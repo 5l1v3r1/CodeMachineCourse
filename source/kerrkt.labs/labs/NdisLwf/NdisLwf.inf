@@ -1,0 +1,70 @@
+; NDIS Light Weight Filter Driver Installation File
+; Copyright (c)  CodeMachine Inc., U.S.A, http://www.codemachine.com
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = NetService
+ClassGUID   = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider    = %CodeMachine%
+DriverVer   = 06/27/2014,1.0.0.0
+; CatalogFile = NdisLwf.cat
+
+[Manufacturer]
+%CodeMachine%=NDISLWF,NTx86,NTia64,NTamd64
+
+[NDISLWF.NTx86]
+%Filter%=NdisLwf.Install, CM_NDISLWF
+
+[NDISLWF.NTia64]
+%Filter%=NdisLwf.Install, CM_NDISLWF
+
+[NDISLWF.NTamd64]
+%Filter%=NdisLwf.Install, CM_NDISLWF
+
+[NdisLwf.Install]
+AddReg=NdisLwf.Install.Ndi
+Characteristics=0x40000
+NetCfgInstanceId="{5cbf81bd-5055-47cd-9055-a76b2b4e3697}"
+Copyfiles = NdisLwf.CopyFiles
+
+[SourceDisksNames]
+1=%DiskId%,"",,
+
+[SourceDisksFiles]
+NdisLwf.sys=1
+
+[DestinationDirs]
+NdisLwf.CopyFiles=12
+
+[NdisLwf.CopyFiles]
+NdisLwf.sys,,,2
+
+[NdisLwf.Install.Ndi]
+HKR, Ndi,Service,,"NdisLwf"
+HKR, Ndi,CoServices,0x00010000,"NdisLwf"
+HKR, Ndi,HelpText,,%ServiceDescription%
+HKR, Ndi,FilterClass,, compression
+HKR, Ndi,FilterType,0x00010001,0x00000002
+HKR, Ndi,FilterRunType, 0x00010001, 1 
+HKR, Ndi\Interfaces,UpperRange,,"noupper"
+HKR, Ndi\Interfaces,LowerRange,,"nolower"
+HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
+
+[NdisLwf.Install.Services]
+AddService	= %ServiceName%,,NdisLwf.AddService
+
+[NdisLwf.AddService]
+DisplayName     = %ServiceDescription%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 1 ;SERVICE_SYSTEM_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\NdisLwf.sys
+LoadOrderGroup  = NDIS
+Description     = %ServiceDescription%
+
+[Strings]
+CodeMachine             = "CodeMachine Inc."
+Filter                  = "CodeMachine NDIS LWF Driver"
+ServiceDescription      = "CodeMachine NDIS LWF Service"
+ServiceName             = "NdisLwf"
+DiskId                  = "CodeMachine NDIS LWF Driver Installation Disk"

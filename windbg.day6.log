@@ -1,0 +1,546 @@
+Opened log file 'c:\course\windbg.day6.log'
+Driver Verifier: Enabled for NTFS.sys, flags 0x1, build 10586, key 3UspDkkXdeMuFYNJ6DGpm
+minio\security\base\lsa\security\driver\asyncsspi.cxx - SspiInitAsyncInterface
+IOINIT: Built-in driver \Driver\hwpolicy failed to initialize with status - 0xC000025E
+KDTARGET: Refreshing KD connection
+DriverEntry DriverObject=FFFFE00164485400
+DriverEntry g_CallbackObject=FFFFE00162671CD0 g_CallbackRegistration=FFFFE00164262180
+DimpHidAddDevice: Failed to open device \\?\HID#{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}#6&1a8c06af&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030} (err=5).
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFED4A92993: (caller: 00007FFED857D533) LogHr(1) tid(170) 80004005 Unspecified error
+    CallContext:[\Startup] 
+Fail to read system\currentcontrolset\services\Lmhosts\Parameters\EnableUserMode, error=2
+DfsDs RPC server started.
+shell\lib\util_drive.cpp(28)\shsvcs.dll!00007FFECE53E290: (caller: 00007FFECE5377A1) ReturnHr[PreRelease](1) tid(764) 80070001 Incorrect function.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFECE214EF0: (caller: 00007FFECE21502D) ReturnHr[PreRelease](1) tid(7cc) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFECE214EF0: (caller: 00007FFECE21502D) ReturnHr[PreRelease](2) tid(7cc) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(99)\netprofmsvc.dll!00007FFECE214800: (caller: 00007FFECE2145D3) ReturnHr[PreRelease](3) tid(7cc) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(12)\netprofmsvc.dll!00007FFECE214655: (caller: 00007FFECE214D2E) ReturnHr[PreRelease](4) tid(7cc) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(161)\netprofmsvc.dll!00007FFECE214D4D: (caller: 00007FFECE214F3E) ReturnHr[PreRelease](5) tid(7cc) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(122)\netprofmsvc.dll!00007FFECE214EF0: (caller: 00007FFECE21502D) ReturnHr[PreRelease](6) tid(7cc) 80040154 Class not registered
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFED4A92993: (caller: 00007FFED857D533) LogHr(1) tid(824) 80004005 Unspecified error
+    CallContext:[\Startup] 
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFECB3DFFB3: (caller: 00007FFECB3DF9A6) ReturnHr[PreRelease](1) tid(9b8) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFECB3DFC2B: (caller: 00007FFECB3DF6ED) LogHr(1) tid(9b8) 80070002 The system cannot find the file specified.
+base\flighting\clientapi\lib\enumeratehelper.cpp(18)\diagtrack.dll!00007FFECB3FA5B8: (caller: 00007FFECB3F9134) ReturnHr[PreRelease](2) tid(9b8) 80070002 The system cannot find the file specified.
+    CallContext:[\ActivityFaGetFlightsInfo] 
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFECB3D925A: (caller: 00007FFECB385F74) LogHr(2) tid(9b8) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFECB3D925A: (caller: 00007FFECB385F74) LogHr(3) tid(abc) 80070015 The device is not ready.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1519)\diagtrack.dll!00007FFECB41E105: (caller: 00007FFECB4451B4) ReturnHr[PreRelease](3) tid(9b8) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\connectivityheartbeat.cpp(209)\diagtrack.dll!00007FFECB4451D2: (caller: 00007FFECB42E796) ReturnHr[PreRelease](4) tid(9b8) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFECB3DFFB3: (caller: 00007FFECB3DF9A6) ReturnHr[PreRelease](5) tid(b48) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFECB3DFC2B: (caller: 00007FFECB3DF6ED) LogHr(4) tid(b48) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](6) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](7) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](8) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](9) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](10) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](11) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](12) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](13) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](14) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](15) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](16) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](17) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](18) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](19) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](20) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](21) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](22) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](23) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](24) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](25) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](26) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](27) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](28) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](29) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](30) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](31) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](32) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](33) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](34) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](35) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](36) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](37) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](38) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](39) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](40) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](41) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](42) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](43) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](44) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](45) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](46) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](47) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](48) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](49) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](50) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](51) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](52) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](53) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](54) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](55) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](56) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](57) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](58) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](59) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](60) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](61) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](62) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](63) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](64) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](65) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](66) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](67) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](68) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](69) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](70) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](71) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](72) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](73) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](74) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](75) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](76) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](77) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](78) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](79) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](80) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](81) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3816CD) ReturnHr[PreRelease](82) tid(b48) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(418)\diagtrack.dll!00007FFECB3816EA: (caller: 00007FFECB381B71) LogHr(5) tid(b48) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\twinui\softlanding\published\softlandingcampaign.cpp(56)\diagtrack.dll!00007FFECB401463: (caller: 00007FFECB3D00F0) ReturnHr[PreRelease](83) tid(b48) 800703F0 An attempt was made to reference a token that does not exist.
+base\diagnosis\diagtrack\engine\scenariomanager.cpp(2333)\diagtrack.dll!00007FFECB3D039C: (caller: 00007FFECB381EA3) LogHr(6) tid(b48) 800703F0 An attempt was made to reference a token that does not exist.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](84) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](85) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(1) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(7) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](86) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](87) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(2) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(8) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](88) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](89) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](90) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(3) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(9) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](91) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](92) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(4) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(10) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](93) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\roaming\settingsync\settingprofilehandler.cpp(85)\SettingSync.dll!00007FFEC888D04E: (caller: 00007FFED2BA9F73) LogHr(1) tid(2a4) 80070002 The system cannot find the file specified.
+shell\roaming\settingsync\settingprofilehandler.cpp(24)\SettingSync.dll!00007FFEC8883CBC: (caller: 00007FFED2BA9F73) LogHr(2) tid(2a4) 800704EC This program is blocked by group policy. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\deskstartupmgr.cpp(52)\modernexecserver.dll!00007FFEC6D975EC: (caller: 00007FFEC6D97503) ReturnHr[PreRelease](1) tid(e40) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFECB3DFFB3: (caller: 00007FFECB3DF9A6) ReturnHr[PreRelease](94) tid(b48) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFECB3DFC2B: (caller: 00007FFECB3DF6ED) LogHr(11) tid(b48) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](95) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](96) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](97) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](98) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](99) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](100) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](101) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](102) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](103) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](104) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](105) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](106) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](107) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](108) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](109) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](110) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](111) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](112) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](113) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](114) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](115) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](116) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](117) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](118) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](119) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](120) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](121) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](122) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](123) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](124) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](125) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](126) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](127) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](128) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](129) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](130) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](131) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](132) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](133) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](134) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](135) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](136) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](137) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](138) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](139) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](140) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](141) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](142) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](143) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](144) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](145) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](146) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](147) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](148) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](149) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](150) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](151) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](152) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](153) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](154) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](155) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](156) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](157) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](158) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](159) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](160) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](161) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](162) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](163) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](164) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](165) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](166) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](167) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](168) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](169) tid(b48) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFECB391784: (caller: 00007FFECB3C83EC) ReturnHr[PreRelease](170) tid(b48) 800401F3 Invalid class string
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(162)\ACPBackgroundManagerPolicy.dll!00007FFEC69B4C0B: (caller: 00007FFEC69B47E3) ReturnHr[PreRelease](1) tid(f00) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(248)\ACPBackgroundManagerPolicy.dll!00007FFEC69B4AD4: (caller: 00007FFEC69B64A3) ReturnHr[PreRelease](2) tid(f00) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFEC6DC1020: (caller: 00007FFED857D533) ReturnHr[PreRelease](2) tid(efc) 8002802B Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFEC48232DC: (caller: 00007FFEC48234FF) ReturnHr[PreRelease](1) tid(ccc) 8004B200 base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFEC6DBE724: (caller: 00007FFEC6DAB15A) ReturnHr[PreRelease](3) tid(efc) 80070002 The system cannot find the file specified.
+StartUI.LauncherFrame
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFED4A92993: (caller: 00007FF69A0C6B66) LogHr(1) tid(bcc) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFEC48232DC: (caller: 00007FFEC48234FF) ReturnHr[PreRelease](2) tid(ccc) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFEC69E7C7A: (caller: 00007FFED857D533) ReturnHr[PreRelease](1) tid(b60) 80070002 The system cannot find the file specified.
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\KMCSBypass\sys\x64\Debug\Vulnerable.sys' (\SystemRoot\System32\Drivers\Vulnerable.sys)
+  File size 7KKdPullRemoteFile(FFFFE00164533700): About to overwrite \SystemRoot\System32\Drivers\Vulnerable.sys and preallocate to 1a00
+KdPullRemoteFile(FFFFE00164533700): Return from ZwCreateFile with status 0
+..
+*** Vulnerable.sys Loaded ***
+Vulnerable!DriverEntry DeviceName=\Device\KMCSBypass
+Vulnerable!DriverEntry SymbolicLinkName=\DosDevices\KMCSBypass
+Break instruction exception - code 80000003 (first chance)
+0033:00007ffe`d6b32d52 cc              int     3
+0: kd> p
+0033:00007ffe`d6b32d53 c3              ret
+0: kd> p
+0033:00007ff7`ab92152c 488d15cdfaffff  lea     rdx,[00007ff7`ab921000]
+1: kd> .reload /user
+Loading User Symbols
+.............
+*** WARNING: Unable to verify checksum for KMCSBypass.exe
+1: kd> p
+KMCSBypass!main+0x3f:
+0033:00007ff7`ab92153f 488d0d526c0000  lea     rcx,[KMCSBypass!_NULL_IMPORT_DESCRIPTOR <PERF> (KMCSBypass+0x8198) (00007ff7`ab928198)]
+1: kd> p
+KMCSBypass!main+0x5c:
+0033:00007ff7`ab92155c 488b542420      mov     rdx,qword ptr [rsp+20h]
+0: kd> g
+Vulnerable!DispatchCreateClose DeviceObject=FFFFE001653E2E40 Irp=FFFFE001665499C0
+Breakpoint 0 hit
+Vulnerable!DispatchIoctl:
+fffff802`02421070 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+Vulnerable!DispatchIoctl DeviceObject=FFFFE001653E2E40 Irp=FFFFE00165EB43C0
+Breakpoint 0 hit
+Vulnerable!DispatchIoctl:
+fffff802`02421070 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> p
+Vulnerable!DispatchIoctl+0xe:
+fffff802`0242107e c7442430bb0000c0 mov     dword ptr [rsp+30h],0C00000BBh
+1: kd> p
+Vulnerable!DispatchIoctl+0x16:
+fffff802`02421086 c744243400000000 mov     dword ptr [rsp+34h],0
+1: kd> p
+Vulnerable!DispatchIoctl+0x1e:
+fffff802`0242108e 488b442468      mov     rax,qword ptr [rsp+68h]
+1: kd> p
+Vulnerable!DispatchIoctl DeviceObject=FFFFE001653E2E40 Irp=FFFFE00165EB43C0
+Vulnerable!DispatchIoctl+0x47:
+fffff802`024210b7 488b4c2468      mov     rcx,qword ptr [rsp+68h]
+1: kd> x vulnerable!g_FunctionPointer
+fffff802`02423010 Vulnerable!g_FunctionPointer = 0x00007ff7`ab921000
+1: kd> p
+Vulnerable!DispatchIoctl+0x56:
+fffff802`024210c6 488b442440      mov     rax,qword ptr [rsp+40h]
+1: kd> p
+Vulnerable!DispatchIoctl+0xb8:
+fffff802`02421128 488b442440      mov     rax,qword ptr [rsp+40h]
+1: kd> p
+Vulnerable!DispatchIoctl+0xd0:
+fffff802`02421140 48833dc81e000000 cmp     qword ptr [Vulnerable!g_FunctionPointer (fffff802`02423010)],0
+1: kd> p
+Vulnerable!DispatchIoctl+0xe4:
+fffff802`02421154 ff15b61e0000    call    qword ptr [Vulnerable!g_FunctionPointer (fffff802`02423010)]
+1: kd> t
+KMCSBypass!PayloadFunction:
+00007ff7`ab921000 4057            push    rdi
+1: kd> p
+KMCSBypass!PayloadFunction+0x15:
+00007ff7`ab921015 48833d6372000000 cmp     qword ptr [KMCSBypass!g_KernelDbgPrint (00007ff7`ab928280)],0
+1: kd> p
+KMCSBypass!PayloadFunction+0x1f:
+00007ff7`ab92101f 488d0dea710000  lea     rcx,[KMCSBypass!_NULL_IMPORT_DESCRIPTOR <PERF> (KMCSBypass+0x8210) (00007ff7`ab928210)]
+1: kd> p
+*** Hello from Kernel Mode ***
+KMCSBypass!PayloadFunction+0x2c:
+00007ff7`ab92102c b8efbeadde      mov     eax,0DEADBEEFh
+1: kd> g
+Vulnerable!DispatchCreateClose DeviceObject=FFFFE001653E2E40 Irp=FFFFE00165EB43C0
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff800`8e1c6eb0 cc              int     3
+1: kd> bc *
+1: kd> .reload /u kmcsbypass.exe
+Unloaded kmcsbypass.exe
+1: kd> g
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFEC88069BF: (caller: 00007FFEC87FA93F) ReturnHr[PreRelease](1) tid(268) 80070002 The system cannot find the file specified.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FFED37810FF: (caller: 00007FFEC6D991DB) ReturnHr[PreRelease](1) tid(e30) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FFEC6D992BC: (caller: 00007FFEC6DADCD5) ReturnHr[PreRelease](4) tid(e30) 80070005 Access is denied.
+Vulnerable!DispatchCreateClose DeviceObject=FFFFE001653E2E40 Irp=FFFFE00164553EA0
+Vulnerable!DispatchIoctl DeviceObject=FFFFE001653E2E40 Irp=FFFFE001642BC7F0
+Vulnerable!DispatchIoctl DeviceObject=FFFFE001653E2E40 Irp=FFFFE001642BC7F0
+*** Hello from Kernel Mode ***
+Vulnerable!DispatchCreateClose DeviceObject=FFFFE001653E2E40 Irp=FFFFE001642BC7F0
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](171) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](172) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(5) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(12) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](173) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFEC88069BF: (caller: 00007FFEC87FA93F) ReturnHr[PreRelease](1) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1065)\FlightSettings.dll!00007FFEC87F9D2C: (caller: 00007FFEC87FBF07) ReturnHr[PreRelease](2) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFEC87FA6A4: (caller: 00007FFEC87F9E04) ReturnHr[PreRelease](3) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFEC87F9E8E: (caller: 00007FFEC87FC11D) ReturnHr[PreRelease](4) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFEC87FA6A4: (caller: 00007FFEC87F9E04) ReturnHr[PreRelease](5) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFEC87F9E8E: (caller: 00007FFED857D533) ReturnHr[PreRelease](6) tid(f64) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFEC88069BF: (caller: 00007FFEC87FA93F) ReturnHr[PreRelease](7) tid(f64) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](174) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(6) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(13) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](175) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](176) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(7) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(14) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](177) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](178) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(8) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(15) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](179) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](180) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(9) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(16) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](181) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+Suspending
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1443)\FlightSettings.dll!00007FFEC87FAEEF: (caller: 00007FFECB3D6580) ReturnHr[PreRelease](1) tid(b54) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(912)\diagtrack.dll!00007FFECB3D659C: (caller: 00007FFECB3D646D) LogHr(17) tid(b54) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(1012)\diagtrack.dll!00007FFECB42BC57: (caller: 00007FFECB3D649C) ReturnHr[PreRelease](182) tid(b54) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(859)\diagtrack.dll!00007FFECB42B65E: (caller: 00007FFECB3D6A8C) LogHr(18) tid(b54) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(680)\diagtrack.dll!00007FFECB42BB5E: (caller: 00007FFECB3D5614) ReturnHr(1) tid(b54) 80070490 Element not found.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(559)\diagtrack.dll!00007FFECB42B0FB: (caller: 00007FFECB3D4E46) LogHr(19) tid(b54) 80070490 Element not found.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](183) tid(b54) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](184) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](185) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(10) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(20) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](186) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FFEC6DB102A: (caller: 00007FFEC6D978E3) ReturnHr[PreRelease](5) tid(f10) 8000000D An illegal state change was requested.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](6) tid(f10) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](7) tid(f10) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](8) tid(1018) 80070002 The system cannot find the file specified.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](1) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](2) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](3) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](4) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](5) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](6) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](7) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](8) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](9) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](10) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](11) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](12) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](13) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](14) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](15) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](16) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](17) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](18) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](19) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](20) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](21) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](22) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](23) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](24) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](25) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](26) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](27) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](28) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](29) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](30) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](31) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](32) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](33) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](34) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](35) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](36) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](37) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](38) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](39) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](40) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](41) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](42) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](43) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](44) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](45) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](46) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](47) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](48) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](49) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](50) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](51) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](52) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](53) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](54) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](55) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](56) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](57) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](58) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](59) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](60) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](61) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](62) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](63) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](64) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](65) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](66) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](67) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](68) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](69) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](70) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](71) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](72) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](73) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](74) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](75) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](76) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](77) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](78) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](79) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](80) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](81) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](82) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](83) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](84) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](85) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](86) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](87) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](88) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](89) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](90) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](91) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](92) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](93) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](94) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](95) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](96) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](97) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](98) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](99) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](100) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](101) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](102) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](103) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](104) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](105) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](106) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](107) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](108) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](109) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](110) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](111) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](112) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](113) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](114) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](115) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](116) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](117) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](118) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](119) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](120) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](121) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](122) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](123) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](124) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](125) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](126) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](127) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](128) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](129) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](130) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](131) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](132) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](133) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](134) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](135) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](136) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47B3F) ReturnHr[PreRelease](137) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFECDE465A7: (caller: 00007FFECDE47929) ReturnHr[PreRelease](138) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFECDE47AA1: (caller: 00007FFECDE47B53) ReturnHr[PreRelease](139) tid(dac) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFECDE47B93: (caller: 00007FFECDE44018) ReturnHr[PreRelease](140) tid(dac) 80070103 No more data is available.
+admin\prov\multivariant\engine\src\provisionengine.cpp(3749)\provengine.dll!00007FFEC8311FFA: (caller: 00007FFECDEA507B) ReturnHr[PreRelease](1) tid(dac) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](187) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](188) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(11) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(21) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](189) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFECD4760BE: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](1) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFECD47610D: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](2) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFECD4760BE: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](3) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFECD47610D: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](4) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFECD4760BE: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](5) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFECD47610D: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](6) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFECD4760BE: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](7) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFECD47610D: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](8) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFECD4760BE: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](9) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFECD47610D: (caller: 00007FFECD45BBC4) ReturnHr[PreRelease](10) tid(8a4) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\perfdiagevents.cpp(64)\apprepsync.dll!00007FFECD45B4DE: (caller: 00007FFECD453DFE) ReturnHr[PreRelease](11) tid(8a4) 80070103 No more data is available.
+Invalid parameter passed to C runtime function.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](190) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](191) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(12) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(22) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](192) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](9) tid(1018) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](193) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](194) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(13) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(23) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](195) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](196) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(14) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(24) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](197) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\clientapi\lib\enumeratehelper.cpp(18)\DeviceCensus.exe!00007FF7BD2B5F27: (caller: 00007FF7BD2B33F8) ReturnHr[PreRelease](1) tid(414) 80070002 The system cannot find the file specified.
+    CallContext:[\ActivityFaGetFlightsInfo] 
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](198) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(15) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(25) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](199) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](10) tid(a2c) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](200) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](201) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(16) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(26) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](202) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](203) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(17) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(27) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](204) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFEC6D97AF4: (caller: 00007FFEC6DBAD7A) ReturnHr[PreRelease](11) tid(a2c) 80070002 The system cannot find the file specified.
+Suspending
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFECB42A333: (caller: 00007FFECB3899C5) ReturnHr[PreRelease](205) tid(ab0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB3FE051) ReturnHr[PreRelease](206) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFECB41B8B2: (caller: 00007FFECB389B50) Exception(18) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFECB40C6E7: (caller: 00007FFECB389507) LogHr(28) tid(ab0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFECB41E0D5: (caller: 00007FFECB385C28) ReturnHr[PreRelease](207) tid(ab0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff800`8e1c6eb0 cc              int     3
+0: kd> .logclose
+Closing open log file c:\course\windbg.day6.log

@@ -1,0 +1,8 @@
+TARGETNAME=InlineHook
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+TARGETLIBS=$(DDK_LIB_PATH)\ntoskrnl.lib
+!if "$(_BUILDARCH)"=="AMD64"
+USER_C_FLAGS=$(USER_C_FLAGS) /homeparams
+!endif
+SOURCES=InlineHook.c MemCpyWP.c Trampoline.asm 

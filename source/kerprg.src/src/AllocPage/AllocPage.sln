@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9743ef92-b70c-4188-9bfa-7baff5ffd517}") = "AllocPage", "AllocPage.vcxproj", "{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Debug|x64.ActiveCfg = Debug|x64
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Debug|x64.Build.0 = Debug|x64
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Debug|x86.ActiveCfg = Debug|Win32
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Debug|x86.Build.0 = Debug|Win32
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Release|x64.ActiveCfg = Release|x64
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Release|x64.Build.0 = Release|x64
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Release|x86.ActiveCfg = Release|Win32
+		{a0bcb322-5a10-4fa9-b5dc-26b7ed84a51a}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

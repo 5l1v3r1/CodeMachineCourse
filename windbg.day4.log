@@ -1,0 +1,2387 @@
+Opened log file 'c:\course\windbg.day4.log'
+0: kd> !object \Objecttypes
+Object: ffffc0013201bae0  Type: (ffffe000dd063e90) Directory
+    ObjectHeader: ffffc0013201bab0 (new version)
+    HandleCount: 0  PointerCount: 54
+    Directory Object: ffffc00132017160  Name: ObjectTypes
+
+    Hash Address          Type                      Name
+    ---- -------          ----                      ----
+     00  ffffe000dd10a590 Type                      TmTm
+     01  ffffe000dd107b00 Type                      Desktop
+         ffffe000dd061f20 Type                      Process
+     03  ffffe000dd05c660 Type                      DebugObject
+     04  ffffe000ddbf69c0 Type                      DmaDomain
+         ffffe000dd108dc0 Type                      TpWorkerFactory
+     05  ffffe000dd109f20 Type                      Adapter
+         ffffe000dd05da40 Type                      Token
+     06  ffffe000de412940 Type                      DxgkSharedResource
+     08  ffffe000dea77980 Type                      NetworkNamespace
+     09  ffffe000de4c7d00 Type                      PcwObject
+         ffffe000dd170960 Type                      WmiGuid
+     11  ffffe000ddbf6b20 Type                      DmaAdapter
+         ffffe000dd1a7f20 Type                      EtwRegistration
+     12  ffffe000dd10ef20 Type                      Session
+         ffffe000dd108f20 Type                      RawInputManager
+         ffffe000dd106b40 Type                      Timer
+     13  ffffe000dd068be0 Type                      Mutant
+     14  ffffe000dd1069e0 Type                      IRTimer
+     16  ffffe000dd1099a0 Type                      IoCompletion
+     17  ffffe000de40fbb0 Type                      DxgkSharedSyncObject
+         ffffe000dd107c60 Type                      WindowStation
+         ffffe000dd107f20 Type                      Profile
+     18  ffffe000dd10af20 Type                      File
+     20  ffffe000dd10edc0 Type                      Partition
+     21  ffffe000dd106ca0 Type                      Semaphore
+     23  ffffe000dd1a7dc0 Type                      EtwConsumer
+         ffffe000dd1079a0 Type                      Composition
+     25  ffffe000dd10a430 Type                      TmTx
+         ffffe000dd05a5f0 Type                      SymbolicLink
+     26  ffffe000de5f1440 Type                      FilterConnectionPort
+         ffffe000dd117b70 Type                      Key
+         ffffe000dd107dc0 Type                      KeyedEvent
+         ffffe000dd068a80 Type                      Callback
+     27  ffffe000dd10a080 Type                      WaitCompletionPacket
+     28  ffffe000dd05c290 Type                      UserApcReserve
+         ffffe000dd059870 Type                      Job
+     29  ffffe000de40fa50 Type                      DxgkSharedSwapChainObject
+         ffffe000dd109dc0 Type                      Controller
+         ffffe000dd05c7c0 Type                      IoCompletionReserve
+     30  ffffe000dd109c60 Type                      Device
+         ffffe000dd063e90 Type                      Directory
+     31  ffffe000dd10baa0 Type                      Section
+         ffffe000dd10bf20 Type                      TmEn
+         ffffe000dd05c080 Type                      Thread
+     32  ffffe000dd0622a0 Type                      Type
+     33  ffffe000de5f12e0 Type                      FilterCommunicationPort
+         ffffe000dd1188c0 Type                      PowerRequest
+     35  ffffe000dd10a2d0 Type                      TmRm
+         ffffe000dd068d40 Type                      Event
+     36  ffffe000dd16aa20 Type                      ALPC Port
+         ffffe000dd109b00 Type                      Driver
+0: kd> !object \FileSystem
+Object: ffffc001320a2700  Type: (ffffe000dd063e90) Directory
+    ObjectHeader: ffffc001320a26d0 (new version)
+    HandleCount: 0  PointerCount: 33
+    Directory Object: ffffc00132017160  Name: FileSystem
+
+    Hash Address          Type                      Name
+    ---- -------          ----                      ----
+     02  ffffe000dff923a0 Driver                    mrxsmb10
+         ffffe000dfdf6cf0 Driver                    mrxsmb
+     03  ffffe000dfdf7b80 Driver                    mrxsmb20
+         ffffe000dfccb9d0 Driver                    storqosflt
+     04  ffffe000dfcaba50 Driver                    luafv
+         ffffe000de5ff080 Driver                    Wof
+     11  ffffe000dece6230 Driver                    rdbss
+         ffffe000dea75570 Device                    CdfsRecognizer
+     12  ffffe000dea75c00 Device                    UdfsDiskRecognizer
+         ffffe000dea5f170 Driver                    Fs_Rec
+     13  Unable to read directory entry at ffffc00132170ae0
+     15  ffffe000de41be60 Driver                    Dfsc
+     17  ffffe000dff69cf0 Driver                    srvnet
+     19  ffffe000dffa9080 Driver                    srv
+         ffffc001320b0650 Directory                 Filters
+     21  ffffe000dfdee100 Driver                    bowser
+         ffffe000de5f1e60 Driver                    FltMgr
+     22  ffffe000dea759d0 Device                    FatCdRomRecognizer
+     23  ffffe000dea05910 Driver                    NTFS
+     24  ffffe000de40e3c0 Driver                    Npfs
+         ffffe000deb2b610 Driver                    Mup
+         ffffe000de4bb8a0 Driver                    RAW
+     25  ffffe000dea75060 Device                    ReFSRecognizer
+         ffffe000dea00600 Driver                    WdFilter
+     28  ffffe000de5fee60 Driver                    FileInfo
+     31  ffffe000dea74900 Device                    FatDiskRecognizer
+     32  ffffe000dea75e30 Device                    ReFSv1Recognizer
+     33  ffffe000dff60600 Driver                    srv2
+         ffffe000ded02370 Driver                    NetBIOS
+         ffffe000de403e60 Driver                    FileCrypt
+         ffffe000dea746d0 Device                    ExFatRecognizer
+     35  ffffe000dea757a0 Device                    UdfsCdRomRecognizer
+0: kd> !object \FileSystem\Filters
+Object: ffffc001320b0650  Type: (ffffe000dd063e90) Directory
+    ObjectHeader: ffffc001320b0620 (new version)
+    HandleCount: 0  PointerCount: 3
+    Directory Object: ffffc001320a2700  Name: Filters
+
+    Hash Address          Type                      Name
+    ---- -------          ----                      ----
+     19  ffffe000de5f2060 Device                    FltMgrMsg
+     21  ffffe000de5f1980 Device                    FltMgr
+0: kd> !process 0 0 cmd.exe
+0: kd> g
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFC5C322993: (caller: 00007FFC604DD533) LogHr(1) tid(4fc) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\roaming\settingsync\settingprofilehandler.cpp(85)\SettingSync.dll!00007FFC5459D02E: (caller: 00007FFC5990BA23) LogHr(1) tid(530) 80070002 The system cannot find the file specified.
+shell\roaming\settingsync\settingprofilehandler.cpp(24)\SettingSync.dll!00007FFC54593CBC: (caller: 00007FFC5990BA23) LogHr(2) tid(530) 800704EC This program is blocked by group policy. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\deskstartupmgr.cpp(52)\modernexecserver.dll!00007FFC53BA8CCC: (caller: 00007FFC53BA8D9B) ReturnHr[PreRelease](1) tid(af4) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFC533BFFB3: (caller: 00007FFC533BF9A6) ReturnHr[PreRelease](116) tid(a08) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFC533BFC2B: (caller: 00007FFC533BF6ED) LogHr(19) tid(a08) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](117) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](118) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](119) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](120) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](121) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](122) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](123) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](124) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](125) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](126) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](127) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](128) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](129) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](130) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](131) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](132) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](133) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](134) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](135) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](136) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](137) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](138) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](139) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](140) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](141) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](142) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](143) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](144) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](145) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](146) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](147) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](148) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](149) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](150) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](151) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](152) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](153) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](154) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](155) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](156) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](157) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](158) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](159) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](160) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](161) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](162) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](163) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](164) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](165) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](166) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](167) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](168) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](169) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](170) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](171) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](172) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](173) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](174) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](175) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](176) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](177) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](178) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](179) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](180) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](181) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](182) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](183) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](184) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](185) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](186) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](187) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](188) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](189) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](190) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](191) tid(a08) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFC53371784: (caller: 00007FFC533A83EC) ReturnHr[PreRelease](192) tid(a08) 800401F3 Invalid class string
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(162)\ACPBackgroundManagerPolicy.dll!00007FFC53064C0B: (caller: 00007FFC530647E3) ReturnHr[PreRelease](1) tid(c84) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(248)\ACPBackgroundManagerPolicy.dll!00007FFC53064AD4: (caller: 00007FFC530664A3) ReturnHr[PreRelease](2) tid(c84) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFC53B783C0: (caller: 00007FFC604DD533) ReturnHr[PreRelease](2) tid(c68) 8002802B Element not found.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFC53B783C0: (caller: 00007FFC604DD533) ReturnHr[PreRelease](3) tid(c68) 8002802B Element not found.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9B4AA) ReturnHr[PreRelease](4) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](5) tid(c68) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](6) tid(c68) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](7) tid(c68) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](8) tid(c68) 80070002 The system cannot find the file specified.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](1) tid(e9c) 8004B200 base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9B4AA) ReturnHr[PreRelease](9) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](10) tid(ef0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](11) tid(ef0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](12) tid(ef0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](13) tid(ef0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFC53B9D2C4: (caller: 00007FFC53B9AD06) ReturnHr[PreRelease](14) tid(ef0) 80070002 The system cannot find the file specified.
+StartUI.LauncherFrame
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFC5C322993: (caller: 00007FF693676D86) LogHr(1) tid(dc8) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](2) tid(e9c) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFC53097C7A: (caller: 00007FFC604DD533) ReturnHr[PreRelease](1) tid(c60) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFC53B76FC4: (caller: 00007FFC53B98CFA) ReturnHr[PreRelease](15) tid(cac) 80070002 The system cannot find the file specified.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff803`f0dbb6d0 cc              int     3
+1: kd> !process 0 0 cmd.exe
+PROCESS ffffe000de390200
+    SessionId: 2  Cid: 10b8    Peb: 784be03000  ParentCid: 0d4c
+    DirBase: 14ae3000  ObjectTable: ffffc00134ae3c40  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+1: kd> !handle 0 3 ffffe000de390200
+
+PROCESS ffffe000de390200
+    SessionId: 2  Cid: 10b8    Peb: 784be03000  ParentCid: 0d4c
+    DirBase: 14ae3000  ObjectTable: ffffc00134ae3c40  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+Handle Error reading handle count.
+
+0004: Object: ffffc001320ec4e0  GrantedAccess: 00000003 (Protected) (Inherit) Entry: ffffc00133d70010
+Object: ffffc001320ec4e0  Type: (ffffe000dd063e90) Directory
+    ObjectHeader: ffffc001320ec4b0 (new version)
+        HandleCount: 46  PointerCount: 1504810
+        Directory Object: ffffc00132017160  Name: KnownDlls
+
+        Hash Address          Type                      Name
+        ---- -------          ----                      ----
+         00  ffffc00132aa9f00 Section                   kernel32.dll
+         01  ffffc00137a66c40 Section                   kernel.appcore.dll
+             ffffc00137a64ef0 Section                   windows.storage.dll
+         02  ffffc00137a21fc0 Section                   MSCTF.dll
+             ffffc00132aa92c0 Section                   WS2_32.dll
+             ffffc00137a06660 Section                   SHLWAPI.dll
+         03  ffffc00137a69fc0 Section                   kernelbase.dll
+         04  ffffc00132f4f7b0 Section                   Wow64.dll
+         05  ffffc00137a33c60 Section                   gdiplus.dll
+             ffffc001320ec160 SymbolicLink              KnownDllPath
+         06  ffffc00137a52610 Section                   MSASN1.dll
+             ffffc00137a24c10 Section                   user32.dll
+         10  ffffc00137a50240 Section                   COMCTL32.dll
+         11  ffffc00137a64970 Section                   cfgmgr32.dll
+         12  ffffc00137a2e790 Section                   IMM32.dll
+             ffffc00132f50ad0 Section                   combase.dll
+         13  ffffc001320ed4e0 Section                   rpcrt4.dll
+         14  ffffc00137a45f00 Section                   ntdll.dll
+             ffffc00137a45fc0 Section                   bcryptPrimitives.dll
+             ffffc00137a33250 Section                   coml2.dll
+         17  ffffc00137a34400 Section                   Wow64cpu.dll
+         18  ffffc00132134320 Section                   COMDLG32.dll
+         19  ffffc00137a1a080 Section                   IMAGEHLP.dll
+         20  ffffc00137a3aef0 Section                   SHELL32.dll
+         21  ffffc00137a2ddc0 Section                   sechost.dll
+         22  ffffc00137a45220 Section                   WINTRUST.dll
+         24  ffffc00137a2d620 Section                   LPK.dll
+             ffffc00132aa94c0 Section                   NORMALIZ.dll
+         25  ffffc00132763fc0 Section                   difxapi.dll
+         26  ffffc00137a521d0 Section                   profapi.dll
+             ffffc00137a4fa40 Section                   Setupapi.dll
+         27  ffffc00137a4eef0 Section                   CRYPT32.dll
+         28  ffffc00137a4d590 Section                   FirewallAPI.dll
+             ffffc00137a23350 Section                   gdi32.dll
+             ffffc00132f4fdb0 Section                   MSVCRT.dll
+         29  ffffc00137a4dfc0 Section                   NETAPI32.dll
+             ffffc00132f4edb0 Section                   advapi32.dll
+             ffffc001338a7580 Section                   Wow64win.dll
+         30  ffffc00137a33810 Section                   PSAPI.DLL
+             ffffc00137a06be0 Section                   NSI.dll
+         31  ffffc00137a1f230 Section                   WLDAP32.dll
+             ffffc00137a08420 Section                   OLEAUT32.dll
+         33  ffffc00137a51ef0 Section                   shcore.dll
+         34  ffffc00132f505a0 Section                   ole32.dll
+         35  ffffc00132f4fbb0 Section                   clbcatq.dll
+         36  ffffc00137a657e0 Section                   powrprof.dll
+
+0008: Object: ffffe000de940550  GrantedAccess: 001f0003 (Inherit) Entry: ffffc00133d70020
+Object: ffffe000de940550  Type: (ffffe000dd068d40) Event
+    ObjectHeader: ffffe000de940520 (new version)
+        HandleCount: 1  PointerCount: 32764
+
+000c: Object: ffffe000de73b5c0  GrantedAccess: 001f0003 (Protected) Entry: ffffc00133d70030
+Object: ffffe000de73b5c0  Type: (ffffe000dd068d40) Event
+    ObjectHeader: ffffe000de73b590 (new version)
+        HandleCount: 1  PointerCount: 32766
+
+0010: Object: ffffe000dfba7f20  GrantedAccess: 00100020 (Protected) (Inherit) (Audit) Entry: ffffc00133d70040
+Object: ffffe000dfba7f20  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000dfba7ef0 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Windows\System32 {HarddiskVolume2}
+
+0014: Object: ffffe000ddcac0b0  GrantedAccess: 00120089 Entry: ffffc00133d70050
+Object: ffffe000ddcac0b0  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000ddcac080 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Windows\System32\en-US\cmd.exe.mui {HarddiskVolume2}
+
+0018: Object: ffffe000ddf260b0  GrantedAccess: 0012019f Entry: ffffc00133d70060
+Object: ffffe000ddf260b0  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000ddf26080 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Reference {ConDrv}
+
+001c: Object: ffffe000de981e20  GrantedAccess: 001f0001 (Protected) (Inherit) (Audit) Entry: ffffc00133d70070
+Object: ffffe000de981e20  Type: (ffffe000dd16aa20) ALPC Port
+    ObjectHeader: ffffe000de981df0 (new version)
+        HandleCount: 1  PointerCount: 32770
+
+0020: Object: ffffe000ddf2af20  GrantedAccess: 0012019f (Protected) (Inherit) (Audit) Entry: ffffc00133d70080
+Object: ffffe000ddf2af20  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000ddf2aef0 (new version)
+        HandleCount: 1  PointerCount: 32710
+        Directory Object: 00000000  Name: \Connect {ConDrv}
+
+0024: Object: ffffe000dfe8b310  GrantedAccess: 0012019f (Inherit) (Audit) Entry: ffffc00133d70090
+Object: ffffe000dfe8b310  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000dfe8b2e0 (new version)
+        HandleCount: 1  PointerCount: 32760
+        Directory Object: 00000000  Name: \Input {ConDrv}
+
+0028: Object: ffffe000de47ff20  GrantedAccess: 0012019f (Protected) (Inherit) (Audit) Entry: ffffc00133d700a0
+Object: ffffe000de47ff20  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000de47fef0 (new version)
+        HandleCount: 2  PointerCount: 65507
+        Directory Object: 00000000  Name: \Output {ConDrv}
+
+002c: Object: ffffe000de47ff20  GrantedAccess: 0012019f (Protected) (Inherit) (Audit) Entry: ffffc00133d700b0
+Object: ffffe000de47ff20  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000de47fef0 (new version)
+        HandleCount: 2  PointerCount: 65507
+        Directory Object: 00000000  Name: \Output {ConDrv}
+
+0030: Object: ffffe000deb676a0  GrantedAccess: 001f0003 (Protected) (Inherit) (Audit) Entry: ffffc00133d700c0
+Object: ffffe000deb676a0  Type: (ffffe000dd068d40) Event
+    ObjectHeader: ffffe000deb67670 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0034: Object: ffffe000ddd45f90  GrantedAccess: 00000001 (Inherit) (Audit) Entry: ffffc00133d700d0
+Object: ffffe000ddd45f90  Type: (ffffe000dd10a080) WaitCompletionPacket
+    ObjectHeader: ffffe000ddd45f60 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0038: Object: ffffe000dde1bf80  GrantedAccess: 001f0003 (Protected) (Audit) Entry: ffffc00133d700e0
+Object: ffffe000dde1bf80  Type: (ffffe000dd1099a0) IoCompletion
+    ObjectHeader: ffffe000dde1bf50 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+003c: Object: ffffe000ddf76540  GrantedAccess: 000f00ff (Protected) Entry: ffffc00133d700f0
+Object: ffffe000ddf76540  Type: (ffffe000dd108dc0) TpWorkerFactory
+    ObjectHeader: ffffe000ddf76510 (new version)
+        HandleCount: 1  PointerCount: 32768
+
+0040: Object: ffffe000ddd0ebd0  GrantedAccess: 00100002 (Inherit) Entry: ffffc00133d70100
+Object: ffffe000ddd0ebd0  Type: (ffffe000dd1069e0) IRTimer
+    ObjectHeader: ffffe000ddd0eba0 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0044: Object: ffffe000df6712a0  GrantedAccess: 00000001 (Protected) (Inherit) (Audit) Entry: ffffc00133d70110
+Object: ffffe000df6712a0  Type: (ffffe000dd10a080) WaitCompletionPacket
+    ObjectHeader: ffffe000df671270 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0048: Object: ffffe000dded9060  GrantedAccess: 00100002 (Protected) (Inherit) Entry: ffffc00133d70120
+Object: ffffe000dded9060  Type: (ffffe000dd1069e0) IRTimer
+    ObjectHeader: ffffe000dded9030 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+004c: Object: ffffe000dec2abb0  GrantedAccess: 00000001 Entry: ffffc00133d70130
+Object: ffffe000dec2abb0  Type: (ffffe000dd10a080) WaitCompletionPacket
+    ObjectHeader: ffffe000dec2ab80 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0050: Object: ffffe000ddcb9540  GrantedAccess: 00000804 (Protected) Entry: ffffc00133d70140
+Object: ffffe000ddcb9540  Type: (ffffe000dd1a7f20) EtwRegistration
+    ObjectHeader: ffffe000ddcb9510 (new version)
+        HandleCount: 1  PointerCount: 32768
+
+0054: Object: ffffe000de370bc0  GrantedAccess: 001f0003 (Protected) Entry: ffffc00133d70150
+Object: ffffe000de370bc0  Type: (ffffe000dd1099a0) IoCompletion
+    ObjectHeader: ffffe000de370b90 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0058: Object: ffffe000ddd9d290  GrantedAccess: 000f00ff (Inherit) (Audit) Entry: ffffc00133d70160
+Object: ffffe000ddd9d290  Type: (ffffe000dd108dc0) TpWorkerFactory
+    ObjectHeader: ffffe000ddd9d260 (new version)
+        HandleCount: 1  PointerCount: 32762
+
+005c: Object: ffffe000ddc4e7f0  GrantedAccess: 00100002 (Audit) Entry: ffffc00133d70170
+Object: ffffe000ddc4e7f0  Type: (ffffe000dd1069e0) IRTimer
+    ObjectHeader: ffffe000ddc4e7c0 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0060: Object: ffffe000dfcd5670  GrantedAccess: 00000001 (Audit) Entry: ffffc00133d70180
+Object: ffffe000dfcd5670  Type: (ffffe000dd10a080) WaitCompletionPacket
+    ObjectHeader: ffffe000dfcd5640 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0064: Object: ffffe000e0118d10  GrantedAccess: 00100002 (Inherit) (Audit) Entry: ffffc00133d70190
+Object: ffffe000e0118d10  Type: (ffffe000dd1069e0) IRTimer
+    ObjectHeader: ffffe000e0118ce0 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+0068: Object: ffffe000df76a270  GrantedAccess: 00000001 (Audit) Entry: ffffc00133d701a0
+Object: ffffe000df76a270  Type: (ffffe000dd10a080) WaitCompletionPacket
+    ObjectHeader: ffffe000df76a240 (new version)
+        HandleCount: 1  PointerCount: 32769
+
+006c: Object: ffffc001353811d0  GrantedAccess: 00020019 (Inherit) Entry: ffffc00133d701b0
+Object: ffffc001353811d0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc001353811a0 (new version)
+        HandleCount: 1  PointerCount: 32767
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\NLS\SORTING\VERSIONS
+
+0070: Object: ffffe000e0d03840  GrantedAccess: 001fffff (Protected) Entry: ffffc00133d701c0
+Object: ffffe000e0d03840  Type: (ffffe000dd05c080) Thread
+    ObjectHeader: ffffe000e0d03810 (new version)
+        HandleCount: 2  PointerCount: 65531
+
+0074: Object: ffffc001343167e0  GrantedAccess: 000f003f (Protected) (Inherit) Entry: ffffc00133d701d0
+Object: ffffc001343167e0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc001343167b0 (new version)
+        HandleCount: 1  PointerCount: 32765
+        Directory Object: 00000000  Name: \REGISTRY\USER\S-1-5-21-2257097422-1553991371-2697796969-1001
+
+0078: Object: ffffc0013af4e3e0  GrantedAccess: 000f003f (Protected) (Inherit) Entry: ffffc00133d701e0
+Object: ffffc0013af4e3e0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc0013af4e3b0 (new version)
+        HandleCount: 1  PointerCount: 32767
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE
+
+007c: Object: ffffc00134a38990  GrantedAccess: 00020019 (Inherit) (Audit) Entry: ffffc00133d701f0
+Object: ffffc00134a38990  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc00134a38960 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\NLS\LOCALE
+
+0080: Object: ffffc00134658390  GrantedAccess: 00020019 (Inherit) (Audit) Entry: ffffc00133d70200
+Object: ffffc00134658390  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc00134658360 (new version)
+        HandleCount: 1  PointerCount: 1
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\NLS\LOCALE\ALTERNATE SORTS
+
+0084: Object: ffffc001349801d0  GrantedAccess: 00020019 (Inherit) Entry: ffffc00133d70210
+Object: ffffc001349801d0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc001349801a0 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\NLS\LANGUAGE GROUPS
+
+0088: Object: ffffe000de2659e0  GrantedAccess: 00000804 (Protected) (Inherit) Entry: ffffc00133d70220
+Object: ffffe000de2659e0  Type: (ffffe000dd1a7f20) EtwRegistration
+    ObjectHeader: ffffe000de2659b0 (new version)
+        HandleCount: 1  PointerCount: 1
+
+008c: Object: ffffc001346ef9f0  GrantedAccess: 00000001 (Audit) Entry: ffffc00133d70230
+Object: ffffc001346ef9f0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc001346ef9c0 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\SESSION MANAGER
+
+0090: Object: ffffc001351f88b0  GrantedAccess: 00020019 Entry: ffffc00133d70240
+Object: ffffc001351f88b0  Type: (ffffe000dd117b70) Key
+    ObjectHeader: ffffc001351f8880 (new version)
+        HandleCount: 1  PointerCount: 32767
+        Directory Object: 00000000  Name: \REGISTRY\MACHINE\SYSTEM\CONTROLSET001\CONTROL\NLS\SORTING\IDS
+
+
+1: kd> .logfile
+Log 'c:\course\windbg.day4.log' open
+1: kd> !drvobj i8042prt
+Driver object (ffffe000ded99080) is for:
+ \Driver\i8042prt
+Driver Extension List: (id , addr)
+
+Device Object list:
+ffffe000ded9e810  ffffe000ded9a780  
+1: kd> !devobj ffffe000ded9e810
+Device object (ffffe000ded9e810) is for:
+  \Driver\i8042prt DriverObject ffffe000ded99080
+Current Irp 00000000 RefCount 0 Type 00000027 Flags 00002004
+Dacl ffffc1023210f411 DevExt ffffe000ded9e960 DevObjExt ffffe000ded9edb8 
+ExtensionFlags (0x30000800)  DOE_DEFAULT_SD_PRESENT, DOE_RAW_FDO
+                             Unknown flags 0x10000000
+Characteristics (0000000000)  
+AttachedDevice (Upper) ffffe000ded9e4b0 \Driver\mouclass
+AttachedTo (Lower) ffffe000dd020bb0 \Driver\ACPI
+Device queue is not busy.
+1: kd> !devobj ffffe000ded9a780
+Device object (ffffe000ded9a780) is for:
+  \Driver\i8042prt DriverObject ffffe000ded99080
+Current Irp 00000000 RefCount 0 Type 00000027 Flags 00002004
+Dacl ffffc1023210f411 DevExt ffffe000ded9a8d0 DevObjExt ffffe000ded9ad28 
+ExtensionFlags (0x30000800)  DOE_DEFAULT_SD_PRESENT, DOE_RAW_FDO
+                             Unknown flags 0x10000000
+Characteristics (0000000000)  
+AttachedDevice (Upper) ffffe000ded9a400 \Driver\kbdclass
+AttachedTo (Lower) ffffe000dd020e40 \Driver\ACPI
+Device queue is not busy.
+1: kd> !drvobj \Driver\kbdclass
+Driver object (ffffe000ded9a080) is for:
+ \Driver\kbdclass
+Driver Extension List: (id , addr)
+
+Device Object list:
+ffffe000dfa59890  ffffe000dedb9690  ffffe000ded9a400  
+1: kd> !devobj ffffe000dfa59890
+Device object (ffffe000dfa59890) is for:
+ KeyboardClass2 \Driver\kbdclass DriverObject ffffe000ded9a080
+Current Irp 00000000 RefCount 0 Type 0000000b Flags 00002044
+Dacl ffffc1023210f411 DevExt ffffe000dfa599e0 DevObjExt ffffe000dfa59b60 
+ExtensionFlags (0x00000c00)  DOE_SESSION_DEVICE, DOE_DEFAULT_SD_PRESENT
+Characteristics (0x00000100)  FILE_DEVICE_SECURE_OPEN
+AttachedTo (Lower) ffffe000de212630 \Driver\terminpt
+Device queue is not busy.
+1: kd> !devobj ffffe000dedb9690
+Device object (ffffe000dedb9690) is for:
+ KeyboardClass1 \Driver\kbdclass DriverObject ffffe000ded9a080
+Current Irp 00000000 RefCount 0 Type 0000000b Flags 00002044
+Dacl ffffc1023210f411 DevExt ffffe000dedb97e0 DevObjExt ffffe000dedb9960 
+ExtensionFlags (0x00000800)  DOE_DEFAULT_SD_PRESENT
+Characteristics (0x00000100)  FILE_DEVICE_SECURE_OPEN
+AttachedTo (Lower) ffffe000dedb7d60 \Driver\hyperkbd
+Device queue is not busy.
+1: kd> !devobj ffffe000ded9a400
+Device object (ffffe000ded9a400) is for:
+ KeyboardClass0 \Driver\kbdclass DriverObject ffffe000ded9a080
+Current Irp 00000000 RefCount 0 Type 0000000b Flags 00002044
+Dacl ffffc1023210f411 DevExt ffffe000ded9a550 DevObjExt ffffe000ded9a6d0 
+ExtensionFlags (0x00000800)  DOE_DEFAULT_SD_PRESENT
+Characteristics (0000000000)  
+AttachedTo (Lower) ffffe000ded9a780 \Driver\i8042prt
+Device queue is not busy.
+1: kd> !process 0 0 winlogon.exe
+PROCESS ffffe000df68e080
+    SessionId: 1  Cid: 022c    Peb: 50ea522000  ParentCid: 01f0
+    DirBase: 0b681000  ObjectTable: ffffc0013ae982c0  HandleCount: <Data Not Accessible>
+    Image: winlogon.exe
+
+PROCESS ffffe000de1f2080
+    SessionId: 2  Cid: 09b0    Peb: 87fecf2000  ParentCid: 09d4
+    DirBase: 1ffd2000  ObjectTable: ffffc00133eb8040  HandleCount: <Data Not Accessible>
+    Image: winlogon.exe
+
+1: kd> .process /i ffffe000df68e080
+You need to continue execution (press 'g' <enter>) for the context
+to be switched. When the debugger breaks in again, you will be in
+the new process context.
+1: kd> g
+Break instruction exception - code 80000003 (first chance)
+nt!DbgBreakPointWithStatus:
+fffff803`f0dbb6d0 cc              int     3
+0: kd> !process
+PROCESS ffffe000df68e080
+    SessionId: 1  Cid: 022c    Peb: 50ea522000  ParentCid: 01f0
+    DirBase: 0b681000  ObjectTable: ffffc0013ae982c0  HandleCount: <Data Not Accessible>
+    Image: winlogon.exe
+    VadRoot ffffe000df764c70 Vads 56 Clone 0 Private 228. Modified 427. Locked 0.
+    DeviceMap ffffc0013201b770
+    Token                             ffffc0013af26b30
+    ElapsedTime                       02:25:18.243
+    UserTime                          00:00:00.000
+    KernelTime                        00:00:00.031
+    QuotaPoolUsage[PagedPool]         119848
+    QuotaPoolUsage[NonPagedPool]      7800
+    Working Set Sizes (now,min,max)  (1141, 50, 345) (4564KB, 200KB, 1380KB)
+    PeakWorkingSetSize                2068
+    VirtualSize                       2097206 Mb
+    PeakVirtualSize                   2097208 Mb
+    PageFaultCount                    2988
+    MemoryPriority                    BACKGROUND
+    BasePriority                      13
+    CommitCharge                      466
+
+        THREAD ffffe000df690080  Cid 022c.0230  Teb: 00000050ea523000 Win32Thread: ffffe000df775c80 WAIT: (UserRequest) UserMode Non-Alertable
+            ffffe000df957c80  SynchronizationEvent
+
+        THREAD ffffe000decf6040  Cid 022c.0248  Teb: 00000050ea529000 Win32Thread: ffffe000df7d1bf0 WAIT: (WrQueue) UserMode Alertable
+            ffffe000df690ec0  QueueObject
+
+        THREAD ffffe000df94e080  Cid 022c.0394  Teb: 00000050ea52f000 Win32Thread: ffffe000df7e4740 WAIT: (WrLpcReply) UserMode Non-Alertable
+            ffffe000df94e6b8  Semaphore Limit 0x1
+
+        THREAD ffffe000de7ef840  Cid 022c.0c94  Teb: 00000050ea533000 Win32Thread: 0000000000000000 WAIT: (WrQueue) UserMode Alertable
+            ffffe000df690ec0  QueueObject
+
+
+0: kd> !handle 0 3 ffffe000df68e080 File
+
+Searching for handles of type File
+
+PROCESS ffffe000df68e080
+    SessionId: 1  Cid: 022c    Peb: 50ea522000  ParentCid: 01f0
+    DirBase: 0b681000  ObjectTable: ffffc0013ae982c0  HandleCount: <Data Not Accessible>
+    Image: winlogon.exe
+
+Handle Error reading handle count.
+
+0010: Object: ffffe000df5c2310  GrantedAccess: 00100020 (Inherit) (Audit) Entry: ffffc0013af25040
+Object: ffffe000df5c2310  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000df5c22e0 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Windows\System32 {HarddiskVolume2}
+
+0074: Object: ffffe000df69aea0  GrantedAccess: 00100003 (Protected) (Inherit) (Audit) Entry: ffffc0013af251d0
+Object: ffffe000df69aea0  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000df69ae70 (new version)
+        HandleCount: 1  PointerCount: 32768
+
+0104: Object: ffffe000df5935f0  GrantedAccess: 00120089 (Audit) Entry: ffffc0013af25410
+Object: ffffe000df5935f0  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000df5935c0 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Windows\System32\en-US\user32.dll.mui {HarddiskVolume2}
+
+0148: Object: ffffe000df91b3f0  GrantedAccess: 00100001 (Audit) Entry: ffffc0013af25520
+Object: ffffe000df91b3f0  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000df91b3c0 (new version)
+        HandleCount: 1  PointerCount: 32768
+
+01a4: Object: ffffe000decbd660  GrantedAccess: 00100001 (Protected) (Inherit) Entry: ffffc0013af25690
+Object: ffffe000decbd660  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000decbd630 (new version)
+        HandleCount: 1  PointerCount: 32768
+
+01e4: Object: ffffe000df9e4430  GrantedAccess: 00120089 Entry: ffffc0013af25790
+Object: ffffe000df9e4430  Type: (ffffe000dd10af20) File
+    ObjectHeader: ffffe000df9e4400 (new version)
+        HandleCount: 1  PointerCount: 32768
+        Directory Object: 00000000  Name: \Windows\System32\en-US\winlogon.exe.mui {HarddiskVolume2}
+
+
+0: kd> !fileobj ffffe000df9e4430
+
+\Windows\System32\en-US\winlogon.exe.mui
+
+Device Object: 0xffffe000deb93690   \Driver\volmgr
+Vpb: 0xffffe000deb95870
+Event signalled
+Access: Read SharedRead SharedDelete 
+
+Flags:  0x40040
+	Cache Supported
+	Handle Created
+
+FsContext: 0xffffcf80c46e6c00	FsContext2: 0xffffcf80c5490f70
+CurrentByteOffset: 0
+Cache Data:
+  Section Object Pointers: ffffcf80c4222f58
+  Shared Cache Map: 00000000
+
+0: kd> !devobj 0xffffe000deb93690   
+Device object (ffffe000deb93690) is for:
+ HarddiskVolume2 \Driver\volmgr DriverObject ffffe000de5ccd20
+Current Irp 00000000 RefCount 3966 Type 00000007 Flags 00001150
+Vpb ffffe000deb95870 Dacl ffffc10232304490 DevExt ffffe000deb937e0 DevObjExt ffffe000deb939a0 Dope ffffe000deb95800 DevNode ffffe000deb94d30 
+ExtensionFlags (0x00000800)  DOE_DEFAULT_SD_PRESENT
+Characteristics (0x00020000)  FILE_DEVICE_ALLOW_APPCONTAINER_TRAVERSAL
+AttachedDevice (Upper) ffffe000deb99030 \Driver\fvevol
+Device queue is not busy.
+0: kd> !drvobj ffffe000de5ccd20
+fffff803f0f50800: Unable to get value of ObpRootDirectoryObject
+Driver object (ffffe000de5ccd20) is for:
+Cannot read _DRIVER_OBJECT at ffffe000de5ccd20
+0: kd> !drvobj \Driver\volmgr
+Driver object \Driver\volmgr not found
+0: kd> !drvobj \Driver\volmgr 2
+Driver object (ffffe000de5ccd20) is for:
+ \Driver\volmgr
+DriverEntry:   fffff800bb394000	
+DriverStartIo: 00000000	
+DriverUnload:  fffff800bb3932a0	
+AddDevice:     00000000	
+
+Dispatch routines:
+[00] IRP_MJ_CREATE                      fffff800bb381f90	+0xfffff800bb381f90
+[01] IRP_MJ_CREATE_NAMED_PIPE           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[02] IRP_MJ_CLOSE                       fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[03] IRP_MJ_READ                        fffff800bb381000	+0xfffff800bb381000
+[04] IRP_MJ_WRITE                       fffff800bb381000	+0xfffff800bb381000
+[05] IRP_MJ_QUERY_INFORMATION           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[06] IRP_MJ_SET_INFORMATION             fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[07] IRP_MJ_QUERY_EA                    fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[08] IRP_MJ_SET_EA                      fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[09] IRP_MJ_FLUSH_BUFFERS               fffff800bb381e50	+0xfffff800bb381e50
+[0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0c] IRP_MJ_DIRECTORY_CONTROL           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0e] IRP_MJ_DEVICE_CONTROL              fffff800bb3812e0	+0xfffff800bb3812e0
+[0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff800bb382300	+0xfffff800bb382300
+[10] IRP_MJ_SHUTDOWN                    fffff800bb384690	+0xfffff800bb384690
+[11] IRP_MJ_LOCK_CONTROL                fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[12] IRP_MJ_CLEANUP                     fffff800bb381e00	+0xfffff800bb381e00
+[13] IRP_MJ_CREATE_MAILSLOT             fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[14] IRP_MJ_QUERY_SECURITY              fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[15] IRP_MJ_SET_SECURITY                fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[16] IRP_MJ_POWER                       fffff800bb3821f0	+0xfffff800bb3821f0
+[17] IRP_MJ_SYSTEM_CONTROL              fffff800bb381fc0	+0xfffff800bb381fc0
+[18] IRP_MJ_DEVICE_CHANGE               fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[19] IRP_MJ_QUERY_QUOTA                 fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[1a] IRP_MJ_SET_QUOTA                   fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[1b] IRP_MJ_PNP                         fffff800bb38bb60	+0xfffff800bb38bb60
+
+0: kd> .reload
+Connected to Windows 10 10586 x64 target at (Thu May  5 11:07:59.856 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+...............................................................
+....
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+............................................................
+..........................
+Loading User Symbols
+......................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.....
+Loading unloaded module list
+.......
+0: kd> !drvobj \Driver\volmgr 2
+Driver object (ffffe000de5ccd20) is for:
+ \Driver\volmgr
+DriverEntry:   fffff800bb394000	volmgr!GsDriverEntry
+DriverStartIo: 00000000	
+DriverUnload:  fffff800bb3932a0	volmgr!VmUnload
+AddDevice:     00000000	
+
+Dispatch routines:
+[00] IRP_MJ_CREATE                      fffff800bb381f90	volmgr!VmCreate
+[01] IRP_MJ_CREATE_NAMED_PIPE           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[02] IRP_MJ_CLOSE                       fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[03] IRP_MJ_READ                        fffff800bb381000	volmgr!VmReadWrite
+[04] IRP_MJ_WRITE                       fffff800bb381000	volmgr!VmReadWrite
+[05] IRP_MJ_QUERY_INFORMATION           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[06] IRP_MJ_SET_INFORMATION             fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[07] IRP_MJ_QUERY_EA                    fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[08] IRP_MJ_SET_EA                      fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[09] IRP_MJ_FLUSH_BUFFERS               fffff800bb381e50	volmgr!VmFlushBuffers
+[0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0c] IRP_MJ_DIRECTORY_CONTROL           fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[0e] IRP_MJ_DEVICE_CONTROL              fffff800bb3812e0	volmgr!VmDeviceControl
+[0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff800bb382300	volmgr!VmInternalDeviceControl
+[10] IRP_MJ_SHUTDOWN                    fffff800bb384690	volmgr!VmShutdown
+[11] IRP_MJ_LOCK_CONTROL                fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[12] IRP_MJ_CLEANUP                     fffff800bb381e00	volmgr!VmCleanup
+[13] IRP_MJ_CREATE_MAILSLOT             fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[14] IRP_MJ_QUERY_SECURITY              fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[15] IRP_MJ_SET_SECURITY                fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[16] IRP_MJ_POWER                       fffff800bb3821f0	volmgr!VmPower
+[17] IRP_MJ_SYSTEM_CONTROL              fffff800bb381fc0	volmgr!VmWmi
+[18] IRP_MJ_DEVICE_CHANGE               fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[19] IRP_MJ_QUERY_QUOTA                 fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[1a] IRP_MJ_SET_QUOTA                   fffff803f0d4aa00	nt!IopInvalidDeviceRequest
+[1b] IRP_MJ_PNP                         fffff800bb38bb60	volmgr!VmPnp
+
+0: kd> .logfile
+Log 'c:\course\windbg.day4.log' open
+0: kd> !drvobj kbdclass
+Driver object (ffffe000ded9a080) is for:
+ \Driver\kbdclass
+Driver Extension List: (id , addr)
+
+Device Object list:
+ffffe000dfa59890  ffffe000dedb9690  ffffe000ded9a400  
+0: kd> !drvobj kbdclass
+Driver object (ffffe000ded9a080) is for:
+ \Driver\kbdclass
+Driver Extension List: (id , addr)
+
+Device Object list:
+ffffe000dfa59890  ffffe000dedb9690  ffffe000ded9a400  
+0: kd> lm
+start             end                 module name
+00007ff7`93770000 00007ff7`93804000   winlogon   (deferred)             
+00007ffc`5cb90000 00007ffc`5cc09000   apphelp    (deferred)             
+00007ffc`5cc40000 00007ffc`5cc54000   dwminit    (deferred)             
+00007ffc`5cd10000 00007ffc`5cda6000   UxTheme    (deferred)             
+00007ffc`5ce90000 00007ffc`5ceaa000   UXINIT     (deferred)             
+00007ffc`5d9e0000 00007ffc`5d9ea000   DPAPI      (deferred)             
+00007ffc`5de30000 00007ffc`5de3b000   CRYPTBASE   (deferred)             
+00007ffc`5e010000 00007ffc`5e03d000   SspiCli    (deferred)             
+00007ffc`5e1c0000 00007ffc`5e216000   winsta     (deferred)             
+00007ffc`5e2d0000 00007ffc`5e2f9000   bcrypt     (deferred)             
+00007ffc`5e3a0000 00007ffc`5e3eb000   powrprof   (deferred)             
+00007ffc`5e3f0000 00007ffc`5e404000   profapi    (deferred)             
+00007ffc`5e410000 00007ffc`5e420000   MSASN1     (deferred)             
+00007ffc`5e4d0000 00007ffc`5e585000   shcore     (deferred)             
+00007ffc`5ecc0000 00007ffc`5ee87000   CRYPT32    (deferred)             
+00007ffc`5ef10000 00007ffc`5ef7a000   bcryptPrimitives   (deferred)             
+00007ffc`5ef80000 00007ffc`5f168000   KERNELBASE   (deferred)             
+00007ffc`5f7d0000 00007ffc`5f82b000   sechost    (deferred)             
+00007ffc`5f830000 00007ffc`5f86b000   IMM32      (deferred)             
+00007ffc`5f870000 00007ffc`5f9c6000   user32     (deferred)             
+00007ffc`5fb90000 00007ffc`5fd16000   GDI32      (deferred)             
+00007ffc`60070000 00007ffc`6011d000   KERNEL32   (deferred)             
+00007ffc`60120000 00007ffc`601c7000   advapi32   (deferred)             
+00007ffc`601d0000 00007ffc`6044d000   combase    (deferred)             
+00007ffc`60450000 00007ffc`6056c000   RPCRT4     (deferred)             
+00007ffc`60650000 00007ffc`606ed000   msvcrt     (deferred)             
+00007ffc`61d70000 00007ffc`61f31000   ntdll      (pdb symbols)          c:\course\symbols\ntdll.pdb\4E4F50879F8345499DAE85935D2391CE1\ntdll.pdb
+fffff800`ba200000 fffff800`ba299000   CI         (deferred)             
+fffff800`ba2a0000 fffff800`ba2fc000   msrpc      (deferred)             
+fffff800`ba300000 fffff800`ba362000   FLTMGR     (deferred)             
+fffff800`ba370000 fffff800`ba395000   ksecdd     (deferred)             
+fffff800`ba3a0000 fffff800`ba445000   clipsp     (deferred)             
+fffff800`ba450000 fffff800`ba515000   Wdf01000   (deferred)             
+fffff800`ba520000 fffff800`ba533000   WDFLDR     (deferred)             
+fffff800`ba540000 fffff800`ba563000   acpiex     (deferred)             
+fffff800`ba570000 fffff800`ba57d000   WppRecorder   (deferred)             
+fffff800`ba580000 fffff800`ba618000   cng        (deferred)             
+fffff800`ba620000 fffff800`ba6b0000   ACPI       (deferred)             
+fffff800`ba6b0000 fffff800`ba6bc000   WMILIB     (deferred)             
+fffff800`ba6d0000 fffff800`ba6ef000   WindowsTrustedRT   (deferred)             
+fffff800`ba6f0000 fffff800`ba6fb000   WindowsTrustedRTProxy   (deferred)             
+fffff800`ba700000 fffff800`ba712000   pcw        (deferred)             
+fffff800`ba720000 fffff800`ba72b000   msisadrv   (deferred)             
+fffff800`ba730000 fffff800`ba786000   pci        (deferred)             
+fffff800`ba790000 fffff800`ba7a2000   vdrvroot   (deferred)             
+fffff800`ba7b0000 fffff800`ba7ce000   pdc        (deferred)             
+fffff800`ba7d0000 fffff800`ba7e9000   CEA        (deferred)             
+fffff800`ba7f0000 fffff800`ba812000   partmgr    (deferred)             
+fffff800`ba820000 fffff800`ba841000   vmbus      (deferred)             
+fffff800`ba850000 fffff800`ba970000   NDIS       (deferred)             
+fffff800`ba970000 fffff800`ba9e8000   NETIO      (deferred)             
+fffff800`ba9f0000 fffff800`baa0b000   hvsocket   (deferred)             
+fffff800`baa10000 fffff800`baa28000   vmbkmcl    (deferred)             
+fffff800`baa30000 fffff800`baa3e000   winhv      (deferred)             
+fffff800`baa50000 fffff800`baade000   mcupdate_GenuineIntel   (deferred)             
+fffff800`baae0000 fffff800`baaf0000   werkernel   (deferred)             
+fffff800`baaf0000 fffff800`bab55000   CLFS       (deferred)             
+fffff800`bab60000 fffff800`bab85000   tm         (deferred)             
+fffff800`bab90000 fffff800`baba7000   PSHED      (deferred)             
+fffff800`babb0000 fffff800`babbb000   BOOTVID    (deferred)             
+fffff800`babc0000 fffff800`babce000   cmimcext   (deferred)             
+fffff800`babd0000 fffff800`babdc000   ntosext    (deferred)             
+fffff800`bac00000 fffff800`bac1d000   mountmgr   (deferred)             
+fffff800`bac20000 fffff800`bac2c000   atapi      (deferred)             
+fffff800`bac30000 fffff800`bac65000   ataport    (deferred)             
+fffff800`bac70000 fffff800`bac8c000   EhStorClass   (deferred)             
+fffff800`bac90000 fffff800`baca9000   fileinfo   (deferred)             
+fffff800`bacb0000 fffff800`bace8000   Wof        (deferred)             
+fffff800`bacf0000 fffff800`bad3c000   WdFilter   (deferred)             
+fffff800`bad40000 fffff800`baf58000   NTFS       (deferred)             
+fffff800`baf60000 fffff800`baf6e000   storvsc    (deferred)             
+fffff800`baf70000 fffff800`bafe8000   storport   (deferred)             
+fffff800`baff0000 fffff800`baffd000   Fs_Rec     (deferred)             
+fffff800`bb000000 fffff800`bb02e000   ksecpkg    (deferred)             
+fffff800`bb030000 fffff800`bb287000   tcpip      (deferred)             
+fffff800`bb290000 fffff800`bb2bb000   intelppm   (deferred)             
+fffff800`bb2c0000 fffff800`bb346000   spaceport   (deferred)             
+fffff800`bb350000 fffff800`bb35b000   intelide   (deferred)             
+fffff800`bb360000 fffff800`bb371000   PCIIDEX    (deferred)             
+fffff800`bb380000 fffff800`bb398000   volmgr     (pdb symbols)          c:\course\symbols\volmgr.pdb\44F7F9DEEF2E44AC9141AFBDB5F67D391\volmgr.pdb
+fffff800`bb3a0000 fffff800`bb3fe000   volmgrx    (deferred)             
+fffff800`bb400000 fffff800`bb469000   volsnap    (deferred)             
+fffff800`bb470000 fffff800`bb4b4000   rdyboost   (deferred)             
+fffff800`bb4c0000 fffff800`bb4e5000   mup        (deferred)             
+fffff800`bb4f0000 fffff800`bb4fb000   vmgencounter   (deferred)             
+fffff800`bb500000 fffff800`bb51f000   disk       (deferred)             
+fffff800`bb520000 fffff800`bb580000   CLASSPNP   (deferred)             
+fffff800`bb5a0000 fffff800`bb5b9000   crashdmp   (deferred)             
+fffff800`bb640000 fffff800`bb671000   cdrom      (deferred)             
+fffff800`bb680000 fffff800`bb69d000   filecrypt   (deferred)             
+fffff800`bb6a0000 fffff800`bb6ac000   tbs        (deferred)             
+fffff800`bb6b0000 fffff800`bb6ba000   Null       (deferred)             
+fffff800`bb6c0000 fffff800`bb6ca000   Beep       (deferred)             
+fffff800`bb6d0000 fffff800`bb6e4000   BasicDisplay   (deferred)             
+fffff800`bb6f0000 fffff800`bb705000   watchdog   (deferred)             
+fffff800`bb710000 fffff800`bb8fd000   dxgkrnl    (deferred)             
+fffff800`bb900000 fffff800`bb912000   BasicRender   (deferred)             
+fffff800`bb920000 fffff800`bb939000   Npfs       (deferred)             
+fffff800`bb940000 fffff800`bb94f000   Msfs       (deferred)             
+fffff800`bb950000 fffff800`bb973000   tdx        (deferred)             
+fffff800`bb980000 fffff800`bb98f000   TDI        (deferred)             
+fffff800`bb990000 fffff800`bb9db000   netbt      (deferred)             
+fffff800`bb9e0000 fffff800`bba73000   afd        (deferred)             
+fffff800`bba80000 fffff800`bba99000   vwififlt   (deferred)             
+fffff800`bbaa0000 fffff800`bbacb000   pacer      (deferred)             
+fffff800`bbad0000 fffff800`bbae2000   netbios    (deferred)             
+fffff800`bbaf0000 fffff800`bbb61000   rdbss      (deferred)             
+fffff800`bbb70000 fffff800`bbbfe000   csc        (deferred)             
+fffff800`bbc00000 fffff800`bbc10000   nsiproxy   (deferred)             
+fffff800`bbc10000 fffff800`bbc1d000   npsvctrig   (deferred)             
+fffff800`bbc20000 fffff800`bbc30000   mssmbios   (deferred)             
+fffff800`bbc30000 fffff800`bbc3a000   gpuenergydrv   (deferred)             
+fffff800`bbc40000 fffff800`bbc6a000   dfsc       (deferred)             
+fffff800`bbc70000 fffff800`bbc7d000   NdisVirtualBus   (deferred)             
+fffff800`bbc80000 fffff800`bbc8c000   swenum     (deferred)             
+fffff800`bbc90000 fffff800`bbccc000   ahcache    (deferred)             
+fffff800`bbcd0000 fffff800`bbce1000   CompositeBus   (deferred)             
+fffff800`bbcf0000 fffff800`bbcfd000   kdnic      (deferred)             
+fffff800`bbd00000 fffff800`bbd15000   umbus      (deferred)             
+fffff800`bbd20000 fffff800`bbd42000   i8042prt   (deferred)             
+fffff800`bbd50000 fffff800`bbd63000   kbdclass   (pdb symbols)          c:\course\symbols\kbdclass.pdb\AC3D9BC841F049A6BBEDFF33A0F1B1D71\kbdclass.pdb
+fffff800`bbd70000 fffff800`bbd82000   mouclass   (deferred)             
+fffff800`bbd90000 fffff800`bbdab000   serial     (deferred)             
+fffff800`bbdb0000 fffff800`bbdbf000   serenum    (deferred)             
+fffff800`bbdc0000 fffff800`bbdcf000   fdc        (deferred)             
+fffff800`bbdd0000 fffff800`bbddf000   dmvsc      (deferred)             
+fffff800`bbde0000 fffff800`bbdee000   VMBusHID   (deferred)             
+fffff800`bbdf0000 fffff800`bbe1e000   HIDCLASS   (deferred)             
+fffff800`bbe20000 fffff800`bbe31000   HIDPARSE   (deferred)             
+fffff800`bbe40000 fffff800`bbe4c000   hyperkbd   (deferred)             
+fffff800`bbe50000 fffff800`bbe5f000   HyperVideo   (deferred)             
+fffff800`bbe60000 fffff800`bbec7000   fwpkclnt   (deferred)             
+fffff800`bbed0000 fffff800`bbefa000   wfplwfs    (deferred)             
+fffff800`bbf00000 fffff800`bbf10000   vmstorfl   (deferred)             
+fffff800`bbf10000 fffff800`bbfb1000   fvevol     (deferred)             
+fffff800`bbfc0000 fffff800`bbfe1000   netvsc     (deferred)             
+fffff800`bbff0000 fffff800`bbffb000   vms3cap    (deferred)             
+fffff800`bc200000 fffff800`bc222000   WdNisDrv   (deferred)             
+fffff800`bc230000 fffff800`bc23f000   terminpt   (deferred)             
+fffff800`bc700000 fffff800`bc710000   monitor    (deferred)             
+fffff800`bc710000 fffff800`bc7a2000   dxgmms2    (deferred)             
+fffff800`bc7b0000 fffff800`bc7bd000   rdpvideominiport   (deferred)             
+fffff800`bc7c0000 fffff800`bc7f0000   rdpdr      (deferred)             
+fffff800`bc7f0000 fffff800`bc816000   luafv      (deferred)             
+fffff800`bc820000 fffff800`bc839000   storqosflt   (deferred)             
+fffff800`bc840000 fffff800`bc865000   tsusbhub   (deferred)             
+fffff800`bc870000 fffff800`bc886000   lltdio     (deferred)             
+fffff800`bc890000 fffff800`bc8aa000   mslldp     (deferred)             
+fffff800`bc8b0000 fffff800`bc8ca000   rspndr     (deferred)             
+fffff800`bc8d0000 fffff800`bc9e1000   HTTP       (deferred)             
+fffff800`bc9f0000 fffff800`bca0d000   WudfPf     (deferred)             
+fffff800`bca10000 fffff800`bca33000   bowser     (deferred)             
+fffff800`bca40000 fffff800`bcab2000   mrxsmb     (deferred)             
+fffff800`bcac0000 fffff800`bcafa000   mrxsmb20   (deferred)             
+fffff800`bcb00000 fffff800`bcb19000   mpsdrv     (deferred)             
+fffff800`bcb20000 fffff800`bcb61000   srvnet     (deferred)             
+fffff800`bcb70000 fffff800`bcc1f000   srv2       (deferred)             
+fffff800`bcc20000 fffff800`bcc6e000   mrxsmb10   (deferred)             
+fffff800`bcc70000 fffff800`bcc84000   mmcss      (deferred)             
+fffff800`bcc90000 fffff800`bccb6000   Ndu        (deferred)             
+fffff800`bccc0000 fffff800`bcd4c000   srv        (deferred)             
+fffff800`bcd50000 fffff800`bcd64000   tcpipreg   (deferred)             
+fffff800`bcda0000 fffff800`bce08000   ks         (deferred)             
+fffff800`bce10000 fffff800`bce1e000   rdpbus     (deferred)             
+fffff800`bce20000 fffff800`bce2e000   flpydisk   (deferred)             
+fffff800`bce30000 fffff800`bce3f000   mouhid     (deferred)             
+fffff800`bce50000 fffff800`bce5f000   dump_dumpata   (deferred)             
+fffff800`bce70000 fffff800`bce7c000   dump_atapi   (deferred)             
+fffff800`bcea0000 fffff800`bcebc000   dump_dumpfve   (deferred)             
+fffff800`bcec0000 fffff800`bcf80000   peauth     (deferred)             
+fffff800`bcf80000 fffff800`bcfaf000   tunnel     (deferred)             
+fffff800`bcfe0000 fffff800`bcff1000   condrv     (deferred)             
+fffff803`efce5000 fffff803`efcf3000   kdcom      (deferred)             
+fffff803`f0c01000 fffff803`f0c74000   hal        (deferred)             
+fffff803`f0c74000 fffff803`f1440000   nt         (pdb symbols)          c:\course\symbols\ntkrnlmp.pdb\0DE6DC238E194BB78608D54B1E6FA3791\ntkrnlmp.pdb
+fffff961`33200000 fffff961`33582000   win32kfull   (deferred)             
+fffff961`33590000 fffff961`336f2000   win32kbase   (deferred)             
+fffff961`33710000 fffff961`3371a000   TSDDD      (deferred)             
+fffff961`33720000 fffff961`3375c000   cdd        (deferred)             
+fffff961`33780000 fffff961`3379c000   RDPUDD     (deferred)             
+fffff961`33b20000 fffff961`33b43000   win32k     (deferred)             
+
+Unloaded modules:
+fffff800`bcfb0000 fffff800`bcfd2000   WdNisDrv.sys
+fffff800`bb5d0000 fffff800`bb5df000   dump_ataport.sys
+fffff800`bb5f0000 fffff800`bb5fc000   dump_atapi.sys
+fffff800`bb620000 fffff800`bb63c000   dump_dumpfve.sys
+fffff800`bbc70000 fffff800`bbc83000   dam.sys 
+fffff800`ba6c0000 fffff800`ba6d0000   WdBoot.sys
+fffff800`bb4f0000 fffff800`bb4fe000   hwpolicy.sys
+0: kd> !drvobj kbdclass
+Driver object (ffffe000ded9a080) is for:
+ \Driver\kbdclass
+Driver Extension List: (id , addr)
+
+Device Object list:
+ffffe000dfa59890  ffffe000dedb9690  ffffe000ded9a400  
+0: kd> !devstack ffffe000dfa59890
+  !DevObj           !DrvObj            !DevExt           ObjectName
+> ffffe000dfa59890  \Driver\kbdclass   ffffe000dfa599e0  KeyboardClass2
+  ffffe000de212630  \Driver\terminpt   ffffe000de212780  
+  ffffe000dfeaae20  \Driver\umbus      ffffe000de213fb0  00000040
+!DevNode ffffe000de270010 :
+  DeviceInst is "TERMINPUT_BUS\UMB\2&2c22bcc9&0&Session2Keyboard0"
+  ServiceName is "terminpt"
+0: kd> !devstack ffffe000dedb9690
+  !DevObj           !DrvObj            !DevExt           ObjectName
+> ffffe000dedb9690  \Driver\kbdclass   ffffe000dedb97e0  KeyboardClass1
+  ffffe000dedb7d60  \Driver\hyperkbd   ffffe000dedb6cd0  
+  ffffe000de5abe20  \Driver\vmbus      ffffe000de5aaed0  00000025
+!DevNode ffffe000de5ca010 :
+  DeviceInst is "VMBUS\{f912ad6d-2b17-48ea-bd65-f927a61c7684}\{d34b2567-b9b6-42b9-8778-0a4ec0b955bf}"
+  ServiceName is "<???>"
+0: kd> !devstack ffffe000ded9a400  
+  !DevObj           !DrvObj            !DevExt           ObjectName
+> ffffe000ded9a400  \Driver\kbdclass   ffffe000ded9a550  KeyboardClass0
+  ffffe000ded9a780  \Driver\i8042prt   ffffe000ded9a8d0  
+  ffffe000dd020e40  \Driver\ACPI       ffffe000de49b8d0  00000019
+!DevNode ffffe000dd022a50 :
+  DeviceInst is "ACPI\PNP0303\4&215d0f95&0"
+  ServiceName is "i8042prt"
+0: kd> bc *
+0: kd> bp classpnp!classreadwrite
+0: kd> bl
+ 0 e fffff800`bb526ee0     0001 (0001) CLASSPNP!ClassReadWrite
+
+0: kd> g
+Breakpoint 0 hit
+CLASSPNP!ClassReadWrite:
+fffff800`bb526ee0 4053            push    rbx
+1: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd001`3a210908 fffff803`f1327cbc CLASSPNP!ClassReadWrite
+01 ffffd001`3a210910 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+02 ffffd001`3a210950 fffff803`f1327cbc nt!IofCallDriver+0x72
+03 ffffd001`3a210990 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+04 ffffd001`3a2109d0 fffff800`ba7f11f6 nt!IofCallDriver+0x72
+05 ffffd001`3a210a10 fffff803`f1327cbc partmgr!PartitionIo+0x1c6
+06 ffffd001`3a210ac0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+07 ffffd001`3a210b00 fffff800`bb381109 nt!IofCallDriver+0x72
+08 ffffd001`3a210b40 fffff803`f1327cbc volmgr!VmReadWrite+0x109
+09 ffffd001`3a210b80 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0a ffffd001`3a210bc0 fffff800`bbf22398 nt!IofCallDriver+0x72
+0b ffffd001`3a210c00 fffff803`f1327cbc fvevol!FveFilterRundownReadWrite+0x2e8
+0c ffffd001`3a210ce0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0d ffffd001`3a210d20 fffff800`bb471234 nt!IofCallDriver+0x72
+0e ffffd001`3a210d60 fffff800`bb471098 rdyboost!SmdProcessReadWrite+0x144
+0f ffffd001`3a210e30 fffff803`f1327cbc rdyboost!SmdDispatchReadWrite+0x98
+10 ffffd001`3a210e60 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+11 ffffd001`3a210ea0 fffff800`bb40243d nt!IofCallDriver+0x72
+12 ffffd001`3a210ee0 fffff803`f1327cbc volsnap!VolSnapReadFilter+0x5d
+13 ffffd001`3a210f10 fffff800`bad5cb76 nt!IovCallDriver+0x50
+14 ffffd001`3a210f50 fffff803`f0db8b47 NTFS!NtfsStorageDriverCallout+0x16
+15 ffffd001`3a210f80 fffff803`f0db8b0d nt!KxSwitchKernelStackCallout+0x27
+16 ffffd001`3b2eddf0 fffff803`f0ce9ea1 nt!KiSwitchKernelStackContinue
+17 ffffd001`3b2ede10 fffff803`f0ce9c16 nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+18 ffffd001`3b2ede90 fffff803`f0ce9adf nt!KiExpandKernelStackAndCalloutSwitchStack+0xa6
+19 ffffd001`3b2edef0 fffff800`bad5238c nt!KeExpandKernelStackAndCalloutInternal+0x2f
+1a ffffd001`3b2edf40 fffff800`bad51204 NTFS!NtfsMultipleAsync+0xac
+1b ffffd001`3b2edfb0 fffff800`bad5358f NTFS!NtfsNonCachedIo+0x3c4
+1c ffffd001`3b2ee230 fffff800`bad528b2 NTFS!NtfsCommonRead+0xb1f
+1d ffffd001`3b2ee3e0 fffff803`f1327cbc NTFS!NtfsFsdRead+0x1f2
+1e ffffd001`3b2ee660 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+1f ffffd001`3b2ee6a0 fffff800`ba307895 nt!IofCallDriver+0x72
+20 ffffd001`3b2ee6e0 fffff800`ba305816 FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+21 ffffd001`3b2ee770 fffff803`f1327cbc FLTMGR!FltpDispatch+0xb6
+22 ffffd001`3b2ee7d0 fffff803`f0dd917e nt!IovCallDriver+0x50
+23 ffffd001`3b2ee810 fffff803`f0d1c15c nt! ?? ::FNODOBFM::`string'+0x1487e
+24 ffffd001`3b2ee870 fffff803`f0d1b632 nt!MiIssueHardFaultIo+0xd4
+25 ffffd001`3b2ee8f0 fffff803`f0cad37f nt!MiIssueHardFault+0x162
+26 ffffd001`3b2ee990 fffff803`f0dbf1bc nt!MmAccessFault+0x82f
+27 ffffd001`3b2eeb00 00007ffc`5a0e6840 nt!KiPageFault+0x13c
+28 0000007d`94dff6f8 00007ffc`59f32533 0x00007ffc`5a0e6840
+29 0000007d`94dff700 00000000`00000000 0x00007ffc`59f32533
+1: kd> .reload
+Connected to Windows 10 10586 x64 target at (Thu May  5 11:47:06.515 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+...............................................................
+.......
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.........................................................
+..........................
+Loading User Symbols
+......................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+..........................
+...................................
+Loading unloaded module list
+...........
+1: kd> bd *
+1: kd> g
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff803`f0dbb6d0 cc              int     3
+1: kd> be *
+1: kd> g
+Breakpoint 0 hit
+CLASSPNP!ClassReadWrite:
+fffff800`bb526ee0 4053            push    rbx
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd001`411a0908 fffff803`f1327cbc CLASSPNP!ClassReadWrite
+01 ffffd001`411a0910 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+02 ffffd001`411a0950 fffff803`f1327cbc nt!IofCallDriver+0x72
+03 ffffd001`411a0990 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+04 ffffd001`411a09d0 fffff800`ba7f11f6 nt!IofCallDriver+0x72
+05 ffffd001`411a0a10 fffff803`f1327cbc partmgr!PartitionIo+0x1c6
+06 ffffd001`411a0ac0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+07 ffffd001`411a0b00 fffff800`bb381109 nt!IofCallDriver+0x72
+08 ffffd001`411a0b40 fffff803`f1327cbc volmgr!VmReadWrite+0x109
+09 ffffd001`411a0b80 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0a ffffd001`411a0bc0 fffff800`bbf22398 nt!IofCallDriver+0x72
+0b ffffd001`411a0c00 fffff803`f1327cbc fvevol!FveFilterRundownReadWrite+0x2e8
+0c ffffd001`411a0ce0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0d ffffd001`411a0d20 fffff800`bb471234 nt!IofCallDriver+0x72
+0e ffffd001`411a0d60 fffff800`bb471098 rdyboost!SmdProcessReadWrite+0x144
+0f ffffd001`411a0e30 fffff803`f1327cbc rdyboost!SmdDispatchReadWrite+0x98
+10 ffffd001`411a0e60 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+11 ffffd001`411a0ea0 fffff800`bb40243d nt!IofCallDriver+0x72
+12 ffffd001`411a0ee0 fffff803`f1327cbc volsnap!VolSnapReadFilter+0x5d
+13 ffffd001`411a0f10 fffff800`bad5cb76 nt!IovCallDriver+0x50
+14 ffffd001`411a0f50 fffff803`f0db8b47 NTFS!NtfsStorageDriverCallout+0x16
+15 ffffd001`411a0f80 fffff803`f0db8b0d nt!KxSwitchKernelStackCallout+0x27
+16 ffffd001`410e8a80 fffff803`f0ce9ea1 nt!KiSwitchKernelStackContinue
+17 ffffd001`410e8aa0 fffff803`f0ce9c16 nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+18 ffffd001`410e8b20 fffff803`f0ce9adf nt!KiExpandKernelStackAndCalloutSwitchStack+0xa6
+19 ffffd001`410e8b80 fffff800`bad5238c nt!KeExpandKernelStackAndCalloutInternal+0x2f
+1a ffffd001`410e8bd0 fffff800`bad51204 NTFS!NtfsMultipleAsync+0xac
+1b ffffd001`410e8c40 fffff800`bad5358f NTFS!NtfsNonCachedIo+0x3c4
+1c ffffd001`410e8ec0 fffff800`bad528b2 NTFS!NtfsCommonRead+0xb1f
+1d ffffd001`410e9070 fffff803`f1327cbc NTFS!NtfsFsdRead+0x1f2
+1e ffffd001`410e92f0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+1f ffffd001`410e9330 fffff800`ba307895 nt!IofCallDriver+0x72
+20 ffffd001`410e9370 fffff800`ba305816 FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+21 ffffd001`410e9400 fffff803`f1327cbc FLTMGR!FltpDispatch+0xb6
+22 ffffd001`410e9460 fffff803`f0dd917e nt!IovCallDriver+0x50
+23 ffffd001`410e94a0 fffff803`f0d1c15c nt! ?? ::FNODOBFM::`string'+0x1487e
+24 ffffd001`410e9500 fffff803`f0d1b632 nt!MiIssueHardFaultIo+0xd4
+25 ffffd001`410e9580 fffff803`f0cad37f nt!MiIssueHardFault+0x162
+26 ffffd001`410e9620 fffff803`f0dbf1bc nt!MmAccessFault+0x82f
+27 ffffd001`410e9790 fffff800`bad4b150 nt!KiPageFault+0x13c
+28 ffffd001`410e9920 fffff800`badf2ace NTFS!NtfsAddToFileRecordCache+0x30
+29 ffffd001`410e9950 fffff800`badfb5b6 NTFS!NtfsPinMftRecord+0x12a
+2a ffffd001`410e99d0 fffff800`bae07eb3 NTFS!NtfsCreateNewFile+0x472
+2b ffffd001`410e9d20 fffff800`bae05e8d NTFS!NtfsCommonCreate+0x1283
+2c ffffd001`410e9f50 fffff803`f0db8b47 NTFS!NtfsCommonCreateCallout+0x1d
+2d ffffd001`410e9f80 fffff803`f0db8b0d nt!KxSwitchKernelStackCallout+0x27
+2e ffffd001`3da7cf10 fffff803`f0ce9ea1 nt!KiSwitchKernelStackContinue
+2f ffffd001`3da7cf30 fffff803`f0ce9c16 nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+30 ffffd001`3da7cfb0 fffff803`f0ce9adf nt!KiExpandKernelStackAndCalloutSwitchStack+0xa6
+31 ffffd001`3da7d010 fffff800`bae0a8d9 nt!KeExpandKernelStackAndCalloutInternal+0x2f
+32 ffffd001`3da7d060 fffff803`f1327cbc NTFS!NtfsFsdCreate+0x1d9
+33 ffffd001`3da7d280 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+34 ffffd001`3da7d2c0 fffff800`ba307895 nt!IofCallDriver+0x72
+35 ffffd001`3da7d300 fffff800`ba3362d7 FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+36 ffffd001`3da7d390 fffff803`f1327cbc FLTMGR!FltpCreate+0x347
+37 ffffd001`3da7d440 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+38 ffffd001`3da7d480 fffff803`f1068328 nt!IofCallDriver+0x72
+39 ffffd001`3da7d4c0 fffff803`f105ec96 nt!IopParseDevice+0x7c8
+3a ffffd001`3da7d690 fffff803`f105d69c nt!ObpLookupObjectName+0x776
+3b ffffd001`3da7d830 fffff803`f10868c8 nt!ObOpenObjectByNameEx+0x1ec
+3c ffffd001`3da7d950 fffff803`f1086429 nt!IopCreateFile+0x3d8
+3d ffffd001`3da7da00 fffff803`f0dc07a3 nt!NtCreateFile+0x79
+3e ffffd001`3da7da90 00007ffc`61e157f4 nt!KiSystemServiceCopyEnd+0x13
+3f 00000037`2727ebf8 00007ffc`5ef9a484 ntdll!NtCreateFile+0x14
+40 00000037`2727ec00 00007ffc`5ef9a156 KERNELBASE!CreateFileInternal+0x314
+41 00000037`2727ed80 00007ffc`5efe933b KERNELBASE!CreateFileW+0x66
+42 00000037`2727ede0 00007ffc`5ccb1989 KERNELBASE!GetTempFileNameW+0x25b
+43 00000037`2727eeb0 0000014b`00000010 0x00007ffc`5ccb1989
+44 00000037`2727eeb8 00000000`00000000 0x0000014b`00000010
+0: kd> .reload /user
+Loading User Symbols
+........................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+........................
+.........
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd001`411a0908 fffff803`f1327cbc CLASSPNP!ClassReadWrite
+01 ffffd001`411a0910 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+02 ffffd001`411a0950 fffff803`f1327cbc nt!IofCallDriver+0x72
+03 ffffd001`411a0990 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+04 ffffd001`411a09d0 fffff800`ba7f11f6 nt!IofCallDriver+0x72
+05 ffffd001`411a0a10 fffff803`f1327cbc partmgr!PartitionIo+0x1c6
+06 ffffd001`411a0ac0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+07 ffffd001`411a0b00 fffff800`bb381109 nt!IofCallDriver+0x72
+08 ffffd001`411a0b40 fffff803`f1327cbc volmgr!VmReadWrite+0x109
+09 ffffd001`411a0b80 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0a ffffd001`411a0bc0 fffff800`bbf22398 nt!IofCallDriver+0x72
+0b ffffd001`411a0c00 fffff803`f1327cbc fvevol!FveFilterRundownReadWrite+0x2e8
+0c ffffd001`411a0ce0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+0d ffffd001`411a0d20 fffff800`bb471234 nt!IofCallDriver+0x72
+0e ffffd001`411a0d60 fffff800`bb471098 rdyboost!SmdProcessReadWrite+0x144
+0f ffffd001`411a0e30 fffff803`f1327cbc rdyboost!SmdDispatchReadWrite+0x98
+10 ffffd001`411a0e60 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+11 ffffd001`411a0ea0 fffff800`bb40243d nt!IofCallDriver+0x72
+12 ffffd001`411a0ee0 fffff803`f1327cbc volsnap!VolSnapReadFilter+0x5d
+13 ffffd001`411a0f10 fffff800`bad5cb76 nt!IovCallDriver+0x50
+14 ffffd001`411a0f50 fffff803`f0db8b47 NTFS!NtfsStorageDriverCallout+0x16
+15 ffffd001`411a0f80 fffff803`f0db8b0d nt!KxSwitchKernelStackCallout+0x27
+16 ffffd001`410e8a80 fffff803`f0ce9ea1 nt!KiSwitchKernelStackContinue
+17 ffffd001`410e8aa0 fffff803`f0ce9c16 nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+18 ffffd001`410e8b20 fffff803`f0ce9adf nt!KiExpandKernelStackAndCalloutSwitchStack+0xa6
+19 ffffd001`410e8b80 fffff800`bad5238c nt!KeExpandKernelStackAndCalloutInternal+0x2f
+1a ffffd001`410e8bd0 fffff800`bad51204 NTFS!NtfsMultipleAsync+0xac
+1b ffffd001`410e8c40 fffff800`bad5358f NTFS!NtfsNonCachedIo+0x3c4
+1c ffffd001`410e8ec0 fffff800`bad528b2 NTFS!NtfsCommonRead+0xb1f
+1d ffffd001`410e9070 fffff803`f1327cbc NTFS!NtfsFsdRead+0x1f2
+1e ffffd001`410e92f0 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+1f ffffd001`410e9330 fffff800`ba307895 nt!IofCallDriver+0x72
+20 ffffd001`410e9370 fffff800`ba305816 FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+21 ffffd001`410e9400 fffff803`f1327cbc FLTMGR!FltpDispatch+0xb6
+22 ffffd001`410e9460 fffff803`f0dd917e nt!IovCallDriver+0x50
+23 ffffd001`410e94a0 fffff803`f0d1c15c nt! ?? ::FNODOBFM::`string'+0x1487e
+24 ffffd001`410e9500 fffff803`f0d1b632 nt!MiIssueHardFaultIo+0xd4
+25 ffffd001`410e9580 fffff803`f0cad37f nt!MiIssueHardFault+0x162
+26 ffffd001`410e9620 fffff803`f0dbf1bc nt!MmAccessFault+0x82f
+27 ffffd001`410e9790 fffff800`bad4b150 nt!KiPageFault+0x13c
+28 ffffd001`410e9920 fffff800`badf2ace NTFS!NtfsAddToFileRecordCache+0x30
+29 ffffd001`410e9950 fffff800`badfb5b6 NTFS!NtfsPinMftRecord+0x12a
+2a ffffd001`410e99d0 fffff800`bae07eb3 NTFS!NtfsCreateNewFile+0x472
+2b ffffd001`410e9d20 fffff800`bae05e8d NTFS!NtfsCommonCreate+0x1283
+2c ffffd001`410e9f50 fffff803`f0db8b47 NTFS!NtfsCommonCreateCallout+0x1d
+2d ffffd001`410e9f80 fffff803`f0db8b0d nt!KxSwitchKernelStackCallout+0x27
+2e ffffd001`3da7cf10 fffff803`f0ce9ea1 nt!KiSwitchKernelStackContinue
+2f ffffd001`3da7cf30 fffff803`f0ce9c16 nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+30 ffffd001`3da7cfb0 fffff803`f0ce9adf nt!KiExpandKernelStackAndCalloutSwitchStack+0xa6
+31 ffffd001`3da7d010 fffff800`bae0a8d9 nt!KeExpandKernelStackAndCalloutInternal+0x2f
+32 ffffd001`3da7d060 fffff803`f1327cbc NTFS!NtfsFsdCreate+0x1d9
+33 ffffd001`3da7d280 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+34 ffffd001`3da7d2c0 fffff800`ba307895 nt!IofCallDriver+0x72
+35 ffffd001`3da7d300 fffff800`ba3362d7 FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+36 ffffd001`3da7d390 fffff803`f1327cbc FLTMGR!FltpCreate+0x347
+37 ffffd001`3da7d440 fffff803`f0cc3cf2 nt!IovCallDriver+0x50
+38 ffffd001`3da7d480 fffff803`f1068328 nt!IofCallDriver+0x72
+39 ffffd001`3da7d4c0 fffff803`f105ec96 nt!IopParseDevice+0x7c8
+3a ffffd001`3da7d690 fffff803`f105d69c nt!ObpLookupObjectName+0x776
+3b ffffd001`3da7d830 fffff803`f10868c8 nt!ObOpenObjectByNameEx+0x1ec
+3c ffffd001`3da7d950 fffff803`f1086429 nt!IopCreateFile+0x3d8
+3d ffffd001`3da7da00 fffff803`f0dc07a3 nt!NtCreateFile+0x79
+3e ffffd001`3da7da90 00007ffc`61e157f4 nt!KiSystemServiceCopyEnd+0x13
+3f 00000037`2727ebf8 00007ffc`5ef9a484 ntdll!NtCreateFile+0x14
+40 00000037`2727ec00 00007ffc`5ef9a156 KERNELBASE!CreateFileInternal+0x314
+41 00000037`2727ed80 00007ffc`5efe933b KERNELBASE!CreateFileW+0x66
+42 00000037`2727ede0 00007ffc`5ccb1989 KERNELBASE!GetTempFileNameW+0x25b
+43 00000037`2727eeb0 00007ffc`5ccb1b0c systemeventsbrokerserver!UserPresencePrediction::HistoryPredictor::_SerializeToDisk+0x99
+44 00000037`2727f350 00007ffc`5ccb0cb9 systemeventsbrokerserver!UserPresencePrediction::HistoryPredictor::SerializeToDisk+0x2c
+45 00000037`2727f390 00007ffc`5e3a1635 systemeventsbrokerserver!UserPresencePrediction::PowerSettingChangedCallback+0x119
+46 00000037`2727f480 00007ffc`61d78589 powrprof!CallNtPowerInformation+0x445
+47 00000037`2727f920 00007ffc`61d77442 ntdll!RtlpWnfWalkUserSubscriptionList+0x23d
+48 00000037`2727f9f0 00007ffc`61d753f2 ntdll!RtlpWnfProcessCurrentDescriptor+0x192
+49 00000037`2727fa70 00007ffc`61d79835 ntdll!RtlpWnfNotificationThread+0xa2
+4a 00000037`2727fad0 00007ffc`61d9b9fe ntdll!TppExecuteWaitCallback+0x91
+4b 00000037`2727fb10 00007ffc`60088102 ntdll!TppWorkerThread+0x9ae
+4c 00000037`2727ff20 00007ffc`61dcc264 KERNEL32!BaseThreadInitThunk+0x22
+4d 00000037`2727ff50 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> !thread
+THREAD ffffe000dddf5080  Cid 02e8.0d18  Teb: 000000372384a000 Win32Thread: 0000000000000000 RUNNING on processor 0
+IRP List:
+    ffffe000dfc83010: (0006,0508) Flags: 00060043  Mdl: ffffe000dff7a290
+    ffffe000de8b4af0: (0006,0508) Flags: 00000884  Mdl: 00000000
+Not impersonating
+DeviceMap                 ffffc0013201b770
+Owning Process            ffffe000df87c840       Image:         svchost.exe
+Attached Process          N/A            Image:         N/A
+Wait Start TickCount      146600         Ticks: 0
+Context Switch Count      248            IdealProcessor: 1             
+UserTime                  00:00:00.000
+KernelTime                00:00:00.000
+Win32 Start Address ntdll!TppWorkerThread (0x00007ffc61d9b050)
+Stack Init ffffd001411a0fd0 Current ffffd0013da7c610
+Base ffffd001411a1000 Limit ffffd0014119b000 Call 0
+Priority 9 BasePriority 8 UnusualBoost 0 ForegroundBoost 0 IoPriority 2 PagePriority 5
+Child-SP          RetAddr           : Args to Child                                                           : Call Site
+ffffd001`411a0908 fffff803`f1327cbc : ffffe000`dfc83010 00000000`00989680 00000000`00000001 ffffe000`dfc832d8 : CLASSPNP!ClassReadWrite
+ffffd001`411a0910 fffff803`f0cc3cf2 : ffffe000`dfc83010 fffff800`ba7f11f6 ffffe000`deb72b10 00000000`00001000 : nt!IovCallDriver+0x50
+ffffd001`411a0950 fffff803`f1327cbc : 00000001`00000001 00000000`00989680 ffffe000`dfc83010 fffff901`403f4820 : nt!IofCallDriver+0x72
+ffffd001`411a0990 fffff803`f0cc3cf2 : 00000000`00000000 ffffe000`dfc83010 00000000`00000000 00000000`00000011 : nt!IovCallDriver+0x50
+ffffd001`411a09d0 fffff800`ba7f11f6 : ffffd001`00000000 fffff803`f0cf1a3b ffffd001`411a1000 ffffc001`35514060 : nt!IofCallDriver+0x72
+ffffd001`411a0a10 fffff803`f1327cbc : ffffe000`dfc83320 ffffe000`dfc830b8 ffffe000`deb95be0 ffffc001`3320d380 : partmgr!PartitionIo+0x1c6
+ffffd001`411a0ac0 fffff803`f0cc3cf2 : ffffe000`deb937e0 fffff800`bbf22398 ffffe000`deb93690 ffffe000`deb9a440 : nt!IovCallDriver+0x50
+ffffd001`411a0b00 fffff800`bb381109 : ffffe000`deb937e0 00000000`00989680 ffffe000`dd01b140 ffffd001`411a0b50 : nt!IofCallDriver+0x72
+ffffd001`411a0b40 fffff803`f1327cbc : fffff800`bbf22398 ffffe000`dfc83010 ffffe000`deb93690 ffffc001`3320d3d0 : volmgr!VmReadWrite+0x109
+ffffd001`411a0b80 fffff803`f0cc3cf2 : ffffe000`deb99180 ffffe000`dfc83010 ffffe000`deb27010 ffffe000`dd117b70 : nt!IovCallDriver+0x50
+ffffd001`411a0bc0 fffff800`bbf22398 : ffffe000`deb99180 ffffe000`dfc83010 ffffe000`deb99030 ffffc001`2079654b : nt!IofCallDriver+0x72
+ffffd001`411a0c00 fffff803`f1327cbc : 00000000`00000001 00000000`00000000 ffffe000`dff198f0 ffffe000`deb99030 : fvevol!FveFilterRundownReadWrite+0x2e8
+ffffd001`411a0ce0 fffff803`f0cc3cf2 : 00000000`00000022 ffffd001`411a0dc9 ffffe000`deb9aa10 00000000`00030174 : nt!IovCallDriver+0x50
+ffffd001`411a0d20 fffff800`bb471234 : fffff901`40813e70 00000037`6e37edb0 0000018c`31f30b60 00000000`00000000 : nt!IofCallDriver+0x72
+ffffd001`411a0d60 fffff800`bb471098 : 00000000`00000020 fffff803`f0dc07a3 ffffe000`e0e59080 00000000`00000002 : rdyboost!SmdProcessReadWrite+0x144
+ffffd001`411a0e30 fffff803`f1327cbc : ffffe000`dfc83010 fffff800`bb40243d ffffe000`deb9a8c0 ffffe000`dfc83010 : rdyboost!SmdDispatchReadWrite+0x98
+ffffd001`411a0e60 fffff803`f0cc3cf2 : ffffe000`deb9b190 fffff800`bad5cb76 ffffe000`deb9b040 00000000`00000000 : nt!IovCallDriver+0x50
+ffffd001`411a0ea0 fffff800`bb40243d : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : nt!IofCallDriver+0x72
+ffffd001`411a0ee0 fffff803`f1327cbc : ffffe000`dfc83010 00000000`00000000 00000000`00000000 00000000`00000000 : volsnap!VolSnapReadFilter+0x5d
+ffffd001`411a0f10 fffff800`bad5cb76 : ffffd001`410e8c08 ffffe000`dddf5080 ffffe000`dddf5080 00000000`00000000 : nt!IovCallDriver+0x50
+ffffd001`411a0f50 fffff803`f0db8b47 : 00000037`6e37f700 00007ffc`61e14c60 00000037`6e37f6e8 00000037`6e37f860 : NTFS!NtfsStorageDriverCallout+0x16
+ffffd001`411a0f80 fffff803`f0db8b0d : 00000000`00006002 00000000`00000012 ffffd001`411a1000 fffff803`f0ce9ea1 : nt!KxSwitchKernelStackCallout+0x27 (TrapFrame @ ffffd001`411a0e40)
+ffffd001`410e8a80 fffff803`f0ce9ea1 : ffffd001`00000006 00000000`00006000 00001981`00001982 fffff803`00000000 : nt!KiSwitchKernelStackContinue
+ffffd001`410e8aa0 fffff803`f0ce9c16 : 00000000`00000009 00000000`00006000 fffff803`00001000 ffffd001`410e8b20 : nt!KiExpandKernelStackAndCalloutOnStackSegment+0x131
+ffffd001`410e8b20 fffff803`f0ce9adf : ffffd001: kd> !error c00000f0
+Error code: (NTSTATUS) 0xc00000f0 (3221225712) - An invalid parameter was passed to a service or function as the second argument.
+1: kd> .logfile
+Log 'c:\course\windbg.day4.log' open for append
+1: kd> .logclose
+Closing open log file c:\course\windbg.day4.log
+e8bd0 fffff800`bad51204 : ffffd001`410e8c80 ffffd001`410e90a0 ffffcf80`c3a2ed60 ffffd001`410e90a0 : NTFS!NtfsMultipleAsync+0xac
+ffffd001`410e8c40 fffff800`bad5358f : 00000000`00000001 ffffe000`debb7180 ffffd001`410e90f0 fffff803`f0cf180f : NTFS!NtfsNonCachedIo+0x3c4
+ffffd001`410e8ec0 fffff800`bad528b2 : ffffd001`410e90a0 ffffe000`dfc83010 00000000`071c0000 ffffd001`410e9100 : NTFS!NtfsCommonRead+0xb1f
+ffffd001`410e9070 fffff803`f1327cbc : ffffe000`dfc83010 ffffe000`dfc83010 ffffe000`debb7030 ffffe000`dfc83440 : NTFS!NtfsFsdRead+0x1f2
+ffffd001`410e92f0 fffff803`f0cc3cf2 : ffffe000`de6ab480 00000000`00000001 ffffe000`dfc83010 00000000`00000000 : nt!IovCallDriver+0x50
+ffffd001`410e9330 fffff800`ba307895 : ffffd001`410e9420 00000000`00000000 00000000`00000003 ffffe000`dec9b000 : nt!IofCallDriver+0x72
+ffffd001`410e9370 fffff800`ba305816 : 00000000`0000000f fffff803`f0cb2048 ffffe000`debb1201 00000000`00000000 : FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x1a5
+ffffd001`410e9400 fffff803`f1327cbc : ffffe000`dfc83010 c0013235`e5d00400 fffff803`f0cc3df0 fffff800`bae16d5e : FLTMGR!FltpDispatch+0xb6
+ffffd001`410e9460 fffff803`f0dd917e : ffffe000`dfc83030 ffffe000`dfc83010 ffffe000`dff7a290 ffffe000`dec9b090 : nt!IovCallDriver+0x50
+ffffd001`410e94a0 fffff803`f0d1c15c : ffffe000`decabd00 ffffd001`410e9790 ffffe000`dff7a1f0 ffffe000`dff7a1b0 : nt! ?? ::FNODOBFM::`string'+0x1487e
+ffffd001`410e9500 fffff803`f0d1b632 : 00000000`00000002 00000000`00000000 ffffe000`dff7a190 ffffe000`deca2010 : nt!MiIssueHardFaultIo+0xd4
+ffffd001`410e9580 fffff803`f0cad37f : 00000000`c0033333 fffff803`f0f70740 ffffd001`410e9790 fffff803`00000000 : nt!MiIssueHardFault+0x162
+ffffd001`410e9620 fffff803`f0dbf1bc : ffffe000`00000000 00000000`00000000 ffffb001`2f9bb000 00000000`00001000 : nt!MmAccessFault+0x82f
+ffffd001`410e9790 fffff800`bad4b150 : ffffc001`00000400 00000000`00000001 ffffd001`410e9a80 ffffd001`410e9a98 : nt!KiPageFault+0x13c (TrapFrame @ ffffd001`410e9790)
+
+0: kd> !irp ffffe000dfc83010
+Irp is active with 13 stacks 7 is current (= 0xffffe000dfc83290)
+ Mdl=ffffe000dff7a290: No System Buffer: Thread ffffe000dddf5080:  Irp stack trace.  
+     cmd  flg cl Device   File     Completion-Context
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+ [N/A(0), N/A(0)]
+            0  0 00000000 00000000 00000000-00000000    
+
+			Args: 00000000 00000000 00000000 00000000
+>[IRP_MJ_READ(3), N/A(0)]
+           10 e0 ffffe000deb72060 00000000 fffff800ba7f1220-00000000 Success Error Cancel 
+	       \Driver\disk	partmgr!PmIoCompletion
+			Args: 00001000 00000000 e59ba000 00000000
+ [IRP_MJ_READ(3), N/A(3)]
+           10 e0 ffffe000deb72b10 00000000 fffff800ba7f1980-00000000 Success Error Cancel 
+	       \Driver\partmgr	partmgr!PartitionIoCompletion
+			Args: 1a91b99249 00000000 e59ba000 00000000
+ [IRP_MJ_READ(3), N/A(0)]
+           10 e0 ffffe000deb95be0 00000000 fffff800bb381b90-ffffe000deb937e0 Success Error Cancel 
+	       \Driver\partmgr	volmgr!VmpReadWriteCompletionRoutine
+			Args: 00001000 00000000 c64ba000 00000000
+ [IRP_MJ_READ(3), N/A(0)]
+            0 e0 ffffe000deb93690 00000000 fffff800bbf21ee0-ffffe000deb99180 Success Error Cancel 
+	       \Driver\volmgr	fvevol!FvePassThroughCompletionRdpLevel2
+			Args: 00001000 00000000 1a91b99223 00000000
+ [IRP_MJ_READ(3), N/A(0)]
+            0 e0 ffffe000deb99030 00000000 fffff800bad5caf0-ffffd001410e8fe0 Success Error Cancel 
+	       \Driver\fvevol	NTFS!NtfsMasterIrpSyncCompletionRoutine
+			Args: 00001000 00000000 c64ba000 00000000
+ [IRP_MJ_READ(3), N/A(0)]
+            0 e0 ffffe000debb7030 ffffe000dec9b090 fffff800ba3055a0-ffffe000de6ab480 Success Error Cancel 
+	       \FileSystem\NTFS	FLTMGR!FltpPassThroughCompletion
+			Args: 00001000 00000000 064ba000 00000000
+ [IRP_MJ_READ(3), N/A(0)]
+            0  1 ffffe000debb1270 ffffe000dec9b090 00000000-00000000    pending
+	       \FileSystem\FltMgr
+			Args: 00001000 00000000 064ba000 00000000
+
+Irp Extension present at 0xffffe000dfc83488:
+0: kd> bc *
+0: kd> g
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFC53B76FC4: (caller: 00007FFC53B98CFA) ReturnHr[PreRelease](16) tid(dc) 80070002 The system cannot find the file specified.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](3) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](4) tid(f70) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](5) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](6) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](7) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](8) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](9) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](10) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](11) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](12) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](13) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](14) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](15) tid(f74) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](16) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](17) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](18) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](19) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](20) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](21) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](22) tid(1024) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](23) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](24) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](25) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](26) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](27) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](28) tid(1090) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](29) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](30) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](31) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](32) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](33) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](34) tid(e5c) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](35) tid(e5c) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](36) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](37) tid(f74) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](38) tid(f70) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](39) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](40) tid(e5c) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FFC4E1B8D28: (caller: 00007FFC5E63708C) ReturnHr[PreRelease](41) tid(1090) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](42) tid(e5c) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](43) tid(1024) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](44) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](45) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](46) tid(e5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](47) tid(e5c) 8004B200 base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFC544D69BF: (caller: 00007FFC544CA93F) ReturnHr[PreRelease](1) tid(bd0) 80070002 The system cannot find the file specified.
+Suspending
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FFC4E1C341D: (caller: 00007FFC5E64B9B1) ReturnHr[PreRelease](2) tid(11a4) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FFC4E1C341D: (caller: 00007FFC5E64B9B1) ReturnHr[PreRelease](1) tid(f58) 8004B200 Suspending
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFC53097C7A: (caller: 00007FFC604DD533) ReturnHr[PreRelease](1) tid(c78) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](193) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](194) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(14) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(20) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](195) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](196) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(15) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(21) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](197) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](198) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](199) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(16) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(22) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](200) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1443)\FlightSettings.dll!00007FFC544CAEEF: (caller: 00007FFC533B6580) ReturnHr[PreRelease](1) tid(a0c) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(912)\diagtrack.dll!00007FFC533B659C: (caller: 00007FFC533B646D) LogHr(23) tid(a0c) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(1012)\diagtrack.dll!00007FFC5340BC47: (caller: 00007FFC533B649C) ReturnHr[PreRelease](201) tid(a0c) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(859)\diagtrack.dll!00007FFC5340B64E: (caller: 00007FFC533B6A8C) LogHr(24) tid(a0c) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(680)\diagtrack.dll!00007FFC5340BB4E: (caller: 00007FFC533B5614) ReturnHr(1) tid(a0c) 80070490 Element not found.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(559)\diagtrack.dll!00007FFC5340B0EB: (caller: 00007FFC533B4E46) LogHr(25) tid(a0c) 80070490 Element not found.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](202) tid(a0c) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](203) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](204) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(17) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(26) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](205) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFC53B76FC4: (caller: 00007FFC53B98CFA) ReturnHr[PreRelease](17) tid(10c8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFC53B76FC4: (caller: 00007FFC53B98CFA) ReturnHr[PreRelease](18) tid(10c8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFC53B76FC4: (caller: 00007FFC53B98CFA) ReturnHr[PreRelease](19) tid(13ac) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FFC53B8E05A: (caller: 00007FFC53BAA0B3) ReturnHr[PreRelease](20) tid(ccc) 8000000D An illegal state change was requested.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FFC5A3D10FF: (caller: 00007FFC53B76AD3) ReturnHr[PreRelease](1) tid(3e4) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FFC53B76BB4: (caller: 00007FFC53B8ABB5) ReturnHr[PreRelease](21) tid(3e4) 80070005 Access is denied.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FFC5A3D10FF: (caller: 00007FFC53B76AD3) ReturnHr[PreRelease](2) tid(3e4) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FFC53B76BB4: (caller: 00007FFC53B8ABB5) ReturnHr[PreRelease](22) tid(3e4) 80070005 Access is denied.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FFC5A3D10FF: (caller: 00007FFC53B76AD3) ReturnHr[PreRelease](3) tid(3e4) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FFC53B76BB4: (caller: 00007FFC53B8ABB5) ReturnHr[PreRelease](23) tid(3e4) 80070005 Access is denied.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FFC5A3D10FF: (caller: 00007FFC53B76AD3) ReturnHr[PreRelease](4) tid(3e4) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FFC53B76BB4: (caller: 00007FFC53B8ABB5) ReturnHr[PreRelease](24) tid(3e4) 80070005 Access is denied.
+WER/CrashAPI:1959: ERROR ReadProcessMemory failed while trying to read PebBaseAddress
+WER/CrashAPI:2068: ERROR Failed to read the peb from the process
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](1) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](2) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](3) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](4) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](5) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](6) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](7) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](8) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](9) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](10) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](11) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](12) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](13) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](14) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FFC5E541ADA: (caller: 00007FFC604DD533) ReturnHr[PreRelease](15) tid(af8) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FFC5E51CA14: (caller: 00007FFC5E4E3D11) ReturnHr[PreRelease](16) tid(af8) 80070005 Access is denied.
+Suspending
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](206) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](207) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(18) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(27) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](208) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFC469260BE: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](1) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFC4692610D: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](2) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFC469260BE: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](3) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFC4692610D: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](4) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFC469260BE: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](5) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFC4692610D: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](6) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFC469260BE: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](7) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFC4692610D: (caller: 00007FFC4690BBC4) ReturnHr[PreRelease](8) tid(494) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(47)\apprepsync.dll!00007FFC4690B7A4: (caller: 00007FFC46903DFE) ReturnHr[PreRelease](9) tid(494) 80070103 No more data is available.
+Invalid parameter passed to C runtime function.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](209) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](210) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(19) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(28) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](211) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFC4E1C32DC: (caller: 00007FFC4E1C34FF) ReturnHr[PreRelease](48) tid(ddc) 8004B200 internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](212) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](213) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(20) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(29) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](214) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](1) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](2) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](3) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](4) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](5) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](6) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](7) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](8) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](9) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](10) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](11) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](12) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](13) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](14) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](15) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=880 DismApi.dll:                                            - DismInitializeInternal
+PID=3392 TID=880 DismApi.dll: <----- Starting DismApi.dll session -----> - DismInitializeInternal
+PID=3392 TID=880 DismApi.dll:                                            - DismInitializeInternal
+PID=3392 TID=880 DismApi.dll: Version 10.0.10586.0 - DismInitializeInternal
+PID=3392 TID=880 DismApi.dll: Parent process command line: C:\Windows\system32\cleanmgr.exe /autoclean /d C: - DismInitializeInternal
+PID=3392 TID=880 Enter DismInitializeInternal - DismInitializeInternal
+PID=3392 TID=880 Input parameters: LogLevel: 2, LogFilePath: (null), ScratchDirectory: (null) - DismInitializeInternal
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](16) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](17) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](18) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](19) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](20) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=880 Initialized GlobalConfig - DismInitializeInternal
+PID=3392 TID=880 Initialized SessionTable - DismInitializeInternal
+PID=3392 TID=880 Lookup in table by path failed for: DummyPath-2BA51B78-C7F7-4910-B99D-BB7345357CDC - CTransactionalImageTable::LookupImagePath
+PID=3392 TID=880 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=3392 TID=3340 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](21) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](22) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](23) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](24) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](25) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](26) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](27) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](28) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](29) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](30) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=3340 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=3392 TID=880 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=3392 TID=880 m_pInternalThread started - CCommandThread::Start
+PID=3392 TID=880 Created g_internalDismSession - DismInitializeInternal
+PID=3392 TID=880 Leave DismInitializeInternal - DismInitializeInternal
+PID=3392 TID=880 Enter DismOpenSessionInternal - DismOpenSessionInternal
+PID=3392 TID=880 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+PID=3392 TID=880 Lookup in table by path failed for: DRIVE_C - CTransactionalImageTable::LookupImagePath
+PID=3392 TID=880 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=3392 TID=352 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=3392 TID=880 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=3392 TID=880 m_pInternalThread started - CCommandThread::Start
+PID=3392 TID=880 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=3392 TID=352 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=3392 TID=352 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=3392 TID=352 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](31) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](32) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](33) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](34) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](35) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](36) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](37) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](38) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](39) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](40) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=352 Instantiating the Provider Store. - CDISMImageSession::get_ProviderStorebase\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](41) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](42) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=352 Initializing a provider store for the LOCAL session type. - CDISMProviderStore::Final_OnConnectPID=3392 TID=352 Attempting to initialize the logger from the Image Session. - CDISMProviderStore::Final_OnConnectbase\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](43) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](44) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](45) tid(ffc) 80070103 No more data is available.
+PID=3392 TID=352 Provider has not previously been encountered.  Attempting to initialize the provider. - CDISMProviderStore::Internal_GetProviderPID=3392 TID=352 Loading Provider from location C:\Windows\system32\Dism\LogProvider.dll - CDISMProviderStore::Internal_GetProviderinternal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](215) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](216) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(21) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(30) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](217) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+PID=3392 TID=352 Connecting to the provider located at C:\Windows\system32\Dism\LogProvider.dll. - CDISMProviderStore::Internal_LoadProviderbase\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](46) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](47) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](48) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](49) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](50) tid(ffc) 80070103 No more data is available.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](218) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(22) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(31) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](219) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](51) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](52) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](53) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](54) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](55) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](56) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](57) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](58) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](59) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](60) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](61) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](62) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](63) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](64) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](65) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](66) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](67) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](68) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](69) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](70) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](71) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](72) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](73) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](74) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](75) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](76) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](77) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](78) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](79) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](80) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](81) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](82) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](83) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](84) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](85) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](86) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](87) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](88) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](89) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](90) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](91) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](92) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](93) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](94) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](95) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](96) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](97) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](98) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](99) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](100) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](101) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](102) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](103) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](104) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](105) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](106) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](107) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](108) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](109) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](110) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](111) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](112) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](113) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](114) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](115) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](116) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](117) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](118) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](119) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](120) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](121) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](122) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](123) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](124) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](125) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](126) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](127) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](128) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](129) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](130) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](131) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](132) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](133) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](134) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](135) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](136) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47B3F) ReturnHr[PreRelease](137) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\helper.cpp(282)\provpackageapidll.dll!00007FFC58B465A7: (caller: 00007FFC58B47929) ReturnHr[PreRelease](138) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(87)\provpackageapidll.dll!00007FFC58B47AA1: (caller: 00007FFC58B47B53) ReturnHr[PreRelease](139) tid(ffc) 80070103 No more data is available.
+base\ntsetup\provpackageapi\lib\elementenumerator.cpp(133)\provpackageapidll.dll!00007FFC58B47B93: (caller: 00007FFC58B44018) ReturnHr[PreRelease](140) tid(ffc) 80070103 No more data is available.
+admin\prov\multivariant\engine\src\provisionengine.cpp(3722)\provengine.dll!00007FFC46931F8A: (caller: 00007FFC5281507B) ReturnHr[PreRelease](1) tid(ffc) 80070002 The system cannot find the file specified.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff803`f0dbb6d0 cc              int     3
+1: kd> @cr4
+       ^ Syntax error in '@cr4'
+1: kd> r @cr4
+cr4=00000000000406f8
+1: kd> .formats 406f8
+Evaluate expression:
+  Hex:     00000000`000406f8
+  Decimal: 263928
+  Octal:   0000000000000001003370
+  Binary:  00000000 00000000 00000000 00000000 00000000 00000100 00000110 11111000
+  Chars:   ........
+  Time:    Sun Jan 04 12:18:48 1970
+  Float:   low 3.69842e-040 high 0
+  Double:  1.30398e-318
+1: kd> !idt -a
+
+Dumping IDT: ffffd001393e38b0
+
+00:	fffff803f0dbdd00 nt!KiDivideErrorFault
+01:	fffff803f0dbde00 nt!KiDebugTrapOrFault
+02:	fffff803f0dbdfc0 nt!KiNmiInterrupt	Stack = 0xFFFFD001393E2B40
+03:	fffff803f0dbe340 nt!KiBreakpointTrap
+04:	fffff803f0dbe440 nt!KiOverflowTrap
+05:	fffff803f0dbe540 nt!KiBoundFault
+06:	fffff803f0dbe7c0 nt!KiInvalidOpcodeFault
+07:	fffff803f0dbea00 nt!KiNpxNotAvailableFault
+08:	fffff803f0dbeac0 nt!KiDoubleFaultAbort	Stack = 0xFFFFD001393DEB40
+09:	fffff803f0dbeb80 nt!KiNpxSegmentOverrunAbort
+0a:	fffff803f0dbec40 nt!KiInvalidTssFault
+0b:	fffff803f0dbed00 nt!KiSegmentNotPresentFault
+0c:	fffff803f0dbee40 nt!KiStackFault
+0d:	fffff803f0dbef80 nt!KiGeneralProtectionFault
+0e:	fffff803f0dbf080 nt!KiPageFault
+0f:	fffff803f0db7e08 nt!KiIsrThunk+0x78
+10:	fffff803f0dbf440 nt!KiFloatingErrorFault
+11:	fffff803f0dbf5c0 nt!KiAlignmentFault
+12:	fffff803f0dbf6c0 nt!KiMcheckAbort	Stack = 0xFFFFD001393E0B40
+13:	fffff803f0dbfd40 nt!KiXmmException
+14:	fffff803f0db7e30 nt!KiIsrThunk+0xA0
+15:	fffff803f0db7e38 nt!KiIsrThunk+0xA8
+16:	fffff803f0db7e40 nt!KiIsrThunk+0xB0
+17:	fffff803f0db7e48 nt!KiIsrThunk+0xB8
+18:	fffff803f0db7e50 nt!KiIsrThunk+0xC0
+19:	fffff803f0db7e58 nt!KiIsrThunk+0xC8
+1a:	fffff803f0db7e60 nt!KiIsrThunk+0xD0
+1b:	fffff803f0db7e68 nt!KiIsrThunk+0xD8
+1c:	fffff803f0db7e70 nt!KiIsrThunk+0xE0
+1d:	fffff803f0db7e78 nt!KiIsrThunk+0xE8
+1e:	fffff803f0db7e80 nt!KiIsrThunk+0xF0
+1f:	fffff803f0db90b0 nt!KiApcInterrupt
+20:	fffff803f0dbd430 nt!KiSwInterrupt
+21:	fffff803f0db7e98 nt!KiIsrThunk+0x108
+22:	fffff803f0db7ea0 nt!KiIsrThunk+0x110
+23:	fffff803f0db7ea8 nt!KiIsrThunk+0x118
+24:	fffff803f0db7eb0 nt!KiIsrThunk+0x120
+25:	fffff803f0db7eb8 nt!KiIsrThunk+0x128
+26:	fffff803f0db7ec0 nt!KiIsrThunk+0x130
+27:	fffff803f0db7ec8 nt!KiIsrThunk+0x138
+28:	fffff803f0db7ed0 nt!KiIsrThunk+0x140
+29:	fffff803f0dbff00 nt!KiRaiseSecurityCheckFailure
+2a:	fffff803f0db7ee0 nt!KiIsrThunk+0x150
+2b:	fffff803f0db7ee8 nt!KiIsrThunk+0x158
+2c:	fffff803f0dc0000 nt!KiRaiseAssertion
+2d:	fffff803f0dc0100 nt!KiDebugServiceTrap
+2e:	fffff803f0db7f00 nt!KiIsrThunk+0x170
+2f:	fffff803f0db9380 nt!KiDpcInterrupt
+30:	fffff803f0db95b0 nt!KiHvInterrupt
+31:	fffff803f0db9910 nt!KiVmbusInterrupt0
+32:	fffff803f0db9c60 nt!KiVmbusInterrupt1
+33:	fffff803f0db9fb0 nt!KiVmbusInterrupt2
+34:	fffff803f0dba300 nt!KiVmbusInterrupt3
+35:	fffff803f0db7f38 hal!HalpInterruptCmciService (KINTERRUPT fffff803f0c4e7b0)
+
+36:	fffff803f0db7f40 nt!KiIsrThunk+0x1B0
+37:	fffff803f0db7f48 nt!KiIsrThunk+0x1B8
+38:	fffff803f0db7f50 nt!KiIsrThunk+0x1C0
+39:	fffff803f0db7f58 nt!KiIsrThunk+0x1C8
+3a:	fffff803f0db7f60 nt!KiIsrThunk+0x1D0
+3b:	fffff803f0db7f68 nt!KiIsrThunk+0x1D8
+3c:	fffff803f0db7f70 nt!KiIsrThunk+0x1E0
+3d:	fffff803f0db7f78 nt!KiIsrThunk+0x1E8
+3e:	fffff803f0db7f80 nt!KiIsrThunk+0x1F0
+3f:	fffff803f0db7f88 nt!KiIsrThunk+0x1F8
+40:	fffff803f0db7f90 nt!KiIsrThunk+0x200
+41:	fffff803f0db7f98 nt!KiIsrThunk+0x208
+42:	fffff803f0db7fa0 nt!KiIsrThunk+0x210
+43:	fffff803f0db7fa8 nt!KiIsrThunk+0x218
+44:	fffff803f0db7fb0 nt!KiIsrThunk+0x220
+45:	fffff803f0db7fb8 nt!KiIsrThunk+0x228
+46:	fffff803f0db7fc0 nt!KiIsrThunk+0x230
+47:	fffff803f0db7fc8 nt!KiIsrThunk+0x238
+48:	fffff803f0db7fd0 nt!KiIsrThunk+0x240
+49:	fffff803f0db7fd8 nt!KiIsrThunk+0x248
+4a:	fffff803f0db7fe0 nt!KiIsrThunk+0x250
+4b:	fffff803f0db7fe8 nt!KiIsrThunk+0x258
+4c:	fffff803f0db7ff0 nt!KiIsrThunk+0x260
+4d:	fffff803f0db7ff8 nt!KiIsrThunk+0x268
+4e:	fffff803f0db8000 nt!KiIsrThunk+0x270
+4f:	fffff803f0db8008 nt!KiIsrThunk+0x278
+50:	fffff803f0db8010 serial!SerialCIsrSw (KINTERRUPT ffffd00139789a00)
+
+51:	fffff803f0db8018 nt!KiIsrThunk+0x288
+52:	fffff803f0db8020 nt!KiIsrThunk+0x290
+53:	fffff803f0db8028 nt!KiIsrThunk+0x298
+54:	fffff803f0db8030 nt!KiIsrThunk+0x2A0
+55:	fffff803f0db8038 nt!KiIsrThunk+0x2A8
+56:	fffff803f0db8040 nt!KiIsrThunk+0x2B0
+57:	fffff803f0db8048 nt!KiIsrThunk+0x2B8
+58:	fffff803f0db8050 nt!KiIsrThunk+0x2C0
+59:	fffff803f0db8058 nt!KiIsrThunk+0x2C8
+5a:	fffff803f0db8060 nt!KiIsrThunk+0x2D0
+5b:	fffff803f0db8068 nt!KiIsrThunk+0x2D8
+5c:	fffff803f0db8070 nt!KiIsrThunk+0x2E0
+5d:	fffff803f0db8078 nt!KiIsrThunk+0x2E8
+5e:	fffff803f0db8080 nt!KiIsrThunk+0x2F0
+5f:	fffff803f0db8088 nt!KiIsrThunk+0x2F8
+60:	fffff803f0db8090 nt!KiIsrThunk+0x300
+61:	fffff803f0db8098 nt!KiIsrThunk+0x308
+62:	fffff803f0db80a0 nt!KiIsrThunk+0x310
+63:	fffff803f0db80a8 nt!KiIsrThunk+0x318
+64:	fffff803f0db80b0 nt!KiIsrThunk+0x320
+65:	fffff803f0db80b8 nt!KiIsrThunk+0x328
+66:	fffff803f0db80c0 nt!KiIsrThunk+0x330
+67:	fffff803f0db80c8 nt!KiIsrThunk+0x338
+68:	fffff803f0db80d0 nt!KiIsrThunk+0x340
+69:	fffff803f0db80d8 nt!KiIsrThunk+0x348
+6a:	fffff803f0db80e0 nt!KiIsrThunk+0x350
+6b:	fffff803f0db80e8 nt!KiIsrThunk+0x358
+6c:	fffff803f0db80f0 nt!KiIsrThunk+0x360
+6d:	fffff803f0db80f8 nt!KiIsrThunk+0x368
+6e:	fffff803f0db8100 nt!KiIsrThunk+0x370
+6f:	fffff803f0db8108 nt!KiIsrThunk+0x378
+70:	fffff803f0db8110 i8042prt!I8042MouseInterruptService (KINTERRUPT ffffd00139789780)
+
+71:	fffff803f0db8118 ataport!IdePortInterrupt (KINTERRUPT ffffd00139789b40)
+
+72:	fffff803f0db8120 nt!KiIsrThunk+0x390
+73:	fffff803f0db8128 nt!KiIsrThunk+0x398
+74:	fffff803f0db8130 nt!KiIsrThunk+0x3A0
+75:	fffff803f0db8138 nt!KiIsrThunk+0x3A8
+76:	fffff803f0db8140 nt!KiIsrThunk+0x3B0
+77:	fffff803f0db8148 nt!KiIsrThunk+0x3B8
+78:	fffff803f0db8150 nt!KiIsrThunk+0x3C0
+79:	fffff803f0db8158 nt!KiIsrThunk+0x3C8
+7a:	fffff803f0db8160 nt!KiIsrThunk+0x3D0
+7b:	fffff803f0db8168 nt!KiIsrThunk+0x3D8
+7c:	fffff803f0db8170 nt!KiIsrThunk+0x3E0
+7d:	fffff803f0db8178 nt!KiIsrThunk+0x3E8
+7e:	fffff803f0db8180 nt!KiIsrThunk+0x3F0
+7f:	fffff803f0db8188 nt!KiIsrThunk+0x3F8
+80:	fffff803f0db8190 i8042prt!I8042KeyboardInterruptService (KINTERRUPT ffffd001397898c0)
+
+81:	fffff803f0db8198 ataport!IdePortInterrupt (KINTERRUPT ffffd00139789c80)
+
+82:	fffff803f0db81a0 nt!KiIsrThunk+0x410
+83:	fffff803f0db81a8 nt!KiIsrThunk+0x418
+84:	fffff803f0db81b0 nt!KiIsrThunk+0x420
+85:	fffff803f0db81b8 nt!KiIsrThunk+0x428
+86:	fffff803f0db81c0 nt!KiIsrThunk+0x430
+87:	fffff803f0db81c8 nt!KiIsrThunk+0x438
+88:	fffff803f0db81d0 nt!KiIsrThunk+0x440
+89:	fffff803f0db81d8 nt!KiIsrThunk+0x448
+8a:	fffff803f0db81e0 nt!KiIsrThunk+0x450
+8b:	fffff803f0db81e8 nt!KiIsrThunk+0x458
+8c:	fffff803f0db81f0 nt!KiIsrThunk+0x460
+8d:	fffff803f0db81f8 nt!KiIsrThunk+0x468
+8e:	fffff803f0db8200 nt!KiIsrThunk+0x470
+8f:	fffff803f0db8208 nt!KiIsrThunk+0x478
+90:	fffff803f0db8210 nt!KiIsrThunk+0x480
+91:	fffff803f0db8218 nt!KiIsrThunk+0x488
+92:	fffff803f0db8220 nt!KiIsrThunk+0x490
+93:	fffff803f0db8228 nt!KiIsrThunk+0x498
+94:	fffff803f0db8230 nt!KiIsrThunk+0x4A0
+95:	fffff803f0db8238 nt!KiIsrThunk+0x4A8
+96:	fffff803f0db8240 nt!KiIsrThunk+0x4B0
+97:	fffff803f0db8248 nt!KiIsrThunk+0x4B8
+98:	fffff803f0db8250 nt!KiIsrThunk+0x4C0
+99:	fffff803f0db8258 nt!KiIsrThunk+0x4C8
+9a:	fffff803f0db8260 nt!KiIsrThunk+0x4D0
+9b:	fffff803f0db8268 nt!KiIsrThunk+0x4D8
+9c:	fffff803f0db8270 nt!KiIsrThunk+0x4E0
+9d:	fffff803f0db8278 nt!KiIsrThunk+0x4E8
+9e:	fffff803f0db8280 nt!KiIsrThunk+0x4F0
+9f:	fffff803f0db8288 nt!KiIsrThunk+0x4F8
+a0:	fffff803f0db8290 nt!KiIsrThunk+0x500
+a1:	fffff803f0db8298 nt!KiIsrThunk+0x508
+a2:	fffff803f0db82a0 nt!KiIsrThunk+0x510
+a3:	fffff803f0db82a8 nt!KiIsrThunk+0x518
+a4:	fffff803f0db82b0 nt!KiIsrThunk+0x520
+a5:	fffff803f0db82b8 nt!KiIsrThunk+0x528
+a6:	fffff803f0db82c0 nt!KiIsrThunk+0x530
+a7:	fffff803f0db82c8 nt!KiIsrThunk+0x538
+a8:	fffff803f0db82d0 nt!KiIsrThunk+0x540
+a9:	fffff803f0db82d8 nt!KiIsrThunk+0x548
+aa:	fffff803f0db82e0 nt!KiIsrThunk+0x550
+ab:	fffff803f0db82e8 nt!KiIsrThunk+0x558
+ac:	fffff803f0db82f0 nt!KiIsrThunk+0x560
+ad:	fffff803f0db82f8 nt!KiIsrThunk+0x568
+ae:	fffff803f0db8300 nt!KiIsrThunk+0x570
+af:	fffff803f0db8308 nt!KiIsrThunk+0x578
+b0:	fffff803f0db8310 ACPI!ACPIInterruptServiceRoutine (KINTERRUPT ffffd00139789dc0)
+
+b1:	fffff803f0db8318 nt!KiIsrThunk+0x588
+b2:	fffff803f0db8320 nt!KiIsrThunk+0x590
+b3:	fffff803f0db8328 nt!KiIsrThunk+0x598
+b4:	fffff803f0db8330 nt!KiIsrThunk+0x5A0
+b5:	fffff803f0db8338 nt!KiIsrThunk+0x5A8
+b6:	fffff803f0db8340 nt!KiIsrThunk+0x5B0
+b7:	fffff803f0db8348 nt!KiIsrThunk+0x5B8
+b8:	fffff803f0db8350 nt!KiIsrThunk+0x5C0
+b9:	fffff803f0db8358 nt!KiIsrThunk+0x5C8
+ba:	fffff803f0db8360 nt!KiIsrThunk+0x5D0
+bb:	fffff803f0db8368 nt!KiIsrThunk+0x5D8
+bc:	fffff803f0db8370 nt!KiIsrThunk+0x5E0
+bd:	fffff803f0db8378 nt!KiIsrThunk+0x5E8
+be:	fffff803f0db8380 nt!KiIsrThunk+0x5F0
+bf:	fffff803f0db8388 nt!KiIsrThunk+0x5F8
+c0:	fffff803f0db8390 nt!KiIsrThunk+0x600
+c1:	fffff803f0db8398 nt!KiIsrThunk+0x608
+c2:	fffff803f0db83a0 nt!KiIsrThunk+0x610
+c3:	fffff803f0db83a8 nt!KiIsrThunk+0x618
+c4:	fffff803f0db83b0 nt!KiIsrThunk+0x620
+c5:	fffff803f0db83b8 nt!KiIsrThunk+0x628
+c6:	fffff803f0db83c0 nt!KiIsrThunk+0x630
+c7:	fffff803f0db83c8 nt!KiIsrThunk+0x638
+c8:	fffff803f0db83d0 nt!KiIsrThunk+0x640
+c9:	fffff803f0db83d8 nt!KiIsrThunk+0x648
+ca:	fffff803f0db83e0 nt!KiIsrThunk+0x650
+cb:	fffff803f0db83e8 nt!KiIsrThunk+0x658
+cc:	fffff803f0db83f0 nt!KiIsrThunk+0x660
+cd:	fffff803f0db83f8 nt!KiIsrThunk+0x668
+ce:	fffff803f0db8400 hal!HalpIommuInterruptRoutine (KINTERRUPT ffffe000dd087200)
+
+cf:	fffff803f0db8408 nt!KiIsrThunk+0x678
+d0:	fffff803f0db8410 nt!KiIsrThunk+0x680
+d1:	fffff803f0db8418 hal!HalpTimerClockInterrupt (KINTERRUPT ffffe000dd087400)
+
+d2:	fffff803f0db8420 hal!HalpTimerClockIpiRoutine (KINTERRUPT ffffe000dd087300)
+
+d3:	fffff803f0db8428 nt!KiIsrThunk+0x698
+d4:	fffff803f0db8430 nt!KiIsrThunk+0x6A0
+d5:	fffff803f0db8438 nt!KiIsrThunk+0x6A8
+d6:	fffff803f0db8440 nt!KiIsrThunk+0x6B0
+d7:	fffff803f0db8448 hal!HalpInterruptRebootService (KINTERRUPT fffff803f0c4eab0)
+
+d8:	fffff803f0db8450 hal!HalpInterruptStubService (KINTERRUPT fffff803f0c4e9b0)
+
+d9:	fffff803f0db8458 nt!KiIsrThunk+0x6C8
+da:	fffff803f0db8460 nt!KiIsrThunk+0x6D0
+db:	fffff803f0db8468 nt!KiIsrThunk+0x6D8
+dc:	fffff803f0db8470 nt!KiIsrThunk+0x6E0
+dd:	fffff803f0db8478 nt!KiIsrThunk+0x6E8
+de:	fffff803f0db8480 nt!KiIsrThunk+0x6F0
+df:	fffff803f0db8488 hal!HalpInterruptSpuriousService (KINTERRUPT fffff803f0c4e8b0)
+
+e0:	fffff803f0db8490 nt!KiIsrThunk+0x700
+e1:	fffff803f0dba650 nt!KiIpiInterrupt
+e2:	fffff803f0db84a0 hal!HalpInterruptLocalErrorService (KINTERRUPT fffff803f0c4ebb0)
+
+e3:	fffff803f0db84a8 hal!HalpInterruptDeferredRecoveryService (KINTERRUPT ffffe000dd087100)
+
+e4:	fffff803f0db84b0 nt!KiIsrThunk+0x720
+e5:	fffff803f0db84b8 nt!KiIsrThunk+0x728
+e6:	fffff803f0db84c0 nt!KiIsrThunk+0x730
+e7:	fffff803f0db84c8 nt!KiIsrThunk+0x738
+e8:	fffff803f0db84d0 nt!KiIsrThunk+0x740
+e9:	fffff803f0db84d8 nt!KiIsrThunk+0x748
+ea:	fffff803f0db84e0 nt!KiIsrThunk+0x750
+eb:	fffff803f0db84e8 nt!KiIsrThunk+0x758
+ec:	fffff803f0db84f0 nt!KiIsrThunk+0x760
+ed:	fffff803f0db84f8 nt!KiIsrThunk+0x768
+ee:	fffff803f0db8500 nt!KiIsrThunk+0x770
+ef:	fffff803f0db8508 nt!KiIsrThunk+0x778
+f0:	fffff803f0db8510 nt!KiIsrThunk+0x780
+f1:	fffff803f0db8518 nt!KiIsrThunk+0x788
+f2:	fffff803f0db8520 nt!KiIsrThunk+0x790
+f3:	fffff803f0db8528 nt!KiIsrThunk+0x798
+f4:	fffff803f0db8530 nt!KiIsrThunk+0x7A0
+f5:	fffff803f0db8538 nt!KiIsrThunk+0x7A8
+f6:	fffff803f0db8540 nt!KiIsrThunk+0x7B0
+f7:	fffff803f0db8548 nt!KiIsrThunk+0x7B8
+f8:	fffff803f0db8550 nt!KiIsrThunk+0x7C0
+f9:	fffff803f0db8558 nt!KiIsrThunk+0x7C8
+fa:	fffff803f0db8560 nt!KiIsrThunk+0x7D0
+fb:	fffff803f0db8568 nt!KiIsrThunk+0x7D8
+fc:	fffff803f0db8570 nt!KiIsrThunk+0x7E0
+fd:	fffff803f0db8578 hal!HalpTimerProfileInterrupt (KINTERRUPT ffffe000dd087500)
+
+fe:	fffff803f0db8580 hal!HalpPerfInterrupt (KINTERRUPT ffffe000dd087000)
+
+ff:	fffff803f0db8588 nt!KiIsrThunk+0x7F8
+
+1: kd> x nt!KiRaiseSecurityCheckFailure
+fffff803`f0dbff00 nt!KiRaiseSecurityCheckFailure (<no parameter info>)
+1: kd> !idt
+
+Dumping IDT: ffffd001393e38b0
+
+00:	fffff803f0dbdd00 nt!KiDivideErrorFault
+01:	fffff803f0dbde00 nt!KiDebugTrapOrFault
+02:	fffff803f0dbdfc0 nt!KiNmiInterrupt	Stack = 0xFFFFD001393E2B40
+03:	fffff803f0dbe340 nt!KiBreakpointTrap
+04:	fffff803f0dbe440 nt!KiOverflowTrap
+05:	fffff803f0dbe540 nt!KiBoundFault
+06:	fffff803f0dbe7c0 nt!KiInvalidOpcodeFault
+07:	fffff803f0dbea00 nt!KiNpxNotAvailableFault
+08:	fffff803f0dbeac0 nt!KiDoubleFaultAbort	Stack = 0xFFFFD001393DEB40
+09:	fffff803f0dbeb80 nt!KiNpxSegmentOverrunAbort
+0a:	fffff803f0dbec40 nt!KiInvalidTssFault
+0b:	fffff803f0dbed00 nt!KiSegmentNotPresentFault
+0c:	fffff803f0dbee40 nt!KiStackFault
+0d:	fffff803f0dbef80 nt!KiGeneralProtectionFault
+0e:	fffff803f0dbf080 nt!KiPageFault
+10:	fffff803f0dbf440 nt!KiFloatingErrorFault
+11:	fffff803f0dbf5c0 nt!KiAlignmentFault
+12:	fffff803f0dbf6c0 nt!KiMcheckAbort	Stack = 0xFFFFD001393E0B40
+13:	fffff803f0dbfd40 nt!KiXmmException
+1f:	fffff803f0db90b0 nt!KiApcInterrupt
+20:	fffff803f0dbd430 nt!KiSwInterrupt
+29:	fffff803f0dbff00 nt!KiRaiseSecurityCheckFailure
+2c:	fffff803f0dc0000 nt!KiRaiseAssertion
+2d:	fffff803f0dc0100 nt!KiDebugServiceTrap
+2f:	fffff803f0db9380 nt!KiDpcInterrupt
+30:	fffff803f0db95b0 nt!KiHvInterrupt
+31:	fffff803f0db9910 nt!KiVmbusInterrupt0
+32:	fffff803f0db9c60 nt!KiVmbusInterrupt1
+33:	fffff803f0db9fb0 nt!KiVmbusInterrupt2
+34:	fffff803f0dba300 nt!KiVmbusInterrupt3
+35:	fffff803f0db7f38 hal!HalpInterruptCmciService (KINTERRUPT fffff803f0c4e7b0)
+
+50:	fffff803f0db8010 serial!SerialCIsrSw (KINTERRUPT ffffd00139789a00)
+
+70:	fffff803f0db8110 i8042prt!I8042MouseInterruptService (KINTERRUPT ffffd00139789780)
+
+71:	fffff803f0db8118 ataport!IdePortInterrupt (KINTERRUPT ffffd00139789b40)
+
+80:	fffff803f0db8190 i8042prt!I8042KeyboardInterruptService (KINTERRUPT ffffd001397898c0)
+
+81:	fffff803f0db8198 ataport!IdePortInterrupt (KINTERRUPT ffffd00139789c80)
+
+b0:	fffff803f0db8310 ACPI!ACPIInterruptServiceRoutine (KINTERRUPT ffffd00139789dc0)
+
+ce:	fffff803f0db8400 hal!HalpIommuInterruptRoutine (KINTERRUPT ffffe000dd087200)
+
+d1:	fffff803f0db8418 hal!HalpTimerClockInterrupt (KINTERRUPT ffffe000dd087400)
+
+d2:	fffff803f0db8420 hal!HalpTimerClockIpiRoutine (KINTERRUPT ffffe000dd087300)
+
+d7:	fffff803f0db8448 hal!HalpInterruptRebootService (KINTERRUPT fffff803f0c4eab0)
+
+d8:	fffff803f0db8450 hal!HalpInterruptStubService (KINTERRUPT fffff803f0c4e9b0)
+
+df:	fffff803f0db8488 hal!HalpInterruptSpuriousService (KINTERRUPT fffff803f0c4e8b0)
+
+e1:	fffff803f0dba650 nt!KiIpiInterrupt
+e2:	fffff803f0db84a0 hal!HalpInterruptLocalErrorService (KINTERRUPT fffff803f0c4ebb0)
+
+e3:	fffff803f0db84a8 hal!HalpInterruptDeferredRecoveryService (KINTERRUPT ffffe000dd087100)
+
+fd:	fffff803f0db8578 hal!HalpTimerProfileInterrupt (KINTERRUPT ffffe000dd087500)
+
+fe:	fffff803f0db8580 hal!HalpPerfInterrupt (KINTERRUPT ffffe000dd087000)
+
+
+1: kd> !analyze -show 0x109
+Connected to Windows 10 10586 x64 target at (Thu May  5 14:44:03.896 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+..................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.............................................
+................................................................
+.........................
+Loading User Symbols
+...................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.............................................
+...
+Loading unloaded module list
+...............
+CRITICAL_STRUCTURE_CORRUPTION (109)
+This bugcheck is generated when the kernel detects that critical kernel code or
+data have been corrupted. There are generally three causes for a corruption:
+1) A driver has inadvertently or deliberately modified critical kernel code
+ or data. See http://www.microsoft.com/whdc/driver/kernel/64bitPatching.mspx
+2) A developer attempted to set a normal kernel breakpoint using a kernel
+ debugger that was not attached when the system was booted. Normal breakpoints,
+ "bp", can only be set if the debugger is attached at boot time. Hardware
+ breakpoints, "ba", can be set at any time.
+3) A hardware corruption occurred, e.g. failing RAM holding kernel code or data.
+Arguments:
+Arg1: 0000000000000000, Reserved
+Arg2: 0000000000000000, Reserved
+Arg3: 0000000000000000, Failure type dependent information
+Arg4: 0000000000000000, Type of corrupted region, can be
+	0   : A generic data region
+	1   : Modification of a function or .pdata
+	2   : A processor IDT
+	3   : A processor GDT
+	4   : Type 1 process list corruption
+	5   : Type 2 process list corruption
+	6   : Debug routine modification
+	7   : Critical MSR modification
+	8   : Object type
+	9   : A processor IVT
+	a   : Modification of a system service function
+	b   : A generic session data region
+	c   : Modification of a session function or .pdata
+	d   : Modification of an import table
+	e   : Modification of a session import table
+	f   : Ps Win32 callout modification
+	10  : Debug switch routine modification
+	11  : IRP allocator modification
+	12  : Driver call dispatcher modification
+	13  : IRP completion dispatcher modification
+	14  : IRP deallocator modification
+	15  : A processor control register
+	16  : Critical floating point control register modification
+	17  : Local APIC modification
+	18  : Kernel notification callout modification
+	19  : Loaded module list modification
+	1a  : Type 3 process list corruption
+	1b  : Type 4 process list corruption
+	1c  : Driver object corruption
+	1d  : Executive callback object modification
+	1e  : Modification of module padding
+	1f  : Modification of a protected process
+	20  : A generic data region
+	21  : A page hash mismatch
+	22  : A session page hash mismatch
+	23  : Load config directory modification
+	24  : Inverted function table modification
+	25  : Session configuration modification
+	102 : Modification of win32k.sys
+1: kd> lm
+start             end                 module name
+00007ff7`beee0000 00007ff7`beee7000   MsMpEng    (deferred)             
+00007ffc`470f0000 00007ffc`470f8000   amsiproxy   (deferred)             
+00007ffc`479f0000 00007ffc`47b99000   gdiplus    (deferred)             
+00007ffc`47c70000 00007ffc`47cd7000   WinSATAPI   (deferred)             
+00007ffc`4edf0000 00007ffc`4f07e000   wininet    (deferred)             
+00007ffc`4f130000 00007ffc`4f165000   wscapi     (deferred)             
+00007ffc`51130000 00007ffc`51c70000   mpengine   (deferred)             
+00007ffc`51e80000 00007ffc`51f0f000   mprtp      (deferred)             
+00007ffc`51f10000 00007ffc`520c8000   urlmon     (deferred)             
+00007ffc`526e0000 00007ffc`526ea000   VERSION    (deferred)             
+00007ffc`52c60000 00007ffc`52d3f000   mpclient   (deferred)             
+00007ffc`52d70000 00007ffc`52d7d000   wofutil    (deferred)             
+00007ffc`52df0000 00007ffc`52e0d000   NisIpsPlugin   (deferred)             
+00007ffc`52e80000 00007ffc`53047000   mpsvc      (deferred)             
+00007ffc`55660000 00007ffc`55668000   wscproxystub   (deferred)             
+00007ffc`55c10000 00007ffc`55c1e000   npmproxy   (deferred)             
+00007ffc`56d50000 00007ffc`570d2000   iertutil   (deferred)             
+00007ffc`58ac0000 00007ffc`58ad5000   offreg     (deferred)             
+00007ffc`594b0000 00007ffc`594ba000   FLTLIB     (deferred)             
+00007ffc`5b390000 00007ffc`5b3d0000   netprofm   (deferred)             
+00007ffc`5ba60000 00007ffc`5bb02000   dxgi       (deferred)             
+00007ffc`5c380000 00007ffc`5c506000   PROPSYS    (deferred)             
+00007ffc`5c510000 00007ffc`5c523000   WTSAPI32   (deferred)             
+00007ffc`5d390000 00007ffc`5d3b4000   gpapi      (deferred)             
+00007ffc`5d3c0000 00007ffc`5d4b8000   Tdh        (deferred)             
+00007ffc`5d7e0000 00007ffc`5d7ed000   tbs_7ffc5d7e0000   (deferred)             
+00007ffc`5d7f0000 00007ffc`5d87b000   PCPTPM12   (deferred)             
+00007ffc`5d880000 00007ffc`5d8b1000   ntmarta    (deferred)             
+00007ffc`5d8c0000 00007ffc`5d8db000   PCPKsp     (deferred)             
+00007ffc`5d9a0000 00007ffc`5d9d4000   rsaenh     (deferred)             
+00007ffc`5daf0000 00007ffc`5db0f000   USERENV    (deferred)             
+00007ffc`5dd10000 00007ffc`5dd27000   CRYPTSP    (deferred)             
+00007ffc`5de30000 00007ffc`5de3b000   CRYPTBASE   (deferred)             
+00007ffc`5dec0000 00007ffc`5defa000   NTASN1     (deferred)             
+00007ffc`5df00000 00007ffc`5df27000   ncrypt     (deferred)             
+00007ffc`5e010000 00007ffc`5e03d000   sspicli    (deferred)             
+00007ffc`5e1c0000 00007ffc`5e216000   WINSTA     (deferred)             
+00007ffc`5e2d0000 00007ffc`5e2f9000   bcrypt     (deferred)             
+00007ffc`5e390000 00007ffc`5e39f000   kernel_appcore   (deferred)             
+00007ffc`5e3a0000 00007ffc`5e3eb000   powrprof   (deferred)             
+00007ffc`5e3f0000 00007ffc`5e404000   profapi    (deferred)             
+00007ffc`5e410000 00007ffc`5e420000   MSASN1     (deferred)             
+00007ffc`5e4d0000 00007ffc`5e585000   shcore     (deferred)             
+00007ffc`5e590000 00007ffc`5e5d3000   cfgmgr32   (deferred)             
+00007ffc`5e5e0000 00007ffc`5ec24000   windows_storage   (deferred)             
+00007ffc`5ecc0000 00007ffc`5ee87000   CRYPT32    (deferred)             
+00007ffc`5eeb0000 00007ffc`5ef05000   wintrust   (deferred)             
+00007ffc`5ef10000 00007ffc`5ef7a000   bcryptPrimitives   (deferred)             
+00007ffc`5ef80000 00007ffc`5f168000   KERNELBASE   (deferred)             
+00007ffc`5f170000 00007ffc`5f599000   SETUPAPI   (deferred)             
+00007ffc`5f5a0000 00007ffc`5f5a8000   psapi      (deferred)             
+00007ffc`5f7d0000 00007ffc`5f82b000   sechost    (deferred)             
+00007ffc`5f870000 00007ffc`5f9c6000   USER32     (deferred)             
+00007ffc`5fb90000 00007ffc`5fd16000   GDI32      (deferred)             
+00007ffc`5fd20000 00007ffc`5fd3c000   imagehlp   (deferred)             
+00007ffc`5fd40000 00007ffc`5fe01000   OLEAUT32   (deferred)             
+00007ffc`5fe10000 00007ffc`5ff53000   ole32      (deferred)             
+00007ffc`60070000 00007ffc`6011d000   KERNEL32   (deferred)             
+00007ffc`60120000 00007ffc`601c7000   ADVAPI32   (deferred)             
+00007ffc`601d0000 00007ffc`6044d000   combase    (deferred)             
+00007ffc`60450000 00007ffc`6056c000   RPCRT4     (deferred)             
+00007ffc`605e0000 00007ffc`6064b000   WS2_32     (deferred)             
+00007ffc`60650000 00007ffc`606ed000   msvcrt     (deferred)             
+00007ffc`606f0000 00007ffc`60797000   clbcatq    (deferred)             
+00007ffc`607a0000 00007ffc`61cff000   SHELL32    (deferred)             
+00007ffc`61d00000 00007ffc`61d52000   shlwapi    (deferred)             
+00007ffc`61d70000 00007ffc`61f31000   ntdll      (deferred)             
+fffff800`ba200000 fffff800`ba299000   CI         (deferred)             
+fffff800`ba2a0000 fffff800`ba2fc000   msrpc      (deferred)             
+fffff800`ba300000 fffff800`ba362000   FLTMGR     (deferred)             
+fffff800`ba370000 fffff800`ba395000   ksecdd     (deferred)             
+fffff800`ba3a0000 fffff800`ba445000   clipsp     (deferred)             
+fffff800`ba450000 fffff800`ba515000   Wdf01000   (deferred)             
+fffff800`ba520000 fffff800`ba533000   WDFLDR     (deferred)             
+fffff800`ba540000 fffff800`ba563000   acpiex     (deferred)             
+fffff800`ba570000 fffff800`ba57d000   WppRecorder   (deferred)             
+fffff800`ba580000 fffff800`ba618000   cng        (deferred)             
+fffff800`ba620000 fffff800`ba6b0000   ACPI       (deferred)             
+fffff800`ba6b0000 fffff800`ba6bc000   WMILIB     (deferred)             
+fffff800`ba6d0000 fffff800`ba6ef000   WindowsTrustedRT   (deferred)             
+fffff800`ba6f0000 fffff800`ba6fb000   WindowsTrustedRTProxy   (deferred)             
+fffff800`ba700000 fffff800`ba712000   pcw        (deferred)             
+fffff800`ba720000 fffff800`ba72b000   msisadrv   (deferred)             
+fffff800`ba730000 fffff800`ba786000   pci        (deferred)             
+fffff800`ba790000 fffff800`ba7a2000   vdrvroot   (deferred)             
+fffff800`ba7b0000 fffff800`ba7ce000   pdc        (deferred)             
+fffff800`ba7d0000 fffff800`ba7e9000   CEA        (deferred)             
+fffff800`ba7f0000 fffff800`ba812000   partmgr    (deferred)             
+fffff800`ba820000 fffff800`ba841000   vmbus      (deferred)             
+fffff800`ba850000 fffff800`ba970000   NDIS       (deferred)             
+fffff800`ba970000 fffff800`ba9e8000   NETIO      (deferred)             
+fffff800`ba9f0000 fffff800`baa0b000   hvsocket   (deferred)             
+fffff800`baa10000 fffff800`baa28000   vmbkmcl    (deferred)             
+fffff800`baa30000 fffff800`baa3e000   winhv      (deferred)             
+fffff800`baa50000 fffff800`baade000   mcupdate   (deferred)             
+fffff800`baae0000 fffff800`baaf0000   werkernel   (deferred)             
+fffff800`baaf0000 fffff800`bab55000   CLFS       (deferred)             
+fffff800`bab60000 fffff800`bab85000   tm         (deferred)             
+fffff800`bab90000 fffff800`baba7000   PSHED      (deferred)             
+fffff800`babb0000 fffff800`babbb000   BOOTVID    (deferred)             
+fffff800`babc0000 fffff800`babce000   cmimcext   (deferred)             
+fffff800`babd0000 fffff800`babdc000   ntosext    (deferred)             
+fffff800`bac00000 fffff800`bac1d000   mountmgr   (deferred)             
+fffff800`bac20000 fffff800`bac2c000   atapi      (deferred)             
+fffff800`bac30000 fffff800`bac65000   ataport    (deferred)             
+fffff800`bac70000 fffff800`bac8c000   EhStorClass   (deferred)             
+fffff800`bac90000 fffff800`baca9000   fileinfo   (deferred)             
+fffff800`bacb0000 fffff800`bace8000   Wof        (deferred)             
+fffff800`bacf0000 fffff800`bad3c000   WdFilter   (deferred)             
+fffff800`bad40000 fffff800`baf58000   NTFS       (deferred)             
+fffff800`baf60000 fffff800`baf6e000   storvsc    (deferred)             
+fffff800`baf70000 fffff800`bafe8000   storport   (deferred)             
+fffff800`baff0000 fffff800`baffd000   Fs_Rec     (deferred)             
+fffff800`bb000000 fffff800`bb02e000   ksecpkg    (deferred)             
+fffff800`bb030000 fffff800`bb287000   tcpip      (deferred)             
+fffff800`bb290000 fffff800`bb2bb000   intelppm   (deferred)             
+fffff800`bb2c0000 fffff800`bb346000   spaceport   (deferred)             
+fffff800`bb350000 fffff800`bb35b000   intelide   (deferred)             
+fffff800`bb360000 fffff800`bb371000   PCIIDEX    (deferred)             
+fffff800`bb380000 fffff800`bb398000   volmgr     (deferred)             
+fffff800`bb3a0000 fffff800`bb3fe000   volmgrx    (deferred)             
+fffff800`bb400000 fffff800`bb469000   volsnap    (deferred)             
+fffff800`bb470000 fffff800`bb4b4000   rdyboost   (deferred)             
+fffff800`bb4c0000 fffff800`bb4e5000   mup        (deferred)             
+fffff800`bb4f0000 fffff800`bb4fb000   vmgencounter   (deferred)             
+fffff800`bb500000 fffff800`bb51f000   disk       (deferred)             
+fffff800`bb520000 fffff800`bb580000   CLASSPNP   (deferred)             
+fffff800`bb5a0000 fffff800`bb5b9000   crashdmp   (deferred)             
+fffff800`bb640000 fffff800`bb671000   cdrom      (deferred)             
+fffff800`bb680000 fffff800`bb69d000   filecrypt   (deferred)             
+fffff800`bb6a0000 fffff800`bb6ac000   tbs        (deferred)             
+fffff800`bb6b0000 fffff800`bb6ba000   Null       (deferred)             
+fffff800`bb6c0000 fffff800`bb6ca000   Beep       (deferred)             
+fffff800`bb6d0000 fffff800`bb6e4000   BasicDisplay   (deferred)             
+fffff800`bb6f0000 fffff800`bb705000   watchdog   (deferred)             
+fffff800`bb710000 fffff800`bb8fd000   dxgkrnl    (deferred)             
+fffff800`bb900000 fffff800`bb912000   BasicRender   (deferred)             
+fffff800`bb920000 fffff800`bb939000   Npfs       (deferred)             
+fffff800`bb940000 fffff800`bb94f000   Msfs       (deferred)             
+fffff800`bb950000 fffff800`bb973000   tdx        (deferred)             
+fffff800`bb980000 fffff800`bb98f000   TDI        (deferred)             
+fffff800`bb990000 fffff800`bb9db000   netbt      (deferred)             
+fffff800`bb9e0000 fffff800`bba73000   afd        (deferred)             
+fffff800`bba80000 fffff800`bba99000   vwififlt   (deferred)             
+fffff800`bbaa0000 fffff800`bbacb000   pacer      (deferred)             
+fffff800`bbad0000 fffff800`bbae2000   netbios    (deferred)             
+fffff800`bbaf0000 fffff800`bbb61000   rdbss      (deferred)             
+fffff800`bbb70000 fffff800`bbbfe000   csc        (deferred)             
+fffff800`bbc00000 fffff800`bbc10000   nsiproxy   (deferred)             
+fffff800`bbc10000 fffff800`bbc1d000   npsvctrig   (deferred)             
+fffff800`bbc20000 fffff800`bbc30000   mssmbios   (deferred)             
+fffff800`bbc30000 fffff800`bbc3a000   gpuenergydrv   (deferred)             
+fffff800`bbc40000 fffff800`bbc6a000   dfsc       (deferred)             
+fffff800`bbc70000 fffff800`bbc7d000   NdisVirtualBus   (deferred)             
+fffff800`bbc80000 fffff800`bbc8c000   swenum     (deferred)             
+fffff800`bbc90000 fffff800`bbccc000   ahcache    (deferred)             
+fffff800`bbcd0000 fffff800`bbce1000   CompositeBus   (deferred)             
+fffff800`bbcf0000 fffff800`bbcfd000   kdnic      (deferred)             
+fffff800`bbd00000 fffff800`bbd15000   umbus      (deferred)             
+fffff800`bbd20000 fffff800`bbd42000   i8042prt   (deferred)             
+fffff800`bbd50000 fffff800`bbd63000   kbdclass   (deferred)             
+fffff800`bbd70000 fffff800`bbd82000   mouclass   (deferred)             
+fffff800`bbd90000 fffff800`bbdab000   serial     (deferred)             
+fffff800`bbdb0000 fffff800`bbdbf000   serenum    (deferred)             
+fffff800`bbdc0000 fffff800`bbdcf000   fdc        (deferred)             
+fffff800`bbdd0000 fffff800`bbddf000   dmvsc      (deferred)             
+fffff800`bbde0000 fffff800`bbdee000   VMBusHID   (deferred)             
+fffff800`bbdf0000 fffff800`bbe1e000   HIDCLASS   (deferred)             
+fffff800`bbe20000 fffff800`bbe31000   HIDPARSE   (deferred)             
+fffff800`bbe40000 fffff800`bbe4c000   hyperkbd   (deferred)             
+fffff800`bbe50000 fffff800`bbe5f000   HyperVideo   (deferred)             
+fffff800`bbe60000 fffff800`bbec7000   fwpkclnt   (deferred)             
+fffff800`bbed0000 fffff800`bbefa000   wfplwfs    (deferred)             
+fffff800`bbf00000 fffff800`bbf10000   vmstorfl   (deferred)             
+fffff800`bbf10000 fffff800`bbfb1000   fvevol     (deferred)             
+fffff800`bbfc0000 fffff800`bbfe1000   netvsc     (deferred)             
+fffff800`bbff0000 fffff800`bbffb000   vms3cap    (deferred)             
+fffff800`bc200000 fffff800`bc222000   WdNisDrv   (deferred)             
+fffff800`bc230000 fffff800`bc23f000   terminpt   (deferred)             
+fffff800`bc700000 fffff800`bc710000   monitor    (deferred)             
+fffff800`bc710000 fffff800`bc7a2000   dxgmms2    (deferred)             
+fffff800`bc7b0000 fffff800`bc7bd000   rdpvideominiport   (deferred)             
+fffff800`bc7c0000 fffff800`bc7f0000   rdpdr      (deferred)             
+fffff800`bc7f0000 fffff800`bc816000   luafv      (deferred)             
+fffff800`bc820000 fffff800`bc839000   storqosflt   (deferred)             
+fffff800`bc840000 fffff800`bc865000   tsusbhub   (deferred)             
+fffff800`bc870000 fffff800`bc886000   lltdio     (deferred)             
+fffff800`bc890000 fffff800`bc8aa000   mslldp     (deferred)             
+fffff800`bc8b0000 fffff800`bc8ca000   rspndr     (deferred)             
+fffff800`bc8d0000 fffff800`bc9e1000   HTTP       (deferred)             
+fffff800`bc9f0000 fffff800`bca0d000   WudfPf     (deferred)             
+fffff800`bca10000 fffff800`bca33000   bowser     (deferred)             
+fffff800`bca40000 fffff800`bcab2000   mrxsmb     (deferred)             
+fffff800`bcac0000 fffff800`bcafa000   mrxsmb20   (deferred)             
+fffff800`bcb00000 fffff800`bcb19000   mpsdrv     (deferred)             
+fffff800`bcb20000 fffff800`bcb61000   srvnet     (deferred)             
+fffff800`bcb70000 fffff800`bcc1f000   srv2       (deferred)             
+fffff800`bcc20000 fffff800`bcc6e000   mrxsmb10   (deferred)             
+fffff800`bcc70000 fffff800`bcc84000   mmcss      (deferred)             
+fffff800`bcc90000 fffff800`bccb6000   Ndu        (deferred)             
+fffff800`bccc0000 fffff800`bcd4c000   srv        (deferred)             
+fffff800`bcd50000 fffff800`bcd64000   tcpipreg   (deferred)             
+fffff800`bcda0000 fffff800`bce08000   ks         (deferred)             
+fffff800`bce10000 fffff800`bce1e000   rdpbus     (deferred)             
+fffff800`bce20000 fffff800`bce2e000   flpydisk   (deferred)             
+fffff800`bce30000 fffff800`bce3f000   mouhid     (deferred)             
+fffff800`bce50000 fffff800`bce5f000   dump_dumpata   (deferred)             
+fffff800`bce70000 fffff800`bce7c000   dump_atapi   (deferred)             
+fffff800`bcea0000 fffff800`bcebc000   dump_dumpfve   (deferred)             
+fffff800`bcec0000 fffff800`bcf80000   peauth     (deferred)             
+fffff800`bcf80000 fffff800`bcfaf000   tunnel     (deferred)             
+fffff800`bcfe0000 fffff800`bcff1000   condrv     (deferred)             
+fffff803`efce5000 fffff803`efcf3000   kdcom      (deferred)             
+fffff803`f0c01000 fffff803`f0c74000   hal        (pdb symbols)          c:\course\symbols\hal.pdb\81C1AF690083498BA941D5EC628CDCF41\hal.pdb
+fffff803`f0c74000 fffff803`f1440000   nt         (pdb symbols)          c:\course\symbols\ntkrnlmp.pdb\0DE6DC238E194BB78608D54B1E6FA3791\ntkrnlmp.pdb
+fffff961`33200000 fffff961`33582000   win32kfull   (deferred)             
+fffff961`33590000 fffff961`336f2000   win32kbase   (deferred)             
+fffff961`33710000 fffff961`3371a000   TSDDD      (deferred)             
+fffff961`337a0000 fffff961`337dc000   cdd        (deferred)             
+fffff961`33b20000 fffff961`33b43000   win32k     (deferred)             
+
+Unloaded modules:
+fffff800`bcfb0000 fffff800`bcfd2000   WdNisDrv.sys
+fffff800`bb5d0000 fffff800`bb5df000   dump_ataport.sys
+fffff800`bb5f0000 fffff800`bb5fc000   dump_atapi.sys
+fffff800`bb620000 fffff800`bb63c000   dump_dumpfve.sys
+fffff800`bbc70000 fffff800`bbc83000   dam.sys 
+fffff800`ba6c0000 fffff800`ba6d0000   WdBoot.sys
+fffff800`bb4f0000 fffff800`bb4fe000   hwpolicy.sys
+00007ffc`52750000 00007ffc`5275a000   version.dll
+00007ffc`52740000 00007ffc`5274a000   version.dll
+00007ffc`507f0000 00007ffc`507fb000   wscisvif.dll
+00007ffc`507e0000 00007ffc`507e8000   wscproxystub.dll
+00007ffc`5b070000 00007ffc`5b12f000   taskschd.dll
+00007ffc`5b330000 00007ffc`5b366000   XmlLite.dll
+00007ffc`586d0000 00007ffc`586db000   wscisvif.dll
+00007ffc`5d150000 00007ffc`5d17a000   rmclient.dll
+1: kd> g
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFC5340A323: (caller: 00007FFC533699C5) ReturnHr[PreRelease](220) tid(9b8) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC533DE051) ReturnHr[PreRelease](221) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFC533FB8A2: (caller: 00007FFC53369B50) Exception(23) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFC533EC6D7: (caller: 00007FFC53369507) LogHr(32) tid(9b8) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFC533FE0C5: (caller: 00007FFC53365C28) ReturnHr[PreRelease](222) tid(9b8) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFC544D69BF: (caller: 00007FFC544CA93F) ReturnHr[PreRelease](1) tid(1374) 80070002 The system cannot find the file specified.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff803`f0dbb6d0 cc              int     3
+0: kd> .logfile
+Log 'c:\course\windbg.day4.log' open
+0: kd> g

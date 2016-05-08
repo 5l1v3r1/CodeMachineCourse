@@ -1,0 +1,57 @@
+; File System Mini-Filter Driver Installation File
+; Copyright (c)  CodeMachine Inc., U.S.A, http://www.codemachine.com
+
+[Version]
+Signature	= "$Windows NT$"
+Class		= ActivityMonitor
+ClassGUID	= {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider	= %CodeMachine%
+DriverVer	= 06/26/2014,1.0.0.0
+
+[DestinationDirs]
+MiniFilter.CopyFiles	= 12
+
+[DefaultInstall]
+CopyFiles	= MiniFilter.CopyFiles
+
+[DefaultInstall.Services]
+AddService	= %ServiceName%,,MiniFilter.AddService
+
+[DefaultUninstall]
+DelFiles	= MiniFilter.CopyFiles
+
+[DefaultUninstall.Services]
+DelService	= %ServiceName%,0x204
+
+
+[MiniFilter.AddService]
+DisplayName		= %ServiceName%
+Description		= %ServiceDescription%
+ServiceBinary	= %12%\HideFile.sys
+Dependencies	= "FltMgr"
+ServiceType		= 2
+StartType		= 3
+ErrorControl	= 1
+LoadOrderGroup	= "FSFilter Encryption"
+AddReg			= MiniFilter.AddRegistry
+
+[MiniFilter.AddRegistry]
+HKR,"Instances","DefaultInstance",0x00000000, "HideFile Instance"
+HKR,"Instances\HideFile Instance","Altitude",0x00000000, 142000
+HKR,"Instances\HideFile Instance","Flags",0x00010001, 0x0
+
+[MiniFilter.CopyFiles]
+HideFile.sys
+
+[SourceDisksNames]
+1 = %DiskId%,,,""
+
+[SourceDisksFiles]
+HideFile.sys  = 1,,
+
+[Strings]
+CodeMachine				= "CodeMachine Inc."
+ServiceDescription		= "CodeMachine HideFile MiniFilter Driver"
+ServiceName				= "HideFile"
+DiskId					= "CodeMachine HideFile MiniFilter Driver Installation Disk"
+

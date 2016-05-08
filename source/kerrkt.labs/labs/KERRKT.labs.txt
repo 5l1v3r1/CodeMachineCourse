@@ -1,0 +1,74 @@
+Windows Kernel Rootkit Labs
+
+Section #1 : Kernel Architecture
+Instructor led follow along labs
+
+Section #2 : Kernel Security Mitigations
+Instructor led follow along labs
+
+Section #3 : Kernel Mode Security Bypasses
+
+Lab #1  : ObjectAddress
+Learn how to retrieve pointers to kernel objects from user mode.
+
+Lab #2  : KMCSBypass
+Learn how to exploit drivers to execute arbitrary code in user mode with kernel mode privileges.
+
+Lab #3  : DriverMigrate
+Learn how to migrate executable code in a driver to dynamically allocated memory.
+
+Lab #4  : ExportScan
+Learn how to scan the export table of a module and call an exported function.
+
+Section #4 : Hooking Techniques
+
+Lab #5  : InlineHook
+Learn how to replace instructions of a function in disk.sys to subvert execution flow.
+
+Lab #6  : IATHook
+Learn how to modify the import address table of a driver to subvert execution flow.
+
+Section #5 : Filtering Mechanisms
+
+Lab #7  : KeyboardFilter
+Learn how to develop an IRP based filter driver to intercept raw keystorkes in the system.
+
+Lab #8  : ProcessBlock
+Learn how to use process creation notification to block specific executable files.
+
+Lab #9  : HideReg
+Learn how to use a Configuration Manager callbacks to prevent access to a registry key.
+
+Lab #10  : HideFile
+Learn how to use a FltMgr file system minifilter to modify contents of a directory.
+
+Section #6 : Covert Communications
+
+Lab #11 : StreamScan
+Learn how to find a pattern in a TCP stream
+
+Lab #12 : NdisLwf
+Learn how to select allow and block packet at the layer 2.
+
+Lab #13 : NdisHook
+Learn how to intercept inbound network traffic by hooking NDIS internal data structures.
+
+Section #7 : Stealth Behavior
+
+Lab #14 : InjectApc
+Learn how to inject and execute shellcode into a user mode process using APCs.
+
+Lab #15 : HideDriver
+Learn how to hide a module by removing is loader entry from the module list (DKOM).
+
+Lab #16 : StealthComm
+Learn how to use hijacked entry points of a system driver to perform stealth communication with applications.
+
+Lab #17 : StealthFilter
+Learn how to use to filter device object using driver object hijacking.
+
+Lab #18 : SelfProtection
+Learn how to protect a driver's binary and the associated service entry from tampering.
+
+(c) CodeMachine Inc. 
+[www.codemachine.com]

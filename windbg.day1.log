@@ -1,0 +1,100 @@
+Opened log file 'c:\course\windbg.day1.log'
+0: kd> bp nt!KeInsertQueueEx
+0: kd> bl
+ 0 e fffff801`bdb3af54     0001 (0001) nt!KeInsertQueueEx
+
+0: kd> x nt!KeInsertQueueEx
+fffff801`bdb3af54 nt!KeInsertQueueEx (<no parameter info>)
+0: kd> ln fffff801`bdb3af54 
+Browse module
+Clear breakpoint 0
+
+(fffff801`bdb3af54)   nt!KeInsertQueueEx   |  (fffff801`bdb3b078)   nt!KeDisableQueueingPriorityIncrement
+Exact matches:
+    nt!KeInsertQueueEx (<no parameter info>)
+0: kd> g
+Breakpoint 0 hit
+rax=ffffe000ee8d10d8 rbx=ffffe000ec0a0980 rcx=ffffe000ec0a0980
+rdx=ffffe000ee8fc120 rsi=ffffe000ee8fc120 rdi=0000000000000000
+rip=fffff801bdb3af54 rsp=ffffd00020900758 rbp=0000000000000000
+ r8=0000000000000000  r9=0000000000000001 r10=7fffe000ec42a1d0
+r11=7ffffffffffffffc r12=0000000000000001 r13=ffffe000ec5890d0
+r14=0000000000000000 r15=00000264aa860680
+iopl=0         nv up ei pl zr na po nc
+cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+nt!KeInsertQueueEx:
+fffff801`bdb3af54 48895c2408      mov     qword ptr [rsp+8],rbx ss:0018:ffffd000`20900760=ffffd00000000000
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`20900758 fffff801`bdb3af22 nt!KeInsertQueueEx
+01 ffffd000`20900760 fffff801`bdb6f5f0 nt!IoSetIoCompletionEx2+0x192
+02 ffffd000`209007c0 fffff801`bdadbfff nt!AlpcpQueueIoCompletionPort+0xb0
+03 ffffd000`20900850 fffff801`bdbd37a3 nt!NtWaitForWorkViaWorkerFactory+0xabf
+04 ffffd000`20900a90 00007ffe`6f738464 nt!KiSystemServiceCopyEnd+0x13
+05 000000dd`bdd7f728 00007ffe`6f6bb2e8 ntdll!NtWaitForWorkViaWorkerFactory+0x14
+06 000000dd`bdd7f730 00007ffe`6e458102 ntdll!TppWorkerThread+0x298
+07 000000dd`bdd7fb40 00000000`00000000 0x00007ffe`6e458102
+0: kd> !thread
+THREAD ffffe000ee8d1040  Cid 0c30.108c  Teb: 000000ddb3b4f000 Win32Thread: 0000000000000000 RUNNING on processor 0
+Not impersonating
+DeviceMap                 ffffc000392f0e50
+Owning Process            ffffe000ec7af080       Image:         RuntimeBroker.exe
+Attached Process          N/A            Image:         N/A
+Wait Start TickCount      534728         Ticks: 640 (0:00:00:10.000)
+Context Switch Count      34             IdealProcessor: 0             
+UserTime                  00:00:00.000
+KernelTime                00:00:00.000
+Win32 Start Address ntdll!TppWorkerThread (0x00007ffe6f6bb050)
+Stack Init ffffd00020900c90 Current ffffd000209003e0
+Base ffffd00020901000 Limit ffffd000208fb000 Call 0
+Priority 8 BasePriority 8 UnusualBoost 0 ForegroundBoost 0 IoPriority 2 PagePriority 5
+Child-SP          RetAddr           : Args to Child                                                           : Call Site
+ffffd000`20900758 fffff801`bdb3af22 : ffffd000`00000000 00002002`006d0045 00000000`000002fc 00000000`00000b18 : nt!KeInsertQueueEx
+ffffd000`20900760 fffff801`bdb6f5f0 : 00000000`00000000 ffffe000`ec42a070 ffffe000`ee8fc120 00000000`00000000 : nt!IoSetIoCompletionEx2+0x192
+ffffd000`209007c0 fffff801`bdadbfff : 00000000`00000000 ffffe000`ec9b77a0 ffffd000`20900b80 ffffc000`00000001 : nt!AlpcpQueueIoCompletionPort+0xb0
+ffffd000`20900850 fffff801`bdbd37a3 : ffffe000`ec5890d0 00000000`00000000 ffffe000`ee9fc440 000000dd`bdd7f400 : nt!NtWaitForWorkViaWorkerFactory+0xabf
+ffffd000`20900a90 00007ffe`6f738464 : 00007ffe`6f6bb2e8 00000000`00000000 00007ffe`6f6bde30 00000000`00000010 : nt!KiSystemServiceCopyEnd+0x13 (TrapFrame @ ffffd000`20900b00)
+000000dd`bdd7f728 00007ffe`6f6bb2e8 : 00000000`00000000 00007ffe`6f6bde30 00000000`00000010 00000296`ccc2d3d0 : ntdll!NtWaitForWorkViaWorkerFactory+0x14
+000000dd`bdd7f730 00007ffe`6e458102 : 00000000`00000000 00007ffe`6f6bb050 00000296`c8404cc0 00000000`00000000 : ntdll!TppWorkerThread+0x298
+000000dd`bdd7fb40 00000000`00000000 : 00007ffe`6f6bb050 00000296`c8404cc0 00000000`00000000 00007ffe`6f6bb050 : 0x00007ffe`6e458102
+
+0: kd> bl
+ 0 e fffff801`bdb3af54     0001 (0001) nt!KeInsertQueueEx
+
+0: kd> bd 0
+0: kd> bl
+ 0 d fffff801`bdb3af54     0001 (0001) nt!KeInsertQueueEx
+
+0: kd> be 0
+0: kd> bl
+ 0 e fffff801`bdb3af54     0001 (0001) nt!KeInsertQueueEx
+
+0: kd> bd 0
+0: kd> bl
+ 0 d fffff801`bdb3af54     0001 (0001) nt!KeInsertQueueEx
+
+0: kd> bc *
+0: kd> bl
+
+0: kd> ~1
+1: kd> ~
+       ^ Syntax error in '~'
+1: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`64bf36e0 fffff801`bdaa61b5 nt!PpmIdleGuestExecute+0x61
+01 ffffd000`64bf38b0 fffff801`bdaa59fb nt!PpmIdleExecuteTransition+0x605
+02 ffffd000`64bf3b00 fffff801`bdbcbd0c nt!PoIdle+0x33b
+03 ffffd000`64bf3c60 00000000`00000000 nt!KiIdleLoop+0x2c
+1: kd> ~0
+Break instruction exception - code 80000003 (first chance)
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`20900758 fffff801`bdb3af22 nt!KeInsertQueueEx
+01 ffffd000`20900760 fffff801`bdb6f5f0 nt!IoSetIoCompletionEx2+0x192
+02 ffffd000`209007c0 fffff801`bdadbfff nt!AlpcpQueueIoCompletionPort+0xb0
+03 ffffd000`20900850 fffff801`bdbd37a3 nt!NtWaitForWorkViaWorkerFactory+0xabf
+04 ffffd000`20900a90 00007ffe`6f738464 nt!KiSystemServiceCopyEnd+0x13
+05 000000dd`bdd7f728 00007ffe`6f6bb2e8 ntdll!NtWaitForWorkViaWorkerFactory+0x14
+06 000000dd`bdd7f730 00007ffe`6e458102 ntdll!TppWorkerThread+0x298
+07 000000dd`bdd7fb40 00000000`00000000 0x00007ffe`6e458102
+0: kd> g

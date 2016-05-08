@@ -1,0 +1,13 @@
+TARGETNAME=IpiSync
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+!if "$(_BUILDARCH)"=="AMD64"
+USER_C_FLAGS=$(USER_C_FLAGS) /homeparams
+!endif
+
+INCLUDES=..\inc
+
+TARGETLIBS= $(DDK_LIB_PATH)\ntoskrnl.lib
+
+SOURCES=IpiSync.c

@@ -1,0 +1,9 @@
+TARGETNAME=StreamScan
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+TARGETLIBS=$(DDK_LIB_PATH)\fwpkclnt.lib $(DDK_LIB_PATH)\netio.lib
+!if "$(_BUILDARCH)"=="AMD64"
+USER_C_FLAGS=$(USER_C_FLAGS) /homeparams
+!endif
+SOURCES=StreamScan.c
+

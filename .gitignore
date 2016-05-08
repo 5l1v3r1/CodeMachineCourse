@@ -1,0 +1,15 @@
+*.opendb
+.idea
+*.tlog
+*BuildIo/x64/Debug/*
+*.sdf
+*.suo
+source/kerprg.labs/labs/*/x64
+source/kerprg.src/src/*/x64/
+source/kerrkt.labs/labs/**/x64/
+ewdk/
+vm/
+symbols/
+sysint/
+dumps/
+rootkits/

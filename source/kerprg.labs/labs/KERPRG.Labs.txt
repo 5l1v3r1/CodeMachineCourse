@@ -1,0 +1,74 @@
+*Windows Kernel Programming Labs*
+
+Driver Programming Basics
+
+LAB : #1 : Labs\Simple
+Learn how to build, install and debug a kernel driver using the WDK
+Learn how to register an unload entry point
+Learn how to display debug messages from a kernel driver
+
+LAB : #2 : Labs\Strings
+Learn how to allocate and free memory dynamically in a kernel module
+Learn how to use Unicode strings
+
+I/O Processing
+
+LAB : #1 Labs\UserComm and Labs\AppComm
+Learn how to create and delete a symbolic link
+Learn how to register dispatch entry points in a driver
+
+LAB : #2 : Labs\BuildIo
+Learn how to obtain a pointer to device object created by another
+Learn how to build and send I/O requests to a device object
+
+Asynchronous Execution
+
+LAB : #1 : Labs\DpcTimer
+Learn how to use a timer with due time and period
+Learn how to specify relative time in the kernel
+Learn how to handle time expiration via a DPC routine
+Learn how to measure time in the kernel
+
+LAB : #2 : Labs\WorkItem
+Learn how to create a device object
+Learn how to allocate and queue a work item
+
+LAB : #3 : Labs\Thread
+Learn how to create a kernel mode thread
+Learn how to gracefully exit out of a kernel thread
+Learn how to perform object referencing and dereferencing
+Learn how to use events in the kernel
+
+Queues and Serialization
+
+LAB : #1 : Labs\Locking
+Learn how perform synchronization using reader/writer locks
+Learn how to disable kernel APC delivery while holding locks
+
+LAB : #2 : Labs\Rundown
+Learn how to use rundown protection to prevent driver from unloading while there are outstanding callbacks.
+
+LAB : #3 : Labs\UserIoctl & Labs\AppIoctl
+Learn how to insert and delete elements from double linked lists
+Learn how to protect linked lists from reentrancy issues using a spin lock
+
+Advanced Techniques
+
+LAB : #1 : Labs\MemMap
+Learn how to allocate MDLs
+Learn how to lock pages
+Learn how to map pages
+
+LAB : #2 : Labs\PowerNotify
+Learn how to use power callback notifications to detect system power-up and shutdown.
+
+LAB : #3 : Labs\StackTrace
+Learn how to user interlocked operations to perform MP safe operations
+Learn how to use capture and store run time stack traces
+Learn how to retrieve run time stack traces using debugger commands
+
+LAB : #4 : Labs\Registry
+Learn how to use object attributes to pass strings to kernel functions
+Learn how to use the registry APIs to track how many times a driver has been loaded
+
+(c) CodeMachine Inc, 2000-2016. All rights reserved.

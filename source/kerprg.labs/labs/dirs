@@ -1,0 +1,15 @@
+DIRS= \
+    AppComm \
+    AppIoctl \
+    DpcTimer \
+    MemMap \
+    PowerNotify \
+    Registry \
+    RunDown \
+    Shutdown \
+    Simple \
+    Strings \
+    Thread \
+    UserComm \
+    UserIoctl \
+    WorkItem

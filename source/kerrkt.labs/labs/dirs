@@ -1,0 +1,19 @@
+DIRS= \
+    DriverMigrate \
+    ExportScan \
+    KMCSBypass \
+    ObjectAddress \
+    InlineHook \
+    IATHook \
+    KeyboardFilter \
+    ProcessBlock \
+    HideFile \
+    HideReg \
+    StreamScan \
+    NdisLwf \
+    NdisHook \
+    InjectApc \
+    HideDriver \
+    StealthComm \
+    StealthFilter
+

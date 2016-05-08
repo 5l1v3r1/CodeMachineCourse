@@ -1,0 +1,5 @@
+TARGETNAME=PowerNotify
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+SOURCES=powernotify.c

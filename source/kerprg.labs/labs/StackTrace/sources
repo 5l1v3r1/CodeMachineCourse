@@ -1,0 +1,5 @@
+TARGETNAME=StackTrace
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+SOURCES=stacktrace.c

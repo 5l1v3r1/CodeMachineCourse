@@ -1,0 +1,6 @@
+TARGETNAME=ObjectNamespace
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+SOURCES=ObjectNamespace.c
+

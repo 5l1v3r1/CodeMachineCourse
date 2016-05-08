@@ -1,0 +1,2225 @@
+Opened log file 'c:\course\windbg.day2.log'
+Opened log file 'c:\course\windbg.day2.log'
+1: kd> .load pykd
+Opened log file 'c:\course\windbg.day2.log'
+0: kd> bp nt!NtCreateFile
+0: kd> bl
+ 0 e fffff803`2cc2d3b0     0001 (0001) nt!NtCreateFile
+
+0: kd> g
+Breakpoint 0 hit
+nt!NtCreateFile:
+fffff803`2cc2d3b0 4881ec88000000  sub     rsp,88h
+0: kd> .reload
+Connected to Windows 10 10586 x64 target at (Tue May  3 09:17:02.694 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+..................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.............................
+................................................................
+......................
+Loading User Symbols
+.........................................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.......
+...............................
+Loading unloaded module list
+..........
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`227a4a88 fffff803`2c9677a3 nt!NtCreateFile
+01 ffffd000`227a4a90 00007ffb`6ffb57f4 nt!KiSystemServiceCopyEnd+0x13
+02 00000052`44c7ec08 00007ffb`6cc14aa2 ntdll!NtCreateFile+0x14
+03 00000052`44c7ec10 00007ffb`6cc140b1 cfgmgr32!CMP_Register_Notification+0x362
+04 00000052`44c7f100 00007ffb`67962e53 cfgmgr32!CM_Register_Notification+0x11
+05 00000052`44c7f140 00007ffb`692ae85c vmbuspipe!VmbusPipeClientReadyForChannelNotification+0xa3
+06 00000052`44c7f320 00007ffb`6ffa4dfa rdpcorets!CUMRDPListenerVMBus::ControlIoCompletion+0x40c
+07 00000052`44c7f420 00007ffb`6ff3ba2b ntdll!RtlpTpIoCallback+0xaa
+08 00000052`44c7f460 00007ffb`6d328102 ntdll!TppWorkerThread+0x9db
+09 00000052`44c7f870 00007ffb`6ff6c264 KERNEL32!BaseThreadInitThunk+0x22
+0a 00000052`44c7f8a0 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> bd *
+0: kd> g
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFB6A4A2993: (caller: 00007FFB6FB8D533) LogHr(1) tid(bc4) 80004005 Unspecified error
+    CallContext:[\Startup] 
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFB62FCA323: (caller: 00007FFB62F299C5) ReturnHr[PreRelease](90) tid(844) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+Break instruction exception - code 80000003 (first chance)
+ntdll!DbgBreakPointWithStatus:
+0033:00007ffb`6ffb8500 cc              int     3
+1: kd> be *
+1: kd> g
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFB62FBE0C5: (caller: 00007FFB62F9E051) ReturnHr[PreRelease](91) tid(844) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+Breakpoint 0 hit
+nt!NtCreateFile:
+fffff803`2cc2d3b0 4881ec88000000  sub     rsp,88h
+0: kd> .reload
+Connected to Windows 10 10586 x64 target at (Tue May  3 09:19:41.669 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+............................................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+...
+................................................................
+......................
+Loading User Symbols
+..........................................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+...
+Loading unloaded module list
+....................
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`243e5a88 fffff803`2c9677a3 nt!NtCreateFile
+01 ffffd000`243e5a90 00007ffb`6ffb57f4 nt!KiSystemServiceCopyEnd+0x13
+02 00000093`3f3fe638 00007ffb`690f58e7 ntdll!NtCreateFile+0x14
+03 00000093`3f3fe640 00007ffb`690f2a75 IPHLPAPI!AllocateAndGetAdaptersAddresses+0xda7
+04 00000093`3f3fecc0 00007ffb`68fd58c1 IPHLPAPI!GetAdaptersAddresses+0x55
+05 00000093`3f3fed30 00007ffb`68fd5759 WINHTTP!WxGetAdaptersAddresses+0x89
+06 00000093`3f3feda0 00007ffb`68fd59ca WINHTTP!GetActiveConnectionName+0x59
+07 00000093`3f3fee20 00007ffb`62fa0d4a WINHTTP!WinHttpGetIEProxyConfigForCurrentUser+0xaa
+08 00000093`3f3fef10 00007ffb`62f2c888 diagtrack!CHttpRequest::DiscoverProxyInfoForUrl+0xba
+09 00000093`3f3fefe0 00007ffb`62f2b7b1 diagtrack!CHttpRequest::GetProxyInfoForUrl+0xec
+0a 00000093`3f3ff050 00007ffb`62f2b361 diagtrack!CHttpRequest::CreateConnectionAndSendRequest+0x3b1
+0b 00000093`3f3ff230 00007ffb`62f2ac63 diagtrack!CHttpRequest::UploadAndFetchResource+0x95
+0c 00000093`3f3ff2a0 00007ffb`62f29b50 diagtrack!Microsoft::Diagnostics::CAsimovHttpClient::UploadEventBuffer+0x273
+0d 00000093`3f3ff480 00007ffb`62f291a5 diagtrack!Microsoft::Diagnostics::CAsimovUploader::UploadBufferAndCalculateWaitTime+0x42c
+0e 00000093`3f3ff6b0 00007ffb`62fa6ba2 diagtrack!Microsoft::Diagnostics::CAsimovUploader::UploaderThreadProc+0x2d1
+0f 00000093`3f3ff9a0 00007ffb`6d328102 diagtrack!Microsoft::Diagnostics::CAsimovUploader::StaticUploaderThreadProc+0x12
+10 00000093`3f3ff9e0 00007ffb`6ff6c264 KERNEL32!BaseThreadInitThunk+0x22
+11 00000093`3f3ffa10 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> r
+rax=0000000000000000 rbx=ffffe0006f163080 rcx=000000933f3fe6e0
+rdx=0000000000100001 rsi=000000933f3fe658 rdi=ffffd000243e5aa8
+rip=fffff8032cc2d3b0 rsp=ffffd000243e5a88 rbp=ffffd000243e5b80
+ r8=000000933f3fe798  r9=000000933f3fe778 r10=fffff8032cc2d3b0
+r11=fffff8032c967758 r12=0000000000000008 r13=0000027d9f438300
+r14=0000000000000e46 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+nt!NtCreateFile:
+fffff803`2cc2d3b0 4881ec88000000  sub     rsp,88h
+0: kd> dg 10
+                                                    P Si Gr Pr Lo
+Sel        Base              Limit          Type    l ze an es ng Flags
+---- ----------------- ----------------- ---------- - -- -- -- -- --------
+0010 00000000`00000000 00000000`00000000 Code RE Ac 0 Nb By P  Lo 0000029b
+0: kd> dg 0x10
+                                                    P Si Gr Pr Lo
+Sel        Base              Limit          Type    l ze an es ng Flags
+---- ----------------- ----------------- ---------- - -- -- -- -- --------
+0010 00000000`00000000 00000000`00000000 Code RE Ac 0 Nb By P  Lo 0000029b
+0: kd> dt nt!*GTD*ENTRY*
+0: kd> dt nt!*GDT*
+          ntkrnlmp!_KGDTENTRY64
+0: kd> dt nt!*GDT*ENTRY*
+          ntkrnlmp!_KGDTENTRY64
+0: kd> dt ntkrnlmp!_KGDTENTRY64
+   +0x000 LimitLow         : Uint2B
+   +0x002 BaseLow          : Uint2B
+   +0x004 Bytes            : <unnamed-tag>
+   +0x004 Bits             : <unnamed-tag>
+   +0x008 BaseUpper        : Uint4B
+   +0x00c MustBeZero       : Uint4B
+   +0x000 DataLow          : Int8B
+   +0x008 DataHigh         : Int8B
+0: kd> dt ntkrnlmp!_KGDTENTRY64 Bits
+   +0x004 Bits : <unnamed-tag>
+0: kd> dt ntkrnlmp!_KGDTENTRY64 Bits.
+   +0x004 Bits  : 
+      +0x000 BaseMiddle : Pos 0, 8 Bits
+      +0x000 Type  : Pos 8, 5 Bits
+      +0x000 Dpl   : Pos 13, 2 Bits
+      +0x000 Present : Pos 15, 1 Bit
+      +0x000 LimitHigh : Pos 16, 4 Bits
+      +0x000 System : Pos 20, 1 Bit
+      +0x000 LongMode : Pos 21, 1 Bit
+      +0x000 DefaultBig : Pos 22, 1 Bit
+      +0x000 Granularity : Pos 23, 1 Bit
+      +0x000 BaseHigh : Pos 24, 8 Bits
+0: kd> bl
+ 0 e fffff803`2cc2d3b0     0001 (0001) nt!NtCreateFile
+
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`243e5a88 fffff803`2c9677a3 nt!NtCreateFile
+01 ffffd000`243e5a90 00007ffb`6ffb57f4 nt!KiSystemServiceCopyEnd+0x13
+02 00000093`3f3fe638 00007ffb`690f58e7 ntdll!NtCreateFile+0x14
+03 00000093`3f3fe640 00007ffb`690f2a75 IPHLPAPI!AllocateAndGetAdaptersAddresses+0xda7
+04 00000093`3f3fecc0 00007ffb`68fd58c1 IPHLPAPI!GetAdaptersAddresses+0x55
+05 00000093`3f3fed30 00007ffb`68fd5759 WINHTTP!WxGetAdaptersAddresses+0x89
+06 00000093`3f3feda0 00007ffb`68fd59ca WINHTTP!GetActiveConnectionName+0x59
+07 00000093`3f3fee20 00007ffb`62fa0d4a WINHTTP!WinHttpGetIEProxyConfigForCurrentUser+0xaa
+08 00000093`3f3fef10 00007ffb`62f2c888 diagtrack!CHttpRequest::DiscoverProxyInfoForUrl+0xba
+09 00000093`3f3fefe0 00007ffb`62f2b7b1 diagtrack!CHttpRequest::GetProxyInfoForUrl+0xec
+0a 00000093`3f3ff050 00007ffb`62f2b361 diagtrack!CHttpRequest::CreateConnectionAndSendRequest+0x3b1
+0b 00000093`3f3ff230 00007ffb`62f2ac63 diagtrack!CHttpRequest::UploadAndFetchResource+0x95
+0c 00000093`3f3ff2a0 00007ffb`62f29b50 diagtrack!Microsoft::Diagnostics::CAsimovHttpClient::UploadEventBuffer+0x273
+0d 00000093`3f3ff480 00007ffb`62f291a5 diagtrack!Microsoft::Diagnostics::CAsimovUploader::UploadBufferAndCalculateWaitTime+0x42c
+0e 00000093`3f3ff6b0 00007ffb`62fa6ba2 diagtrack!Microsoft::Diagnostics::CAsimovUploader::UploaderThreadProc+0x2d1
+0f 00000093`3f3ff9a0 00007ffb`6d328102 diagtrack!Microsoft::Diagnostics::CAsimovUploader::StaticUploaderThreadProc+0x12
+10 00000093`3f3ff9e0 00007ffb`6ff6c264 KERNEL32!BaseThreadInitThunk+0x22
+11 00000093`3f3ffa10 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> bp ntdll!NtCreateFile
+0: kd> g
+Breakpoint 1 hit
+ntdll!NtCreateFile:
+0033:00007ffb`6ffb57e0 4c8bd1          mov     r10,rcx
+0: kd> r
+rax=0000005244c7ec88 rbx=0000005244c7f2e0 rcx=0000020abd8fe440
+rdx=0000000080000000 rsi=0000000000000000 rdi=0000020abd8fe250
+rip=00007ffb6ffb57e0 rsp=0000005244c7ec08 rbp=0000005244c7f3b9
+ r8=0000005244c7ecb8  r9=0000005244c7eca8 r10=0000000000000000
+r11=00007ffb6ffbb657 r12=00007ffb67962c30 r13=0000020ac1715be0
+r14=0000020ac1715be8 r15=0000000000000000
+iopl=0         nv up ei pl nz na po nc
+cs=0033  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+ntdll!NtCreateFile:
+0033:00007ffb`6ffb57e0 4c8bd1          mov     r10,rcx
+0: kd> dg 33
+                                                    P Si Gr Pr Lo
+Sel        Base              Limit          Type    l ze an es ng Flags
+---- ----------------- ----------------- ---------- - -- -- -- -- --------
+0033 00000000`00000000 00000000`00000000 Code RE Ac 3 Nb By P  Lo 000002fb
+0: kd> !pte fffff8032cc2d3b0
+                                           VA fffff8032cc2d3b0
+PXE at FFFFF6FB7DBEDF80    PPE at FFFFF6FB7DBF0060    PDE at FFFFF6FB7E00CB30    PTE at FFFFF6FC01966168
+contains 0000000000804063  contains 0000000000805063  contains 0000000000810063  contains 000000000282D121
+pfn 804       ---DA--KWEV  pfn 805       ---DA--KWEV  pfn 810       ---DA--KWEV  pfn 282d      -G--A--KREV
+
+0: kd> !pte 00007ffb6ffb57e0
+                                           VA 00007ffb6ffb57e0
+PXE at FFFFF6FB7DBED7F8    PPE at FFFFF6FB7DAFFF68    PDE at FFFFF6FB5FFEDBF8    PTE at FFFFF6BFFDB7FDA8
+contains 10E0000024591867  contains 0220000024526867  contains 087000002402E867  contains 6CA00000387E4025
+pfn 24591     ---DA--UWEV  pfn 24526     ---DA--UWEV  pfn 2402e     ---DA--UWEV  pfn 387e4     ----A--UREV
+
+0: kd> .load pykd
+Opened log file 'c:\course\windbg.day2.log'
+0: kd> .load pykd
+Opened log file 'c:\course\windbg.day2.log'
+0: kd> x nt!IO*complet*
+fffff803`28a5c068 nt!IopFreeCompletionListPackets (<no parameter info>)
+fffff803`28a97c98 nt!IopUserCompletion (<no parameter info>)
+fffff803`286c3718 nt!IopDeleteIoCompletionInternal (<no parameter info>)
+fffff803`28903d11 nt!IopInitSystemCompletedEnoughForReInitRoutines = <no type information>
+fffff803`2865ea80 nt!IopfCompleteRequest (<no parameter info>)
+fffff803`28921040 nt!IopCompletionLookasideList = <no type information>
+fffff803`28988380 nt!IoCompletionObjectType = <no type information>
+fffff803`286bcd90 nt!IoSetIoCompletionEx2 (<no parameter info>)
+fffff803`2890960c nt!IopIrpCompletionTimeoutInSeconds = <no type information>
+fffff803`2865ea70 nt!IoCompleteRequest (<no parameter info>)
+fffff803`28a4c9a0 nt!IopAllocateMiniCompletionPacket (<no parameter info>)
+fffff803`289fc660 nt!IopFreeMiniCompletionPacket (<no parameter info>)
+fffff803`286e7df8 nt!IoSetCompletionRoutineEx (<no parameter info>)
+fffff803`28909608 nt!IopBootDriverReinitCompleted = <no type information>
+fffff803`286e8c3c nt!IopUnloadSafeCompletion (<no parameter info>)
+fffff803`286f1078 nt!IopCompleteUnloadOrDelete (<no parameter info>)
+fffff803`28a4c8c4 nt!IoAllocateMiniCompletionPacket (<no parameter info>)
+fffff803`287c1d38 nt!IopPerfCompleteRequest (<no parameter info>)
+fffff803`28cbd5bc nt!IovpLocalCompletionRoutine (<no parameter info>)
+fffff803`28a5c048 nt!IopCloseIoCompletion (<no parameter info>)
+fffff803`28c0b51c nt!IopDeviceRemovalForResetComplete (<no parameter info>)
+fffff803`28d91200 nt!IopCompletionMapping = <no type information>
+fffff803`286bc670 nt!IopCancelWaitCompletionPacket (<no parameter info>)
+fffff803`28d032dc nt!IopUseCompletionOptimization = <no type information>
+fffff803`286c3bc8 nt!IopFreeWaitCompletionPacket (<no parameter info>)
+fffff803`28cc7544 nt!IovpCompleteRequest4 (<no parameter info>)
+fffff803`28901600 nt!IopMountCompletionEvent = <no type information>
+fffff803`28988570 nt!IopWaitCompletionPacketObjectType = <no type information>
+fffff803`287c7090 nt!IopDeviceEjectComplete (<no parameter info>)
+fffff803`287c0e74 nt!IopReplaceCompletionPort (<no parameter info>)
+fffff803`287c1f64 nt!IopPerfCompletionRoutine (<no parameter info>)
+fffff803`28a6a50c nt!IoWMICompleteRequest (<no parameter info>)
+fffff803`286ecc88 nt!IopCompletePageWrite (<no parameter info>)
+fffff803`286c3e1c nt!IoSetIoCompletionEx (<no parameter info>)
+fffff803`289bb804 nt!IoInitializeMiniCompletionPacket (<no parameter info>)
+fffff803`28cc7150 nt!IovpCompleteRequest2 (<no parameter info>)
+fffff803`28cc77c8 nt!IovpInternalCompletionTrap (<no parameter info>)
+fffff803`2867d5ac nt!IopCloseWaitCompletionPacket (<no parameter info>)
+fffff803`2865fb60 nt!IopCompleteRequest (<no parameter info>)
+fffff803`28d91210 nt!IopWaitCompletionMapping = <no type information>
+fffff803`28cc74bc nt!IovpCompleteRequest3 (<no parameter info>)
+fffff803`2899b900 nt!IopCompletionLock = <no type information>
+fffff803`28cbcf3c nt!IovCompleteRequest (<no parameter info>)
+fffff803`28aacef4 nt!IoFreeMiniCompletionPacket (<no parameter info>)
+fffff803`286effdc nt!IopPnPCompleteRequest (<no parameter info>)
+fffff803`2865cb10 nt!IoRemoveIoCompletion (<no parameter info>)
+fffff803`28af7674 nt!IoSetIoCompletion (<no parameter info>)
+fffff803`28a5c040 nt!IopDeleteIoCompletion (<no parameter info>)
+fffff803`28cc7028 nt!IovpCompleteRequest1 (<no parameter info>)
+fffff803`2865ea70 nt!IofCompleteRequest (<no parameter info>)
+fffff803`28920dc0 nt!IopSafeCompletionLookasideList = <no type information>
+fffff803`2892278c nt!IopMountCompletionWaiters = <no type information>
+0: kd> !dh null 
+
+File Type: EXECUTABLE IMAGE
+FILE HEADER VALUES
+    8664 machine (X64)
+       9 number of sections
+5632D166 time date stamp Fri Oct 30 13:09:42 2015
+
+       0 file pointer to symbol table
+       0 number of symbols
+      F0 size of optional header
+      22 characteristics
+            Executable
+            App can handle >2gb addresses
+
+OPTIONAL HEADER VALUES
+     20B magic #
+   12.10 linker version
+     600 size of code
+    1200 size of initialized data
+       0 size of uninitialized data
+    6000 address of entry point
+    1000 base of code
+         ----- new -----
+fffff801db360000 image base
+    1000 section alignment
+     200 file alignment
+       1 subsystem (Native)
+   10.00 operating system version
+   10.00 image version
+   10.00 subsystem version
+    A000 size of image
+     400 size of headers
+    2DC5 checksum
+0000000000040000 size of stack reserve
+0000000000001000 size of stack commit
+0000000000100000 size of heap reserve
+0000000000001000 size of heap commit
+    4160  DLL characteristics
+            High entropy VA supported
+            Dynamic base
+            NX compatible
+            Guard
+       0 [       0] address [size] of Export Directory
+    5040 [      28] address [size] of Import Directory
+    8000 [     3E8] address [size] of Resource Directory
+    4000 [      78] address [size] of Exception Directory
+       0 [       0] address [size] of Security Directory
+    9000 [      1C] address [size] of Base Relocation Directory
+    2000 [      38] address [size] of Debug Directory
+       0 [       0] address [size] of Description Directory
+       0 [       0] address [size] of Special Directory
+       0 [       0] address [size] of Thread Storage Directory
+    2060 [      A0] address [size] of Load Configuration Directory
+       0 [       0] address [size] of Bound Import Directory
+    5000 [      30] address [size] of Import Address Table Directory
+       0 [       0] address [size] of Delay Import Directory
+       0 [       0] address [size] of COR20 Header Directory
+       0 [       0] address [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+     2B7 virtual size
+    1000 virtual address
+     400 size of raw data
+     400 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+68000020 flags
+         Code
+         Not Paged
+         (no align specified)
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+     3B4 virtual size
+    2000 virtual address
+     400 size of raw data
+     800 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+48000040 flags
+         Initialized Data
+         Not Paged
+         (no align specified)
+         Read Only
+
+
+Debug Directories(2)
+	Type       Size     Address  Pointer
+	cv           21        2100      900	Format: RSDS, guid, 1, null.pdb
+	(    13)     1f8        2138      938
+
+SECTION HEADER #3
+   .data name
+      10 virtual size
+    3000 virtual address
+     200 size of raw data
+     C00 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C8000040 flags
+         Initialized Data
+         Not Paged
+         (no align specified)
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+      78 virtual size
+    4000 virtual address
+     200 size of raw data
+     E00 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+48000040 flags
+         Initialized Data
+         Not Paged
+         (no align specified)
+         Read Only
+
+SECTION HEADER #5
+  .idata name
+     10E virtual size
+    5000 virtual address
+     200 size of raw data
+    1000 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+48000040 flags
+         Initialized Data
+         Not Paged
+         (no align specified)
+         Read Only
+
+SECTION HEADER #6
+    INIT name
+     14A virtual size
+    6000 virtual address
+     200 size of raw data
+    1200 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+62000020 flags
+         Code
+         Discardable
+         (no align specified)
+         Execute Read
+
+SECTION HEADER #7
+   GFIDS name
+      20 virtual size
+    7000 virtual address
+     200 size of raw data
+    1400 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         (no align specified)
+         Read Only
+
+SECTION HEADER #8
+   .rsrc name
+     3E8 virtual size
+    8000 virtual address
+     400 size of raw data
+    1600 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         (no align specified)
+         Read Only
+
+SECTION HEADER #9
+  .reloc name
+      1C virtual size
+    9000 virtual address
+     200 size of raw data
+    1A00 file pointer to raw data
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         (no align specified)
+         Read Only
+0: kd> x /a null!*
+fffff801`db3610a0 Null!_security_check_cookie ()
+fffff801`db3610c0 Null!guard_check_icall_nop ()
+fffff801`db3610e0 Null!guard_dispatch_icall_nop ()
+fffff801`db361100 Null!memset ()
+fffff801`db361280 Null!NlsUnload ()
+fffff801`db3612b0 Null!_report_gsfailure ()
+fffff801`db362060 Null!load_config_used = <no type information>
+fffff801`db363000 Null!_security_cookie_complement = <no type information>
+fffff801`db363008 Null!_security_cookie = <no type information>
+fffff801`db365000 Null!_imp_IoDeleteDevice = <no type information>
+fffff801`db365008 Null!_imp_MmPageEntireDriver = <no type information>
+fffff801`db365010 Null!_imp_IofCompleteRequest = <no type information>
+fffff801`db365018 Null!_imp_IoCreateDevice = <no type information>
+fffff801`db365020 Null!_imp_RtlInitUnicodeString = <no type information>
+fffff801`db365028 Null!ntoskrnl_NULL_THUNK_DATA = <no type information>
+fffff801`db365030 Null!_guard_check_icall_fptr = <no type information>
+fffff801`db365038 Null!_guard_dispatch_icall_fptr = <no type information>
+fffff801`db365040 Null!_IMPORT_DESCRIPTOR_ntoskrnl = <no type information>
+fffff801`db365054 Null!_NULL_IMPORT_DESCRIPTOR = <no type information>
+fffff801`db366000 Null!GsDriverEntry ()
+fffff801`db366020 Null!DriverEntry ()
+fffff801`db366100 Null!_security_init_cookie ()
+fffff801`db366130 Null! ?? ::PBOPGDP::`string' ()
+fffff801`db367000 Null!_guard_fids_table = <no type information>
+0: kd> .fnent Null!_security_check_cookie
+Debugger function entry 0000020c`8b01e560 for:
+(fffff801`db3610a0)   Null!_security_check_cookie   |  (fffff801`db3610c0)   Null!guard_check_icall_nop
+Exact matches:
+    Null!_security_check_cookie (<no parameter info>)
+
+BeginAddress      = 00000000`000010a0
+EndAddress        = 00000000`000010be
+UnwindInfoAddress = 00000000`00002398
+
+Unwind info at fffff801`db362398, 4 bytes
+  version 1, flags 0, prolog 0, codes 0
+0: kd> ? 1 + 1
+Evaluate expression: 2 = 00000000`00000002
+0: kd> ? null
+Evaluate expression: -8788120305664 = fffff801`db360000
+0: kd> .load pykd
+
+0: kd> bp @@masm(dbgeng!ExtensionInfo::Load) + 5ce
+Opened log file 'c:\course\windbg.day2.log'
+1: kd> x hyperkbd!HkEvt*
+fffff800`d0ae14a0 hyperkbd!HkEvtInternalIoctl (<no parameter info>)
+fffff800`d0ae1420 hyperkbd!HkEvtDeviceReleaseHardware (<no parameter info>)
+fffff800`d0ae70e0 hyperkbd!HkEvtChannelSuspend (<no parameter info>)
+fffff800`d0ae1000 hyperkbd!HkEvtDeviceAdd (<no parameter info>)
+fffff800`d0ae708c hyperkbd!HkEvtChannelSetLedIndicators (<no parameter info>)
+fffff800`d0ae12f0 hyperkbd!HkEvtDevicePrepareHardware (<no parameter info>)
+fffff800`d0ae1480 hyperkbd!HkEvtFileCreate (<no parameter info>)
+fffff800`d0ae7000 hyperkbd!HkEvtChannelPostResume (<no parameter info>)
+fffff800`d0ae1840 hyperkbd!HkEvtChannelProcessPacket (<no parameter info>)
+1: kd> bp hyperkbd!HkEvtChannelProcessPacket
+1: kd> bl
+ 0 e fffff800`d0ae1840     0001 (0001) hyperkbd!HkEvtChannelProcessPacket
+
+1: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> !irql
+Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e50ead8 fffff800`cf492f36 hyperkbd!HkEvtChannelProcessPacket
+01 fffff801`4e50eae0 fffff800`cf49511e vmbkmcl!InpFillAndProcessQueue+0x266
+02 fffff801`4e50eb70 fffff800`cf2a10b7 vmbkmcl!PkSetInterruptMaskSkipCount+0xcd6
+03 fffff801`4e50ebb0 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e50ec10 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e50ed60 fffff801`4c952cb5 nt!KiRetireDpcList+0xe9
+06 fffff801`4e50efb0 fffff801`4c952ac0 nt!KxRetireDpcList+0x5
+07 ffffd001`adc2bac0 fffff801`4c951595 nt!KiDispatchInterruptContinue
+08 ffffd001`adc2baf0 fffff801`4c9521c2 nt!KiDpcInterruptBypass+0x25
+09 ffffd001`adc2bb00 00007ffc`0a0fad3b nt!KiVmbusInterrupt2+0x212
+0a 00000033`eeb7d230 0000014c`4a730c90 0x00007ffc`0a0fad3b
+0b 00000033`eeb7d238 0000014c`3f7607a0 0x0000014c`4a730c90
+0c 00000033`eeb7d240 0000014c`3e4b6640 0x0000014c`3f7607a0
+0d 00000033`eeb7d248 02d44294`2097c300 0x0000014c`3e4b6640
+0e 00000033`eeb7d250 00000033`eeb7d260 0x02d44294`2097c300
+0f 00000033`eeb7d258 00000000`00000000 0x00000033`eeb7d260
+0: kd> .reload /user
+Loading User Symbols
+.................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+........................
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e50ead8 fffff800`cf492f36 hyperkbd!HkEvtChannelProcessPacket
+01 fffff801`4e50eae0 fffff800`cf49511e vmbkmcl!InpFillAndProcessQueue+0x266
+02 fffff801`4e50eb70 fffff800`cf2a10b7 vmbkmcl!PkSetInterruptMaskSkipCount+0xcd6
+03 fffff801`4e50ebb0 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e50ec10 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e50ed60 fffff801`4c952cb5 nt!KiRetireDpcList+0xe9
+06 fffff801`4e50efb0 fffff801`4c952ac0 nt!KxRetireDpcList+0x5
+07 ffffd001`adc2bac0 fffff801`4c951595 nt!KiDispatchInterruptContinue
+08 ffffd001`adc2baf0 fffff801`4c9521c2 nt!KiDpcInterruptBypass+0x25
+09 ffffd001`adc2bb00 00007ffc`0a0fad3b nt!KiVmbusInterrupt2+0x212
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for mpengine.dll - 
+0a 00000033`eeb7d230 0000014c`4a730c90 mpengine!GetSigFiles+0x64c0b
+0b 00000033`eeb7d238 0000014c`3f7607a0 0x0000014c`4a730c90
+0c 00000033`eeb7d240 0000014c`3e4b6640 0x0000014c`3f7607a0
+0d 00000033`eeb7d248 02d44294`2097c300 0x0000014c`3e4b6640
+0e 00000033`eeb7d250 00000033`eeb7d260 0x02d44294`2097c300
+0f 00000033`eeb7d258 00000000`00000000 0x00000033`eeb7d260
+0: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e50ead8 fffff800`cf492f36 hyperkbd!HkEvtChannelProcessPacket
+01 fffff801`4e50eae0 fffff800`cf49511e vmbkmcl!InpFillAndProcessQueue+0x266
+02 fffff801`4e50eb70 fffff800`cf2a10b7 vmbkmcl!PkSetInterruptMaskSkipCount+0xcd6
+03 fffff801`4e50ebb0 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e50ec10 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e50ed60 fffff801`4c952cb5 nt!KiRetireDpcList+0xe9
+06 fffff801`4e50efb0 fffff801`4c952ac0 nt!KxRetireDpcList+0x5
+07 ffffd001`adc2bac0 fffff801`4c951595 nt!KiDispatchInterruptContinue
+08 ffffd001`adc2baf0 fffff801`4c9521c2 nt!KiDpcInterruptBypass+0x25
+09 ffffd001`adc2bb00 00007ffc`0a0fad3b nt!KiVmbusInterrupt2+0x212
+0a 00000033`eeb7d230 0000014c`4a730c90 mpengine!GetSigFiles+0x64c0b
+0b 00000033`eeb7d238 0000014c`3f7607a0 0x0000014c`4a730c90
+0c 00000033`eeb7d240 0000014c`3e4b6640 0x0000014c`3f7607a0
+0d 00000033`eeb7d248 02d44294`2097c300 0x0000014c`3e4b6640
+0e 00000033`eeb7d250 00000033`eeb7d260 0x02d44294`2097c300
+0f 00000033`eeb7d258 00000000`00000000 0x00000033`eeb7d260
+0: kd> .reload /user
+Loading User Symbols
+.................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+........................
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e50ead8 fffff800`cf492f36 hyperkbd!HkEvtChannelProcessPacket
+01 fffff801`4e50eae0 fffff800`cf49511e vmbkmcl!InpFillAndProcessQueue+0x266
+02 fffff801`4e50eb70 fffff800`cf2a10b7 vmbkmcl!PkSetInterruptMaskSkipCount+0xcd6
+03 fffff801`4e50ebb0 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e50ec10 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e50ed60 fffff801`4c952cb5 nt!KiRetireDpcList+0xe9
+06 fffff801`4e50efb0 fffff801`4c952ac0 nt!KxRetireDpcList+0x5
+07 ffffd001`adc2bac0 fffff801`4c951595 nt!KiDispatchInterruptContinue
+08 ffffd001`adc2baf0 fffff801`4c9521c2 nt!KiDpcInterruptBypass+0x25
+09 ffffd001`adc2bb00 00007ffc`0a0fad3b nt!KiVmbusInterrupt2+0x212
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for mpengine.dll - 
+0a 00000033`eeb7d230 0000014c`4a730c90 mpengine!GetSigFiles+0x64c0b
+0b 00000033`eeb7d238 0000014c`3f7607a0 0x0000014c`4a730c90
+0c 00000033`eeb7d240 0000014c`3e4b6640 0x0000014c`3f7607a0
+0d 00000033`eeb7d248 02d44294`2097c300 0x0000014c`3e4b6640
+0e 00000033`eeb7d250 00000033`eeb7d260 0x02d44294`2097c300
+0f 00000033`eeb7d258 00000000`00000000 0x00000033`eeb7d260
+0: kd> bd *
+0: kd> g
+PID=784 TID=3144 DismApi.dll:                                            - DismInitializeInternal
+PID=784 TID=3144 DismApi.dll: <----- Starting DismApi.dll session -----> - DismInitializeInternal
+PID=784 TID=3144 DismApi.dll:                                            - DismInitializeInternal
+PID=784 TID=3144 DismApi.dll: Version 10.0.10586.0 - DismInitializeInternal
+PID=784 TID=3144 DismApi.dll: Parent process command line: C:\Windows\system32\cleanmgr.exe /autoclean /d C: - DismInitializeInternal
+PID=784 TID=3144 Enter DismInitializeInternal - DismInitializeInternal
+PID=784 TID=3144 Input parameters: LogLevel: 2, LogFilePath: (null), ScratchDirectory: (null) - DismInitializeInternal
+PID=784 TID=3144 Initialized GlobalConfig - DismInitializeInternal
+PID=784 TID=3144 Initialized SessionTable - DismInitializeInternal
+PID=784 TID=3144 Lookup in table by path failed for: DummyPath-2BA51B78-C7F7-4910-B99D-BB7345357CDC - CTransactionalImageTable::LookupImagePath
+PID=784 TID=3144 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=784 TID=2384 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=784 TID=3144 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=784 TID=3144 m_pInternalThread started - CCommandThread::Start
+PID=784 TID=2384 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=784 TID=3144 Created g_internalDismSession - DismInitializeInternal
+PID=784 TID=3144 Leave DismInitializeInternal - DismInitializeInternal
+PID=784 TID=3144 Enter DismOpenSessionInternal - DismOpenSessionInternal
+PID=784 TID=3144 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+PID=784 TID=3144 Lookup in table by path failed for: DRIVE_C - CTransactionalImageTable::LookupImagePath
+PID=784 TID=3144 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=784 TID=4832 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=784 TID=4832 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=784 TID=3144 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=784 TID=3144 m_pInternalThread started - CCommandThread::Start
+PID=784 TID=3144 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=784 TID=4832 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=784 TID=4832 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=784 TID=4832 Instantiating the Provider Store. - CDISMImageSession::get_ProviderStorePID=784 TID=4832 Initializing a provider store for the LOCAL session type. - CDISMProviderStore::Final_OnConnectPID=784 TID=4832 Attempting to initialize the logger from the Image Session. - CDISMProviderStore::Final_OnConnectPID=784 TID=4832 Provider has not previously been encountered.  Attempting to initialize the provider. - CDISMProviderStore::Internal_GetProviderPID=784 TID=4832 Loading Provider from location C:\Windows\system32\Dism\LogProvider.dll - CDISMProviderStore::Internal_GetProviderPID=784 TID=4832 Connecting to the provider located at C:\Windows\system32\Dism\LogProvider.dll. - CDISMProviderStore::Internal_LoadProviderBreak instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff801`4c9536d0 cc              int     3
+0: kd> be *
+0: kd> g
+Breakpoint 0 hit
+hyperkbd!HkEvtChannelProcessPacket:
+fffff800`d0ae1840 48895c2408      mov     qword ptr [rsp+8],rbx
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e507788 fffff800`cf492f36 hyperkbd!HkEvtChannelProcessPacket
+01 fffff801`4e507790 fffff800`cf49511e vmbkmcl!InpFillAndProcessQueue+0x266
+02 fffff801`4e507820 fffff800`cf2a10b7 vmbkmcl!PkSetInterruptMaskSkipCount+0xcd6
+03 fffff801`4e507860 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e5078c0 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e507a10 fffff801`4c950d3a nt!KiRetireDpcList+0xe9
+06 fffff801`4e507c60 00000000`00000000 nt!KiIdleLoop+0x5a
+0: kd> !irql
+Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
+0: kd> bc *
+0: kd> bp nt!NtCreateFile
+0: kd> g
+Breakpoint 0 hit
+nt!NtCreateFile:
+fffff801`4cc1e3b0 4881ec88000000  sub     rsp,88h
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd000`23da9a88 fffff801`4c9587a3 nt!NtCreateFile
+01 ffffd000`23da9a90 00007ffc`1b2b57f4 nt!KiSystemServiceCopyEnd+0x13
+02 00000001`073fee28 00007ffc`1826a484 ntdll!NtCreateFile+0x14
+03 00000001`073fee30 00007ffc`1826a156 KERNELBASE!CreateFileInternal+0x314
+04 00000001`073fefb0 00007ffc`182981f3 KERNELBASE!CreateFileW+0x66
+05 00000001`073ff010 00007ffc`1829726c KERNELBASE!BasepCopyFileExW+0x333
+06 00000001`073ff600 00007ffc`182968f1 KERNELBASE!CopyFileExW+0xbc
+07 00000001`073ff6b0 00007ffb`ff7e377e KERNELBASE!CopyFileW+0x21
+08 00000001`073ff6f0 00002fa1`7c6dfe5d 0x00007ffb`ff7e377e
+09 00000001`073ff6f8 00000000`00000001 0x00002fa1`7c6dfe5d
+0a 00000001`073ff700 00000001`073ffad0 0x1
+0b 00000001`073ff708 00000001`073ff840 0x00000001`073ffad0
+0c 00000001`073ff710 00000001`073ff840 0x00000001`073ff840
+0d 00000001`073ff718 00007ffb`ff709ebb 0x00000001`073ff840
+0e 00000001`073ff720 00000000`00000000 0x00007ffb`ff709ebb
+0: kd> .reload
+Connected to Windows 10 10586 x64 target at (Tue May  3 11:42:48.955 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+.........................................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+......
+................................................................
+.......................
+Loading User Symbols
+........................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+........................
+................................................................
+................................................................
+.................................
+Loading unloaded module list
+..................................
+0: kd> kv
+ # Child-SP          RetAddr           : Args to Child                                                           : Call Site
+00 ffffd000`23da9a88 fffff801`4c9587a3 : fffff6fb`7dafff80 fffff6fb`5fff06c8 fffff6bf`fe0d9428 ffff24e3`a4decb77 : nt!NtCreateFile
+01 ffffd000`23da9a90 00007ffc`1b2b57f4 : 00007ffc`1826a484 00000000`00000000 00000000`00000000 00000000`00000000 : nt!KiSystemServiceCopyEnd+0x13 (TrapFrame @ ffffd000`23da9b00)
+02 00000001`073fee28 00007ffc`1826a484 : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000003 : ntdll!NtCreateFile+0x14
+03 00000001`073fee30 00007ffc`1826a156 : 00000130`d4bb0000 00000000`00000015 00002fa1`7c6dd58d 00000000`00000000 : KERNELBASE!CreateFileInternal+0x314
+04 00000001`073fefb0 00007ffc`182981f3 : 00000001`00000000 00000000`00000130 00000000`00001b00 00000130`d662da50 : KERNELBASE!CreateFileW+0x66
+05 00000001`073ff010 00007ffc`1829726c : 00000000`00000000 00000130`d66f5360 00000000`c0000034 00007ffc`182b7faf : KERNELBASE!BasepCopyFileExW+0x333
+06 00000001`073ff600 00007ffc`182968f1 : 00000000`00000000 00000130`d66b46d0 00000000`00000000 00000001`00000100 : KERNELBASE!CopyFileExW+0xbc
+07 00000001`073ff6b0 00007ffb`ff7e377e : 00002fa1`7c6dfe5d 00000000`00000001 00000001`073ffad0 00000001`073ff840 : KERNELBASE!CopyFileW+0x21
+08 00000001`073ff6f0 00007ffb`ff709ebb : 00000000`00000000 00000000`0000004d 00000001`073ff800 00000001`073ff800 : wuaueng!SusCopyFileRetryIfSharingViolation+0x62
+09 00000001`073ff720 00007ffb`ff7e3f31 : 00000130`d6c07a60 00000001`073ff810 00000130`d623d7bc 00000001`073ff808 : wuaueng!CAppxAppFamiliesCache::IsAppFamilyInstalled+0x503
+0a 00000001`073ff7b0 00007ffb`ff767fae : 00000130`d66b0990 00000130`d4d7fad0 00000000`00000000 00000130`d4d8a510 : wuaueng!SusMoveFileRetryIfSharingViolation+0x1b9
+0b 00000001`073ff840 00007ffb`ff7297db : 00000130`d4d4dd90 00000000`00000005 00000001`073ffd68 00000000`00000000 : wuaueng!CAgentDownloadManager::GenerateDownloadRequest+0x3ca
+0c 00000001`073ffd30 00007ffb`ff6c389e : 00000130`d4d46bc0 00000130`00000001 00000000`00000000 00000000`00000000 : wuaueng!CUHWinSetupSession::Release+0x1c31b
+0d 00000001`073ffdb0 00007ffb`ff6d0c99 : 00000000`00000000 00000000`00000000 00000130`d4d3f3a8 00007ffb`ff6c3780 : wuaueng!CAgentDownloadManager::ProcessWorkItem+0x11e
+0e 00000001`073ffe70 00007ffb`ff6cf555 : 00000000`00000000 00000000`00000000 00000130`d4d40168 00000000`00000000 : wuaueng!CWorkItemManager::ExecuteNonCallbackWorkItem+0x1ad
+0f 00000001`073ffee0 00007ffc`18a18102 : 00007ffb`ff6cf510 00000000`00000000 00000000`00000000 00000000`00000000 : wuaueng!CWorkItemManager::ExecuteWorkItemWrapper+0x45
+10 00000001`073fff10 00007ffc`1b26c264 : 00007ffc`18a180e0 00000000`00000000 00000000`00000000 00000000`00000000 : KERNEL32!BaseThreadInitThunk+0x22
+11 00000001`073fff40 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x34
+0: kd> .load pykd
+Opened log file 'c:\course\windbg.day2.log'
+0: kd> dt nt!_KTRAP_FRAME
+   +0x000 P1Home           : Uint8B
+   +0x008 P2Home           : Uint8B
+   +0x010 P3Home           : Uint8B
+   +0x018 P4Home           : Uint8B
+   +0x020 P5               : Uint8B
+   +0x028 PreviousMode     : Char
+   +0x029 PreviousIrql     : UChar
+   +0x02a FaultIndicator   : UChar
+   +0x02b ExceptionActive  : UChar
+   +0x02c MxCsr            : Uint4B
+   +0x030 Rax              : Uint8B
+   +0x038 Rcx              : Uint8B
+   +0x040 Rdx              : Uint8B
+   +0x048 R8               : Uint8B
+   +0x050 R9               : Uint8B
+   +0x058 R10              : Uint8B
+   +0x060 R11              : Uint8B
+   +0x068 GsBase           : Uint8B
+   +0x068 GsSwap           : Uint8B
+   +0x070 Xmm0             : _M128A
+   +0x080 Xmm1             : _M128A
+   +0x090 Xmm2             : _M128A
+   +0x0a0 Xmm3             : _M128A
+   +0x0b0 Xmm4             : _M128A
+   +0x0c0 Xmm5             : _M128A
+   +0x0d0 FaultAddress     : Uint8B
+   +0x0d0 ContextRecord    : Uint8B
+   +0x0d0 TimeStampCKCL    : Uint8B
+   +0x0d8 Dr0              : Uint8B
+   +0x0e0 Dr1              : Uint8B
+   +0x0e8 Dr2              : Uint8B
+   +0x0f0 Dr3              : Uint8B
+   +0x0f8 Dr6              : Uint8B
+   +0x100 Dr7              : Uint8B
+   +0x108 DebugControl     : Uint8B
+   +0x110 LastBranchToRip  : Uint8B
+   +0x118 LastBranchFromRip : Uint8B
+   +0x120 LastExceptionToRip : Uint8B
+   +0x128 LastExceptionFromRip : Uint8B
+   +0x130 SegDs            : Uint2B
+   +0x132 SegEs            : Uint2B
+   +0x134 SegFs            : Uint2B
+   +0x136 SegGs            : Uint2B
+   +0x138 TrapFrame        : Uint8B
+   +0x140 Rbx              : Uint8B
+   +0x148 Rdi              : Uint8B
+   +0x150 Rsi              : Uint8B
+   +0x158 Rbp              : Uint8B
+   +0x160 ErrorCode        : Uint8B
+   +0x160 ExceptionFrame   : Uint8B
+   +0x160 TimeStampKlog    : Uint8B
+   +0x168 Rip              : Uint8B
+   +0x170 SegCs            : Uint2B
+   +0x172 Fill0            : UChar
+   +0x173 Logging          : UChar
+   +0x174 Fill1            : [2] Uint2B
+   +0x178 EFlags           : Uint4B
+   +0x17c Fill2            : Uint4B
+   +0x180 Rsp              : Uint8B
+   +0x188 SegSs            : Uint2B
+   +0x18a Fill3            : Uint2B
+   +0x18c Fill4            : Uint4B
+0: kd> bp nt!NtCreateFile
+0: kd> g
+Breakpoint 0 hit
+nt!NtCreateFile:
+fffff801`4cc1e3b0 4881ec88000000  sub     rsp,88h
+0: kd> .reload
+Connected to Windows 10 10586 x64 target at (Tue May  3 11:46:36.694 2016 (UTC + 10:00)), ptr64 TRUE
+Loading Kernel Symbols
+...............................................................
+....
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+............................................................
+.......................
+Loading User Symbols
+.......................................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+.........................
+................................................................
+................................................................
+.................................
+Loading unloaded module list
+..................................
+0: kd> kv
+ # Child-SP          RetAddr           : Args to Child                                                           : Call Site
+00 ffffd000`23da9a88 fffff801`4c9587a3 : fffff6fb`7dafff80 00000001`073fdff0 00000001`073fe08c ffff24e3`00000004 : nt!NtCreateFile
+01 ffffd000`23da9a90 00007ffc`1b2b57f4 : 00007ffc`1829b6cd 00000000`00000001 00000001`073ff250 00000000`00000001 : nt!KiSystemServiceCopyEnd+0x13 (TrapFrame @ ffffd000`23da9b00)
+02 00000001`073fdde8 00007ffc`1829b6cd : 00000000`00000001 00000001`073ff250 00000000`00000001 00000000`00000000 : ntdll!NtCreateFile+0x14
+03 00000001`073fddf0 00007ffc`1829864f : 00000001`00000000 00000000`00000130 00000000`00001b00 00000130`d662da50 : KERNELBASE!BaseCopyStream+0x17d9
+04 00000001`073ff010 00007ffc`1829726c : 00000000`00000000 00000130`d66f5360 00000000`c0000034 00007ffc`182b7faf : KERNELBASE!BasepCopyFileExW+0x78f
+05 00000001`073ff600 00007ffc`182968f1 : 00000000`00000000 00000130`d66b46d0 00000000`00000000 00000001`00000100 : KERNELBASE!CopyFileExW+0xbc
+06 00000001`073ff6b0 00007ffb`ff7e377e : 00002fa1`7c6dfe5d 00000000`00000001 00000001`073ffad0 00000001`073ff840 : KERNELBASE!CopyFileW+0x21
+07 00000001`073ff6f0 00007ffb`ff709ebb : 00000000`00000000 00000000`0000004d 00000001`073ff800 00000001`073ff800 : wuaueng!SusCopyFileRetryIfSharingViolation+0x62
+08 00000001`073ff720 00007ffb`ff7e3f31 : 00000130`d6c07a60 00000001`073ff810 00000130`d623d7bc 00000001`073ff808 : wuaueng!CAppxAppFamiliesCache::IsAppFamilyInstalled+0x503
+09 00000001`073ff7b0 00007ffb`ff767fae : 00000130`d66b0990 00000130`d4d7fad0 00000000`00000000 00000130`d4d8a510 : wuaueng!SusMoveFileRetryIfSharingViolation+0x1b9
+0a 00000001`073ff840 00007ffb`ff7297db : 00000130`d4d4dd90 00000000`00000005 00000001`073ffd68 00000000`00000000 : wuaueng!CAgentDownloadManager::GenerateDownloadRequest+0x3ca
+0b 00000001`073ffd30 00007ffb`ff6c389e : 00000130`d4d46bc0 00000130`00000001 00000000`00000000 00000000`00000000 : wuaueng!CUHWinSetupSession::Release+0x1c31b
+0c 00000001`073ffdb0 00007ffb`ff6d0c99 : 00000000`00000000 00000000`00000000 00000130`d4d3f3a8 00007ffb`ff6c3780 : wuaueng!CAgentDownloadManager::ProcessWorkItem+0x11e
+0d 00000001`073ffe70 00007ffb`ff6cf555 : 00000000`00000000 00000000`00000000 00000130`d4d40168 00000000`00000000 : wuaueng!CWorkItemManager::ExecuteNonCallbackWorkItem+0x1ad
+0e 00000001`073ffee0 00007ffc`18a18102 : 00007ffb`ff6cf510 00000000`00000000 00000000`00000000 00000000`00000000 : wuaueng!CWorkItemManager::ExecuteWorkItemWrapper+0x45
+0f 00000001`073fff10 00007ffc`1b26c264 : 00007ffc`18a180e0 00000000`00000000 00000000`00000000 00000000`00000000 : KERNEL32!BaseThreadInitThunk+0x22
+10 00000001`073fff40 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x34
+0: kd> r
+rax=0000000000000000 rbx=ffffe000777c8080 rcx=00000001073fde70
+rdx=00000000c0150081 rsi=00000001073fde08 rdi=ffffd00023da9aa8
+rip=fffff8014cc1e3b0 rsp=ffffd00023da9a88 rbp=ffffd00023da9b80
+ r8=00000001073fe150  r9=00000001073fdff0 r10=fffff8014cc1e3b0
+r11=fffff8014c958758 r12=00000000c0150081 r13=0000000000000020
+r14=00000000ffffffff r15=0000000000000064
+iopl=0         nv up ei pl zr na po nc
+cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+nt!NtCreateFile:
+fffff801`4cc1e3b0 4881ec88000000  sub     rsp,88h
+0: kd> .trap ffffd000`23da9b00
+NOTE: The trap frame does not contain all registers.
+Some register values may be zeroed or incorrect.
+rax=0000000000000000 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000000000
+rip=00007ffc1b2b57f4 rsp=00000001073fdde8 rbp=00000130d66b0990
+ r8=0000000000000000  r9=0000000000000000 r10=0000000000000000
+r11=0000000000000000 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+ntdll!NtCreateFile+0x14:
+0033:00007ffc`1b2b57f4 c3              ret
+0: kd> r
+Last set context:
+rax=0000000000000000 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000000000
+rip=00007ffc1b2b57f4 rsp=00000001073fdde8 rbp=00000130d66b0990
+ r8=0000000000000000  r9=0000000000000000 r10=0000000000000000
+r11=0000000000000000 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+cs=0033  ss=002b  ds=0000  es=0000  fs=0000  gs=0000             efl=00000246
+ntdll!NtCreateFile+0x14:
+0033:00007ffc`1b2b57f4 c3              ret
+0: kd> .trap
+Resetting default scope
+0: kd> r
+rax=0000000000000000 rbx=ffffe000777c8080 rcx=00000001073fde70
+rdx=00000000c0150081 rsi=00000001073fde08 rdi=ffffd00023da9aa8
+rip=fffff8014cc1e3b0 rsp=ffffd00023da9a88 rbp=ffffd00023da9b80
+ r8=00000001073fe150  r9=00000001073fdff0 r10=fffff8014cc1e3b0
+r11=fffff8014c958758 r12=00000000c0150081 r13=0000000000000020
+r14=00000000ffffffff r15=0000000000000064
+iopl=0         nv up ei pl zr na po nc
+cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+nt!NtCreateFile:
+fffff801`4cc1e3b0 4881ec88000000  sub     rsp,88h
+0: kd> dt nt!_KTRAP_FRAME ffffd000`23da9b00
+   +0x000 P1Home           : 0xffffe000`777c8080
+   +0x008 P2Home           : 0
+   +0x010 P3Home           : 0xffffe000`777c8080
+   +0x018 P4Home           : 0xffffd000`23da9b80
+   +0x020 P5               : 0x00000130`00000000
+   +0x028 PreviousMode     : 0 ''
+   +0x029 PreviousIrql     : 0 ''
+   +0x02a FaultIndicator   : 0x8 ''
+   +0x02b ExceptionActive  : 0x2 ''
+   +0x02c MxCsr            : 0x1fa0
+   +0x030 Rax              : 0x1000
+   +0x038 Rcx              : 0x00007ffc`1b353880
+   +0x040 Rdx              : 0x3ef3d539`6bfa223a
+   +0x048 R8               : 0x00000001`073fefc8
+   +0x050 R9               : 0
+   +0x058 R10              : 0x10
+   +0x060 R11              : 0x00000001`073ff008
+   +0x068 GsBase           : 0x00000001`00224000
+   +0x068 GsSwap           : 0x00000001`00224000
+   +0x070 Xmm0             : _M128A
+   +0x080 Xmm1             : _M128A
+   +0x090 Xmm2             : _M128A
+   +0x0a0 Xmm3             : _M128A
+   +0x0b0 Xmm4             : _M128A
+   +0x0c0 Xmm5             : _M128A
+   +0x0d0 FaultAddress     : 0x00007ffc`1b2374c0
+   +0x0d0 ContextRecord    : 0x00007ffc`1b2374c0
+   +0x0d0 TimeStampCKCL    : 0x00007ffc`1b2374c0
+   +0x0d8 Dr0              : 0
+   +0x0e0 Dr1              : 0
+   +0x0e8 Dr2              : 0
+   +0x0f0 Dr3              : 0
+   +0x0f8 Dr6              : 0
+   +0x100 Dr7              : 0
+   +0x108 DebugControl     : 0
+   +0x110 LastBranchToRip  : 0
+   +0x118 LastBranchFromRip : 0
+   +0x120 LastExceptionToRip : 0
+   +0x128 LastExceptionFromRip : 0
+   +0x130 SegDs            : 0
+   +0x132 SegEs            : 0
+   +0x134 SegFs            : 0
+   +0x136 SegGs            : 0
+   +0x138 TrapFrame        : 0
+   +0x140 Rbx              : 0
+   +0x148 Rdi              : 5
+   +0x150 Rsi              : 0x00000001`073ff250
+   +0x158 Rbp              : 0x00000130`d66b0990
+   +0x160 ErrorCode        : 0x14
+   +0x160 ExceptionFrame   : 0x14
+   +0x160 TimeStampKlog    : 0x14
+   +0x168 Rip              : 0x00007ffc`1b2b57f4
+   +0x170 SegCs            : 0x33
+   +0x172 Fill0            : 0 ''
+   +0x173 Logging          : 0 ''
+   +0x174 Fill1            : [2] 0
+   +0x178 EFlags           : 0x246
+   +0x17c Fill2            : 0
+   +0x180 Rsp              : 0x00000001`073fdde8
+   +0x188 SegSs            : 0x2b
+   +0x18a Fill3            : 0
+   +0x18c Fill4            : 0
+Opened log file 'c:\course\windbg.day2.log'
+1: kd> x nt!IO*complet*request*
+fffff801`4c861a80 nt!IopfCompleteRequest (<no parameter info>)
+fffff801`4c861a70 nt!IoCompleteRequest (<no parameter info>)
+fffff801`4c9c4d38 nt!IopPerfCompleteRequest (<no parameter info>)
+fffff801`4ceca544 nt!IovpCompleteRequest4 (<no parameter info>)
+fffff801`4cc6d50c nt!IoWMICompleteRequest (<no parameter info>)
+fffff801`4ceca150 nt!IovpCompleteRequest2 (<no parameter info>)
+fffff801`4c862b60 nt!IopCompleteRequest (<no parameter info>)
+fffff801`4ceca4bc nt!IovpCompleteRequest3 (<no parameter info>)
+fffff801`4cebff3c nt!IovCompleteRequest (<no parameter info>)
+fffff801`4c8f2fdc nt!IopPnPCompleteRequest (<no parameter info>)
+fffff801`4ceca028 nt!IovpCompleteRequest1 (<no parameter info>)
+fffff801`4c861a70 nt!IofCompleteRequest (<no parameter info>)
+1: kd> bc *
+1: kd> bl
+
+1: kd> bp nt!IoCompleteRequest
+1: kd> g
+Breakpoint 0 hit
+
+DBGHELP: vmbus - public symbols  
+        c:\course\symbols\vmbus.pdb\99A0B22AB8524B839B07BD7BD370441E1\vmbus.pdb
+nt!IoCompleteRequest:
+fffff801`4c861a70 48ff25319a3200  jmp     qword ptr [nt!pIofCompleteRequest (fffff801`4cb8b4a8)]
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 fffff801`4e5077e8 fffff800`cf2a12c6 nt!IoCompleteRequest
+
+DBGHELP: vmbkmcl - public symbols  
+        c:\course\symbols\vmbkmcl.pdb\FCF6A49B625F4437B9A836C5C917556F1\vmbkmcl.pdb
+01 fffff801`4e5077f0 fffff800`cf493b4d vmbus!PipeEvtChannelSignalArrived+0xc6
+02 fffff801`4e507830 fffff800`cf2a10b7 vmbkmcl!KmclpVmbusManualIsr+0x1d
+03 fffff801`4e507860 fffff801`4c855df0 vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e5078c0 fffff801`4c855509 nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e507a10 fffff801`4c950d3a nt!KiRetireDpcList+0xe9
+06 fffff801`4e507c60 00000000`00000000 nt!KiIdleLoop+0x5a
+0: kd> g
+Breakpoint 0 hit
+nt!IoCompleteRequest:
+fffff801`4c861a70 48ff25319a3200  jmp     qword ptr [nt!pIofCompleteRequest (fffff801`4cb8b4a8)]
+0: kd> kv
+ # Child-SP          RetAddr           : Args to Child                                                           : Call Site
+00 fffff801`4e5077e8 fffff800`cf2a12c6 : 00000000`000031a8 ffffe000`77152010 00000000`00000001 00000000`00000001 : nt!IoCompleteRequest
+01 fffff801`4e5077f0 fffff800`cf493b4d : ffffe000`77152010 00000000`00000000 00000000`00000000 fffff801`4c9b978a : vmbus!PipeEvtChannelSignalArrived+0xc6
+02 fffff801`4e507830 fffff800`cf2a10b7 : 00000000`00000000 ffffe000`768e3010 0000001a`00991e2b ffff0ce2`c9542ac7 : vmbkmcl!KmclpVmbusManualIsr+0x1d
+03 fffff801`4e507860 fffff801`4c855df0 : fffff801`4cb2bf00 fffff801`4e5079c0 fffff801`4e507b20 fffff801`4c92e011 : vmbus!ChildInterruptDpc+0xb7
+04 fffff801`4e5078c0 fffff801`4c855509 : 00000000`00000000 00000000`00000003 ffffe000`7563c700 ffffe000`770f4080 : nt!KiExecuteAllDpcs+0x270
+05 fffff801`4e507a10 fffff801`4c950d3a : 00000000`00000000 fffff801`4cb29180 fffff801`4cb9f740 ffffe000`770f4080 : nt!KiRetireDpcList+0xe9
+06 fffff801`4e507c60 00000000`00000000 : fffff801`4e508000 fffff801`4e502000 00000000`00000000 00000000`00000000 : nt!KiIdleLoop+0x5a
+0: kd> dt nt!_KAPC @rcx
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 1
+   +0x008 Thread           : 0xffffe000`778f2190 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`771536e0     void  +ffffe000771536e0
+   +0x028 RundownRoutine   : 0xffffe000`771536e0     void  +ffffe000771536e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`771536e0 Void
+   +0x038 NormalContext    : 0x00000000`00000030 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000d2`3b6ffe78 Void
+   +0x050 ApcStateIndex    : -64 ''
+   +0x051 ApcMode          : 57 '9'
+   +0x052 Inserted         : 0x3 ''
+0: kd> g
+Breakpoint 0 hit
+nt!IoCompleteRequest:
+fffff801`4c861a70 48ff25319a3200  jmp     qword ptr [nt!pIofCompleteRequest (fffff801`4cb8b4a8)]
+0: kd> g
+Breakpoint 0 hit
+nt!IoCompleteRequest:
+fffff801`4c861a70 48ff25319a3200  jmp     qword ptr [nt!pIofCompleteRequest (fffff801`4cb8b4a8)]
+0: kd> kv
+ # Child-SP          RetAddr           : Args to Child                                                           : Call Site
+00 ffffd001`adf6d838 fffff800`cf2a14a9 : 00000000`00000003 fffff6fb`00000d30 ffffe000`775963a0 00000000`00000000 : nt!IoCompleteRequest
+
+DBGHELP: Wdf01000 - private symbols & lines 
+        c:\course\symbols\Wdf01000.pdb\BBFAAF05FB9E4C71900015FF4A30AA8C1\Wdf01000.pdb
+01 ffffd001`adf6d840 fffff800`ceed1290 : ffffe000`775963a0 ffffd001`adf6d8c0 ffffe000`77526a90 fffff801`4c898b84 : vmbus!InstancePdoReadWritePreprocess+0x69
+02 (Inline Function) --------`-------- : --------`-------- --------`-------- --------`-------- --------`-------- : Wdf01000!PreprocessIrp+0x43 (Inline Function @ fffff800`ceed1290) [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1475]
+03 (Inline Function) --------`-------- : --------`-------- --------`-------- --------`-------- --------`-------- : Wdf01000!DispatchWorker+0x180 (Inline Function @ fffff800`ceed1290) [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1537]
+04 (Inline Function) --------`-------- : --------`-------- --------`-------- --------`-------- --------`-------- : Wdf01000!FxDevice::Dispatch+0x194 (Inline Function @ fffff800`ceed1290) [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1560]
+05 ffffd001`adf6d870 fffff801`4cc0eaf6 : ffffd001`adf6d951 ffffe000`775963a0 00000000`00000000 fffff680`f7e3ac60 : Wdf01000!FxDevice::DispatchWithLock+0x1f0 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1402]
+06 ffffd001`adf6d8d0 fffff801`4cc0e642 : ffffe000`770ee370 00000000`00000000 ffffe000`775963a0 00000000`00000000 : nt!IopSynchronousServiceTail+0x176
+07 ffffd001`adf6d9a0 fffff801`4c9587a3 : ffffe000`770f4080 00000000`000000e0 00000000`00000000 000000ca`3ff7fbe8 : nt!NtReadFile+0x672
+08 ffffd001`adf6da90 00007ffc`1b2b4e14 : 00007ffc`1826c3b4 000001ef`c752d201 000001ef`00000003 00000000`00000020 : nt!KiSystemServiceCopyEnd+0x13 (TrapFrame @ ffffd001`adf6db00)
+09 000000ca`3ff7fb28 00007ffc`1826c3b4 : 000001ef`c752d201 000001ef`00000003 00000000`00000020 00007ffc`169dd7b3 : 0x00007ffc`1b2b4e14
+0a 000000ca`3ff7fb30 000001ef`c752d201 : 000001ef`00000003 00000000`00000020 00007ffc`169dd7b3 000000ca`3ff7fbe8 : 0x00007ffc`1826c3b4
+0b 000000ca`3ff7fb38 000001ef`00000003 : 00000000`00000020 00007ffc`169dd7b3 000000ca`3ff7fbe8 000001ef`c7589580 : 0x000001ef`c752d201
+0c 000000ca`3ff7fb40 00000000`00000020 : 00007ffc`169dd7b3 000000ca`3ff7fbe8 000001ef`c7589580 00000000`00003400 : 0x000001ef`00000003
+0d 000000ca`3ff7fb48 00007ffc`169dd7b3 : 000000ca`3ff7fbe8 000001ef`c7589580 00000000`00003400 000000ca`3ff7fbb0 : 0x20
+0e 000000ca`3ff7fb50 000000ca`3ff7fbe8 : 000001ef`c7589580 00000000`00003400 000000ca`3ff7fbb0 00000000`00000000 : 0x00007ffc`169dd7b3
+0f 000000ca`3ff7fb58 000001ef`c7589580 : 00000000`00003400 000000ca`3ff7fbb0 00000000`00000000 00007ffc`1372d179 : 0x000000ca`3ff7fbe8
+10 000000ca`3ff7fb60 00000000`00003400 : 000000ca`3ff7fbb0 00000000`00000000 00007ffc`1372d179 00000000`00000000 : 0x000001ef`c7589580
+11 000000ca`3ff7fb68 000000ca`3ff7fbb0 : 00000000`00000000 00007ffc`1372d179 00000000`00000000 00000000`00000000 : 0x3400
+12 000000ca`3ff7fb70 00000000`00000000 : 00007ffc`1372d179 00000000`00000000 00000000`00000000 000000ca`3ff7fc80 : 0x000000ca`3ff7fbb0
+0: kd> .reload /user
+Loading User Symbols
+...................
+
+Press ctrl-c (cdb, kd, ntsd) or ctrl-break (windbg) to abort symbol loads that take too long.
+Run !sym noisy before .reload to track down problems loading symbols.
+
+..............................
+
+************* Symbol Loading Error Summary **************
+Module name            Error
+SharedUserData         No error - symbol load deferred
+				Symbol loading has been deferred because this symbol is not needed
+				at this time. Use reload /f to force load symbols.
+
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd001`adf6d838 fffff800`cf2a14a9 nt!IoCompleteRequest
+01 ffffd001`adf6d840 fffff800`ceed1290 vmbus!InstancePdoReadWritePreprocess+0x69
+02 (Inline Function) --------`-------- Wdf01000!PreprocessIrp+0x43 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1475]
+03 (Inline Function) --------`-------- Wdf01000!DispatchWorker+0x180 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1537]
+04 (Inline Function) --------`-------- Wdf01000!FxDevice::Dispatch+0x194 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1560]
+05 ffffd001`adf6d870 fffff801`4cc0eaf6 Wdf01000!FxDevice::DispatchWithLock+0x1f0 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1402]
+06 ffffd001`adf6d8d0 fffff801`4cc0e642 nt!IopSynchronousServiceTail+0x176
+07 ffffd001`adf6d9a0 fffff801`4c9587a3 nt!NtReadFile+0x672
+08 ffffd001`adf6da90 00007ffc`1b2b4e14 nt!KiSystemServiceCopyEnd+0x13
+DBGHELP: c:\course\symbols\ntdll.dll\5632D1931c1000\ntdll.dll - OK
+DBGENG:  Partial symbol load found image c:\course\symbols\ntdll.dll\5632D1931c1000\ntdll.dll.
+
+DBGHELP: ntdll - public symbols  
+        c:\course\symbols\ntdll.pdb\4E4F50879F8345499DAE85935D2391CE1\ntdll.pdb
+
+DBGHELP: KERNELBASE - public symbols  
+        c:\course\symbols\kernelbase.pdb\5E2FD130FFC9420B9FE0D5635CEBC9C71\kernelbase.pdb
+09 000000ca`3ff7fb28 00007ffc`1826c3b4 ntdll!NtReadFile+0x14
+SYMSRV:  c:\course\symbols\icsvc.dll\5632D5CC8b000\icsvc.dll - file not found
+*** ERROR: HTTP_STATUS_NOT_FOUND
+INFO:  HTTP_STATUS_OK
+SYMSRV:  c:\course\symbols\icsvc.dll\5632D5CC8b000\icsvc.dll - file not found
+SYMSRV:  icsvc.dll from https://msdl.microsoft.com/download/symbols: 153292 bytes -    0 percent   2 percent  21 percent copied         
+DBGHELP: c:\course\symbols\icsvc.dll\5632D5CC8b000\icsvc.dll - OK
+DBGENG:  Partial symbol load found image c:\course\symbols\icsvc.dll\5632D5CC8b000\icsvc.dll.
+SYMSRV:  c:\course\symbols\ICSvc.pdb\1FAB031144FC4D0795F92FA36A54DE201\ICSvc.pdb - file not found
+*** ERROR: HTTP_STATUS_NOT_FOUND
+
+INFO:  HTTP_STATUS_OK
+SYMSRV:  c:\course\symbols\ICSvc.pdb\1FAB031144FC4D0795F92FA36A54DE201\ICSvc.pdb - file not found
+SYMSRV:  ICSvc.pdb from https://msdl.microsoft.com/download/symbols: 146498 bytes -    0 percent   2 percent
+  55 percent copied         
+
+DBGHELP: icsvc - public symbols  
+        c:\course\symbols\ICSvc.pdb\1FAB031144FC4D0795F92FA36A54DE201\ICSvc.pdb
+0a 000000ca`3ff7fb30 00007ffc`1372d4ed KERNELBASE!ReadFile+0x104
+0b 000000ca`3ff7fbb0 00007ffc`1372c67e icsvc!ICTransport::Read+0xed
+SYMSRV:  c:\course\symbols\ucrtbase.dll\5632D193f4000\ucrtbase.dll - file not found
+*** ERROR: HTTP_STATUS_NOT_FOUND
+INFO:  HTTP_STATUS_OK
+SYMSRV:  c:\course\symbols\ucrtbase.dll\5632D193f4000\ucrtbase.dll - file not found
+SYMSRV:  ucrtbase.dll from https://msdl.microsoft.com/download/symbols: 377995 bytes -    0 percent   1 percent   4 percent copied         
+DBGHELP: c:\course\symbols\ucrtbase.dll\5632D193f4000\ucrtbase.dll - OK
+DBGENG:  Partial symbol load found image c:\course\symbols\ucrtbase.dll\5632D193f4000\ucrtbase.dll.
+SYMSRV:  c:\course\symbols\ucrtbase.pdb\58420F26890B405289C02D8885F0D4E61\ucrtbase.pdb - file not found
+*** ERROR: HTTP_STATUS_NOT_FOUND
+
+INFO:  HTTP_STATUS_OK
+SYMSRV:  c:\course\symbols\ucrtbase.pdb\58420F26890B405289C02D8885F0D4E61\ucrtbase.pdb - file not found
+SYMSRV:  ucrtbase.pdb from https://msdl.microsoft.com/download/symbols: 206481 bytes -    0 percent   1 percent
+ copied         
+
+DBGHELP: ucrtbase - public symbols  
+        c:\course\symbols\ucrtbase.pdb\58420F26890B405289C02D8885F0D4E61\ucrtbase.pdb
+0c 000000ca`3ff7fc40 00007ffc`16a3be1d icsvc!ICEndpoint::DispatchThreadFunc+0xae
+DBGHELP: c:\course\symbols\KERNEL32.DLL\5632D5AAad000\KERNEL32.DLL - OK
+DBGENG:  Partial symbol load found image c:\course\symbols\KERNEL32.DLL\5632D5AAad000\KERNEL32.DLL.
+
+DBGHELP: KERNEL32 - public symbols  
+        c:\course\symbols\kernel32.pdb\A38C0A4E740A49CDAB4FDE37E77B5AA11\kernel32.pdb
+0d 000000ca`3ff7fc80 00007ffc`18a18102 ucrtbase!crt_at_quick_exit+0x7d
+0e 000000ca`3ff7fcb0 00007ffc`1b26c264 KERNEL32!BaseThreadInitThunk+0x22
+0f 000000ca`3ff7fce0 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> k
+ # Child-SP          RetAddr           Call Site
+00 ffffd001`adf6d838 fffff800`cf2a14a9 nt!IoCompleteRequest
+01 ffffd001`adf6d840 fffff800`ceed1290 vmbus!InstancePdoReadWritePreprocess+0x69
+02 (Inline Function) --------`-------- Wdf01000!PreprocessIrp+0x43 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1475]
+03 (Inline Function) --------`-------- Wdf01000!DispatchWorker+0x180 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1537]
+04 (Inline Function) --------`-------- Wdf01000!FxDevice::Dispatch+0x194 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1560]
+05 ffffd001`adf6d870 fffff801`4cc0eaf6 Wdf01000!FxDevice::DispatchWithLock+0x1f0 [d:\th\minkernel\wdf\framework\shared\core\fxdevice.cpp @ 1402]
+06 ffffd001`adf6d8d0 fffff801`4cc0e642 nt!IopSynchronousServiceTail+0x176
+07 ffffd001`adf6d9a0 fffff801`4c9587a3 nt!NtReadFile+0x672
+08 ffffd001`adf6da90 00007ffc`1b2b4e14 nt!KiSystemServiceCopyEnd+0x13
+09 000000ca`3ff7fb28 00007ffc`1826c3b4 ntdll!NtReadFile+0x14
+0a 000000ca`3ff7fb30 00007ffc`1372d4ed KERNELBASE!ReadFile+0x104
+0b 000000ca`3ff7fbb0 00007ffc`1372c67e icsvc!ICTransport::Read+0xed
+0c 000000ca`3ff7fc40 00007ffc`16a3be1d icsvc!ICEndpoint::DispatchThreadFunc+0xae
+0d 000000ca`3ff7fc80 00007ffc`18a18102 ucrtbase!crt_at_quick_exit+0x7d
+0e 000000ca`3ff7fcb0 00007ffc`1b26c264 KERNEL32!BaseThreadInitThunk+0x22
+0f 000000ca`3ff7fce0 00000000`00000000 ntdll!RtlUserThreadStart+0x34
+0: kd> r
+rax=0000000000000000 rbx=0000000000000000 rcx=ffffe000775963a0
+rdx=0000000000000000 rsi=0000000000000000 rdi=ffffe000775963a0
+rip=fffff8014c861a70 rsp=ffffd001adf6d838 rbp=0000000000000003
+ r8=0000000000000000  r9=0000000000000d30 r10=0000000000000000
+r11=0000000000005000 r12=0000000000000000 r13=ffffe000763f2da0
+r14=0000000000000000 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+nt!IoCompleteRequest:
+fffff801`4c861a70 48ff25319a3200  jmp     qword ptr [nt!pIofCompleteRequest (fffff801`4cb8b4a8)] ds:002b:fffff801`4cb8b4a8={nt!IopfCompleteRequest (fffff801`4c861a80)}
+0: kd> dt _KAPC ffffe000775963a0
+ntdll!_KAPC
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> ln ffffe000770f46e0
+Browse module
+Set bu breakpoint
+
+0: kd> !apc
+*** Enumerating APCs in all processes
+Process ffffe0007563c700 System
+    Thread ffffe00075657600    Thread ffffe000756ed040    Thread ffffe000756ec040    Thread ffffe000756ef040    Thread ffffe000756f3040    Thread ffffe000756f9040    Thread ffffe000756f8040    Thread ffffe000756f7040    Thread ffffe000756f0040    Thread ffffe000756f2040    Thread ffffe000756f1040    Thread ffffe0007574c040    Thread ffffe00075750040    Thread ffffe0007574f040    Thread ffffe00075755040    Thread ffffe00075754040    Thread ffffe00075753040    Thread ffffe00075752040    Thread ffffe00075776040    Thread ffffe0007577a040    Thread ffffe00075779040    Thread ffffe0007585e040    Thread ffffe0007585d040    Thread ffffe0007585c040    Thread ffffe0007585b040    Thread ffffe000758be040    Thread ffffe000758bd040    Thread ffffe0007590c040    Thread ffffe00075957040    Thread ffffe00075956040    Thread ffffe000759ba040    Thread ffffe000759cb840    Thread ffffe00075858040    Thread ffffe000759cf040    Thread ffffe000759ce040    Thread ffffe000759cd040    Thread ffffe0007563b040    Thread ffffe000759c8040    Thread ffffe0007628b040    Thread ffffe00076287040    Thread ffffe0007628a040    Thread ffffe00076285840    Thread ffffe00076297840    Thread ffffe00076298500    Thread ffffe000763d2040    Thread ffffe000763d3040    Thread ffffe000763d4040    Thread ffffe000763d5040    Thread ffffe000763d6040    Thread ffffe000763d7040    Thread ffffe000763d8040    Thread ffffe00076743840    Thread ffffe00076747800    Thread ffffe000767af3c0    Thread ffffe000767b0040    Thread ffffe000767b2840    Thread ffffe000767b3040    Thread ffffe000768eb840    Thread ffffe0007698b040    Thread ffffe00076229040    Thread ffffe00076a34040    Thread ffffe00076a77540    Thread ffffe00076ae0040    Thread ffffe00076aeb080    Thread ffffe00076aec080    Thread ffffe00076aff4c0    Thread ffffe00076b02840    Thread ffffe00076ad15c0    Thread ffffe00076bab080    Thread ffffe00076baf080    Thread ffffe00076bd13c0    Thread ffffe00076bae840    Thread ffffe00076fee840    Thread ffffe0007731a080    Thread ffffe0007726b080    Thread ffffe00077276080    Thread ffffe00077277200    Thread ffffe00077282080    Thread ffffe00077298080    Thread ffffe00077299840    Thread ffffe000772ae080    Thread ffffe0007709b040    Thread ffffe000770c1780    Thread ffffe0007748e6c0    Thread ffffe00076bc0680    Thread ffffe00076bc1040    Thread ffffe0007756d840    Thread ffffe0007757d080    Thread ffffe0007718d840    Thread ffffe00077616040    Thread ffffe0007767a080    Thread ffffe0007767b080    Thread ffffe0007767c080    Thread ffffe0007767d080    Thread ffffe0007767e040    Thread ffffe00077728080    Thread ffffe000776ad040    Thread ffffe000776b25c0    Thread ffffe000776f5740    Thread ffffe000776b1840    Thread ffffe000776fa840    Thread ffffe00077701840    Thread ffffe000776fb080    Thread ffffe000776fc080    Thread ffffe000777d6040    Thread ffffe000777d7040    Thread ffffe000777d9040    Thread ffffe000777da040    Thread ffffe000777db040    Thread ffffe000777dd040    Thread ffffe000777d2840    Thread ffffe000777d5040    Thread ffffe000777d0840    Thread ffffe00077566840    Thread ffffe000778a5840    Thread ffffe00077930080    Thread ffffe000765d84c0    Thread ffffe00076b7f840    Thread ffffe00076b85080    Thread ffffe00076b89840    Thread ffffe00077c91840    Thread ffffe00077c8f080    Thread ffffe00077c8e080    Thread ffffe00077c97840    Thread ffffe00077e73340    Thread ffffe00077e50840    Thread ffffe00077dd9080    Thread ffffe00077d28840    Thread ffffe00077cd6700    Thread ffffe000765db040    Thread ffffe000765dd040    Thread ffffe0007755d040    Thread ffffe0007755e040    Thread ffffe0007755f840    Thread ffffe00077560040    Thread ffffe0007792c840    Thread ffffe00077c59780    Thread ffffe00077cc9040    Thread ffffe00077ccb040    Thread ffffe00077cd1040    Thread ffffe00077cd2040    Thread ffffe00077cd5040    Thread ffffe00077cd7040    Thread ffffe00077cda040    Thread ffffe00077cdf040    Thread ffffe00077ce1040    Thread ffffe00077ce5040    Thread ffffe00077ce9040    Thread ffffe00077cea040    Thread ffffe00077ceb040    Thread ffffe00077cee040    Thread ffffe00077cef040    Thread ffffe00077cf3840    Thread ffffe00077cf5840    Thread ffffe00076578840    Thread ffffe00075c63640    Thread ffffe00076387040    Thread ffffe0007637e040Process ffffe00076a37040 smss.exe
+    Thread ffffe00076a38040    Thread ffffe00076a532c0Process ffffe00076b4d080 csrss.exe
+    Thread ffffe00076a28080    Thread ffffe00076fbb600    Thread ffffe00076fb8080    Thread ffffe00076fbe080    Thread ffffe0007565c080    Thread ffffe0007731e080    Thread ffffe00077320080    Thread ffffe000772bd280    Thread ffffe00077860840Process ffffe00076fe3080 wininit.exe
+    Thread ffffe00076fe4080    Thread ffffe0007807c340Process ffffe00076966500 services.exe
+    Thread ffffe00077225680    Thread ffffe000773ed740    Thread ffffe00075ee6080Process ffffe00076b98280 lsass.exe
+    Thread ffffe00077346840    Thread ffffe00076bbc280    Thread ffffe000756d7080    Thread ffffe00077222080    Thread ffffe000772e7080    Thread ffffe00077ef5340Process ffffe0007721f780 svchost.exe
+    Thread ffffe00076bcb840    Thread ffffe00077223080    Thread ffffe0007722c080    Thread ffffe000772c1080    Thread ffffe000772bb080    Thread ffffe000772bf840    Thread ffffe000772f8080    Thread ffffe000771ee080    Thread ffffe000771d35c0    Thread ffffe00076589840    Thread ffffe000765b0840    Thread ffffe00075845080    Thread ffffe000774ed080    Thread ffffe00077d18080    Thread ffffe00075f9d040    Thread ffffe00075a315c0    Thread ffffe00075f95080    Thread ffffe00076412040    Thread ffffe00077441840    Thread ffffe00075bb3080Process ffffe0007722b840 svchost.exe
+    Thread ffffe00077234080    Thread ffffe0007723f080    Thread ffffe00077241080    Thread ffffe000765c83c0    Thread ffffe00075e76840    Thread ffffe00075db0080    Thread ffffe000761df080    Thread ffffe000761e2080    Thread ffffe000762ec080    Thread ffffe00075c66080Process ffffe000772db840 svchost.exe
+    Thread ffffe000772e8080    Thread ffffe000773a3540    Thread ffffe000773e9080    Thread ffffe000773ea080    Thread ffffe000773ec080    Thread ffffe00077016080    Thread ffffe0007701b740    Thread ffffe000770c6080    Thread ffffe000770dd380    Thread ffffe000770e1080    Thread ffffe000770e3080    Thread ffffe000770e6080    Thread ffffe000771e4600    Thread ffffe000771a0080    Thread ffffe000774c7080    Thread ffffe0007753e080    Thread ffffe00077007080    Thread ffffe0007754c080    Thread ffffe000775496c0    Thread ffffe00077646080    Thread ffffe00077682540    Thread ffffe0007768d080    Thread ffffe00077691080    Thread ffffe000776a1080    Thread ffffe000777cd080    Thread ffffe000777f4080    Thread ffffe000777e5500    Thread ffffe0007780c080    Thread ffffe0007780e080    Thread ffffe000778c0080    Thread ffffe000778ca040    Thread ffffe000764c8040    Thread ffffe0007701f080    Thread ffffe000773905c0    Thread ffffe0007739a080    Thread ffffe0007589f080    Thread ffffe00077d20080    Thread ffffe00077dac840    Thread ffffe0007758b840    Thread ffffe00077705080    Thread ffffe00077356840    Thread ffffe000777c8080    Thread ffffe000777a7080    Thread ffffe00077020080    Thread ffffe00077d12080    Thread ffffe00075c81840    Thread ffffe00075f8d040    Thread ffffe00075f94080    Thread ffffe000762d5080    Thread ffffe000762d6080    Thread ffffe000762f5040    Thread ffffe00076608080    Thread ffffe000766a8080    Thread ffffe00075c6d840    Thread ffffe00076685080    Thread ffffe000766845c0    Thread ffffe0007667c080    Thread ffffe00076688080    Thread ffffe00076601840    Thread ffffe0007618d840    Thread ffffe00075ffb080    Thread ffffe00075c6f840    Thread ffffe00077025080    Thread ffffe0007702b080    Thread ffffe00077e13340    Thread ffffe0007632f080Process ffffe000772da080 svchost.exe
+    Thread ffffe000772e9080    Thread ffffe000773a6640    Thread ffffe000773ad080    Thread ffffe000773a57c0    Thread ffffe000773b7080    Thread ffffe00077088080    Thread ffffe000770cb080    Thread ffffe000770f1080    Thread ffffe000770f3080    Thread ffffe000770f5080    Thread ffffe000770f0080    Thread ffffe00077101080    Thread ffffe00077102080    Thread ffffe00077105080    Thread ffffe0007710c740    Thread ffffe0007711a080    Thread ffffe0007710d080    Thread ffffe0007711b840    Thread ffffe0007711c6c0    Thread ffffe00077126080    Thread ffffe000770ed080    Thread ffffe00077130080    Thread ffffe00076985080    Thread ffffe00077134080    Thread ffffe00077135080    Thread ffffe000771c5080    Thread ffffe000771c6080    Thread ffffe000771c8080    Thread ffffe000771c9080    Thread ffffe000771ca080    Thread ffffe000771cb080    Thread ffffe000771cc080    Thread ffffe00077186840    Thread ffffe00077187080    Thread ffffe000773d9080    Thread ffffe000774072c0    Thread ffffe00077606080    Thread ffffe000775ce080    Thread ffffe000775d6080    Thread ffffe000775d7080    Thread ffffe000775d8080    Thread ffffe00077629080    Thread ffffe0007652a080    Thread ffffe000772ea840    Thread ffffe00077194080    Thread ffffe00076647080    Thread ffffe000761e4840    Thread ffffe00076451840    Thread ffffe0007664f840    Thread ffffe000764da080    Thread ffffe00077fe0840    Thread ffffe00075de0640Process ffffe000773ae280 svchost.exe
+    Thread ffffe000773b2080    Thread ffffe000773d4840    Thread ffffe000776027c0    Thread ffffe00077615080    Thread ffffe0007761a080    Thread ffffe0007764c740    Thread ffffe00077643080    Thread ffffe00077722080    Thread ffffe00077723080    Thread ffffe00077733080    Thread ffffe0007772b240    Thread ffffe000777cb6c0    Thread ffffe000777f9080    Thread ffffe000777eb4c0    Thread ffffe000777f0080    Thread ffffe000778145c0    Thread ffffe00077815080    Thread ffffe00077836840    Thread ffffe000778bc300    Thread ffffe000778ba3c0    Thread ffffe00077929600    Thread ffffe0007646d080Process ffffe000773b4840 svchost.exe
+    Thread ffffe000773a1840    Thread ffffe00075844080    Thread ffffe000764e3840    Thread ffffe000764a4080    Thread ffffe00077ec8840    Thread ffffe00075f8b040    Thread ffffe00075f85840    Thread ffffe0007633d080Process ffffe000773a2400 svchost.exe
+    Thread ffffe000773b3440    Thread ffffe000770223c0    Thread ffffe00076bce040    Thread ffffe000771fe840    Thread ffffe000773f5840    Thread ffffe000773f6080    Thread ffffe000774ce080    Thread ffffe000775e1080    Thread ffffe000775d1080    Thread ffffe000775e3080    Thread ffffe000775e5080    Thread ffffe000775ea080    Thread ffffe000777ee080    Thread ffffe000764ca080    Thread ffffe000776253c0    Thread ffffe0007664a840    Thread ffffe00075a6d840Process ffffe000773b6840 svchost.exe
+    Thread ffffe00077018080    Thread ffffe0007704d080    Thread ffffe00077153080 ApcStateIndex 0 ApcListHead ffffe00077153118 [KERNEL]
+        KAPC @ ffffe00075b89648
+          Type           12
+          KernelRoutine  fffff8014c862b60 nt!IopCompleteRequest+0
+          RundownRoutine fffff8014ce034c0 nt!IopAbortRequest+0
+    Thread ffffe0007714d840    Thread ffffe0007716f6c0    Thread ffffe000771d6080    Thread ffffe000771d5080    Thread ffffe000771d7840    Thread ffffe0007718a080    Thread ffffe000774e06c0    Thread ffffe000774f2380    Thread ffffe0007753a080    Thread ffffe0007753b080    Thread ffffe000764f9840    Thread ffffe00075b17840    Thread ffffe000764cb080    Thread ffffe000762d8080    Thread ffffe00075d70780Process ffffe0007701a840 svchost.exe
+    Thread ffffe000770127c0    Thread ffffe00077002080    Thread ffffe00077003080    Thread ffffe00077008080    Thread ffffe00077094080    Thread ffffe0007708d080    Thread ffffe00077103040    Thread ffffe0007710b080    Thread ffffe000773f4080    Thread ffffe000774cf6c0    Thread ffffe000775c9080    Thread ffffe00077663580    Thread ffffe000763e8840    Thread ffffe000776fe080    Thread ffffe000776ff080    Thread ffffe0007647d080    Thread ffffe00077a90840    Thread ffffe00076493080    Thread ffffe00075f8c080    Thread ffffe00076603080Process ffffe0007703d840 svchost.exe
+    Thread ffffe0007722f080    Thread ffffe0007700d080    Thread ffffe00077030840    Thread ffffe0007708a080    Thread ffffe0007708c080    Thread ffffe000770c4080    Thread ffffe000770c7080    Thread ffffe000770c8080    Thread ffffe000770c9080    Thread ffffe000770ca080    Thread ffffe000770e7080    Thread ffffe000770e9080    Thread ffffe000770ef080    Thread ffffe000770f4080    Thread ffffe00075ef1040    Thread ffffe000761ad080Process ffffe00077132080 VSSVC.exe
+    Thread ffffe00077133080    Thread ffffe0007712c7c0    Thread ffffe00075cda040    Thread ffffe000764ab840    Thread ffffe00076480080Process ffffe0007719e080 csrss.exe
+    Thread ffffe0007719d080    Thread ffffe000771ae080    Thread ffffe000771b0080    Thread ffffe000771ab480    Thread ffffe00077413080    Thread ffffe0007742f840    Thread ffffe00077428080    Thread ffffe00077449840    Thread ffffe00075bc6080    Thread ffffe000762f7840Process ffffe0007717f080 winlogon.exe
+    Thread ffffe00077180080    Thread ffffe00077414080    Thread ffffe00077442080    Thread ffffe000761b4080    Thread ffffe00076326080Process ffffe00077447080 dwm.exe
+    Thread ffffe00077448080    Thread ffffe0007745a4c0    Thread ffffe0007745f080    Thread ffffe00077461080    Thread ffffe00077462080    Thread ffffe00077463080    Thread ffffe00077474080    Thread ffffe000774764c0    Thread ffffe00077477080    Thread ffffe00075cfe840    Thread ffffe0007747f080    Thread ffffe00076386840    Thread ffffe000764a0080Process ffffe0007759b080 spoolsv.exe
+    Thread ffffe0007759c080    Thread ffffe000775b6080    Thread ffffe000775ae080    Thread ffffe000764b9080    Thread ffffe000765b55c0    Thread ffffe000765ab840    Thread ffffe000764a2080    Thread ffffe000765ca080    Thread ffffe000775ab5c0    Thread ffffe0007634d840Process ffffe0007764f740 svchost.exe
+    Thread ffffe00077650840    Thread ffffe00077c98080    Thread ffffe00075f6f840    Thread ffffe00075f70080    Thread ffffe00075c39840    Thread ffffe00076332380    Thread ffffe0007744f840    Thread ffffe000765e1080Process ffffe00077655840 svchost.exe
+    Thread ffffe0007717b080    Thread ffffe000776ca080    Thread ffffe000776cd080Process ffffe00077726680 MsMpEng.exe
+    Thread ffffe000776ac080    Thread ffffe000776e7500    Thread ffffe00077703080    Thread ffffe00076926080    Thread ffffe0007692a080    Thread ffffe00076932080    Thread ffffe00076933080    Thread ffffe00076946080    Thread ffffe00076947080    Thread ffffe00076948080    Thread ffffe00076949080    Thread ffffe0007694a080    Thread ffffe0007694b080    Thread ffffe0007694c080                                       
+0: kd> !py C:\course\python\windbg\ex.py
+Ptr Void(__cdecl*)(_KAPC*, Void(__cdecl**)(Void*, Void*, Void*), Void**, Void**, Void**) at 0xffffe000775963c0 Value: 0xffffe000770f46e0 (18446708891334952672)0: kd> dt _KAPC @rcx
+ntdll!_KAPC
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> !py C:\course\python\windbg\ex.py
+184467088913398097280: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963c0L0: kd> !py C:\course\python\windbg\ex.py
+
+
+Traceback (most recent call last):
+
+  File "C:\course\python\windbg\ex.py", line 7, in <module>
+    dprint(str(hex(tv.KernelRoutine.getAddress().deref())))
+
+AttributeError: 'long' object has no attribute 'deref'
+
+
+0: kd> !py C:\course\python\windbg\ex.py
+
+
+Traceback (most recent call last):
+
+  File "C:\course\python\windbg\ex.py", line 7, in <module>
+    dprint(str(hex(tv.KernelRoutine.deref())))
+
+DbgException: pyDia: Call IDiaSymbol::get_length failed
+Symbol: , tag= 13
+Return value is 0x1: 
+Incorrect function.
+
+
+
+0: kd> dt _KAPC @rcx
+ntdll!_KAPC
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> dt nt!_THREAD -y wait
+Symbol nt!_THREAD not found.
+0: kd> dt nt!_KTHREAD -y wait
+   +0x070 WaitRegister : _KWAIT_STATUS_REGISTER
+   +0x074 WaitNext : Pos 2, 1 Bit
+   +0x0c8 WaitStatus : Int8B
+   +0x0d0 WaitBlockList : Ptr64 _KWAIT_BLOCK
+   +0x0d8 WaitListEntry : _LIST_ENTRY
+   +0x140 WaitBlock : [4] _KWAIT_BLOCK
+   +0x140 WaitBlockFill4 : [20] UChar
+   +0x140 WaitBlockFill5 : [68] UChar
+   +0x186 WaitIrql : UChar
+   +0x187 WaitMode : Char
+   +0x140 WaitBlockFill6 : [116] UChar
+   +0x1b4 WaitTime : Uint4B
+   +0x140 WaitBlockFill7 : [164] UChar
+   +0x140 WaitBlockFill8 : [40] UChar
+   +0x140 WaitBlockFill9 : [88] UChar
+   +0x140 WaitBlockFill10 : [136] UChar
+   +0x140 WaitBlockFill11 : [176] UChar
+   +0x24b WaitBlockCount : UChar
+   +0x283 WaitReason : UChar
+   +0x2c8 WaitPrcb : Ptr64 _KPRCB
+0: kd> dt nt!_KTHREAD WaitBlock .
+   +0x000 Header           : 
+      +0x000 Lock             : Int4B
+      +0x000 LockNV           : Int4B
+      +0x000 Type             : UChar
+      +0x001 Signalling       : UChar
+      +0x002 Size             : UChar
+      +0x003 Reserved1        : UChar
+      +0x000 TimerType        : UChar
+      +0x001 TimerControlFlags : UChar
+      +0x001 Absolute         : Pos 0, 1 Bit
+      +0x001 Wake             : Pos 1, 1 Bit
+      +0x001 EncodedTolerableDelay : Pos 2, 6 Bits
+      +0x002 Hand             : UChar
+      +0x003 TimerMiscFlags   : UChar
+      +0x003 Index            : Pos 0, 6 Bits
+      +0x003 Inserted         : Pos 6, 1 Bit
+      +0x003 Expired          : Pos 7, 1 Bit
+      +0x000 Timer2Type       : UChar
+      +0x001 Timer2Flags      : UChar
+      +0x001 Timer2Inserted   : Pos 0, 1 Bit
+      +0x001 Timer2Expiring   : Pos 1, 1 Bit
+      +0x001 Timer2CancelPending : Pos 2, 1 Bit
+      +0x001 Timer2SetPending : Pos 3, 1 Bit
+      +0x001 Timer2Running    : Pos 4, 1 Bit
+      +0x001 Timer2Disabled   : Pos 5, 1 Bit
+      +0x001 Timer2ReservedFlags : Pos 6, 2 Bits
+      +0x002 Timer2Reserved1  : UChar
+      +0x003 Timer2Reserved2  : UChar
+      +0x000 QueueType        : UChar
+      +0x001 QueueControlFlags : UChar
+      +0x001 Abandoned        : Pos 0, 1 Bit
+      +0x001 DisableIncrement : Pos 1, 1 Bit
+      +0x001 QueueReservedControlFlags : Pos 2, 6 Bits
+      +0x002 QueueSize        : UChar
+      +0x003 QueueReserved    : UChar
+      +0x000 ThreadType       : UChar
+      +0x001 ThreadReserved   : UChar
+      +0x002 ThreadControlFlags : UChar
+      +0x002 CycleProfiling   : Pos 0, 1 Bit
+      +0x002 CounterProfiling : Pos 1, 1 Bit
+      +0x002 GroupScheduling  : Pos 2, 1 Bit
+      +0x002 AffinitySet      : Pos 3, 1 Bit
+      +0x002 Tagged           : Pos 4, 1 Bit
+      +0x002 EnergyProfiling  : Pos 5, 1 Bit
+      +0x002 ThreadReservedControlFlags : Pos 6, 2 Bits
+      +0x003 DebugActive      : UChar
+      +0x003 ActiveDR7        : Pos 0, 1 Bit
+      +0x003 Instrumented     : Pos 1, 1 Bit
+      +0x003 Minimal          : Pos 2, 1 Bit
+      +0x003 Reserved4        : Pos 3, 3 Bits
+      +0x003 UmsScheduled     : Pos 6, 1 Bit
+      +0x003 UmsPrimary       : Pos 7, 1 Bit
+      +0x000 MutantType       : UChar
+      +0x001 MutantSize       : UChar
+      +0x002 DpcActive        : UChar
+      +0x003 MutantReserved   : UChar
+      +0x004 SignalState      : Int4B
+      +0x008 WaitListHead     : _LIST_ENTRY
+   +0x018 SListFaultAddress : 
+   +0x020 QuantumTarget    : Uint8B
+   +0x028 InitialStack     : 
+   +0x030 StackLimit       : 
+   +0x038 StackBase        : 
+   +0x040 ThreadLock       : Uint8B
+   +0x048 CycleTime        : Uint8B
+   +0x050 CurrentRunTime   : Uint4B
+   +0x054 ExpectedRunTime  : Uint4B
+   +0x058 KernelStack      : 
+   +0x060 StateSaveArea    : 
+   +0x068 SchedulingGroup  : 
+   +0x070 WaitRegister     : 
+      +0x000 Flags            : UChar
+      +0x000 State            : Pos 0, 3 Bits
+      +0x000 Affinity         : Pos 3, 1 Bit
+      +0x000 Priority         : Pos 4, 1 Bit
+      +0x000 Apc              : Pos 5, 1 Bit
+      +0x000 UserApc          : Pos 6, 1 Bit
+      +0x000 Alert            : Pos 7, 1 Bit
+   +0x071 Running          : UChar
+   +0x072 Alerted          : [2] UChar
+   +0x074 AutoBoostActive  : Uint4B
+   +0x074 ReadyTransition  : Uint4B
+   +0x074 WaitNext         : Uint4B
+   +0x074 SystemAffinityActive : Uint4B
+   +0x074 Alertable        : Uint4B
+   +0x074 UserStackWalkActive : Uint4B
+   +0x074 ApcInterruptRequest : Uint4B
+   +0x074 QuantumEndMigrate : Uint4B
+   +0x074 UmsDirectedSwitchEnable : Uint4B
+   +0x074 TimerActive      : Uint4B
+   +0x074 SystemThread     : Uint4B
+   +0x074 ProcessDetachActive : Uint4B
+   +0x074 CalloutActive    : Uint4B
+   +0x074 ScbReadyQueue    : Uint4B
+   +0x074 ApcQueueable     : Uint4B
+   +0x074 ReservedStackInUse : Uint4B
+   +0x074 UmsPerformingSyscall : Uint4B
+   +0x074 TimerSuspended   : Uint4B
+   +0x074 SuspendedWaitMode : Uint4B
+   +0x074 SuspendSchedulerApcWait : Uint4B
+   +0x074 Reserved         : Uint4B
+   +0x074 MiscFlags        : Int4B
+   +0x078 AutoAlignment    : Uint4B
+   +0x078 DisableBoost     : Uint4B
+   +0x078 ThreadFlagsSpare0 : Uint4B
+   +0x078 AlertedByThreadId : Uint4B
+   +0x078 QuantumDonation  : Uint4B
+   +0x078 EnableStackSwap  : Uint4B
+   +0x078 GuiThread        : Uint4B
+   +0x078 DisableQuantum   : Uint4B
+   +0x078 ChargeOnlySchedulingGroup : Uint4B
+   +0x078 DeferPreemption  : Uint4B
+   +0x078 QueueDeferPreemption : Uint4B
+   +0x078 ForceDeferSchedule : Uint4B
+   +0x078 SharedReadyQueueAffinity : Uint4B
+   +0x078 FreezeCount      : Uint4B
+   +0x078 TerminationApcRequest : Uint4B
+   +0x078 AutoBoostEntriesExhausted : Uint4B
+   +0x078 KernelStackResident : Uint4B
+   +0x078 CommitFailTerminateRequest : Uint4B
+   +0x078 ProcessStackCountDecremented : Uint4B
+   +0x078 ThreadFlagsSpare : Uint4B
+   +0x078 EtwStackTraceApcInserted : Uint4B
+   +0x078 ThreadFlags      : Int4B
+   +0x07c Tag              : UChar
+   +0x07d SystemHeteroCpuPolicy : UChar
+   +0x07e UserHeteroCpuPolicy : UChar
+   +0x07e ExplicitSystemHeteroCpuPolicy : UChar
+   +0x07f Spare0           : UChar
+   +0x080 SystemCallNumber : Uint4B
+   +0x084 Spare10          : Uint4B
+   +0x088 FirstArgument    : 
+   +0x090 TrapFrame        : 
+   +0x098 ApcState         : 
+      +0x000 ApcListHead      : [2] _LIST_ENTRY
+      +0x020 Process          : Ptr64 _KPROCESS
+      +0x028 InProgressFlags  : UChar
+      +0x028 KernelApcInProgress : Pos 0, 1 Bit
+      +0x028 SpecialApcInProgress : Pos 1, 1 Bit
+      +0x029 KernelApcPending : UChar
+      +0x02a UserApcPending   : UChar
+   +0x098 ApcStateFill     : [43] UChar
+   +0x0c3 Priority         : Char
+   +0x0c4 UserIdealProcessor : Uint4B
+   +0x0c8 WaitStatus       : Int8B
+   +0x0d0 WaitBlockList    : 
+   +0x0d8 WaitListEntry    : 
+      +0x000 Flink            : Ptr64 _LIST_ENTRY
+      +0x008 Blink            : Ptr64 _LIST_ENTRY
+   +0x0d8 SwapListEntry    : 
+      +0x000 Next             : Ptr64 _SINGLE_LIST_ENTRY
+   +0x0e8 Queue            : 
+   +0x0f0 Teb              : 
+   +0x0f8 RelativeTimerBias : Uint8B
+   +0x100 Timer            : 
+      +0x000 Header           : _DISPATCHER_HEADER
+      +0x018 DueTime          : _ULARGE_INTEGER
+      +0x020 TimerListEntry   : _LIST_ENTRY
+      +0x030 Dpc              : Ptr64 _KDPC
+      +0x038 Processor        : Uint4B
+      +0x03c Period           : Uint4B
+   +0x140 WaitBlock        : [4] _KWAIT_BLOCK
+      +0x000 WaitListEntry    : _LIST_ENTRY
+      +0x010 WaitType         : UChar
+      +0x011 BlockState       : UChar
+      +0x012 WaitKey          : Uint2B
+      +0x014 SpareLong        : Int4B
+      +0x018 Thread           : Ptr64 _KTHREAD
+      +0x018 NotificationQueue : Ptr64 _KQUEUE
+      +0x020 Object           : Ptr64 Void
+      +0x028 SparePtr         : Ptr64 Void
+   +0x140 WaitBlockFill4   : [20] UChar
+   +0x154 ContextSwitches  : Uint4B
+   +0x140 WaitBlockFill5   : [68] UChar
+   +0x184 State            : UChar
+   +0x185 Spare13          : Char
+   +0x186 WaitIrql         : UChar
+   +0x187 WaitMode         : Char
+   +0x140 WaitBlockFill6   : [116] UChar
+   +0x1b4 WaitTime         : Uint4B
+   +0x140 WaitBlockFill7   : [164] UChar
+   +0x1e4 KernelApcDisable : Int2B
+   +0x1e6 SpecialApcDisable : Int2B
+   +0x1e4 CombinedApcDisable : Uint4B
+   +0x140 WaitBlockFill8   : [40] UChar
+   +0x168 ThreadCounters   : 
+   +0x140 WaitBlockFill9   : [88] UChar
+   +0x198 XStateSave       : 
+   +0x140 WaitBlockFill10  : [136] UChar
+   +0x1c8 Win32Thread      : 
+   +0x140 WaitBlockFill11  : [176] UChar
+   +0x1f0 Ucb              : 
+   +0x1f8 Uch              : 
+   +0x200 TebMappedLowVa   : 
+   +0x208 QueueListEntry   : 
+      +0x000 Flink            : Ptr64 _LIST_ENTRY
+      +0x008 Blink            : Ptr64 _LIST_ENTRY
+   +0x218 NextProcessor    : Uint4B
+   +0x218 NextProcessorNumber : Uint4B
+   +0x218 SharedReadyQueue : Uint4B
+   +0x21c QueuePriority    : Int4B
+   +0x220 Process          : 
+   +0x228 UserAffinity     : 
+      +0x000 Mask             : Uint8B
+      +0x008 Group            : Uint2B
+      +0x00a Reserved         : [3] Uint2B
+   +0x228 UserAffinityFill : [10] UChar
+   +0x232 PreviousMode     : Char
+   +0x233 BasePriority     : Char
+   +0x234 PriorityDecrement : Char
+   +0x234 ForegroundBoost  : UChar
+   +0x234 UnusualBoost     : UChar
+   +0x235 Preempted        : UChar
+   +0x236 AdjustReason     : UChar
+   +0x237 AdjustIncrement  : Char
+   +0x238 AffinityVersion  : Uint8B
+   +0x240 Affinity         : 
+      +0x000 Mask             : Uint8B
+      +0x008 Group            : Uint2B
+      +0x00a Reserved         : [3] Uint2B
+   +0x240 AffinityFill     : [10] UChar
+   +0x24a ApcStateIndex    : UChar
+   +0x24b WaitBlockCount   : UChar
+   +0x24c IdealProcessor   : Uint4B
+   +0x250 NpxState         : Uint8B
+   +0x258 SavedApcState    : 
+      +0x000 ApcListHead      : [2] _LIST_ENTRY
+      +0x020 Process          : Ptr64 _KPROCESS
+      +0x028 InProgressFlags  : UChar
+      +0x028 KernelApcInProgress : Pos 0, 1 Bit
+      +0x028 SpecialApcInProgress : Pos 1, 1 Bit
+      +0x029 KernelApcPending : UChar
+      +0x02a UserApcPending   : UChar
+   +0x258 SavedApcStateFill : [43] UChar
+   +0x283 WaitReason       : UChar
+   +0x284 SuspendCount     : Char
+   +0x285 Saturation       : Char
+   +0x286 SListFaultCount  : Uint2B
+   +0x288 SchedulerApc     : 
+      +0x000 Type             : UChar
+      +0x001 SpareByte0       : UChar
+      +0x002 Size             : UChar
+      +0x003 SpareByte1       : UChar
+      +0x004 SpareLong0       : Uint4B
+      +0x008 Thread           : Ptr64 _KTHREAD
+      +0x010 ApcListEntry     : _LIST_ENTRY
+      +0x020 KernelRoutine    : Ptr64        void 
+      +0x028 RundownRoutine   : Ptr64        void 
+      +0x030 NormalRoutine    : Ptr64        void 
+      +0x020 Reserved         : [3] Ptr64 Void
+      +0x038 NormalContext    : Ptr64 Void
+      +0x040 SystemArgument1  : Ptr64 Void
+      +0x048 SystemArgument2  : Ptr64 Void
+      +0x050 ApcStateIndex    : Char
+      +0x051 ApcMode          : Char
+      +0x052 Inserted         : UChar
+   +0x288 SchedulerApcFill0 : [1] UChar
+   +0x289 ResourceIndex    : UChar
+   +0x288 SchedulerApcFill1 : [3] UChar
+   +0x28b QuantumReset     : UChar
+   +0x288 SchedulerApcFill2 : [4] UChar
+   +0x28c KernelTime       : Uint4B
+   +0x288 SchedulerApcFill3 : [64] UChar
+   +0x2c8 WaitPrcb         : 
+   +0x288 SchedulerApcFill4 : [72] UChar
+   +0x2d0 LegoData         : 
+   +0x288 SchedulerApcFill5 : [83] UChar
+   +0x2db CallbackNestingLevel : UChar
+   +0x2dc UserTime         : Uint4B
+   +0x2e0 SuspendEvent     : 
+      +0x000 Header           : _DISPATCHER_HEADER
+   +0x2f8 ThreadListEntry  : 
+      +0x000 Flink            : Ptr64 _LIST_ENTRY
+      +0x008 Blink            : Ptr64 _LIST_ENTRY
+   +0x308 MutantListHead   : 
+      +0x000 Flink            : Ptr64 _LIST_ENTRY
+      +0x008 Blink            : Ptr64 _LIST_ENTRY
+   +0x318 AbEntrySummary   : UChar
+   +0x319 AbWaitEntryCount : UChar
+   +0x31a Spare20          : Uint2B
+   +0x31c SecureThreadCookie : Uint4B
+   +0x320 LockEntries      : [6] 
+      +0x000 TreeNode         : _RTL_BALANCED_NODE
+      +0x000 FreeListEntry    : _SINGLE_LIST_ENTRY
+      +0x018 EntryFlags       : Uint4B
+      +0x018 EntryOffset      : UChar
+      +0x019 ThreadLocalFlags : UChar
+      +0x019 WaitingBit       : Pos 0, 1 Bit
+      +0x019 Spare0           : Pos 1, 7 Bits
+      +0x01a AcquiredByte     : UChar
+      +0x01a AcquiredBit      : Pos 0, 1 Bit
+      +0x01b CrossThreadFlags : UChar
+      +0x01b HeadNodeBit      : Pos 0, 1 Bit
+      +0x01b IoPriorityBit    : Pos 1, 1 Bit
+      +0x01b Spare1           : Pos 2, 6 Bits
+      +0x018 StaticState      : Pos 0, 8 Bits
+      +0x018 AllFlags         : Pos 8, 24 Bits
+      +0x01c SpareFlags       : Uint4B
+      +0x020 LockState        : _KLOCK_ENTRY_LOCK_STATE
+      +0x020 LockUnsafe       : Ptr64 Void
+      +0x020 CrossThreadReleasableAndBusyByte : UChar
+      +0x021 Reserved         : [6] UChar
+      +0x027 InTreeByte       : UChar
+      +0x028 SessionState     : Ptr64 Void
+      +0x028 SessionId        : Uint4B
+      +0x02c SessionPad       : Uint4B
+      +0x030 OwnerTree        : _RTL_RB_TREE
+      +0x040 WaiterTree       : _RTL_RB_TREE
+      +0x030 CpuPriorityKey   : Char
+      +0x050 EntryLock        : Uint8B
+      +0x058 AllBoosts        : Uint2B
+      +0x058 IoBoost          : Pos 0, 1 Bit
+      +0x058 CpuBoostsBitmap  : Pos 1, 15 Bits
+      +0x05a IoNormalPriorityWaiterCount : Uint2B
+      +0x05c SparePad         : Uint2B
+   +0x560 PropagateBoostsEntry : 
+      +0x000 Next             : Ptr64 _SINGLE_LIST_ENTRY
+   +0x568 IoSelfBoostsEntry : 
+      +0x000 Next             : Ptr64 _SINGLE_LIST_ENTRY
+   +0x570 PriorityFloorCounts : [16] UChar
+   +0x580 PriorityFloorSummary : Uint4B
+   +0x584 AbCompletedIoBoostCount : Int4B
+   +0x588 KeReferenceCount : Int2B
+   +0x58a AbOrphanedEntrySummary : UChar
+   +0x58b AbOwnedEntryCount : UChar
+   +0x58c ForegroundLossTime : Uint4B
+   +0x590 GlobalForegroundListEntry : 
+      +0x000 Flink            : Ptr64 _LIST_ENTRY
+      +0x008 Blink            : Ptr64 _LIST_ENTRY
+   +0x590 ForegroundDpcStackListEntry : 
+      +0x000 Next             : Ptr64 _SINGLE_LIST_ENTRY
+   +0x598 InGlobalForegroundList : Uint8B
+   +0x5a0 ReadOperationCount : Int8B
+   +0x5a8 WriteOperationCount : Int8B
+   +0x5b0 OtherOperationCount : Int8B
+   +0x5b8 ReadTransferCount : Int8B
+   +0x5c0 WriteTransferCount : Int8B
+   +0x5c8 OtherTransferCount : Int8B
+   +0x5d0 QueuedScb        : 
+0: kd> dt nt!_KTHREAD WaitBlock.
+   +0x0d0 WaitBlockList : 
+   +0x140 WaitBlock  : [4] 
+      +0x000 WaitListEntry : _LIST_ENTRY
+      +0x010 WaitType   : UChar
+      +0x011 BlockState : UChar
+      +0x012 WaitKey    : Uint2B
+      +0x014 SpareLong  : Int4B
+      +0x018 Thread     : Ptr64 _KTHREAD
+      +0x018 NotificationQueue : Ptr64 _KQUEUE
+      +0x020 Object     : Ptr64 Void
+      +0x028 SparePtr   : Ptr64 Void
+   +0x140 WaitBlockFill4 : [20] UChar
+   +0x140 WaitBlockFill5 : [68] UChar
+   +0x140 WaitBlockFill6 : [116] UChar
+   +0x140 WaitBlockFill7 : [164] UChar
+   +0x140 WaitBlockFill8 : [40] UChar
+   +0x140 WaitBlockFill9 : [88] UChar
+   +0x140 WaitBlockFill10 : [136] UChar
+   +0x140 WaitBlockFill11 : [176] UChar
+   +0x24b WaitBlockCount : UChar
+0: kd> dt nt!_KTHREAD WaitBlock
+   +0x140 WaitBlock : [4] _KWAIT_BLOCK
+0: kd> dt nt!_KTHREAD WaitBlock.
+   +0x0d0 WaitBlockList : 
+   +0x140 WaitBlock  : [4] 
+      +0x000 WaitListEntry : _LIST_ENTRY
+      +0x010 WaitType   : UChar
+      +0x011 BlockState : UChar
+      +0x012 WaitKey    : Uint2B
+      +0x014 SpareLong  : Int4B
+      +0x018 Thread     : Ptr64 _KTHREAD
+      +0x018 NotificationQueue : Ptr64 _KQUEUE
+      +0x020 Object     : Ptr64 Void
+      +0x028 SparePtr   : Ptr64 Void
+   +0x140 WaitBlockFill4 : [20] UChar
+   +0x140 WaitBlockFill5 : [68] UChar
+   +0x140 WaitBlockFill6 : [116] UChar
+   +0x140 WaitBlockFill7 : [164] UChar
+   +0x140 WaitBlockFill8 : [40] UChar
+   +0x140 WaitBlockFill9 : [88] UChar
+   +0x140 WaitBlockFill10 : [136] UChar
+   +0x140 WaitBlockFill11 : [176] UChar
+   +0x24b WaitBlockCount : UChar
+0: kd> !py C:\course\python\windbg\ex.py
+<class 'pykd.typedVar'>0: kd> !py C:\course\python\windbg\ex.py
+
+
+Traceback (most recent call last):
+
+  File "C:\course\python\windbg\ex.py", line 7, in <module>
+    dprint(str(type(tv.KernelRoutine.deref())))
+
+DbgException: pyDia: Call IDiaSymbol::get_length failed
+Symbol: , tag= 13
+Return value is 0x1: 
+Incorrect function.
+
+
+
+0: kd> !py C:\course\python\windbg\ex.py
+
+
+Traceback (most recent call last):
+
+  File "C:\course\python\windbg\ex.py", line 7, in <module>
+    tv.KernelRoutine.deref()
+
+DbgException: pyDia: Call IDiaSymbol::get_length failed
+Symbol: , tag= 13
+Return value is 0x1: 
+Incorrect function.
+
+
+
+0: kd> dt _KAPC
+ntdll!_KAPC
+   +0x000 Type             : UChar
+   +0x001 SpareByte0       : UChar
+   +0x002 Size             : UChar
+   +0x003 SpareByte1       : UChar
+   +0x004 SpareLong0       : Uint4B
+   +0x008 Thread           : Ptr64 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY
+   +0x020 KernelRoutine    : Ptr64     void 
+   +0x028 RundownRoutine   : Ptr64     void 
+   +0x030 NormalRoutine    : Ptr64     void 
+   +0x020 Reserved         : [3] Ptr64 Void
+   +0x038 NormalContext    : Ptr64 Void
+   +0x040 SystemArgument1  : Ptr64 Void
+   +0x048 SystemArgument2  : Ptr64 Void
+   +0x050 ApcStateIndex    : Char
+   +0x051 ApcMode          : Char
+   +0x052 Inserted         : UChar
+0: kd> dt nt!_KAPC @rcx
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> ?? @rcx
+unsigned int64 0xffffe000`775963a0
+0: kd> !py C:\course\python\windbg\ex.py
+18446708891339809696
+
+
+Traceback (most recent call last):
+
+  File "C:\course\python\windbg\ex.py", line 8, in <module>
+    tv.KernelRoutine.deref()
+
+DbgException: pyDia: Call IDiaSymbol::get_length failed
+Symbol: , tag= 13
+Return value is 0x1: 
+Incorrect function.
+
+
+
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+18446708891339809728
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+0xffffe000775963c0L
+0: kd> poi(0xffffe000775963c0)
+       ^ pass count must be preceeded by whitespace error in 'poi(0xffffe000775963c0)'
+0: kd> @@masm(poi(0xffffe000775963c0))
+       ^ Syntax error in '@@masm(poi(0xffffe000775963c0))'
+0: kd> @@masm(poi(ffffe000775963c0))
+       ^ Syntax error in '@@masm(poi(ffffe000775963c0))'
+0: kd> @@masm(poi(ffffe000775963c0))
+       ^ Syntax error in '@@masm(poi(ffffe000775963c0))'
+0: kd> ??(poi(ffffe000775963c0))
+*************************************************************************
+***                                                                   ***
+***                                                                   ***
+***    Either you specified an unqualified symbol, or your debugger   ***
+***    doesn't have full symbol information.  Unqualified symbol      ***
+***    resolution is turned off by default. Please either specify a   ***
+***    fully qualified symbol module!symbolname, or enable resolution ***
+***    of unqualified symbols by typing ".symopt- 100". Note that   ***
+***    enabling unqualified symbol resolution with network symbol     ***
+***    server shares in the symbol path may cause the debugger to     ***
+***    appear to hang for long periods of time when an incorrect      ***
+***    symbol name is typed or the network symbol server is down.     ***
+***                                                                   ***
+***    For some commands to work properly, your symbol path           ***
+***    must point to .pdb files that have full type information.      ***
+***                                                                   ***
+***    Certain .pdb files (such as the public OS symbols) do not      ***
+***    contain the required information.  Contact the gro1: kd> g
+       ^ No runnable debuggees error in 'g'
+1: kd> g
+       ^ No runnable debuggees error in 'g'
+1: kd> quit
+       ^ Syntax error in 'quit'
+1: kd> exit
+Couldn't resolve error at 'xit'
+                                    ***
+***    Type referenced: poi                                           ***
+***                                                                   ***
+*************************************************************************
+Couldn't resolve error at 'poi(ffffe000775963c0))'
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+ptr to Void(__cdecl)(_KAPC*, Void(__cdecl**)(Void*, Void*, Void*), Void**, Void**, Void**)
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+Ptr Void(__cdecl*)(_KAPC*, Void(__cdecl**)(Void*, Void*, Void*), Void**, Void**, Void**) at 0xffffe000775963c0 Value: 0xffffe000770f46e0 (18446708891334952672)
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+Ptr Void(__cdecl*)(_KAPC*, Void(__cdecl**)(Void*, Void*, Void*), Void**, Void**, Void**) at 0xffffe000775963c0 Value: 0xffffe000770f46e0 (18446708891334952672)
+ffffe000770f46e0
+0: kd> dt _KAPC @rcx
+ntdll!_KAPC
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> dt nt!*guard*
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+Ptr Void(__cdecl*)(_KAPC*, Void(__cdecl**)(Void*, Void*, Void*), Void**, Void**, Void**) at 0xffffe000775963c0 Value: 0xffffe000770f46e0 (18446708891334952672)
+ffffe000770f46e0
+0: kd> ? ffffe000775963c0
+Evaluate expression: -35182369741888 = ffffe000`775963c0
+0: kd> ? poi(ffffe000775963c0)
+Evaluate expression: -35182374598944 = ffffe000`770f46e0
+0: kd> uf ffffe000`770f46e0
+Flow analysis was incomplete, some code may be missing
+ffffe000`770f46e0 c0635977        shl     byte ptr [rbx+59h],77h
+ffffe000`770f46e4 00e0            add     al,ah
+0: kd> poi
+       ^ pass count must be preceeded by whitespace error in 'poi'
+0: kd> poi /?
+       ^ pass count must be preceeded by whitespace error in 'poi /?'
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+18446708891339809728
+0: kd> !py C:\course\python\windbg\ex.py
+0xffffe000775963a0L
+0xffffe000775963c0L
+0xffffe000775963c0L
+0: kd> uf nt!KeAcquireSpickLock
+Couldn't resolve error at 'nt!KeAcquireSpickLock'
+0: kd> x nt!*Acquire*
+fffff801`4c8e4fb0 nt!KeAcquireInterruptSpinLock (<no parameter info>)
+fffff801`4c82d1c0 nt!KxWaitForSpinLockAndAcquire (<no parameter info>)
+fffff801`4ca16e08 nt!PerfLogExecutiveResourceAcquire (<no parameter info>)
+fffff801`4ce0eb58 nt!IopAcquireReleaseDispatcherLock (<no parameter info>)
+fffff801`4ca1a764 nt!ExTryAcquireCacheAwarePushLockExclusiveEx (<no parameter info>)
+fffff801`4cf16190 nt!pXdvExEnterCriticalRegionAndAcquireResourceShared = <no type information>
+fffff801`4cecb330 nt!VerifierExAcquireRundownProtectionEx (<no parameter info>)
+fffff801`4cecb318 nt!VerifierExAcquireRundownProtection (<no parameter info>)
+fffff801`4c8ad1a0 nt!KeAcquireInStackQueuedSpinLock (<no parameter info>)
+fffff801`4cee7ac8 nt!BgAcquireSpinLock (<no parameter info>)
+fffff801`4ced9108 nt!VerifierExAcquireFastMutexUnsafeNoReboot (<no parameter info>)
+fffff801`4cca1d64 nt!PopAcquireAdaptiveLock (<no parameter info>)
+fffff801`4ced450c nt!VerifierExEnterCriticalRegionAndAcquireResourceExclusiveNoReboot (<no parameter info>)
+fffff801`4ccf65bc nt!PopAcquireTransitionLock (<no parameter info>)
+fffff801`4c82773c nt!PopAcquireRwLockShared (<no parameter info>)
+fffff801`4c91d22c nt!PopDiagTraceDeviceAcquireIrp (<no parameter info>)
+fffff801`4cf16170 nt!pXdvExEnterCriticalRegionAndAcquireResourceExclusive = <no type information>
+fffff801`4c9b3260 nt!HvpViewMapAcquireLockShared (<no parameter info>)
+fffff801`4cc7ae64 nt!PsAcquireProcessExitSynchronization (<no parameter info>)
+fffff801`4c9b3204 nt!HvpViewMapAcquireLockExclusive (<no parameter info>)
+fffff801`4c8c6a20 nt!KiAcquireKobjectLockSafe (<no parameter info>)
+fffff801`4ca1a580 nt!ExpTryAcquireFannedOutPushLockExclusive (<no parameter info>)
+fffff801`4c851190 nt!KiAbThreadClearAcquiredLockEntry (<no parameter info>)
+fffff801`4ced179c nt!VerifierKeTryToAcquireQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4c87f8b0 nt!KeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4cb8a148 nt!EtwpSpinLockAcquireSampleRate = <no type information>
+fffff801`4cf16120 nt!pXdvKeAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4cf16a90 nt!pXdvExAcquireFastMutexUnsafe = <no type information>
+fffff801`4c9be0b4 nt!InbvAcquireDisplayOwnership (<no parameter info>)
+fffff801`4ca1aa18 nt!ExTryToAcquireResourceExclusiveLite (<no parameter info>)
+fffff801`4c81eed4 nt!ExAcquireCacheAwarePushLockExclusive (<no parameter info>)
+fffff801`4cd4e49c nt!PopAcquireCoolingInterface (<no parameter info>)
+fffff801`4ceccaac nt!VerifierIoAcquireRemoveLockEx (<no parameter info>)
+fffff801`4c9be9c4 nt!BgkpAcquireConsole (<no parameter info>)
+fffff801`4cf16178 nt!pXdvExAcquireResourceExclusiveLite = <no type information>
+fffff801`4c8b7600 nt!ExAcquireSpinLockExclusive (<no parameter info>)
+fffff801`4ced92f0 nt!VerifierExfAcquirePushLockShared (<no parameter info>)
+fffff801`4c8e7f54 nt!KeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c916f34 nt!KiAcquireInterruptConnectLock (<no parameter info>)
+fffff801`4cc7e7e0 nt!ExpWnfAcquireSubscriptionByName (<no parameter info>)
+fffff801`4c84f410 nt!ExAcquireSpinLockShared (<no parameter info>)
+fffff801`4c8c3734 nt!KxTryToAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4ced0e08 nt!VerifierKeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c8c7e90 nt!SepAcquireOrderedReadLocks (<no parameter info>)
+fffff801`4cbd6068 nt!EtwpAcquireLoggerContextByLoggerId (<no parameter info>)
+fffff801`4ced90d0 nt!VerifierExAcquireFastMutexUnsafe (<no parameter info>)
+fffff801`4ced0e44 nt!VerifierKeAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ced455c nt!VerifierExEnterCriticalRegionAndAcquireResourceSharedNoReboot (<no parameter info>)
+fffff801`4ced4174 nt!VerifierExAcquireResourceExclusiveLiteNoReboot (<no parameter info>)
+fffff801`4ced0d10 nt!VerifierKeAcquireInStackQueuedSpinLockRaiseToSynchCommon (<no parameter info>)
+fffff801`4c9ccc6c nt!KiTryToAcquireQueuedSpinLockInstrumented (<no parameter info>)
+fffff801`4c9beae8 nt!BvgaAcquireLock (<no parameter info>)
+fffff801`4ced44c4 nt!VerifierExEnterCriticalRegionAndAcquireResourceExclusive (<no parameter info>)
+fffff801`4c89eee8 nt!ExfAcquireReleasePushLockExclusive (<no parameter info>)
+fffff801`4c858600 nt!ExAcquireResourceSharedLite (<no parameter info>)
+fffff801`4ced40fc nt!VerifierExAcquireResourceExclusiveLite (<no parameter info>)
+fffff801`4cf16410 nt!pXdvExfAcquirePushLockShared = <no type information>
+fffff801`4cf160c8 nt!pXdvIoAcquireRemoveLockEx = <no type information>
+fffff801`4c9cca7c nt!KiAcquireQueuedSpinLockInstrumented (<no parameter info>)
+fffff801`4ca02da0 nt!RtlWriteTryAcquireTickLock (<no parameter info>)
+fffff801`4c8f44e4 nt!PfLockExclusiveAcquire (<no parameter info>)
+fffff801`4c8eaa3c nt!CcAcquireBcbLockAndVacbLock (<no parameter info>)
+fffff801`4c9ccd58 nt!KeAcquireSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4cbe457c nt!FsRtlAcquireFileExclusive (<no parameter info>)
+fffff801`4cc92588 nt!RtlAcquirePrivilege (<no parameter info>)
+fffff801`4cf16b60 nt!pXdvExAcquireRundownProtectionEx = <no type information>
+fffff801`4c901c24 nt!PpmTryAcquireLock (<no parameter info>)
+fffff801`4ca12b60 nt!ViIrpDatabaseAcquireLockShared (<no parameter info>)
+fffff801`4ced4514 nt!VerifierExEnterCriticalRegionAndAcquireResourceShared (<no parameter info>)
+fffff801`4c8dbec0 nt!FsRtlTryToAcquireHeaderMutex (<no parameter info>)
+fffff801`4ccd1d2c nt!PiDmObjectManagerAcquireSharedLock (<no parameter info>)
+fffff801`4c9cb4a4 nt!KeAcquireGuardedMutexUnsafe (<no parameter info>)
+fffff801`4c8ecd04 nt!MiAcquireResourceSharedLite (<no parameter info>)
+fffff801`4ca1ac84 nt!ExpAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4ced962c nt!ViExTryToAcquireFastMutexCommon (<no parameter info>)
+fffff801`4c8d3a30 nt!ExAcquireRundownProtectionCacheAware (<no parameter info>)
+fffff801`4c899ba0 nt!ExpWaitForSpinLockSharedAndAcquire (<no parameter info>)
+fffff801`4ca02844 nt!RtlpTraceDatabaseAcquireLock (<no parameter info>)
+fffff801`4c811638 nt!SmAcquireReleaseCharges (<no parameter info>)
+fffff801`4cf16b40 nt!pXdvExAcquireRundownProtection = <no type information>
+fffff801`4c9c79cc nt!IopAcquireGlobalPassiveInterruptListLock (<no parameter info>)
+fffff801`4ccfdfc4 nt!IopAcquireActiveConnectLock (<no parameter info>)
+fffff801`4c8c5fa0 nt!KeAcquireQueuedSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c853360 nt!PpmCheckAcquireProcessorPerformance (<no parameter info>)
+fffff801`4c810828 nt!IoAcquireRemoveLockEx (<no parameter info>)
+fffff801`4ced180c nt!VerifierKeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+0: kd> x nt!*Acquire*spin*
+fffff801`4c8e4fb0 nt!KeAcquireInterruptSpinLock (<no parameter info>)
+fffff801`4c8ad1a0 nt!KeAcquireInStackQueuedSpinLock (<no parameter info>)
+fffff801`4cee7ac8 nt!BgAcquireSpinLock (<no parameter info>)
+fffff801`4ced179c nt!VerifierKeTryToAcquireQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4c87f8b0 nt!KeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4cf16120 nt!pXdvKeAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4c8b7600 nt!ExAcquireSpinLockExclusive (<no parameter info>)
+fffff801`4c8e7f54 nt!KeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c84f410 nt!ExAcquireSpinLockShared (<no parameter info>)
+fffff801`4c8c3734 nt!KxTryToAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4ced0e08 nt!VerifierKeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e44 nt!VerifierKeAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ced0d10 nt!VerifierKeAcquireInStackQueuedSpinLockRaiseToSynchCommon (<no parameter info>)
+fffff801`4c9ccc6c nt!KiTryToAcquireQueuedSpinLockInstrumented (<no parameter info>)
+fffff801`4c9cca7c nt!KiAcquireQueuedSpinLockInstrumented (<no parameter info>)
+fffff801`4c9ccd58 nt!KeAcquireSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4ca1ac84 nt!ExpAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4c8c5fa0 nt!KeAcquireQueuedSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced180c nt!VerifierKeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c9cca24 nt!KeTryToAcquireQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4ced0e50 nt!VerifierKeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4c80e520 nt!ExTryAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4ced0a74 nt!VerifierKeAcquireInStackQueuedSpinLock (<no parameter info>)
+fffff801`4ced0e94 nt!VerifierKeAcquireSpinLockRaiseToDpcNoReboot (<no parameter info>)
+fffff801`4cecb8bc nt!VerifierKeAcquireInterruptSpinLock (<no parameter info>)
+fffff801`4ced0cc4 nt!VerifierKeAcquireInStackQueuedSpinLockNoReboot (<no parameter info>)
+fffff801`4ced1a24 nt!VerifierPortKeAcquireSpinLock (<no parameter info>)
+fffff801`4cf16130 nt!pXdvKeAcquireInStackQueuedSpinLock = <no type information>
+fffff801`4c8e7f5c nt!KxTryToAcquireSpinLock (<no parameter info>)
+fffff801`4ced185c nt!VerifierKeTryToAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ced21a8 nt!ViKeTryToAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4cf16fa0 nt!pXdvKeAcquireInterruptSpinLock = <no type information>
+fffff801`4c8afe60 nt!KxAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4cf16140 nt!pXdvKeTryToAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4ca1ad30 nt!ExpAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4cf16060 nt!pXdvKeAcquireSpinLockRaiseToDpc = <no type information>
+fffff801`4c9ccee0 nt!KiTryToAcquireSpinLockInstrumented (<no parameter info>)
+fffff801`4c850290 nt!KeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c90fc34 nt!PopAcquireWakeSourceSpinLock (<no parameter info>)
+fffff801`4ced0b88 nt!VerifierKeAcquireInStackQueuedSpinLockCommon (<no parameter info>)
+fffff801`4c9ccd78 nt!KiAcquireSpinLockInstrumented (<no parameter info>)
+fffff801`4ced1e00 nt!ViKeAcquireSpinLockRaiseToDpcCommon (<no parameter info>)
+fffff801`4c9cc994 nt!KeAcquireQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4cf16fc8 nt!pXdvKeAcquireSpinLockForDpc = <no type information>
+fffff801`4cf16650 nt!pXdvKeTryToAcquireQueuedSpinLock = <no type information>
+fffff801`4c8ddda8 nt!ExpAcquireSpinLockDisabled (<no parameter info>)
+fffff801`4ced0af4 nt!VerifierKeAcquireInStackQueuedSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4c8ad160 nt!KeAcquireInStackQueuedSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0c54 nt!VerifierKeAcquireInStackQueuedSpinLockForDpcCommon (<no parameter info>)
+fffff801`4c916374 nt!KeAcquireInStackQueuedSpinLockForDpc (<no parameter info>)
+fffff801`4c83d650 nt!ExpAcquireSpinLockExclusive (<no parameter info>)
+fffff801`4c9cc96c nt!KeAcquireInStackQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4c8c371c nt!KeTryToAcquireInStackQueuedSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4cecb924 nt!VerifierKeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4ced172c nt!VerifierKeTryToAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4c813f44 nt!IoAcquireVpbSpinLock (<no parameter info>)
+fffff801`4c8f64c0 nt!IoAcquireCancelSpinLock (<no parameter info>)
+fffff801`4c8af180 nt!ExAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4c8ac5a0 nt!KeAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4ced1d70 nt!ViKeAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4ced0da8 nt!VerifierKeAcquireQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4cf16138 nt!pXdvKeAcquireInStackQueuedSpinLockAtDpcLevel = <no type information>
+fffff801`4cf16158 nt!pXdvKeAcquireInStackQueuedSpinLockForDpc = <no type information>
+fffff801`4ca1ae34 nt!ExpTryAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4ced0b7c nt!VerifierKeAcquireInStackQueuedSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4c8d7f98 nt!KeFastAcquireInStackQueuedSpinLockAndRaise (<no parameter info>)
+fffff801`4cf17020 nt!pXdvKeAcquireQueuedSpinLock = <no type information>
+fffff801`4ced0cb8 nt!VerifierKeAcquireInStackQueuedSpinLockForDpcNoReboot (<no parameter info>)
+fffff801`4cf16d98 nt!pXdvIoAcquireVpbSpinLock = <no type information>
+fffff801`4cf16d70 nt!pXdvIoAcquireCancelSpinLock = <no type information>
+fffff801`4cecb8c4 nt!VerifierKeAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4cecb684 nt!VerifierIoAcquireCancelSpinLock (<no parameter info>)
+fffff801`4cecb68c nt!VerifierIoAcquireVpbSpinLock (<no parameter info>)
+fffff801`4c9cc9cc nt!KeTryToAcquireQueuedSpinLock (<no parameter info>)
+fffff801`4c9ccd04 nt!KeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4ca1aebc nt!ExpTryAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4ced0d9c nt!VerifierKeAcquireInStackQueuedSpinLockRaiseToSynchNoReboot (<no parameter info>)
+fffff801`4c9ccb30 nt!KiFastAcquireQueuedSpinLockInstrumented (<no parameter info>)
+fffff801`4ced0cd0 nt!VerifierKeAcquireInStackQueuedSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4c850290 nt!KxAcquireSpinLock (<no parameter info>)
+fffff801`4ced0c14 nt!VerifierKeAcquireInStackQueuedSpinLockForDpc (<no parameter info>)
+fffff801`4ced1aa0 nt!VerifierPortKeAcquireSpinLockNoXdv (<no parameter info>)
+fffff801`4ced0ab4 nt!VerifierKeAcquireInStackQueuedSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c8933e0 nt!ExAcquireSpinLockSharedAtDpcLevel (<no parameter info>)
+0: kd> x nt!*AcquireSpinLock*
+fffff801`4cee7ac8 nt!BgAcquireSpinLock (<no parameter info>)
+fffff801`4c87f8b0 nt!KeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4cf16120 nt!pXdvKeAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4c8b7600 nt!ExAcquireSpinLockExclusive (<no parameter info>)
+fffff801`4c8e7f54 nt!KeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c84f410 nt!ExAcquireSpinLockShared (<no parameter info>)
+fffff801`4ced0e08 nt!VerifierKeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e44 nt!VerifierKeAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4c9ccd58 nt!KeAcquireSpinLockRaiseToSynch (<no parameter info>)
+fffff801`4ca1ac84 nt!ExpAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4ced180c nt!VerifierKeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e50 nt!VerifierKeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4c80e520 nt!ExTryAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4ced0e94 nt!VerifierKeAcquireSpinLockRaiseToDpcNoReboot (<no parameter info>)
+fffff801`4ced1a24 nt!VerifierPortKeAcquireSpinLock (<no parameter info>)
+fffff801`4c8e7f5c nt!KxTryToAcquireSpinLock (<no parameter info>)
+fffff801`4ced185c nt!VerifierKeTryToAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ced21a8 nt!ViKeTryToAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4cf16140 nt!pXdvKeTryToAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4ca1ad30 nt!ExpAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4cf16060 nt!pXdvKeAcquireSpinLockRaiseToDpc = <no type information>
+fffff801`4c9ccee0 nt!KiTryToAcquireSpinLockInstrumented (<no parameter info>)
+fffff801`4c850290 nt!KeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4c9ccd78 nt!KiAcquireSpinLockInstrumented (<no parameter info>)
+fffff801`4ced1e00 nt!ViKeAcquireSpinLockRaiseToDpcCommon (<no parameter info>)
+fffff801`4cf16fc8 nt!pXdvKeAcquireSpinLockForDpc = <no type information>
+fffff801`4c8ddda8 nt!ExpAcquireSpinLockDisabled (<no parameter info>)
+fffff801`4c83d650 nt!ExpAcquireSpinLockExclusive (<no parameter info>)
+fffff801`4cecb924 nt!VerifierKeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4c8af180 nt!ExAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4ced1d70 nt!ViKeAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4ca1ae34 nt!ExpTryAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4c9ccd04 nt!KeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4ca1aebc nt!ExpTryAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4c850290 nt!KxAcquireSpinLock (<no parameter info>)
+fffff801`4ced1aa0 nt!VerifierPortKeAcquireSpinLockNoXdv (<no parameter info>)
+fffff801`4c8933e0 nt!ExAcquireSpinLockSharedAtDpcLevel (<no parameter info>)
+0: kd> x nt!*AcquireSpinLock*dpc*
+fffff801`4c87f8b0 nt!KeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4cf16120 nt!pXdvKeAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4c8e7f54 nt!KeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e08 nt!VerifierKeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e44 nt!VerifierKeAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ca1ac84 nt!ExpAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4ced180c nt!VerifierKeTryToAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced0e50 nt!VerifierKeAcquireSpinLockRaiseToDpc (<no parameter info>)
+fffff801`4c80e520 nt!ExTryAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4ced0e94 nt!VerifierKeAcquireSpinLockRaiseToDpcNoReboot (<no parameter info>)
+fffff801`4ced185c nt!VerifierKeTryToAcquireSpinLockAtDpcLevelNoReboot (<no parameter info>)
+fffff801`4ced21a8 nt!ViKeTryToAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4cf16140 nt!pXdvKeTryToAcquireSpinLockAtDpcLevel = <no type information>
+fffff801`4ca1ad30 nt!ExpAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4cf16060 nt!pXdvKeAcquireSpinLockRaiseToDpc = <no type information>
+fffff801`4c850290 nt!KeAcquireSpinLockAtDpcLevel (<no parameter info>)
+fffff801`4ced1e00 nt!ViKeAcquireSpinLockRaiseToDpcCommon (<no parameter info>)
+fffff801`4cf16fc8 nt!pXdvKeAcquireSpinLockForDpc = <no type information>
+fffff801`4cecb924 nt!VerifierKeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4c8af180 nt!ExAcquireSpinLockExclusiveAtDpcLevel (<no parameter info>)
+fffff801`4ced1d70 nt!ViKeAcquireSpinLockAtDpcLevelCommon (<no parameter info>)
+fffff801`4ca1ae34 nt!ExpTryAcquireSpinLockExclusiveAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4c9ccd04 nt!KeAcquireSpinLockForDpc (<no parameter info>)
+fffff801`4ca1aebc nt!ExpTryAcquireSpinLockSharedAtDpcLevelInstrumented (<no parameter info>)
+fffff801`4c8933e0 nt!ExAcquireSpinLockSharedAtDpcLevel (<no parameter info>)
+0: kd> uf KeAcquireSpinLockAtDpcLevel
+nt!KeAcquireSpinLockAtDpcLevel:
+fffff801`4c850290 4883ec28        sub     rsp,28h
+fffff801`4c850294 f605ebaf330021  test    byte ptr [nt!PerfGlobalGroupMask+0x6 (fffff801`4cb8b286)],21h
+fffff801`4c85029b 7514            jne     nt!KeAcquireSpinLockAtDpcLevel+0x21 (fffff801`4c8502b1)  Branch
+
+nt!KeAcquireSpinLockAtDpcLevel+0xd:
+fffff801`4c85029d f0480fba2900    lock bts qword ptr [rcx],0
+fffff801`4c8502a3 7205            jb      nt!KeAcquireSpinLockAtDpcLevel+0x1a (fffff801`4c8502aa)  Branch
+
+nt!KeAcquireSpinLockAtDpcLevel+0x15:
+fffff801`4c8502a5 4883c428        add     rsp,28h
+fffff801`4c8502a9 c3              ret
+
+nt!KeAcquireSpinLockAtDpcLevel+0x1a:
+fffff801`4c8502aa e811cffdff      call    nt!KxWaitForSpinLockAndAcquire (fffff801`4c82d1c0)
+fffff801`4c8502af ebf4            jmp     nt!KeAcquireSpinLockAtDpcLevel+0x15 (fffff801`4c8502a5)  Branch
+
+nt!KeAcquireSpinLockAtDpcLevel+0x21:
+fffff801`4c8502b1 e8c2ca1700      call    nt!KiAcquireSpinLockInstrumented (fffff801`4c9ccd78)
+fffff801`4c8502b6 ebed            jmp     nt!KeAcquireSpinLockAtDpcLevel+0x15 (fffff801`4c8502a5)  Branch
+0: kd> dt _KAPC @rcx
+ntdll!_KAPC
+   +0x000 Type             : 0x6 ''
+   +0x001 SpareByte0       : 0 ''
+   +0x002 Size             : 0x38 '8'
+   +0x003 SpareByte1       : 0x2 ''
+   +0x004 SpareLong0       : 0
+   +0x008 Thread           : 0xffffe000`77526a90 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY [ 0x00000000`00060900 - 0x00000000`00000000 ]
+   +0x020 KernelRoutine    : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x028 RundownRoutine   : 0xffffe000`770f46e0     void  +ffffe000770f46e0
+   +0x030 NormalRoutine    : (null) 
+   +0x020 Reserved         : [3] 0xffffe000`770f46e0 Void
+   +0x038 NormalContext    : 0x00000000`00000024 Void
+   +0x040 SystemArgument1  : 0x04000000`02020001 Void
+   +0x048 SystemArgument2  : 0x000000ca`3ff7fbe8 Void
+   +0x050 ApcStateIndex    : 48 '0'
+   +0x051 ApcMode          : -25 ''
+   +0x052 Inserted         : 0x43 'C'
+0: kd> dt _KAPC
+ntdll!_KAPC
+   +0x000 Type             : UChar
+   +0x001 SpareByte0       : UChar
+   +0x002 Size             : UChar
+   +0x003 SpareByte1       : UChar
+   +0x004 SpareLong0       : Uint4B
+   +0x008 Thread           : Ptr64 _KTHREAD
+   +0x010 ApcListEntry     : _LIST_ENTRY
+   +0x020 KernelRoutine    : Ptr64     void 
+   +0x028 RundownRoutine   : Ptr64     void 
+   +0x030 NormalRoutine    : Ptr64     void 
+   +0x020 Reserved         : [3] Ptr64 Void
+   +0x038 NormalContext    : Ptr64 Void
+   +0x040 SystemArgument1  : Ptr64 Void
+   +0x048 SystemArgument2  : Ptr64 Void
+   +0x050 ApcStateIndex    : Char
+   +0x051 ApcMode          : Char
+   +0x052 Inserted         : UChar
+0: kd> .openlog c:\source\windbg.day3.log
+                                        ^ Syntax error in '.openlog c:\source\windbg.day3.log'
+0: kd> .logopen c:\source\windbg.day3.log
+Closing open log file c:\course\windbg.day2.log

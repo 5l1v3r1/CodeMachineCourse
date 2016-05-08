@@ -1,0 +1,10 @@
+Launch a Enterprise WDK build window
+Change to any directory that contains a .SLN and .VCXPROJ file
+Build the driver by running "build.driver.cmd"
+Copy the driver binary to the VM’s staging directory
+In the VM copy the driver from the staging directory to the c:\windows\system32\drivers directory
+Copy scripts\install.driver.cmd to the VM’s staging directory
+In the VM install the driver by running "install.driver.cmd <DriverName>". Do not include the (.sys) extension
+Start the driver by running "sc start <DriverName>"
+Test and Debug the driver
+Stop the driver by running "sc stop <DriverName>"
