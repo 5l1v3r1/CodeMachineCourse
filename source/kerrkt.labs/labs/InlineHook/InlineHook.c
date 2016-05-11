@@ -44,12 +44,16 @@ typedef struct _HOOK_OPCODES {
     // For absolute addresses use a ULONGLONG.
     // At the end add NOPs to pad the hook instruction up to an
     // instruction boundary in the original function.
+    UCHAR mov[2]; // mov rax, <address>
+    ULONGLONG mov_addr; // <address>
+    UCHAR jmp_rax[2]; // jmp rax
+    UCHAR nop[3]; // nop slide
 } HOOK_OPCODES, *PHOOK_OPCODES;
 #pragma pack(pop)
 
 extern POBJECT_TYPE *IoDriverObjectType; // defined in NTOSKRNL.exe
 PUCHAR g_OrignalFunction = NULL;
-PUCHAR g_OrignalResume = NULL;
+PUCHAR g_OriginalResume = NULL;
 PUCHAR g_HookFunction = NULL;
 UCHAR g_OriginalOpcodes[sizeof(HOOK_OPCODES)];
 
@@ -88,10 +92,11 @@ DriverEntry(
     UNREFERENCED_PARAMETER(DriverObject);
     UNREFERENCED_PARAMETER(RegistryPath);
 
-    HOOK_OPCODES HookOpCodes = { 
+    HOOK_OPCODES HookOpCodes = {
         // Step # 2 : Fill up the op-codes that will be used to 
         // detour the original function to the trampoline function 
         // Trampoline() defined in amd64\Trampoline.asm
+        0x48, 0xB8, (ULONGLONG)Trampoline, 0xFF, 0xE0, 0x90, 0x90, 0x90
     };
 
     DPF(( "*** %s.sys Loaded ***\n", __MODULE__ ));
@@ -141,7 +146,7 @@ DriverEntry(
     // will resume after HookDispatch() has been called, taking care of
     // instruction boundaries. Execution will resume at the instruction 
     // right after the hooked instructions
-    g_OrignalResume = g_OrignalFunction + sizeof (HOOK_OPCODES);
+    g_OriginalResume = g_OrignalFunction + sizeof (HOOK_OPCODES);
 
     // Before overwriting the opcodes at the beginning of the original 
     // function, save them in g_OriginalOpcodes

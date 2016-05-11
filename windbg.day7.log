@@ -1,0 +1,2110 @@
+Opened log file 'c:\course\windbg.day7.log'
+Driver Verifier: Enabled for NTFS.sys, flags 0x1, build 10586, key 3UspDkkXdeMuFYNJ6DGpm
+minio\security\base\lsa\security\driver\asyncsspi.cxx - SspiInitAsyncInterface
+IOINIT: Built-in driver \Driver\hwpolicy failed to initialize with status - 0xC000025E
+KDTARGET: Refreshing KD connection
+DimpHidAddDevice: Failed to open device \\?\HID#{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}#6&1a8c06af&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030} (err=5).
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFF59FF2993: (caller: 00007FFF5E03D533) LogHr(1) tid(6c) 80004005 Unspecified error
+    CallContext:[\Startup] 
+Fail to read system\currentcontrolset\services\Lmhosts\Parameters\EnableUserMode, error=2
+shell\lib\util_drive.cpp(28)\shsvcs.dll!00007FFF54ECE290: (caller: 00007FFF54EC77A1) ReturnHr[PreRelease](1) tid(6b4) 80070001 Incorrect function.
+DfsDs RPC server started.
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFF59FF2993: (caller: 00007FFF5E03D533) LogHr(1) tid(664) 80004005 Unspecified error
+    CallContext:[\Startup] 
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFF53644EF0: (caller: 00007FFF5364502D) ReturnHr[PreRelease](1) tid(694) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFF53644EF0: (caller: 00007FFF5364502D) ReturnHr[PreRelease](2) tid(694) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(99)\netprofmsvc.dll!00007FFF53644800: (caller: 00007FFF536445D3) ReturnHr[PreRelease](3) tid(694) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(12)\netprofmsvc.dll!00007FFF53644655: (caller: 00007FFF53644D2E) ReturnHr[PreRelease](4) tid(694) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(161)\netprofmsvc.dll!00007FFF53644D4D: (caller: 00007FFF53644F3E) ReturnHr[PreRelease](5) tid(694) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(122)\netprofmsvc.dll!00007FFF53644EF0: (caller: 00007FFF5364502D) ReturnHr[PreRelease](6) tid(694) 80040154 Class not registered
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFF5081FFB3: (caller: 00007FFF5081F9A6) ReturnHr[PreRelease](1) tid(a0c) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFF5081FC2B: (caller: 00007FFF5081F6ED) LogHr(1) tid(a0c) 80070002 The system cannot find the file specified.
+base\flighting\clientapi\lib\enumeratehelper.cpp(18)\diagtrack.dll!00007FFF5083A5B8: (caller: 00007FFF50839134) ReturnHr[PreRelease](2) tid(a0c) 80070002 The system cannot find the file specified.
+    CallContext:[\ActivityFaGetFlightsInfo] 
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFF5081925A: (caller: 00007FFF507C5F74) LogHr(2) tid(a0c) 80070015 The device is not ready.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1519)\diagtrack.dll!00007FFF5085E105: (caller: 00007FFF508851B4) ReturnHr[PreRelease](3) tid(a0c) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\connectivityheartbeat.cpp(209)\diagtrack.dll!00007FFF508851D2: (caller: 00007FFF5086E796) ReturnHr[PreRelease](4) tid(a0c) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFF5081925A: (caller: 00007FFF507C5F74) LogHr(3) tid(aa4) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFF5081FFB3: (caller: 00007FFF5081F9A6) ReturnHr[PreRelease](5) tid(b24) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFF5081FC2B: (caller: 00007FFF5081F6ED) LogHr(4) tid(b24) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](6) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](7) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](8) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](9) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](10) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](11) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](12) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](13) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](14) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](15) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](16) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](17) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](18) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](19) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](20) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](21) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](22) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](23) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](24) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](25) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](26) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](27) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](28) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](29) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](30) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](31) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](32) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](33) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](34) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](35) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](36) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](37) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](38) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](39) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](40) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](41) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](42) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](43) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](44) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](45) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](46) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](47) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](48) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](49) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](50) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](51) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](52) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](53) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](54) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](55) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](56) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](57) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](58) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](59) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](60) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](61) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](62) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](63) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](64) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](65) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](66) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](67) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](68) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](69) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](70) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](71) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](72) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](73) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](74) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](75) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](76) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](77) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](78) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](79) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](80) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](81) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C16CD) ReturnHr[PreRelease](82) tid(b24) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(418)\diagtrack.dll!00007FFF507C16EA: (caller: 00007FFF507C1B71) LogHr(5) tid(b24) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\twinui\softlanding\published\softlandingcampaign.cpp(56)\diagtrack.dll!00007FFF50841463: (caller: 00007FFF508100F0) ReturnHr[PreRelease](83) tid(b24) 800703F0 An attempt was made to reference a token that does not exist.
+base\diagnosis\diagtrack\engine\scenariomanager.cpp(2333)\diagtrack.dll!00007FFF5081039C: (caller: 00007FFF507C1EA3) LogHr(6) tid(b24) 800703F0 An attempt was made to reference a token that does not exist.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](84) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](85) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(1) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(7) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](86) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](87) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(2) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(8) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](88) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](89) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(3) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(9) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](90) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](91) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](92) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(4) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(10) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](93) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\flightsettingsapi\lib\flightsettingsapi.cpp(26)\UpdatePolicy.dll!00007FFF4E33DFA3: (caller: 00007FFF4E3319B6) ReturnHr[PreRelease](1) tid(c50) 80070490 Element not found.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](94) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](95) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(5) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(11) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](96) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](97) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(6) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(12) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](98) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](99) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(7) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(13) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](100) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\roaming\settingsync\settingprofilehandler.cpp(85)\SettingSync.dll!00007FFF52B7D04E: (caller: 00007FFF58339F73) LogHr(1) tid(848) 80070002 The system cannot find the file specified.
+shell\roaming\settingsync\settingprofilehandler.cpp(24)\SettingSync.dll!00007FFF52B73CBC: (caller: 00007FFF58339F73) LogHr(2) tid(848) 800704EC This program is blocked by group policy. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\deskstartupmgr.cpp(52)\modernexecserver.dll!00007FFF4C3E75EC: (caller: 00007FFF4C3E7503) ReturnHr[PreRelease](1) tid(d80) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(162)\ACPBackgroundManagerPolicy.dll!00007FFF4DDA4C0B: (caller: 00007FFF4DDA47E3) ReturnHr[PreRelease](1) tid(efc) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(248)\ACPBackgroundManagerPolicy.dll!00007FFF4DDA4AD4: (caller: 00007FFF4DDA64A3) ReturnHr[PreRelease](2) tid(efc) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFF5081FFB3: (caller: 00007FFF5081F9A6) ReturnHr[PreRelease](101) tid(b24) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFF5081FC2B: (caller: 00007FFF5081F6ED) LogHr(14) tid(b24) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](102) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](103) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](104) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](105) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](106) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](107) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](108) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](109) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](110) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](111) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](112) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](113) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](114) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](115) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](116) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](117) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](118) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](119) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](120) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](121) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](122) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](123) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](124) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](125) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](126) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](127) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](128) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](129) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](130) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](131) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](132) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](133) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](134) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](135) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](136) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](137) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](138) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](139) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](140) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](141) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](142) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](143) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](144) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](145) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](146) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](147) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](148) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](149) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](150) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](151) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](152) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](153) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](154) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](155) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](156) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](157) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](158) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](159) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](160) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](161) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](162) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](163) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](164) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](165) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](166) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](167) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](168) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](169) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](170) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](171) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](172) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](173) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](174) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](175) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](176) tid(b24) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFF507D1784: (caller: 00007FFF508083EC) ReturnHr[PreRelease](177) tid(b24) 800401F3 Invalid class string
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFF4C411020: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](2) tid(ea8) 8002802B Element not found.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFF4C411020: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](3) tid(ea8) 8002802B Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFF4AEE32DC: (caller: 00007FFF4AEE34FF) ReturnHr[PreRelease](1) tid(840) 8004B200 base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FB15A) ReturnHr[PreRelease](4) tid(df8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](5) tid(ea8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FB15A) ReturnHr[PreRelease](6) tid(df8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](7) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](8) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](9) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](10) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](11) tid(c98) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FA9B6) ReturnHr[PreRelease](12) tid(c98) 80070002 The system cannot find the file specified.
+StartUI.LauncherFrame
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFF59FF2993: (caller: 00007FF784A86B66) LogHr(1) tid(7f4) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFF4AEE32DC: (caller: 00007FFF4AEE34FF) ReturnHr[PreRelease](2) tid(840) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFF4C977C7A: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](1) tid(bcc) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](178) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](179) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(8) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(15) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](180) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](181) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(9) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(16) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](182) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\ExportScan\x64\Debug\ExportScan.sys' (\SystemRoot\System32\Drivers\ExportScan.sys)
+  File size 6KKdPullRemoteFile(FFFFE00164456040): About to overwrite \SystemRoot\System32\Drivers\ExportScan.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE00164456040): Return from ZwCreateFile with status 0
+..
+ES Base Addr: (FFFFF802BE1D0000) Value: 66
+ES Base Addr: (FFFFF802BE1CF000) Value: 4c65
+ES Base Addr: (FFFFF802BE1CE000) Value: c033
+ES Base Addr: (FFFFF802BE1CD000) Value: 4800
+ES Base Addr: (FFFFF802BE1CC000) Value: 1
+ES Base Addr: (FFFFF802BE1CB000) Value: b9
+ES Base Addr: (FFFFF802BE1CA000) Value: 0
+ES Base Addr: (FFFFF802BE1C9000) Value: 241
+ES Base Addr: (FFFFF802BE1C8000) Value: 9be8
+ES Base Addr: (FFFFF802BE1C7000) Value: 458b
+ES Base Addr: (FFFFF802BE1C6000) Value: 8b48
+ES Base Addr: (FFFFF802BE1C5000) Value: 8b48
+ES Base Addr: (FFFFF802BE1C4000) Value: 8b48
+ES Base Addr: (FFFFF802BE1C3000) Value: 8b48
+ES Base Addr: (FFFFF802BE1C2000) Value: 85d2
+ES Base Addr: (FFFFF802BE1C1000) Value: 7401
+ES Base Addr: (FFFFF802BE1C0000) Value: 2b4c
+ES Base Addr: (FFFFF802BE1BF000) Value: 68c4
+ES Base Addr: (FFFFF802BE1BE000) Value: 244c
+ES Base Addr: (FFFFF802BE1BD000) Value: 890f
+ES Base Addr: (FFFFF802BE1BC000) Value: 5340
+ES Base Addr: (FFFFF802BE1BB000) Value: 4cf8
+ES Base Addr: (FFFFF802BE1BA000) Value: beb
+ES Base Addr: (FFFFF802BE1B9000) Value: 0
+ES Base Addr: (FFFFF802BE1B8000) Value: 74c8
+ES Base Addr: (FFFFF802BE1B7000) Value: 1ea
+ES Base Addr: (FFFFF802BE1B6000) Value: 2b49
+ES Base Addr: (FFFFF802BE1B5000) Value: c38b
+ES Base Addr: (FFFFF802BE1B4000) Value: 6bc
+ES Base Addr: (FFFFF802BE1B3000) Value: 348
+ES Base Addr: (FFFFF802BE1B2000) Value: 480c
+ES Base Addr: (FFFFF802BE1B1000) Value: 2464
+ES Base Addr: (FFFFF802BE1B0000) Value: 8ba0
+ES Base Addr: (FFFFF802BE1AF000) Value: 76e
+ES Base Addr: (FFFFF802BE1AE000) Value: ea83
+ES Base Addr: (FFFFF802BE1AD000) Value: d8d
+ES Base Addr: (FFFFF802BE1AC000) Value: 44d2
+ES Base Addr: (FFFFF802BE1AB000) Value: f045
+ES Base Addr: (FFFFF802BE1AA000) Value: 20e2
+ES Base Addr: (FFFFF802BE1A9000) Value: 4800
+ES Base Addr: (FFFFF802BE1A8000) Value: ec83
+ES Base Addr: (FFFFF802BE1A7000) Value: 8b44
+ES Base Addr: (FFFFF802BE1A6000) Value: 8b48
+ES Base Addr: (FFFFF802BE1A5000) Value: 2524
+ES Base Addr: (FFFFF802BE1A4000) Value: 5441
+ES Base Addr: (FFFFF802BE1A3000) Value: 0
+ES Base Addr: (FFFFF802BE1A2000) Value: 8000
+ES Base Addr: (FFFFF802BE1A1000) Value: f00
+ES Base Addr: (FFFFF802BE1A0000) Value: ffff
+ES Base Addr: (FFFFF802BE19F000) Value: 2cb
+ES Base Addr: (FFFFF802BE19E000) Value: 8be8
+ES Base Addr: (FFFFF802BE19D000) Value: 0
+ES Base Addr: (FFFFF802BE19C000) Value: 894c
+ES Base Addr: (FFFFF802BE19B000) Value: 4c00
+ES Base Addr: (FFFFF802BE19A000) Value: 4865
+ES Base Addr: (FFFFF802BE199000) Value: c77
+ES Base Addr: (FFFFF802BE198000) Value: 4810
+ES Base Addr: (FFFFF802BE197000) Value: 748b
+ES Base Addr: (FFFFF802BE196000) Value: 3043
+ES Base Addr: (FFFFF802BE195000) Value: c195
+ES Base Addr: (FFFFF802BE194000) Value: bbe8
+ES Base Addr: (FFFFF802BE193000) Value: 4830
+ES Base Addr: (FFFFF802BE192000) Value: 9024
+ES Base Addr: (FFFFF802BE191000) Value: 4
+ES Base Addr: (FFFFF802BE190000) Value: 8b07
+ES Base Addr: (FFFFF802BE18F000) Value: 8348
+ES Base Addr: (FFFFF802BE18E000) Value: 8b48
+ES Base Addr: (FFFFF802BE18D000) Value: 8b45
+ES Base Addr: (FFFFF802BE18C000) Value: 4800
+ES Base Addr: (FFFFF802BE18B000) Value: 3b48
+ES Base Addr: (FFFFF802BE18A000) Value: 4c20
+ES Base Addr: (FFFFF802BE189000) Value: 4808
+ES Base Addr: (FFFFF802BE188000) Value: e820
+ES Base Addr: (FFFFF802BE187000) Value: e78b
+ES Base Addr: (FFFFF802BE186000) Value: e8ce
+ES Base Addr: (FFFFF802BE185000) Value: d68b
+ES Base Addr: (FFFFF802BE184000) Value: 5889
+ES Base Addr: (FFFFF802BE183000) Value: 4870
+ES Base Addr: (FFFFF802BE182000) Value: 0
+ES Base Addr: (FFFFF802BE181000) Value: 8b44
+ES Base Addr: (FFFFF802BE180000) Value: c08b
+ES Base Addr: (FFFFF802BE17F000) Value: c35d
+ES Base Addr: (FFFFF802BE17E000) Value: e9ff
+ES Base Addr: (FFFFF802BE17D000) Value: 41d9
+ES Base Addr: (FFFFF802BE17C000) Value: 1
+ES Base Addr: (FFFFF802BE17B000) Value: 9
+ES Base Addr: (FFFFF802BE17A000) Value: 5b0d
+ES Base Addr: (FFFFF802BE179000) Value: 4c89
+ES Base Addr: (FFFFF802BE178000) Value: cc00
+ES Base Addr: (FFFFF802BE177000) Value: 8348
+ES Base Addr: (FFFFF802BE176000) Value: 8548
+ES Base Addr: (FFFFF802BE175000) Value: 840f
+ES Base Addr: (FFFFF802BE174000) Value: fa8b
+ES Base Addr: (FFFFF802BE173000) Value: 4489
+ES Base Addr: (FFFFF802BE172000) Value: 8440
+ES Base Addr: (FFFFF802BE171000) Value: ffff
+ES Base Addr: (FFFFF802BE170000) Value: 8b48
+ES Base Addr: (FFFFF802BE16F000) Value: 4d1b
+ES Base Addr: (FFFFF802BE16E000) Value: 8a44
+ES Base Addr: (FFFFF802BE16D000) Value: e983
+ES Base Addr: (FFFFF802BE16C000) Value: e901
+ES Base Addr: (FFFFF802BE16B000) Value: b8c3
+ES Base Addr: (FFFFF802BE16A000) Value: 4889
+ES Base Addr: (FFFFF802BE169000) Value: 4043
+ES Base Addr: (FFFFF802BE168000) Value: 318
+ES Base Addr: (FFFFF802BE167000) Value: 0
+ES Base Addr: (FFFFF802BE166000) Value: f
+ES Base Addr: (FFFFF802BE165000) Value: 48d2
+ES Base Addr: (FFFFF802BE164000) Value: 4808
+ES Base Addr: (FFFFF802BE163000) Value: c448
+ES Base Addr: (FFFFF802BE162000) Value: f00
+ES Base Addr: (FFFFF802BE161000) Value: c085
+ES Base Addr: (FFFFF802BE160000) Value: 1
+ES Base Addr: (FFFFF802BE15F000) Value: 8892
+ES Base Addr: (FFFFF802BE15E000) Value: 8348
+ES Base Addr: (FFFFF802BE15D000) Value: 0
+ES Base Addr: (FFFFF802BE15C000) Value: 4be8
+ES Base Addr: (FFFFF802BE15B000) Value: b540
+ES Base Addr: (FFFFF802BE15A000) Value: 3
+ES Base Addr: (FFFFF802BE159000) Value: 30c4
+ES Base Addr: (FFFFF802BE158000) Value: 3c07
+ES Base Addr: (FFFFF802BE157000) Value: c481
+ES Base Addr: (FFFFF802BE156000) Value: 4157
+ES Base Addr: (FFFFF802BE155000) Value: 2ae2
+ES Base Addr: (FFFFF802BE154000) Value: c681
+ES Base Addr: (FFFFF802BE153000) Value: c93b
+ES Base Addr: (FFFFF802BE152000) Value: 38
+ES Base Addr: (FFFFF802BE151000) Value: e800
+ES Base Addr: (FFFFF802BE150000) Value: 240
+ES Base Addr: (FFFFF802BE14F000) Value: c0b6
+ES Base Addr: (FFFFF802BE14E000) Value: 2183
+ES Base Addr: (FFFFF802BE14D000) Value: e372
+ES Base Addr: (FFFFF802BE14C000) Value: ebff
+ES Base Addr: (FFFFF802BE14B000) Value: cc8b
+ES Base Addr: (FFFFF802BE14A000) Value: 8948
+ES Base Addr: (FFFFF802BE149000) Value: 200f
+ES Base Addr: (FFFFF802BE148000) Value: cf3b
+ES Base Addr: (FFFFF802BE147000) Value: 8d48
+ES Base Addr: (FFFFF802BE146000) Value: 4024
+ES Base Addr: (FFFFF802BE145000) Value: c0b7
+ES Base Addr: (FFFFF802BE144000) Value: 2444
+ES Base Addr: (FFFFF802BE143000) Value: 4589
+ES Base Addr: (FFFFF802BE142000) Value: 29cd
+ES Base Addr: (FFFFF802BE141000) Value: 8b48
+ES Base Addr: (FFFFF802BE140000) Value: c085
+ES Base Addr: (FFFFF802BE13F000) Value: c483
+ES Base Addr: (FFFFF802BE13E000) Value: 0
+ES Base Addr: (FFFFF802BE13D000) Value: 3b48
+ES Base Addr: (FFFFF802BE13C000) Value: 2c72
+ES Base Addr: (FFFFF802BE13B000) Value: db05
+ES Base Addr: (FFFFF802BE13A000) Value: c885
+ES Base Addr: (FFFFF802BE139000) Value: 449
+ES Base Addr: (FFFFF802BE138000) Value: a74
+ES Base Addr: (FFFFF802BE137000) Value: 0
+ES Base Addr: (FFFFF802BE136000) Value: c25c
+ES Base Addr: (FFFFF802BE135000) Value: 48d3
+ES Base Addr: (FFFFF802BE134000) Value: 48ff
+ES Base Addr: (FFFFF802BE133000) Value: 48f0
+ES Base Addr: (FFFFF802BE132000) Value: 2bc
+ES Base Addr: (FFFFF802BE131000) Value: 20e2
+ES Base Addr: (FFFFF802BE130000) Value: 74ff
+ES Base Addr: (FFFFF802BE12F000) Value: cd8b
+ES Base Addr: (FFFFF802BE12E000) Value: 8b48
+ES Base Addr: (FFFFF802BE12D000) Value: 3063
+ES Base Addr: (FFFFF802BE12C000) Value: 894c
+ES Base Addr: (FFFFF802BE12B000) Value: 0
+ES Base Addr: (FFFFF802BE12A000) Value: e22b
+ES Base Addr: (FFFFF802BE129000) Value: aaaa
+ES Base Addr: (FFFFF802BE128000) Value: d86
+ES Base Addr: (FFFFF802BE127000) Value: 110
+ES Base Addr: (FFFFF802BE126000) Value: 83ff
+ES Base Addr: (FFFFF802BE125000) Value: ffff
+ES Base Addr: (FFFFF802BE124000) Value: 4811
+ES Base Addr: (FFFFF802BE123000) Value: 8948
+ES Base Addr: (FFFFF802BE122000) Value: 48d
+ES Base Addr: (FFFFF802BE121000) Value: 0
+ES Base Addr: (FFFFF802BE120000) Value: ed83
+ES Base Addr: (FFFFF802BE11F000) Value: 0
+ES Base Addr: (FFFFF802BE11E000) Value: 48e9
+ES Base Addr: (FFFFF802BE11D000) Value: f7ef
+ES Base Addr: (FFFFF802BE11C000) Value: 8948
+ES Base Addr: (FFFFF802BE11B000) Value: 55e4
+ES Base Addr: (FFFFF802BE11A000) Value: 6b04
+ES Base Addr: (FFFFF802BE119000) Value: 8948
+ES Base Addr: (FFFFF802BE118000) Value: 4800
+ES Base Addr: (FFFFF802BE117000) Value: 3348
+ES Base Addr: (FFFFF802BE116000) Value: 0
+ES Base Addr: (FFFFF802BE115000) Value: d1eb
+ES Base Addr: (FFFFF802BE114000) Value: 8b4c
+ES Base Addr: (FFFFF802BE113000) Value: 8b49
+ES Base Addr: (FFFFF802BE112000) Value: 854d
+ES Base Addr: (FFFFF802BE111000) Value: 8b48
+ES Base Addr: (FFFFF802BE110000) Value: 4800
+ES Base Addr: (FFFFF802BE10F000) Value: 27
+ES Base Addr: (FFFFF802BE10E000) Value: e800
+ES Base Addr: (FFFFF802BE10D000) Value: fd0
+ES Base Addr: (FFFFF802BE10C000) Value: 478b
+ES Base Addr: (FFFFF802BE10B000) Value: 8b48
+ES Base Addr: (FFFFF802BE10A000) Value: 3b00
+ES Base Addr: (FFFFF802BE109000) Value: e8cb
+ES Base Addr: (FFFFF802BE108000) Value: 1b8
+ES Base Addr: (FFFFF802BE107000) Value: 48c0
+ES Base Addr: (FFFFF802BE106000) Value: 840f
+ES Base Addr: (FFFFF802BE105000) Value: 2444
+ES Base Addr: (FFFFF802BE104000) Value: 1045
+ES Base Addr: (FFFFF802BE103000) Value: 40c4
+ES Base Addr: (FFFFF802BE102000) Value: 2346
+ES Base Addr: (FFFFF802BE101000) Value: c033
+ES Base Addr: (FFFFF802BE100000) Value: 1d85
+ES Base Addr: (FFFFF802BE0FF000) Value: fffe
+ES Base Addr: (FFFFF802BE0FE000) Value: 44cf
+ES Base Addr: (FFFFF802BE0FD000) Value: 95cb
+ES Base Addr: (FFFFF802BE0FC000) Value: d640
+ES Base Addr: (FFFFF802BE0FB000) Value: 48e9
+ES Base Addr: (FFFFF802BE0FA000) Value: fd76
+ES Base Addr: (FFFFF802BE0F9000) Value: db85
+ES Base Addr: (FFFFF802BE0F8000) Value: b60f
+ES Base Addr: (FFFFF802BE0F7000) Value: 848b
+ES Base Addr: (FFFFF802BE0F6000) Value: 428b
+ES Base Addr: (FFFFF802BE0F5000) Value: 8c84
+ES Base Addr: (FFFFF802BE0F4000) Value: 7e7
+ES Base Addr: (FFFFF802BE0F3000) Value: b9
+ES Base Addr: (FFFFF802BE0F2000) Value: ce75
+ES Base Addr: (FFFFF802BE0F1000) Value: 3256
+ES Base Addr: (FFFFF802BE0F0000) Value: c6af
+ES Base Addr: (FFFFF802BE0EF000) Value: b60f
+ES Base Addr: (FFFFF802BE0EE000) Value: 9be8
+ES Base Addr: (FFFFF802BE0ED000) Value: 0
+ES Base Addr: (FFFFF802BE0EC000) Value: 3948
+ES Base Addr: (FFFFF802BE0EB000) Value: f41
+ES Base Addr: (FFFFF802BE0EA000) Value: ccc3
+ES Base Addr: (FFFFF802BE0E9000) Value: db85
+ES Base Addr: (FFFFF802BE0E8000) Value: 4cff
+ES Base Addr: (FFFFF802BE0E7000) Value: e8d9
+ES Base Addr: (FFFFF802BE0E6000) Value: c702
+ES Base Addr: (FFFFF802BE0E5000) Value: e800
+ES Base Addr: (FFFFF802BE0E4000) Value: 8b49
+ES Base Addr: (FFFFF802BE0E3000) Value: 8948
+ES Base Addr: (FFFFF802BE0E2000) Value: 3d80
+ES Base Addr: (FFFFF802BE0E1000) Value: 850f
+ES Base Addr: (FFFFF802BE0E0000) Value: 6041
+ES Base Addr: (FFFFF802BE0DF000) Value: 0
+ES Base Addr: (FFFFF802BE0DE000) Value: 8b4d
+ES Base Addr: (FFFFF802BE0DD000) Value: 8b48
+ES Base Addr: (FFFFF802BE0DC000) Value: 894
+ES Base Addr: (FFFFF802BE0DB000) Value: 88
+ES Base Addr: (FFFFF802BE0DA000) Value: feb4
+ES Base Addr: (FFFFF802BE0D9000) Value: 0
+ES Base Addr: (FFFFF802BE0D8000) Value: 3b48
+ES Base Addr: (FFFFF802BE0D7000) Value: 8948
+ES Base Addr: (FFFFF802BE0D6000) Value: 5340
+ES Base Addr: (FFFFF802BE0D5000) Value: 8b48
+ES Base Addr: (FFFFF802BE0D4000) Value: 3
+ES Base Addr: (FFFFF802BE0D3000) Value: 4100
+ES Base Addr: (FFFFF802BE0D2000) Value: 1
+ES Base Addr: (FFFFF802BE0D1000) Value: bb48
+ES Base Addr: (FFFFF802BE0D0000) Value: ffff
+ES Base Addr: (FFFFF802BE0CF000) Value: 11bb
+ES Base Addr: (FFFFF802BE0CE000) Value: 4900
+ES Base Addr: (FFFFF802BE0CD000) Value: f6fb
+ES Base Addr: (FFFFF802BE0CC000) Value: d6ac
+ES Base Addr: (FFFFF802BE0CB000) Value: 3fff
+ES Base Addr: (FFFFF802BE0CA000) Value: 0
+ES Base Addr: (FFFFF802BE0C9000) Value: 0
+ES Base Addr: (FFFFF802BE0C8000) Value: 8d4c
+ES Base Addr: (FFFFF802BE0C7000) Value: 8024
+ES Base Addr: (FFFFF802BE0C6000) Value: fffd
+ES Base Addr: (FFFFF802BE0C5000) Value: 8c8d
+ES Base Addr: (FFFFF802BE0C4000) Value: 13c
+ES Base Addr: (FFFFF802BE0C3000) Value: 23a
+ES Base Addr: (FFFFF802BE0C2000) Value: 338
+ES Base Addr: (FFFFF802BE0C1000) Value: 1259
+ES Base Addr: (FFFFF802BE0C0000) Value: ffff
+ES Base Addr: (FFFFF802BE0BF000) Value: 4520
+ES Base Addr: (FFFFF802BE0BE000) Value: e9c1
+ES Base Addr: (FFFFF802BE0BD000) Value: fffc
+ES Base Addr: (FFFFF802BE0BC000) Value: 20e0
+ES Base Addr: (FFFFF802BE0BB000) Value: 9e8
+ES Base Addr: (FFFFF802BE0BA000) Value: c985
+ES Base Addr: (FFFFF802BE0B9000) Value: d98b
+ES Base Addr: (FFFFF802BE0B8000) Value: 8b48
+ES Base Addr: (FFFFF802BE0B7000) Value: 8b48
+ES Base Addr: (FFFFF802BE0B6000) Value: a75
+ES Base Addr: (FFFFF802BE0B5000) Value: e88e
+ES Base Addr: (FFFFF802BE0B4000) Value: 687
+ES Base Addr: (FFFFF802BE0B3000) Value: e083
+ES Base Addr: (FFFFF802BE0B2000) Value: 348d
+ES Base Addr: (FFFFF802BE0B1000) Value: fa8b
+ES Base Addr: (FFFFF802BE0B0000) Value: 2b74
+ES Base Addr: (FFFFF802BE0AF000) Value: ffff
+ES Base Addr: (FFFFF802BE0AE000) Value: 0
+ES Base Addr: (FFFFF802BE0AD000) Value: 8b48
+ES Base Addr: (FFFFF802BE0AC000) Value: f981
+ES Base Addr: (FFFFF802BE0AB000) Value: 244c
+ES Base Addr: (FFFFF802BE0AA000) Value: 4500
+ES Base Addr: (FFFFF802BE0A9000) Value: 8b4d
+ES Base Addr: (FFFFF802BE0A8000) Value: 48ff
+ES Base Addr: (FFFFF802BE0A7000) Value: fbfb
+ES Base Addr: (FFFFF802BE0A6000) Value: b70f
+ES Base Addr: (FFFFF802BE0A5000) Value: adcf
+ES Base Addr: (FFFFF802BE0A4000) Value: f700
+ES Base Addr: (FFFFF802BE0A3000) Value: 83ff
+ES Base Addr: (FFFFF802BE0A2000) Value: 8548
+ES Base Addr: (FFFFF802BE0A1000) Value: 5e9
+ES Base Addr: (FFFFF802BE0A0000) Value: 5024
+ES Base Addr: (FFFFF802BE09F000) Value: 4900
+ES Base Addr: (FFFFF802BE09E000) Value: 2be8
+ES Base Addr: (FFFFF802BE09D000) Value: 4156
+ES Base Addr: (FFFFF802BE09C000) Value: 0
+ES Base Addr: (FFFFF802BE09B000) Value: 48d2
+ES Base Addr: (FFFFF802BE09A000) Value: 90
+ES Base Addr: (FFFFF802BE099000) Value: 7e88
+ES Base Addr: (FFFFF802BE098000) Value: 4850
+ES Base Addr: (FFFFF802BE097000) Value: 4806
+ES Base Addr: (FFFFF802BE096000) Value: 24b4
+ES Base Addr: (FFFFF802BE095000) Value: 8348
+ES Base Addr: (FFFFF802BE094000) Value: b07c
+ES Base Addr: (FFFFF802BE093000) Value: d10c
+ES Base Addr: (FFFFF802BE092000) Value: f41
+ES Base Addr: (FFFFF802BE091000) Value: 48c1
+ES Base Addr: (FFFFF802BE090000) Value: 4912
+ES Base Addr: (FFFFF802BE08F000) Value: c3
+ES Base Addr: (FFFFF802BE08E000) Value: 8b4c
+ES Base Addr: (FFFFF802BE08D000) Value: 4024
+ES Base Addr: (FFFFF802BE08C000) Value: 65ff
+ES Base Addr: (FFFFF802BE08B000) Value: c0
+ES Base Addr: (FFFFF802BE08A000) Value: 4900
+ES Base Addr: (FFFFF802BE089000) Value: 37
+ES Base Addr: (FFFFF802BE088000) Value: 7401
+ES Base Addr: (FFFFF802BE087000) Value: c085
+ES Base Addr: (FFFFF802BE086000) Value: 3898
+ES Base Addr: (FFFFF802BE085000) Value: 25ff
+*** Hello From ShellCode ***
+
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+1: kd> bl
+ 0 eu                      0001 (0001) (ExportScan!DriverEntry)
+ 1 eu                      0001 (0001) (ExportScan!FindNTOSBase)
+ 2 eu                      0001 (0001) (@@masm(`ExportScan!c:\course\source\kerrkt.labs\labs\exportscan\exportscan.c:39+`))
+
+1: kd> bc *
+1: kd> lm
+start             end                 module name
+00007fff`5fa60000 00007fff`5fc21000   ntdll      (pdb symbols)          c:\course\symbols\ntdll.pdb\DC94C6E9486B48219E6A009C144E80AB1\ntdll.pdb
+fffff801`f5800000 fffff801`f580b000   BOOTVID    (deferred)             
+fffff801`f5810000 fffff801`f581e000   cmimcext   (deferred)             
+fffff801`f5820000 fffff801`f582c000   ntosext    (deferred)             
+fffff801`f5830000 fffff801`f58c9000   CI         (deferred)             
+fffff801`f58d0000 fffff801`f592c000   msrpc      (deferred)             
+fffff801`f5930000 fffff801`f5992000   FLTMGR     (deferred)             
+fffff801`f59a0000 fffff801`f59c5000   ksecdd     (deferred)             
+fffff801`f59d0000 fffff801`f5a75000   clipsp     (deferred)             
+fffff801`f5a80000 fffff801`f5b45000   Wdf01000   (deferred)             
+fffff801`f5b50000 fffff801`f5b63000   WDFLDR     (deferred)             
+fffff801`f5b70000 fffff801`f5b93000   acpiex     (deferred)             
+fffff801`f5ba0000 fffff801`f5bad000   WppRecorder   (deferred)             
+fffff801`f5bb0000 fffff801`f5c48000   cng        (deferred)             
+fffff801`f5c50000 fffff801`f5c64000   BasicDisplay   (deferred)             
+fffff801`f5c70000 fffff801`f5c85000   watchdog   (deferred)             
+fffff801`f5ca0000 fffff801`f5d2e000   mcupdate_GenuineIntel   (deferred)             
+fffff801`f5d30000 fffff801`f5d40000   werkernel   (deferred)             
+fffff801`f5d40000 fffff801`f5da5000   CLFS       (deferred)             
+fffff801`f5db0000 fffff801`f5dd5000   tm         (deferred)             
+fffff801`f5de0000 fffff801`f5df7000   PSHED      (deferred)             
+fffff801`f5e00000 fffff801`f5e12000   pcw        (deferred)             
+fffff801`f5e20000 fffff801`f5e2b000   msisadrv   (deferred)             
+fffff801`f5e30000 fffff801`f5e86000   pci        (deferred)             
+fffff801`f5e90000 fffff801`f5ea2000   vdrvroot   (deferred)             
+fffff801`f5eb0000 fffff801`f5ece000   pdc        (deferred)             
+fffff801`f5ed0000 fffff801`f5ee9000   CEA        (deferred)             
+fffff801`f5ef0000 fffff801`f5f12000   partmgr    (deferred)             
+fffff801`f5f20000 fffff801`f5f41000   vmbus      (deferred)             
+fffff801`f5f50000 fffff801`f6070000   NDIS       (deferred)             
+fffff801`f6070000 fffff801`f60e8000   NETIO      (deferred)             
+fffff801`f60f0000 fffff801`f610b000   hvsocket   (deferred)             
+fffff801`f6110000 fffff801`f6128000   vmbkmcl    (deferred)             
+fffff801`f6130000 fffff801`f613e000   winhv      (deferred)             
+fffff801`f6140000 fffff801`f61c6000   spaceport   (deferred)             
+fffff801`f61d0000 fffff801`f61db000   intelide   (deferred)             
+fffff801`f61e0000 fffff801`f61f1000   PCIIDEX    (deferred)             
+fffff801`f6200000 fffff801`f6218000   volmgr     (deferred)             
+fffff801`f6220000 fffff801`f627e000   volmgrx    (deferred)             
+fffff801`f6280000 fffff801`f629d000   mountmgr   (deferred)             
+fffff801`f62a0000 fffff801`f62ac000   atapi      (deferred)             
+fffff801`f62b0000 fffff801`f62e5000   ataport    (deferred)             
+fffff801`f62f0000 fffff801`f630c000   EhStorClass   (deferred)             
+fffff801`f6310000 fffff801`f6329000   fileinfo   (deferred)             
+fffff801`f6330000 fffff801`f6368000   Wof        (deferred)             
+fffff801`f6370000 fffff801`f63bc000   WdFilter   (deferred)             
+fffff801`f63c0000 fffff801`f6420000   CLASSPNP   (deferred)             
+fffff801`f6420000 fffff801`f6439000   crashdmp   (deferred)             
+fffff801`f64a0000 fffff801`f64d1000   cdrom      (deferred)             
+fffff801`f64e0000 fffff801`f64fd000   filecrypt   (deferred)             
+fffff801`f6500000 fffff801`f650c000   tbs        (deferred)             
+fffff801`f6510000 fffff801`f651a000   Null       (deferred)             
+fffff801`f6520000 fffff801`f65b0000   ACPI       (deferred)             
+fffff801`f65b0000 fffff801`f65bc000   WMILIB     (deferred)             
+fffff801`f65c0000 fffff801`f65ca000   Beep       (deferred)             
+fffff801`f65d0000 fffff801`f65ef000   WindowsTrustedRT   (deferred)             
+fffff801`f65f0000 fffff801`f65fb000   WindowsTrustedRTProxy   (deferred)             
+fffff801`f6600000 fffff801`f6857000   tcpip      (deferred)             
+fffff801`f6860000 fffff801`f68c7000   fwpkclnt   (deferred)             
+fffff801`f68d0000 fffff801`f68fa000   wfplwfs    (deferred)             
+fffff801`f6900000 fffff801`f6910000   vmstorfl   (deferred)             
+fffff801`f6910000 fffff801`f69b1000   fvevol     (deferred)             
+fffff801`f69c0000 fffff801`f6a29000   volsnap    (deferred)             
+fffff801`f6a30000 fffff801`f6a74000   rdyboost   (deferred)             
+fffff801`f6a90000 fffff801`f6ca8000   NTFS       (deferred)             
+fffff801`f6cb0000 fffff801`f6cbe000   storvsc    (deferred)             
+fffff801`f6cc0000 fffff801`f6d38000   storport   (deferred)             
+fffff801`f6d40000 fffff801`f6d4d000   Fs_Rec     (deferred)             
+fffff801`f6d50000 fffff801`f6d7e000   ksecpkg    (deferred)             
+fffff801`f6d80000 fffff801`f6da5000   mup        (deferred)             
+fffff801`f6dc0000 fffff801`f6ddf000   disk       (deferred)             
+fffff801`f7200000 fffff801`f724b000   netbt      (deferred)             
+fffff801`f7250000 fffff801`f72e2000   afd        (deferred)             
+fffff801`f72f0000 fffff801`f7309000   vwififlt   (deferred)             
+fffff801`f7310000 fffff801`f733b000   pacer      (deferred)             
+fffff801`f7340000 fffff801`f7352000   netbios    (deferred)             
+fffff801`f7360000 fffff801`f73d1000   rdbss      (deferred)             
+fffff801`f73e0000 fffff801`f746e000   csc        (deferred)             
+fffff801`f7470000 fffff801`f7480000   nsiproxy   (deferred)             
+fffff801`f7480000 fffff801`f748d000   npsvctrig   (deferred)             
+fffff801`f7490000 fffff801`f74a0000   mssmbios   (deferred)             
+fffff801`f74a0000 fffff801`f74aa000   gpuenergydrv   (deferred)             
+fffff801`f74b0000 fffff801`f74da000   dfsc       (deferred)             
+fffff801`f7500000 fffff801`f753c000   ahcache    (deferred)             
+fffff801`f7540000 fffff801`f7551000   CompositeBus   (deferred)             
+fffff801`f7560000 fffff801`f756d000   kdnic      (deferred)             
+fffff801`f7570000 fffff801`f7585000   umbus      (deferred)             
+fffff801`f7590000 fffff801`f75b2000   i8042prt   (deferred)             
+fffff801`f75c0000 fffff801`f75d3000   kbdclass   (deferred)             
+fffff801`f75e0000 fffff801`f75f2000   mouclass   (deferred)             
+fffff801`f7600000 fffff801`f761b000   serial     (deferred)             
+fffff801`f7620000 fffff801`f762f000   serenum    (deferred)             
+fffff801`f7630000 fffff801`f763f000   fdc        (deferred)             
+fffff801`f7640000 fffff801`f764e000   VMBusHID   (deferred)             
+fffff801`f7650000 fffff801`f767e000   HIDCLASS   (deferred)             
+fffff801`f7680000 fffff801`f7691000   HIDPARSE   (deferred)             
+fffff801`f76a0000 fffff801`f76ac000   hyperkbd   (deferred)             
+fffff801`f76b0000 fffff801`f76bf000   HyperVideo   (deferred)             
+fffff801`f76c0000 fffff801`f76cf000   dmvsc      (deferred)             
+fffff801`f76d0000 fffff801`f76f1000   netvsc     (deferred)             
+fffff801`f7700000 fffff801`f770b000   vms3cap    (deferred)             
+fffff801`f7710000 fffff801`f773b000   intelppm   (deferred)             
+fffff801`f7740000 fffff801`f774b000   vmgencounter   (deferred)             
+fffff801`f7750000 fffff801`f775d000   NdisVirtualBus   (deferred)             
+fffff801`f7760000 fffff801`f776c000   swenum     (deferred)             
+fffff801`f7780000 fffff801`f796d000   dxgkrnl    (deferred)             
+fffff801`f7970000 fffff801`f7982000   BasicRender   (deferred)             
+fffff801`f7990000 fffff801`f79a9000   Npfs       (deferred)             
+fffff801`f79b0000 fffff801`f79bf000   Msfs       (deferred)             
+fffff801`f79c0000 fffff801`f79e3000   tdx        (deferred)             
+fffff801`f79f0000 fffff801`f79ff000   TDI        (deferred)             
+fffff801`f7a00000 fffff801`f7a1c000   dump_dumpfve   (deferred)             
+fffff801`f7f20000 fffff801`f7fb2000   dxgmms2    (deferred)             
+fffff801`f7fd0000 fffff801`f7fdd000   rdpvideominiport   (deferred)             
+fffff801`f7fe0000 fffff801`f8006000   luafv      (deferred)             
+fffff801`f8010000 fffff801`f8029000   storqosflt   (deferred)             
+fffff801`f8030000 fffff801`f8060000   rdpdr      (deferred)             
+fffff801`f8060000 fffff801`f8085000   tsusbhub   (deferred)             
+fffff801`f8090000 fffff801`f80b3000   bowser     (deferred)             
+fffff801`f80c0000 fffff801`f8132000   mrxsmb     (deferred)             
+fffff801`f8140000 fffff801`f8150000   monitor    (deferred)             
+fffff801`f8150000 fffff801`f818a000   mrxsmb20   (deferred)             
+fffff801`f8190000 fffff801`f81a6000   lltdio     (deferred)             
+fffff801`f81b0000 fffff801`f81ca000   mslldp     (deferred)             
+fffff801`f81d0000 fffff801`f81ea000   rspndr     (deferred)             
+fffff801`f81f0000 fffff801`f81ff000   terminpt   (deferred)             
+fffff801`f8200000 fffff801`f8311000   HTTP       (deferred)             
+fffff801`f8320000 fffff801`f833d000   WudfPf     (deferred)             
+fffff801`f8340000 fffff801`f8359000   mpsdrv     (deferred)             
+fffff801`f8360000 fffff801`f83a1000   srvnet     (deferred)             
+fffff801`f83b0000 fffff801`f845f000   srv2       (deferred)             
+fffff801`f8460000 fffff801`f8474000   mmcss      (deferred)             
+fffff801`f8480000 fffff801`f84ce000   mrxsmb10   (deferred)             
+fffff801`f84d0000 fffff801`f84f6000   Ndu        (deferred)             
+fffff801`f8500000 fffff801`f85c0000   peauth     (deferred)             
+fffff801`f85c0000 fffff801`f864c000   srv        (deferred)             
+fffff801`f8650000 fffff801`f8664000   tcpipreg   (deferred)             
+fffff801`f8670000 fffff801`f869f000   tunnel     (deferred)             
+fffff801`f86a0000 fffff801`f86b1000   condrv     (deferred)             
+fffff801`f88f0000 fffff801`f8958000   ks         (deferred)             
+fffff801`f8960000 fffff801`f896e000   rdpbus     (deferred)             
+fffff801`f8970000 fffff801`f897e000   flpydisk   (deferred)             
+fffff801`f8980000 fffff801`f898f000   mouhid     (deferred)             
+fffff801`f89a0000 fffff801`f89af000   dump_dumpata   (deferred)             
+fffff801`f89c0000 fffff801`f89cc000   dump_atapi   (deferred)             
+fffff802`bd145000 fffff802`bd153000   kdcom      (deferred)             
+fffff802`be011000 fffff802`be084000   hal        (pdb symbols)          c:\course\symbols\hal.pdb\81C1AF690083498BA941D5EC628CDCF41\hal.pdb
+fffff802`be084000 fffff802`be850000   nt         (pdb symbols)          c:\course\symbols\ntkrnlmp.pdb\1A603169B1B942A092B69787CCB7C4811\ntkrnlmp.pdb
+fffff961`cd200000 fffff961`cd223000   win32k     (deferred)             
+fffff961`cd400000 fffff961`cd561000   win32kbase   (deferred)             
+fffff961`cd580000 fffff961`cd58a000   TSDDD      (deferred)             
+fffff961`cd590000 fffff961`cd5cc000   cdd        (deferred)             
+fffff961`cd5d0000 fffff961`cd5ec000   RDPUDD     (deferred)             
+fffff961`ce3f0000 fffff961`ce772000   win32kfull   (deferred)             
+
+Unloaded modules:
+fffff801`f86c0000 fffff801`f86c8000   ExportScan.sys
+fffff801`f7fc0000 fffff801`f7fd0000   monitor.sys
+fffff801`f6db0000 fffff801`f6dbf000   dump_ataport.sys
+fffff801`f6450000 fffff801`f645c000   dump_atapi.sys
+fffff801`f6480000 fffff801`f649c000   dump_dumpfve.sys
+fffff801`f74e0000 fffff801`f74f3000   dam.sys 
+fffff801`f65c0000 fffff801`f65d0000   WdBoot.sys
+fffff801`f6db0000 fffff801`f6dbe000   hwpolicy.sys
+Unable to enumerate user-mode unloaded modules, Win32 error 0n30
+1: kd> lm
+start             end                 module name
+00007fff`5fa60000 00007fff`5fc21000   ntdll      (pdb symbols)          c:\course\symbols\ntdll.pdb\DC94C6E9486B48219E6A009C144E80AB1\ntdll.pdb
+fffff801`f5800000 fffff801`f580b000   BOOTVID    (deferred)             
+fffff801`f5810000 fffff801`f581e000   cmimcext   (deferred)             
+fffff801`f5820000 fffff801`f582c000   ntosext    (deferred)             
+fffff801`f5830000 fffff801`f58c9000   CI         (deferred)             
+fffff801`f58d0000 fffff801`f592c000   msrpc      (deferred)             
+fffff801`f5930000 fffff801`f5992000   FLTMGR     (deferred)             
+fffff801`f59a0000 fffff801`f59c5000   ksecdd     (deferred)             
+fffff801`f59d0000 fffff801`f5a75000   clipsp     (deferred)             
+fffff801`f5a80000 fffff801`f5b45000   Wdf01000   (deferred)             
+fffff801`f5b50000 fffff801`f5b63000   WDFLDR     (deferred)             
+fffff801`f5b70000 fffff801`f5b93000   acpiex     (deferred)             
+fffff801`f5ba0000 fffff801`f5bad000   WppRecorder   (deferred)             
+fffff801`f5bb0000 fffff801`f5c48000   cng        (deferred)             
+fffff801`f5c50000 fffff801`f5c64000   BasicDisplay   (deferred)             
+fffff801`f5c70000 fffff801`f5c85000   watchdog   (deferred)             
+fffff801`f5ca0000 fffff801`f5d2e000   mcupdate_GenuineIntel   (deferred)             
+fffff801`f5d30000 fffff801`f5d40000   werkernel   (deferred)             
+fffff801`f5d40000 fffff801`f5da5000   CLFS       (deferred)             
+fffff801`f5db0000 fffff801`f5dd5000   tm         (deferred)             
+fffff801`f5de0000 fffff801`f5df7000   PSHED      (deferred)             
+fffff801`f5e00000 fffff801`f5e12000   pcw        (deferred)             
+fffff801`f5e20000 fffff801`f5e2b000   msisadrv   (deferred)             
+fffff801`f5e30000 fffff801`f5e86000   pci        (deferred)             
+fffff801`f5e90000 fffff801`f5ea2000   vdrvroot   (deferred)             
+fffff801`f5eb0000 fffff801`f5ece000   pdc        (deferred)             
+fffff801`f5ed0000 fffff801`f5ee9000   CEA        (deferred)             
+fffff801`f5ef0000 fffff801`f5f12000   partmgr    (deferred)             
+fffff801`f5f20000 fffff801`f5f41000   vmbus      (deferred)             
+fffff801`f5f50000 fffff801`f6070000   NDIS       (deferred)             
+fffff801`f6070000 fffff801`f60e8000   NETIO      (deferred)             
+fffff801`f60f0000 fffff801`f610b000   hvsocket   (deferred)             
+fffff801`f6110000 fffff801`f6128000   vmbkmcl    (deferred)             
+fffff801`f6130000 fffff801`f613e000   winhv      (deferred)             
+fffff801`f6140000 fffff801`f61c6000   spaceport   (deferred)             
+fffff801`f61d0000 fffff801`f61db000   intelide   (deferred)             
+fffff801`f61e0000 fffff801`f61f1000   PCIIDEX    (deferred)             
+fffff801`f6200000 fffff801`f6218000   volmgr     (deferred)             
+fffff801`f6220000 fffff801`f627e000   volmgrx    (deferred)             
+fffff801`f6280000 fffff801`f629d000   mountmgr   (deferred)             
+fffff801`f62a0000 fffff801`f62ac000   atapi      (deferred)             
+fffff801`f62b0000 fffff801`f62e5000   ataport    (deferred)             
+fffff801`f62f0000 fffff801`f630c000   EhStorClass   (deferred)             
+fffff801`f6310000 fffff801`f6329000   fileinfo   (deferred)             
+fffff801`f6330000 fffff801`f6368000   Wof        (deferred)             
+fffff801`f6370000 fffff801`f63bc000   WdFilter   (deferred)             
+fffff801`f63c0000 fffff801`f6420000   CLASSPNP   (deferred)             
+fffff801`f6420000 fffff801`f6439000   crashdmp   (deferred)             
+fffff801`f64a0000 fffff801`f64d1000   cdrom      (deferred)             
+fffff801`f64e0000 fffff801`f64fd000   filecrypt   (deferred)             
+fffff801`f6500000 fffff801`f650c000   tbs        (deferred)             
+fffff801`f6510000 fffff801`f651a000   Null       (deferred)             
+fffff801`f6520000 fffff801`f65b0000   ACPI       (deferred)             
+fffff801`f65b0000 fffff801`f65bc000   WMILIB     (deferred)             
+fffff801`f65c0000 fffff801`f65ca000   Beep       (deferred)             
+fffff801`f65d0000 fffff801`f65ef000   WindowsTrustedRT   (deferred)             
+fffff801`f65f0000 fffff801`f65fb000   WindowsTrustedRTProxy   (deferred)             
+fffff801`f6600000 fffff801`f6857000   tcpip      (deferred)             
+fffff801`f6860000 fffff801`f68c7000   fwpkclnt   (deferred)             
+fffff801`f68d0000 fffff801`f68fa000   wfplwfs    (deferred)             
+fffff801`f6900000 fffff801`f6910000   vmstorfl   (deferred)             
+fffff801`f6910000 fffff801`f69b1000   fvevol     (deferred)             
+fffff801`f69c0000 fffff801`f6a29000   volsnap    (deferred)             
+fffff801`f6a30000 fffff801`f6a74000   rdyboost   (deferred)             
+fffff801`f6a90000 fffff801`f6ca8000   NTFS       (deferred)             
+fffff801`f6cb0000 fffff801`f6cbe000   storvsc    (deferred)             
+fffff801`f6cc0000 fffff801`f6d38000   storport   (deferred)             
+fffff801`f6d40000 fffff801`f6d4d000   Fs_Rec     (deferred)             
+fffff801`f6d50000 fffff801`f6d7e000   ksecpkg    (deferred)             
+fffff801`f6d80000 fffff801`f6da5000   mup        (deferred)             
+fffff801`f6dc0000 fffff801`f6ddf000   disk       (deferred)             
+fffff801`f7200000 fffff801`f724b000   netbt      (deferred)             
+fffff801`f7250000 fffff801`f72e2000   afd        (deferred)             
+fffff801`f72f0000 fffff801`f7309000   vwififlt   (deferred)             
+fffff801`f7310000 fffff801`f733b000   pacer      (deferred)             
+fffff801`f7340000 fffff801`f7352000   netbios    (deferred)             
+fffff801`f7360000 fffff801`f73d1000   rdbss      (deferred)             
+fffff801`f73e0000 fffff801`f746e000   csc        (deferred)             
+fffff801`f7470000 fffff801`f7480000   nsiproxy   (deferred)             
+fffff801`f7480000 fffff801`f748d000   npsvctrig   (deferred)             
+fffff801`f7490000 fffff801`f74a0000   mssmbios   (deferred)             
+fffff801`f74a0000 fffff801`f74aa000   gpuenergydrv   (deferred)             
+fffff801`f74b0000 fffff801`f74da000   dfsc       (deferred)             
+fffff801`f7500000 fffff801`f753c000   ahcache    (deferred)             
+fffff801`f7540000 fffff801`f7551000   CompositeBus   (deferred)             
+fffff801`f7560000 fffff801`f756d000   kdnic      (deferred)             
+fffff801`f7570000 fffff801`f7585000   umbus      (deferred)             
+fffff801`f7590000 fffff801`f75b2000   i8042prt   (deferred)             
+fffff801`f75c0000 fffff801`f75d3000   kbdclass   (deferred)             
+fffff801`f75e0000 fffff801`f75f2000   mouclass   (deferred)             
+fffff801`f7600000 fffff801`f761b000   serial     (deferred)             
+fffff801`f7620000 fffff801`f762f000   serenum    (deferred)             
+fffff801`f7630000 fffff801`f763f000   fdc        (deferred)             
+fffff801`f7640000 fffff801`f764e000   VMBusHID   (deferred)             
+fffff801`f7650000 fffff801`f767e000   HIDCLASS   (deferred)             
+fffff801`f7680000 fffff801`f7691000   HIDPARSE   (deferred)             
+fffff801`f76a0000 fffff801`f76ac000   hyperkbd   (deferred)             
+fffff801`f76b0000 fffff801`f76bf000   HyperVideo   (deferred)             
+fffff801`f76c0000 fffff801`f76cf000   dmvsc      (deferred)             
+fffff801`f76d0000 fffff801`f76f1000   netvsc     (deferred)             
+fffff801`f7700000 fffff801`f770b000   vms3cap    (deferred)             
+fffff801`f7710000 fffff801`f773b000   intelppm   (deferred)             
+fffff801`f7740000 fffff801`f774b000   vmgencounter   (deferred)             
+fffff801`f7750000 fffff801`f775d000   NdisVirtualBus   (deferred)             
+fffff801`f7760000 fffff801`f776c000   swenum     (deferred)             
+fffff801`f7780000 fffff801`f796d000   dxgkrnl    (deferred)             
+fffff801`f7970000 fffff801`f7982000   BasicRender   (deferred)             
+fffff801`f7990000 fffff801`f79a9000   Npfs       (deferred)             
+fffff801`f79b0000 fffff801`f79bf000   Msfs       (deferred)             
+fffff801`f79c0000 fffff801`f79e3000   tdx        (deferred)             
+fffff801`f79f0000 fffff801`f79ff000   TDI        (deferred)             
+fffff801`f7a00000 fffff801`f7a1c000   dump_dumpfve   (deferred)             
+fffff801`f7f20000 fffff801`f7fb2000   dxgmms2    (deferred)             
+fffff801`f7fd0000 fffff801`f7fdd000   rdpvideominiport   (deferred)             
+fffff801`f7fe0000 fffff801`f8006000   luafv      (deferred)             
+fffff801`f8010000 fffff801`f8029000   storqosflt   (deferred)             
+fffff801`f8030000 fffff801`f8060000   rdpdr      (deferred)             
+fffff801`f8060000 fffff801`f8085000   tsusbhub   (deferred)             
+fffff801`f8090000 fffff801`f80b3000   bowser     (deferred)             
+fffff801`f80c0000 fffff801`f8132000   mrxsmb     (deferred)             
+fffff801`f8140000 fffff801`f8150000   monitor    (deferred)             
+fffff801`f8150000 fffff801`f818a000   mrxsmb20   (deferred)             
+fffff801`f8190000 fffff801`f81a6000   lltdio     (deferred)             
+fffff801`f81b0000 fffff801`f81ca000   mslldp     (deferred)             
+fffff801`f81d0000 fffff801`f81ea000   rspndr     (deferred)             
+fffff801`f81f0000 fffff801`f81ff000   terminpt   (deferred)             
+fffff801`f8200000 fffff801`f8311000   HTTP       (deferred)             
+fffff801`f8320000 fffff801`f833d000   WudfPf     (deferred)             
+fffff801`f8340000 fffff801`f8359000   mpsdrv     (deferred)             
+fffff801`f8360000 fffff801`f83a1000   srvnet     (deferred)             
+fffff801`f83b0000 fffff801`f845f000   srv2       (deferred)             
+fffff801`f8460000 fffff801`f8474000   mmcss      (deferred)             
+fffff801`f8480000 fffff801`f84ce000   mrxsmb10   (deferred)             
+fffff801`f84d0000 fffff801`f84f6000   Ndu        (deferred)             
+fffff801`f8500000 fffff801`f85c0000   peauth     (deferred)             
+fffff801`f85c0000 fffff801`f864c000   srv        (deferred)             
+fffff801`f8650000 fffff801`f8664000   tcpipreg   (deferred)             
+fffff801`f8670000 fffff801`f869f000   tunnel     (deferred)             
+fffff801`f86a0000 fffff801`f86b1000   condrv     (deferred)             
+fffff801`f88f0000 fffff801`f8958000   ks         (deferred)             
+fffff801`f8960000 fffff801`f896e000   rdpbus     (deferred)             
+fffff801`f8970000 fffff801`f897e000   flpydisk   (deferred)             
+fffff801`f8980000 fffff801`f898f000   mouhid     (deferred)             
+fffff801`f89a0000 fffff801`f89af000   dump_dumpata   (deferred)             
+fffff801`f89c0000 fffff801`f89cc000   dump_atapi   (deferred)             
+fffff802`bd145000 fffff802`bd153000   kdcom      (deferred)             
+fffff802`be011000 fffff802`be084000   hal        (pdb symbols)          c:\course\symbols\hal.pdb\81C1AF690083498BA941D5EC628CDCF41\hal.pdb
+fffff802`be084000 fffff802`be850000   nt         (pdb symbols)          c:\course\symbols\ntkrnlmp.pdb\1A603169B1B942A092B69787CCB7C4811\ntkrnlmp.pdb
+fffff961`cd200000 fffff961`cd223000   win32k     (deferred)             
+fffff961`cd400000 fffff961`cd561000   win32kbase   (deferred)             
+fffff961`cd580000 fffff961`cd58a000   TSDDD      (deferred)             
+fffff961`cd590000 fffff961`cd5cc000   cdd        (deferred)             
+fffff961`cd5d0000 fffff961`cd5ec000   RDPUDD     (deferred)             
+fffff961`ce3f0000 fffff961`ce772000   win32kfull   (deferred)             
+
+Unloaded modules:
+fffff801`f86c0000 fffff801`f86c8000   ExportScan.sys
+fffff801`f7fc0000 fffff801`f7fd0000   monitor.sys
+fffff801`f6db0000 fffff801`f6dbf000   dump_ataport.sys
+fffff801`f6450000 fffff801`f645c000   dump_atapi.sys
+fffff801`f6480000 fffff801`f649c000   dump_dumpfve.sys
+fffff801`f74e0000 fffff801`f74f3000   dam.sys 
+fffff801`f65c0000 fffff801`f65d0000   WdBoot.sys
+fffff801`f6db0000 fffff801`f6dbe000   hwpolicy.sys
+Unable to enumerate user-mode unloaded modules, Win32 error 0n30
+1: kd> g
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFF59FF2993: (caller: 00007FFF5E03D533) LogHr(1) tid(1120) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFF59FF2993: (caller: 00007FFF5697D08F) LogHr(2) tid(5cc) 80004005 Unspecified error
+    CallContext:[\Startup] 
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1443)\FlightSettings.dll!00007FFF4CEFAEEF: (caller: 00007FFF50816580) ReturnHr[PreRelease](1) tid(b28) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(912)\diagtrack.dll!00007FFF5081659C: (caller: 00007FFF5081646D) LogHr(17) tid(b28) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(1012)\diagtrack.dll!00007FFF5086BC57: (caller: 00007FFF5081649C) ReturnHr[PreRelease](183) tid(b28) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(859)\diagtrack.dll!00007FFF5086B65E: (caller: 00007FFF50816A8C) LogHr(18) tid(b28) 80070525 The specified account does not exist.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(680)\diagtrack.dll!00007FFF5086BB5E: (caller: 00007FFF50815614) ReturnHr(1) tid(b28) 80070490 Element not found.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(559)\diagtrack.dll!00007FFF5086B0FB: (caller: 00007FFF50814E46) LogHr(19) tid(b28) 80070490 Element not found.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](184) tid(b28) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](185) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](186) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(10) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(20) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](187) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](13) tid(eb8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](14) tid(df8) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FFF4C40102A: (caller: 00007FFF4C3E78E3) ReturnHr[PreRelease](15) tid(1320) 8000000D An illegal state change was requested.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](16) tid(1320) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFF4CF069BF: (caller: 00007FFF4CEFA93F) ReturnHr[PreRelease](1) tid(153c) 80070002 The system cannot find the file specified.
+Suspending
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\ExportScan\x64\Debug\ExportScan.sys' (\SystemRoot\System32\Drivers\ExportScan.sys)
+  File size 6KKdPullRemoteFile(FFFFE00164496040): About to overwrite \SystemRoot\System32\Drivers\ExportScan.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE00164496040): Return from ZwCreateFile with status 0
+..
+*** Hello From ShellCode ***
+
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFF4CF069BF: (caller: 00007FFF4CEFA93F) ReturnHr[PreRelease](1) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1065)\FlightSettings.dll!00007FFF4CEF9D2C: (caller: 00007FFF4CEFBF07) ReturnHr[PreRelease](2) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFF4CEFA6A4: (caller: 00007FFF4CEF9E04) ReturnHr[PreRelease](3) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFF4CEF9E8E: (caller: 00007FFF4CEFC11D) ReturnHr[PreRelease](4) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFF4CEFA6A4: (caller: 00007FFF4CEF9E04) ReturnHr[PreRelease](5) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFF4CEF9E8E: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](6) tid(8c4) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFF4CF069BF: (caller: 00007FFF4CEFA93F) ReturnHr[PreRelease](7) tid(8c4) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](188) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](189) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(11) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(21) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](190) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](191) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(12) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(22) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](192) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+1: kd> g
+KD: Accessing 'C:\course\source\kerprg.labs\labs\Registry\x64\Debug\Registry.sys' (\SystemRoot\System32\Drivers\Registry.sys)
+  File size 6KKdPullRemoteFile(FFFFE0016449C040): About to overwrite \SystemRoot\System32\Drivers\Registry.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE0016449C040): Return from ZwCreateFile with status 0
+..
+DriverEntry DriverObject=FFFFE0016497A080
+TrackDriverLoad LoadCount=2
+DriverUnload DriverObject=FFFFE0016497A080
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FFF4AEE341D: (caller: 00007FFF5C15FE5D) ReturnHr[PreRelease](1) tid(f8c) 8004B200 Suspending
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FFF4AEE341D: (caller: 00007FFF5C15FE5D) ReturnHr[PreRelease](2) tid(f8c) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFF4C977C7A: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](1) tid(2c4) 80070002 The system cannot find the file specified.
+KD: Accessing 'C:\course\source\kerprg.labs\labs\Registry\x64\Debug\Registry.sys' (\SystemRoot\System32\Drivers\Registry.sys)
+  File size 6KKdPullRemoteFile(FFFFE00164456040): About to overwrite \SystemRoot\System32\Drivers\Registry.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE00164456040): Return from ZwCreateFile with status 0
+..
+DriverEntry DriverObject=FFFFE00166DFC370
+TrackDriverLoad LoadCount=0
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\ExportScan\x64\Debug\ExportScan.sys' (\SystemRoot\System32\Drivers\ExportScan.sys)
+  File size 6KKdPullRemoteFile(FFFFE00164456040): About to overwrite \SystemRoot\System32\Drivers\ExportScan.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE00164456040): Return from ZwCreateFile with status 0
+..
+*** Hello From ShellCode ***
+
+DriverUnload DriverObject=FFFFE00166DFC370
+KD: Accessing 'C:\course\source\kerprg.labs\labs\Registry\x64\Debug\Registry.sys' (\SystemRoot\System32\Drivers\Registry.sys)
+  File size 6KKdPullRemoteFile(FFFFE00164456040): About to overwrite \SystemRoot\System32\Drivers\Registry.sys and preallocate to 1800
+KdPullRemoteFile(FFFFE00164456040): Return from ZwCreateFile with status 0
+..
+DriverEntry DriverObject=FFFFE00166DFC370
+TrackDriverLoad LoadCount=1
+DriverUnload DriverObject=FFFFE00166DFC370
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](193) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](194) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(13) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(23) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](195) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF535E60BE: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](1) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF535E610D: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](2) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF535E60BE: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](3) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF535E610D: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](4) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF535E60BE: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](5) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF535E610D: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](6) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF535E60BE: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](7) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF535E610D: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](8) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF535E60BE: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](9) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF535E610D: (caller: 00007FFF535CBBC4) ReturnHr[PreRelease](10) tid(63c) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\perfdiagevents.cpp(64)\apprepsync.dll!00007FFF535CB4DE: (caller: 00007FFF535C3DFE) ReturnHr[PreRelease](11) tid(63c) 80070103 No more data is available.
+Invalid parameter passed to C runtime function.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+1: kd> !reg help
+
+reg <command>      <params>       - Registry extensions
+    querykey|q     <FullKeyPath>  - Dump subkeys and values
+    keyinfo        <HiveAddr> <KnodeAddr> - Dump subkeys and values, given knode
+    kcb        <Address>      - Dump registry key-control-blocks
+    knode      <Address>      - Dump registry key-node struct
+    kbody      <Address>      - Dump registry key-body struct
+    kvalue     <Address>      - Dump registry key-value struct
+    valuelist  <HiveAddr> <KnodeAddr> - Dumps list of values for a particular knode
+    subkeylist <HiveAddr> <KnodeAddr> - Dumps list of subkeys for a particular knode
+    baseblock  <HiveAddr>     - Dump the baseblock for the specified hive
+    seccache   <HiveAddr>     - Dump the security cache for the specified hive
+    hashindex  <conv_key>     - Find the hash entry given a Kcb ConvKey
+    openkeys   <HiveAddr|0>   - Dump the keys opened inside the specified hive
+    openhandles <HiveAddr|0>  - Dump the handles opened inside the specified hive
+    findkcb    <FullKeyPath>  - Find the kcb for the corresponding path
+    hivelist                  - Displays the list of the hives in the system
+    viewlist   <HiveAddr>     - Dump the pinned/mapped view list for the specified hive
+    freebins   <HiveAddr>     - Dump the free bins for the specified hive
+    freecells  <BinAddr>      - Dump the free cells in the specified bin
+    dirtyvector<HiveAddr>     - Dump the dirty vector for the specified hive
+    cellindex  <HiveAddr> <cellindex> - Finds the VA for a specified cell index
+    freehints  <HiveAddr> <Storage> <Display> - Dumps freehint info
+    translist  <RmAddr|0>     - Displays the list of active transactions in this RM
+    uowlist    <TransAddr>    - Displays the list of UoW attached to this transaction
+    locktable  <KcbAddr|ThreadAddr> - Displays relevant LOCK table content
+    convkey    <KeyPath>      - Displays hash keys for a key path input
+    postblocklist             - Displays the list of threads which have 1 or more postblocks posted
+    notifylist                - Displays the list of notify blocks in the system
+    ixlock     <LockAddr>     - Dumps ownership of an intent lock
+    dumppool   [s|r]          - Dump registry allocated paged pool
+       s - Save list of registry pages to temporary file
+       r - Restore list of registry pages from temp. file
+1: kd> !reg hivelist
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+|     HiveAddr     |Stable Length|    Stable Map    |Volatile Length|    Volatile Map    |MappedViews|PinnedViews|U(Cnt)|     BaseBlock     | FileName 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| ffffc000c9223000 |       1000  | ffffc000c9223588 |       1000    |  ffffc000c9223800  |     0| ffffc000c9231000  | <UNKNOWN>
+| ffffc000c923c000 |     8db000  | ffffc000c9244000 |      18000    |  ffffc000c923c800  |     0| ffffc000c923e000  | SYSTEM
+| ffffc000c926f000 |       7000  | ffffc000c926f588 |       8000    |  ffffc000c926f800  |     0| ffffc000c9271000  | <UNKNOWN>
+| ffffc000c998b000 |       8000  | ffffc000c998b588 |          0    |  0000000000000000  |     0| ffffc000c998f000  | \SystemRoot\System32\Config\SAM
+| ffffc000c97f7000 |       6000  | ffffc000c97f7588 |       1000    |  ffffc000c97f7800  |     0| ffffc000c97f9000  | emRoot\System32\Config\SECURITY
+| ffffc000c97ec000 |      48000  | ffffc000c97ec588 |       1000    |  ffffc000c97ec800  |     0| ffffc000c97ee000  | temRoot\System32\Config\DEFAULT
+| ffffc000c97f1000 |    3756000  | ffffc000c97f4000 |       8000    |  ffffc000c97f1800  |     0| ffffc000c97f3000  | emRoot\System32\Config\SOFTWARE
+| ffffc000cee3f000 |       6000  | ffffc000cee3f588 |          0    |  0000000000000000  |     0| ffffc000cee30000  | Device\HarddiskVolume1\Boot\BCD
+| ffffc000cbaf6000 |      26000  | ffffc000cbaf6588 |          0    |  0000000000000000  |     0| ffffc000cbaf8000  | files\NetworkService\NTUSER.DAT
+| ffffc000cbcb7000 |      2a000  | ffffc000cbcb7588 |       1000    |  ffffc000cbcb7800  |     0| ffffc000cbcb9000  | rofiles\LocalService\NTUSER.DAT
+| ffffc000cbc51000 |      2d000  | ffffc000cbc51588 |          0    |  0000000000000000  |     0| ffffc000cbc53000  | \SystemRoot\System32\Config\BBI
+| ffffc000cc599000 |       e000  | ffffc000cc599588 |          0    |  0000000000000000  |     0| ffffc000cc231000  | <UNKNOWN>
+| ffffc000cc72f000 |      ac000  | ffffc000cc72f588 |       4000    |  ffffc000cc72f800  |     0| ffffc000cc731000  | \??\C:\Users\labuser\ntuser.dat
+| ffffc000cc76d000 |     198000  | ffffc000cc76d588 |          0    |  0000000000000000  |     0| ffffc000cc76f000  | \Microsoft\Windows\UsrClass.dat
+| ffffc000cca29000 |       b000  | ffffc000cca29588 |          0    |  0000000000000000  |     0| ffffc000cca2b000  | vationStore\ActivationStore.dat
+| ffffc000cca59000 |       1000  | ffffc000cca59588 |          0    |  0000000000000000  |     0| ffffc000cca5b000  | 1h2txyewy\Settings\settings.dat
+| ffffc000cbf8b000 |      34000  | ffffc000cbf8b588 |          0    |  0000000000000000  |     0| ffffc000c942b000  | vationStore\ActivationStore.dat
+| ffffc000ccb02000 |       8000  | ffffc000ccb02588 |          0    |  0000000000000000  |     0| ffffc000ccb04000  | 1h2txyewy\Settings\settings.dat
+| ffffc000cce2b000 |      27000  | ffffc000cce2b588 |          0    |  0000000000000000  |     0| ffffc000cce2e000  | vationStore\ActivationStore.dat
+| ffffc000ce3e4000 |       1000  | ffffc000ce3e4588 |          0    |  0000000000000000  |     0| ffffc000ccf21000  | yb3d8bbwe\Settings\settings.dat
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1: kd> !driver
+No export driver found
+1: kd> !device
+No export device found
+1: kd> !obj
+No export obj found
+1: kd> !object
+Usage: !object [-p] | [[<Path>] | [<Address>] | [0 <TypeName>]]
+1: kd> !object \Device\Harddisk0\DR0
+Object: ffffe001652d6060  Type: (ffffe001639088c0) Device
+    ObjectHeader: ffffe001652d6030 (new version)
+    HandleCount: 0  PointerCount: 3
+    Directory Object: ffffc000c9512a60  Name: DR0
+1: kd> !device
+No export device found
+1: kd> !dev
+No export dev found
+1: kd> !devobj
+Device object  not found
+1: kd> !devobj ffffe001652d6060
+Device object (ffffe001652d6060) is for:
+ DR0 \Driver\disk DriverObject ffffe001652d2e60
+Current Irp 00000000 RefCount 1 Type 00000007 Flags 01000050
+Vpb ffffe001652d6fa0 Dacl ffffc101c9632960 DevExt ffffe001652d61b0 DevObjExt ffffe001652d6968 Dope ffffe001652d6f30 
+ExtensionFlags (0x20000800)  DOE_DEFAULT_SD_PRESENT, DOE_RAW_FDO
+Characteristics (0x00000100)  FILE_DEVICE_SECURE_OPEN
+AttachedDevice (Upper) ffffe001652d6a30 \Driver\partmgr
+AttachedTo (Lower) ffffe001652d5e20 \Driver\storflt
+Device queue is not busy.
+1: kd> !drvobj
+fffff802be360840: Unable to get value of ObpRootDirectoryObject
+Driver object  not found
+1: kd> !drvobj ffffe001652d2e60
+Driver object (ffffe001652d2e60) is for:
+ \Driver\disk
+Driver Extension List: (id , addr)
+(fffff801f6402580 ffffe001652d3c70)  
+Device Object list:
+ffffe001652d6060  
+1: kd> !drvobj ffffe001652d2e60 2
+Cannot read info offset from nt!ObpInfoMaskToOffset
+fffff802be360840: Unable to get value of ObpRootDirectoryObject
+Driver object (ffffe001652d2e60) is for:
+Cannot read _DRIVER_OBJECT at ffffe001652d2e60
+1: kd> !drvobj \Driver\disk 2
+Driver object (ffffe001652d2e60) is for:
+ \Driver\disk
+DriverEntry:   fffff801f6dd6000	disk!GsDriverEntry
+DriverStartIo: 00000000	
+DriverUnload:  fffff801f640c4c0	CLASSPNP!ClassUnload
+AddDevice:     fffff801f6404f60	CLASSPNP!ClassAddDevice
+
+Dispatch routines:
+[00] IRP_MJ_CREATE                      fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[01] IRP_MJ_CREATE_NAMED_PIPE           fffff802be155094	nt!IopInvalidDeviceRequest
+[02] IRP_MJ_CLOSE                       fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[03] IRP_MJ_READ                        fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[04] IRP_MJ_WRITE                       fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[05] IRP_MJ_QUERY_INFORMATION           fffff802be155094	nt!IopInvalidDeviceRequest
+[06] IRP_MJ_SET_INFORMATION             fffff802be155094	nt!IopInvalidDeviceRequest
+[07] IRP_MJ_QUERY_EA                    fffff802be155094	nt!IopInvalidDeviceRequest
+[08] IRP_MJ_SET_EA                      fffff802be155094	nt!IopInvalidDeviceRequest
+[09] IRP_MJ_FLUSH_BUFFERS               fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff802be155094	nt!IopInvalidDeviceRequest
+[0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff802be155094	nt!IopInvalidDeviceRequest
+[0c] IRP_MJ_DIRECTORY_CONTROL           fffff802be155094	nt!IopInvalidDeviceRequest
+[0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff802be155094	nt!IopInvalidDeviceRequest
+[0e] IRP_MJ_DEVICE_CONTROL              fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[10] IRP_MJ_SHUTDOWN                    fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[11] IRP_MJ_LOCK_CONTROL                fffff802be155094	nt!IopInvalidDeviceRequest
+[12] IRP_MJ_CLEANUP                     fffff802be155094	nt!IopInvalidDeviceRequest
+[13] IRP_MJ_CREATE_MAILSLOT             fffff802be155094	nt!IopInvalidDeviceRequest
+[14] IRP_MJ_QUERY_SECURITY              fffff802be155094	nt!IopInvalidDeviceRequest
+[15] IRP_MJ_SET_SECURITY                fffff802be155094	nt!IopInvalidDeviceRequest
+[16] IRP_MJ_POWER                       fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[17] IRP_MJ_SYSTEM_CONTROL              fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+[18] IRP_MJ_DEVICE_CHANGE               fffff802be155094	nt!IopInvalidDeviceRequest
+[19] IRP_MJ_QUERY_QUOTA                 fffff802be155094	nt!IopInvalidDeviceRequest
+[1a] IRP_MJ_SET_QUOTA                   fffff802be155094	nt!IopInvalidDeviceRequest
+[1b] IRP_MJ_PNP                         fffff801f63c8770	CLASSPNP!ClassGlobalDispatch
+
+1: kd> uf fffff801f63c8770
+Flow analysis was incomplete, some code may be missing
+CLASSPNP!ClassGlobalDispatch:
+fffff801`f63c8770 488b82b8000000  mov     rax,qword ptr [rdx+0B8h]
+fffff801`f63c8777 4c8b4940        mov     r9,qword ptr [rcx+40h]
+fffff801`f63c877b 440fb600        movzx   r8d,byte ptr [rax]
+fffff801`f63c877f 498b81c0010000  mov     rax,qword ptr [r9+1C0h]
+fffff801`f63c8786 4a8b04c0        mov     rax,qword ptr [rax+r8*8]
+fffff801`f63c878a 48ff25976d0300  jmp     qword ptr [CLASSPNP!_guard_dispatch_icall_fptr (fffff801`f63ff528)]  Branch
+
+CLASSPNP!_guard_dispatch_icall_fptr:
+fffff801`f63ff528 3030            xor     byte ptr [rax],dh
+fffff801`f63ff52a 3df601f8ff      cmp     eax,0FFF801F6h
+fffff801`f63ff52f ff80f5030000    inc     dword ptr [rax+3F5h]
+fffff801`f63ff535 0000            add     byte ptr [rax],al
+fffff801`f63ff537 0000            add     byte ptr [rax],al
+fffff801`f63ff539 0000            add     byte ptr [rax],al
+
+CLASSPNP!_IMPORT_DESCRIPTOR_ntoskrnl+0xb:
+fffff801`f63ff53b 0018            add     byte ptr [rax],bl
+fffff801`f63ff53d 090400          or      dword ptr [rax+rax],eax
+fffff801`f63ff540 10f0            adc     al,dh
+fffff801`f63ff542 0300            add     eax,dword ptr [rax]
+fffff801`f63ff544 70f5            jo      CLASSPNP!_IMPORT_DESCRIPTOR_ntoskrnl+0xb (fffff801`f63ff53b)  Branch
+
+CLASSPNP!_IMPORT_DESCRIPTOR_HAL+0x2:
+fffff801`f63ff546 0300            add     eax,dword ptr [rax]
+fffff801`f63ff548 0000            add     byte ptr [rax],al
+fffff801`f63ff54a 0000            add     byte ptr [rax],al
+fffff801`f63ff54c 0000            add     byte ptr [rax],al
+fffff801`f63ff54e 0000            add     byte ptr [rax],al
+fffff801`f63ff550 42090400        or      dword ptr [rax+r8],eax
+fffff801`f63ff554 00f0            add     al,dh
+fffff801`f63ff556 0300            add     eax,dword ptr [rax]
+fffff801`f63ff558 0000            add     byte ptr [rax],al
+fffff801`f63ff55a 0000            add     byte ptr [rax],al
+fffff801`f63ff55c 0000            add     byte ptr [rax],al
+fffff801`f63ff55e 0000            add     byte ptr [rax],al
+fffff801`f63ff560 0000            add     byte ptr [rax],al
+fffff801`f63ff562 0000            add     byte ptr [rax],al
+fffff801`f63ff564 0000            add     byte ptr [rax],al
+fffff801`f63ff566 0000            add     byte ptr [rax],al
+fffff801`f63ff568 0000            add     byte ptr [rax],al
+fffff801`f63ff56a 0000            add     byte ptr [rax],al
+fffff801`f63ff56c 0000            add     byte ptr [rax],al
+fffff801`f63ff56e 0000            add     byte ptr [rax],al
+fffff801`f63ff570 26090400        or      dword ptr es:[rax+rax],eax
+fffff801`f63ff574 0000            add     byte ptr [rax],al
+fffff801`f63ff576 0000            add     byte ptr [rax],al
+fffff801`f63ff578 0000            add     byte ptr [rax],al
+fffff801`f63ff57a 0000            add     byte ptr [rax],al
+fffff801`f63ff57c 0000            add     byte ptr [rax],al
+fffff801`f63ff57e 0000            add     byte ptr [rax],al
+fffff801`f63ff580 b6fa            mov     dh,0FAh
+fffff801`f63ff582 0300            add     eax,dword ptr [rax]
+fffff801`f63ff584 0000            add     byte ptr [rax],al
+fffff801`f63ff586 0000            add     byte ptr [rax],al
+1: kd> u fffff801f63c8770
+CLASSPNP!ClassGlobalDispatch:
+fffff801`f63c8770 488b82b8000000  mov     rax,qword ptr [rdx+0B8h]
+fffff801`f63c8777 4c8b4940        mov     r9,qword ptr [rcx+40h]
+fffff801`f63c877b 440fb600        movzx   r8d,byte ptr [rax]
+fffff801`f63c877f 498b81c0010000  mov     rax,qword ptr [r9+1C0h]
+fffff801`f63c8786 4a8b04c0        mov     rax,qword ptr [rax+r8*8]
+fffff801`f63c878a 48ff25976d0300  jmp     qword ptr [CLASSPNP!_guard_dispatch_icall_fptr (fffff801`f63ff528)]
+fffff801`f63c8791 cc              int     3
+fffff801`f63c8792 cc              int     3
+1: kd> u fffff801f63c8770
+CLASSPNP!ClassGlobalDispatch:
+fffff801`f63c8770 488b82b8000000  mov     rax,qword ptr [rdx+0B8h]
+fffff801`f63c8777 4c8b4940        mov     r9,qword ptr [rcx+40h]
+fffff801`f63c877b 440fb600        movzx   r8d,byte ptr [rax]
+fffff801`f63c877f 498b81c0010000  mov     rax,qword ptr [r9+1C0h]
+fffff801`f63c8786 4a8b04c0        mov     rax,qword ptr [rax+r8*8]
+fffff801`f63c878a 48ff25976d0300  jmp     qword ptr [CLASSPNP!_guard_dispatch_icall_fptr (fffff801`f63ff528)]
+fffff801`f63c8791 cc              int     3
+fffff801`f63c8792 cc              int     3
+1: kd> a NOP
+Couldn't resolve error at 'NOP'
+1: kd> a MOV 56, r8
+Couldn't resolve error at 'MOV 56, r8'
+1: kd> a mov     rax,qword ptr [rax+r8*8]
+Couldn't resolve error at 'mov     rax,qword ptr [rax+r8*8]'
+1: kd> bc *
+1: kd> g
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(768)\diagtrack.dll!00007FFF5086C3C5: (caller: 00007FFF50816A0E) ReturnHr(2) tid(b28) 8000401A The server process could not be started because the configured identity is incorrect. Check the username and password.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(656)\diagtrack.dll!00007FFF5086BB1C: (caller: 00007FFF50815614) ReturnHr(3) tid(b28) 8000401A The server process could not be started because the configured identity is incorrect. Check the username and password.
+base\diagnosis\diagtrack\common\msauseridentityprovider.cpp(559)\diagtrack.dll!00007FFF5086B0FB: (caller: 00007FFF50814E46) LogHr(24) tid(b28) 8000401A The server process could not be started because the configured identity is incorrect. Check the username and password.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](196) tid(b28) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFF5086A333: (caller: 00007FFF507C99C5) ReturnHr[PreRelease](197) tid(a98) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF5083E051) ReturnHr[PreRelease](198) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFF5085B8B2: (caller: 00007FFF507C9B50) Exception(14) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFF5084C6E7: (caller: 00007FFF507C9507) LogHr(25) tid(a98) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFF5085E0D5: (caller: 00007FFF507C5C28) ReturnHr[PreRelease](199) tid(a98) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FFF4C40102A: (caller: 00007FFF4C3E78E3) ReturnHr[PreRelease](17) tid(15d4) 8000000D An illegal state change was requested.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(145)\usermgrcli.dll!00007FFF4C3FCEE7: (caller: 00007FFF4C3FCEE7) ReturnHr[PreRelease](1) tid(e1c) 80070057 The parameter is incorrect.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FFF4C40102A: (caller: 00007FFF4C3E78E3) ReturnHr[PreRelease](18) tid(1260) 8000000D An illegal state change was requested.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFF4C40E724: (caller: 00007FFF4C3FB15A) ReturnHr[PreRelease](19) tid(15d4) 80070002 The system cannot find the file specified.
+Suspending
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFF4C977C7A: (caller: 00007FFF5E03D533) ReturnHr[PreRelease](1) tid(1038) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](20) tid(15d4) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](21) tid(1538) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](22) tid(15d4) 80070002 The system cannot find the file specified.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+0: kd> !process 0 0
+**** NT ACTIVE PROCESS DUMP ****
+PROCESS ffffe00163866700
+    SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
+    DirBase: 001aa000  ObjectTable: ffffc000c9215000  HandleCount: <Data Not Accessible>
+    Image: System
+
+PROCESS ffffe0016554b040
+    SessionId: none  Cid: 0154    Peb: a1ff7a0000  ParentCid: 0004
+    DirBase: 2abd4000  ObjectTable: ffffc000c950c640  HandleCount: <Data Not Accessible>
+    Image: smss.exe
+
+PROCESS ffffe00165e2f080
+    SessionId: 0  Cid: 01b4    Peb: 3d3c74000  ParentCid: 01a8
+    DirBase: 0560c000  ObjectTable: ffffc000cb8c5d80  HandleCount: <Data Not Accessible>
+    Image: csrss.exe
+
+PROCESS ffffe00165fd7080
+    SessionId: 0  Cid: 0214    Peb: ad1a476000  ParentCid: 01a8
+    DirBase: 05c12000  ObjectTable: ffffc000cb95b9c0  HandleCount: <Data Not Accessible>
+    Image: wininit.exe
+
+PROCESS ffffe00165fca580
+    SessionId: 0  Cid: 02a0    Peb: f111ab9000  ParentCid: 0214
+    DirBase: 14028000  ObjectTable: ffffc000cba28b80  HandleCount: <Data Not Accessible>
+    Image: services.exe
+
+PROCESS ffffe00165fe2080
+    SessionId: 0  Cid: 02ac    Peb: 5f5cc84000  ParentCid: 0214
+    DirBase: 146c6000  ObjectTable: ffffc000cba2b900  HandleCount: <Data Not Accessible>
+    Image: lsass.exe
+
+PROCESS ffffe0016635d500
+    SessionId: 0  Cid: 02fc    Peb: 2651626000  ParentCid: 02a0
+    DirBase: 17059000  ObjectTable: ffffc000cbab1f00  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe00166381640
+    SessionId: 0  Cid: 0330    Peb: f485c8a000  ParentCid: 02a0
+    DirBase: 183ef000  ObjectTable: ffffc000cbb17280  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016670c440
+    SessionId: 0  Cid: 0170    Peb: 54f4efa000  ParentCid: 02a0
+    DirBase: 1c54b000  ObjectTable: ffffc000cbc4e8c0  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016670f840
+    SessionId: 0  Cid: 0008    Peb: 8308525000  ParentCid: 02a0
+    DirBase: 1c55b000  ObjectTable: ffffc000cbcb1e00  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe00166739840
+    SessionId: 0  Cid: 0288    Peb: 3d360ea000  ParentCid: 02a0
+    DirBase: 12a75000  ObjectTable: ffffc000cbcf22c0  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016673c840
+    SessionId: 0  Cid: 0280    Peb: 12aea1f000  ParentCid: 02a0
+    DirBase: 1d4fd000  ObjectTable: ffffc000cbcf96c0  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016681e840
+    SessionId: 0  Cid: 0508    Peb: c4d7736000  ParentCid: 02a0
+    DirBase: 1e4ed000  ObjectTable: ffffc000cbdf2800  HandleCount: <Data Not Accessible>
+    Image: VSSVC.exe
+
+PROCESS ffffe0016684e6c0
+    SessionId: 0  Cid: 0534    Peb: 797f6ea000  ParentCid: 02a0
+    DirBase: 1ee73000  ObjectTable: ffffc000cef3af00  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016683f840
+    SessionId: 0  Cid: 0540    Peb: 96f9c06000  ParentCid: 02a0
+    DirBase: 1f579000  ObjectTable: ffffc000cef3cc80  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016688c840
+    SessionId: 0  Cid: 0570    Peb: 617b992000  ParentCid: 02a0
+    DirBase: 20004000  ObjectTable: ffffc000c9905980  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe001668a1840
+    SessionId: 0  Cid: 0598    Peb: 254a4e000  ParentCid: 02a0
+    DirBase: 1fc0d000  ObjectTable: ffffc000cbbc0840  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe00166953080
+    SessionId: 2  Cid: 06b8    Peb: 155a03000  ParentCid: 0154
+    DirBase: 24d77000  ObjectTable: 00000000  HandleCount:   0.
+    Image: smss.exe
+
+PROCESS ffffe0016696a6c0
+    SessionId: 2  Cid: 06c4    Peb: 2d23dd5000  ParentCid: 06b8
+    DirBase: 24c2d000  ObjectTable: ffffc000cbeb67c0  HandleCount: <Data Not Accessible>
+    Image: csrss.exe
+
+PROCESS ffffe00166970080
+    SessionId: 2  Cid: 06f0    Peb: 248ff1e000  ParentCid: 06b8
+    DirBase: 24632000  ObjectTable: ffffc000cbecc640  HandleCount: <Data Not Accessible>
+    Image: winlogon.exe
+
+PROCESS ffffe001664a5300
+    SessionId: 0  Cid: 0738    Peb: 00243000  ParentCid: 02a0
+    DirBase: 0a6a0000  ObjectTable: ffffc000cbf7df00  HandleCount: <Data Not Accessible>
+    Image: spoolsv.exe
+
+PROCESS ffffe00166a46080
+    SessionId: 2  Cid: 04c4    Peb: d56500e000  ParentCid: 06f0
+    DirBase: 2ce8b000  ObjectTable: ffffc000cbbbc840  HandleCount: <Data Not Accessible>
+    Image: dwm.exe
+
+PROCESS ffffe00166b26840
+    SessionId: 0  Cid: 08d8    Peb: c96826b000  ParentCid: 02a0
+    DirBase: 07adc000  ObjectTable: ffffc000cc1a0440  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe00166b2b840
+    SessionId: 0  Cid: 08e4    Peb: 9fa3201000  ParentCid: 02a0
+    DirBase: 151e1000  ObjectTable: ffffc000cc1aa2c0  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe00166589740
+    SessionId: 0  Cid: 0944    Peb: 7decd27000  ParentCid: 02a0
+    DirBase: 18dee000  ObjectTable: ffffc000cc209280  HandleCount: <Data Not Accessible>
+    Image: MsMpEng.exe
+
+PROCESS ffffe00166b78840
+    SessionId: 0  Cid: 094c    Peb: 16b5b4c000  ParentCid: 02a0
+    DirBase: 194f3000  ObjectTable: ffffc000cc211f00  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016629b840
+    SessionId: 0  Cid: 0f58    Peb: 89e031000  ParentCid: 02a0
+    DirBase: 0fea6000  ObjectTable: ffffc000ccc6cd40  HandleCount: <Data Not Accessible>
+    Image: SearchIndexer.exe
+
+PROCESS ffffe001662f62c0
+    SessionId: 2  Cid: 0c04    Peb: f8dccd0000  ParentCid: 0170
+    DirBase: 0da03000  ObjectTable: ffffc000cc69b180  HandleCount: <Data Not Accessible>
+    Image: sihost.exe
+
+PROCESS ffffe0016620e840
+    SessionId: 2  Cid: 0d58    Peb: 62f091f000  ParentCid: 0170
+    DirBase: 00708000  ObjectTable: ffffc000cc37bf00  HandleCount: <Data Not Accessible>
+    Image: taskhostw.exe
+
+PROCESS ffffe001645f3840
+    SessionId: 2  Cid: 0790    Peb: c3f8fbf000  ParentCid: 06f0
+    DirBase: 1907c000  ObjectTable: 00000000  HandleCount:   0.
+    Image: userinit.exe
+
+PROCESS ffffe00164501080
+    SessionId: 2  Cid: 0ef0    Peb: 003a0000  ParentCid: 0790
+    DirBase: 1e96b000  ObjectTable: ffffc000cd004f00  HandleCount: <Data Not Accessible>
+    Image: explorer.exe
+
+PROCESS ffffe0016388e840
+    SessionId: 2  Cid: 0e6c    Peb: 00369000  ParentCid: 02fc
+    DirBase: 250bc000  ObjectTable: ffffc000cd0a1240  HandleCount: <Data Not Accessible>
+    Image: SkypeHost.exe
+
+PROCESS ffffe001649f3080
+    SessionId: 2  Cid: 0dec    Peb: 3f92f01000  ParentCid: 02fc
+    DirBase: 40474000  ObjectTable: ffffc000ccde8740  HandleCount: <Data Not Accessible>
+    Image: RuntimeBroker.exe
+
+PROCESS ffffe00166583840
+    SessionId: 2  Cid: 0bb8    Peb: f0cdba2000  ParentCid: 02fc
+DeepFreeze
+    DirBase: 29ed8000  ObjectTable: ffffc000cd0ffa00  HandleCount: <Data Not Accessible>
+    Image: ShellExperienceHost.exe
+
+PROCESS ffffe0016457a080
+    SessionId: 2  Cid: 11b4    Peb: 2b08c5b000  ParentCid: 0ef0
+    DirBase: 356a0000  ObjectTable: ffffc000cc241200  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+PROCESS ffffe0016478a840
+    SessionId: 2  Cid: 11bc    Peb: 2935059000  ParentCid: 11b4
+    DirBase: 33f38000  ObjectTable: ffffc000cc7183c0  HandleCount: <Data Not Accessible>
+    Image: conhost.exe
+
+PROCESS ffffe0016485d840
+    SessionId: 2  Cid: 11e0    Peb: 0024d000  ParentCid: 0ef0
+    DirBase: 3254e000  ObjectTable: ffffc000cd93ac40  HandleCount: <Data Not Accessible>
+    Image: OneDrive.exe
+
+PROCESS ffffe00164fda840
+    SessionId: 2  Cid: 152c    Peb: bf278df000  ParentCid: 02a0
+    DirBase: 01527000  ObjectTable: ffffc000ce361f00  HandleCount: <Data Not Accessible>
+    Image: svchost.exe
+
+PROCESS ffffe0016620a080
+    SessionId: 0  Cid: 0be4    Peb: a51e55e000  ParentCid: 0f58
+    DirBase: 43b8c000  ObjectTable: ffffc000ccfa8700  HandleCount: <Data Not Accessible>
+    Image: SearchFilterHost.exe
+
+PROCESS ffffe00166d0d080
+    SessionId: 2  Cid: 108c    Peb: b81b58f000  ParentCid: 02fc
+    DirBase: 40809000  ObjectTable: 00000000  HandleCount:   0.
+    Image: backgroundTaskHost.exe
+
+PROCESS ffffe001645c6080
+    SessionId: 2  Cid: 0308    Peb: 6ef3618000  ParentCid: 02fc
+    DirBase: 3a82a000  ObjectTable: 00000000  HandleCount:   0.
+    Image: TSTheme.exe
+
+PROCESS ffffe001665c4340
+    SessionId: 2  Cid: 0d88    Peb: de44a70000  ParentCid: 0f58
+    DirBase: 209af000  ObjectTable: ffffc000cd1416c0  HandleCount: <Data Not Accessible>
+    Image: SearchProtocolHost.exe
+
+PROCESS ffffe00166821680
+    SessionId: 2  Cid: 1028    Peb: 844f4bb000  ParentCid: 02fc
+    DirBase: 12548000  ObjectTable: ffffc000ccb564c0  HandleCount: <Data Not Accessible>
+    Image: SearchUI.exe
+
+PROCESS ffffe00164260080
+    SessionId: 2  Cid: 12e8    Peb: 8d848a9000  ParentCid: 0ef0
+    DirBase: 2da61000  ObjectTable: ffffc000cbf7abc0  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+PROCESS ffffe00166872080
+    SessionId: 2  Cid: 116c    Peb: 3be3f5b000  ParentCid: 12e8
+    DirBase: 311d3000  ObjectTable: ffffc000cb9aab40  HandleCount: <Data Not Accessible>
+    Image: conhost.exe
+
+0: kd> !process 0 cmd.exe
+0: kd> !process 0 0 cmd.exe
+PROCESS ffffe0016457a080
+    SessionId: 2  Cid: 11b4    Peb: 2b08c5b000  ParentCid: 0ef0
+    DirBase: 356a0000  ObjectTable: ffffc000cc241200  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+PROCESS ffffe00164260080
+    SessionId: 2  Cid: 12e8    Peb: 8d848a9000  ParentCid: 0ef0
+    DirBase: 2da61000  ObjectTable: ffffc000cbf7abc0  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+
+0: kd> g
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+0: kd> !process 0 1 cmd.exe
+PROCESS ffffe00164260080
+    SessionId: 2  Cid: 12e8    Peb: 8d848a9000  ParentCid: 0ef0
+    DirBase: 2da61000  ObjectTable: ffffc000cbf7abc0  HandleCount: <Data Not Accessible>
+    Image: cmd.exe
+    VadRoot ffffe001673a3240 Vads 26 Clone 0 Private 137. Modified 1. Locked 8.
+    DeviceMap ffffc000cc0509c0
+    Token                             ffffc000ccb00060
+    ElapsedTime                       00:02:03.955
+    UserTime                          00:00:00.000
+    KernelTime                        00:00:00.000
+    QuotaPoolUsage[PagedPool]         34440
+    QuotaPoolUsage[NonPagedPool]      3656
+    Working Set Sizes (now,min,max)  (732, 50, 345) (2928KB, 200KB, 1380KB)
+    PeakWorkingSetSize                699
+    VirtualSize                       2097170 Mb
+    PeakVirtualSize                   2097171 Mb
+    PageFaultCount                    764
+    MemoryPriority                    FOREGROUND
+    BasePriority                      8
+    CommitCharge                      394
+
+0: kd> dt nt!_TOKEN ffffc000ccb00060
+   +0x000 TokenSource      : _TOKEN_SOURCE
+   +0x010 TokenId          : _LUID
+   +0x018 AuthenticationId : _LUID
+   +0x020 ParentTokenId    : _LUID
+   +0x028 ExpirationTime   : _LARGE_INTEGER 0x7fffffff`ffffffff
+   +0x030 TokenLock        : 0xffffe001`66892e70 _ERESOURCE
+   +0x038 ModifiedId       : _LUID
+   +0x040 Privileges       : _SEP_TOKEN_PRIVILEGES
+   +0x058 AuditPolicy      : _SEP_AUDIT_POLICY
+   +0x078 SessionId        : 2
+   +0x07c UserAndGroupCount : 0xf
+   +0x080 RestrictedSidCount : 0
+   +0x084 VariableLength   : 0xf4
+   +0x088 DynamicCharged   : 0x1000
+   +0x08c DynamicAvailable : 0
+   +0x090 DefaultOwnerIndex : 0
+   +0x098 UserAndGroups    : 0xffffc000`ccb004d8 _SID_AND_ATTRIBUTES
+   +0x0a0 RestrictedSids   : (null) 
+   +0x0a8 PrimaryGroup     : 0xffffc000`cd967e10 Void
+   +0x0b0 DynamicPart      : 0xffffc000`cd967e10  -> 0x501
+   +0x0b8 DefaultDacl      : 0xffffc000`cd967e2c _ACL
+   +0x0c0 TokenType        : 1 ( TokenPrimary )
+   +0x0c4 ImpersonationLevel : 0 ( SecurityAnonymous )
+   +0x0c8 TokenFlags       : 0x2a00
+   +0x0cc TokenInUse       : 0x1 ''
+   +0x0d0 IntegrityLevelIndex : 0xe
+   +0x0d4 MandatoryPolicy  : 3
+   +0x0d8 LogonSession     : 0xffffc000`cba2ede0 _SEP_LOGON_SESSION_REFERENCES
+   +0x0e0 OriginatingLogonSession : _LUID
+   +0x0e8 SidHash          : _SID_AND_ATTRIBUTES_HASH
+   +0x1f8 RestrictedSidHash : _SID_AND_ATTRIBUTES_HASH
+   +0x308 pSecurityAttributes : 0xffffc000`cd096880 _AUTHZBASEP_SECURITY_ATTRIBUTES_INFORMATION
+   +0x310 Package          : (null) 
+   +0x318 Capabilities     : (null) 
+   +0x320 CapabilityCount  : 0
+   +0x328 CapabilitiesHash : _SID_AND_ATTRIBUTES_HASH
+   +0x438 LowboxNumberEntry : (null) 
+   +0x440 LowboxHandlesEntry : (null) 
+   +0x448 pClaimAttributes : (null) 
+   +0x450 TrustLevelSid    : (null) 
+   +0x458 TrustLinkedToken : (null) 
+   +0x460 IntegrityLevelSidValue : 0xffffc000`cdb12c60 Void
+   +0x468 TokenSidValues   : 0xffffc000`cbfa0190 _SEP_SID_VALUES_BLOCK
+   +0x470 IndexEntry       : 0xffffc000`ccf94860 _SEP_LUID_TO_INDEX_MAP_ENTRY
+   +0x478 VariablePart     : 0xffffc000`cbfa01a8
+0: kd> dt nt!_TOKEN ffffc000ccb00060 -y Privileges
+   +0x040 Privileges : _SEP_TOKEN_PRIVILEGES
+0: kd> dt nt!_TOKEN ffffc000ccb00060 -y Privileges.
+   +0x040 Privileges  : 
+      +0x000 Present     : 0x00000006`02880000
+      +0x008 Enabled     : 0x800000
+      +0x010 EnabledByDefault : 0x800000
+0: kd> db ffffc000ccb00060+0
+ffffc000`ccb00060  55 73 65 72 33 32 20 00-a7 97 03 00 00 00 00 00  User32 .........
+ffffc000`ccb00070  95 51 0d 00 00 00 00 00-0b 98 03 00 00 00 00 00  .Q..............
+ffffc000`ccb00080  0e 98 03 00 00 00 00 00-ff ff ff ff ff ff ff 7f  ................
+ffffc000`ccb00090  70 2e 89 66 01 e0 ff ff-17 98 03 00 00 00 00 00  p..f............
+ffffc000`ccb000a0  00 00 88 02 06 00 00 00-00 00 80 00 00 00 00 00  ................
+ffffc000`ccb000b0  00 00 80 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+ffffc000`ccb000c0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+ffffc000`ccb000d0  00 00 00 00 00 00 01 00-02 00 00 00 0f 00 00 00  ................
+0: kd> dt nt!_TOKEN Privileges.
+   +0x040 Privileges  : 
+      +0x000 Present     : Uint8B
+      +0x008 Enabled     : Uint8B
+      +0x010 EnabledByDefault : Uint8B
+0: kd> db ffffc000ccb00060+0 8
+                             ^ Range error in 'db ffffc000ccb00060+0 8'
+0: kd> !db ffffc000ccb00060 L8
+Physical memory read at ffffc000ccb00060 failed
+If you know the caching attributes used for the memory,
+try specifying [c], [uc] or [wc], as in !dd [c] <params>.
+WARNING: Incorrect use of these flags will cause unpredictable
+processor corruption.  This may immediately (or at any time in
+the future until reboot) result in a system hang, incorrect data
+being displayed or other strange crashes and corruption.
+0: kd> db ffffc000ccb00060 L8
+ffffc000`ccb00060  55 73 65 72 33 32 20 00                          User32 .
+0: kd> dt nt!_TOKEN ffffc000ccb00060 -y Privileges.
+   +0x040 Privileges  : 
+      +0x000 Present     : 0x00000006`02880000
+      +0x008 Enabled     : 0x800000
+      +0x010 EnabledByDefault : 0x800000
+0: kd> db ffffc000ccb00060+0x40 L8
+ffffc000`ccb000a0  00 00 88 02 06 00 00 00                          ........
+0: kd> db ffffc000ccb00060+0x40+1 L1
+ffffc000`ccb000a1  00                                               .
+0: kd> eb ffffc000ccb00060+0x40+1 10
+0: kd> db ffffc000ccb00060+0x40 L8
+ffffc000`ccb000a0  00 10 88 02 06 00 00 00                          ........
+0: kd> eb ffffc000ccb00060+0x40+1 4
+0: kd> db ffffc000ccb00060+0x40 L8
+ffffc000`ccb000a0  00 04 88 02 06 00 00 00                          ........
+0: kd> eb ffffc000ccb00060+0x40+8+1 4
+0: kd> eb ffffc000ccb00060+0x40+10+1 4
+0: kd> g
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF53FC60BE: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](1) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF53FC610D: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](2) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF53FC60BE: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](3) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF53FC610D: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](4) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF53FC60BE: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](5) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF53FC610D: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](6) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF53FC60BE: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](7) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF53FC610D: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](8) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(278)\apprepsync.dll!00007FFF53FC60BE: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](9) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\apprepeventlog.cpp(95)\apprepsync.dll!00007FFF53FC610D: (caller: 00007FFF53FABBC4) ReturnHr[PreRelease](10) tid(5d8) 80070103 No more data is available.
+ds\security\appid\sail\apprep\arc\lib\perfdiagevents.cpp(64)\apprepsync.dll!00007FFF53FAB4DE: (caller: 00007FFF53FA3DFE) ReturnHr[PreRelease](11) tid(5d8) 80070103 No more data is available.
+tzsync.exe Information: 0 : tzsync Started 05/10/2016 13:47:19
+PID=5556 TID=5552 DismApi.dll:                                            - DismInitializeInternal
+PID=5556 TID=5552 DismApi.dll: <----- Starting DismApi.dll session -----> - DismInitializeInternal
+PID=5556 TID=5552 DismApi.dll:                                            - DismInitializeInternal
+PID=5556 TID=5552 DismApi.dll: Version 10.0.10586.0 - DismInitializeInternal
+PID=5556 TID=5552 DismApi.dll: Parent process command line: C:\Windows\system32\cleanmgr.exe /autoclean /d C: - DismInitializeInternal
+PID=5556 TID=5552 Enter DismInitializeInternal - DismInitializeInternal
+PID=5556 TID=5552 Input parameters: LogLevel: 2, LogFilePath: (null), ScratchDirectory: (null) - DismInitializeInternal
+PID=5556 TID=5552 Initialized GlobalConfig - DismInitializeInternal
+PID=5556 TID=5552 Initialized SessionTable - DismInitializeInternal
+PID=5556 TID=5552 Lookup in table by path failed for: DummyPath-2BA51B78-C7F7-4910-B99D-BB7345357CDC - CTransactionalImageTable::LookupImagePath
+PID=5556 TID=5552 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=5556 TID=4976 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=5556 TID=4976 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=5556 TID=5552 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=5556 TID=5552 m_pInternalThread started - CCommandThread::Start
+PID=5556 TID=5552 Created g_internalDismSession - DismInitializeInternal
+PID=5556 TID=5552 Leave DismInitializeInternal - DismInitializeInternal
+PID=5556 TID=5552 Enter DismOpenSessionInternal - DismOpenSessionInternal
+PID=5556 TID=5552 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+PID=5556 TID=5552 Lookup in table by path failed for: DRIVE_C - CTransactionalImageTable::LookupImagePath
+PID=5556 TID=5552 Waiting for m_pInternalThread to start - CCommandThread::Start
+PID=5556 TID=5172 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=5556 TID=5552 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+PID=5556 TID=5552 m_pInternalThread started - CCommandThread::Start
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=5172 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=5172 Instantiating the Provider Store. - CDISMImageSession::get_ProviderStorePID=5556 TID=5172 Initializing a provider store for the LOCAL session type. - CDISMProviderStore::Final_OnConnectPID=5556 TID=5172 Attempting to initialize the logger from the Image Session. - CDISMProviderStore::Final_OnConnectPID=5556 TID=5172 Provider has not previously been encountered.  Attempting to initialize the provider. - CDISMProviderStore::Internal_GetProviderPID=5556 TID=5172 Loading Provider from location C:\Windows\system32\Dism\LogProvider.dll - CDISMProviderStore::Internal_GetProviderPID=5556 TID=5172 Connecting to the provider located at C:\Windows\system32\Dism\LogProvider.dll. - CDISMProviderStore::Internal_LoadProvidertzsync.exe Information: 0 : 55 tzid referenced
+tzsync.exe Information: 0 : 341 TimeZoneRule used
+tzsync.exe Information: 0 : 44 rules referenced
+tzsync.exe Information: 0 : 940 DstTransitionRule used
+tzsync.exe Information: 0 : maps tzid America/Anchorage to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Asia/Barnaul to range (2010, 2017)
+tzsync.exe Information: 0 : maps tzid Asia/Baghdad to range (2006, 2008)
+tzsync.exe Information: 0 : maps tzid America/Argentina/Buenos_Aires to range (2006, 2010)
+tzsync.exe Information: 0 : maps tzid Europe/Astrakhan to range (2010, 2017)
+tzsync.exe Information: 0 : maps tzid America/Halifax to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Australia/Sydney to range (2007, 2008)
+tzsync.exe Information: 0 : maps tzid Atlantic/Azores to range (2011, 2013)
+tzsync.exe Information: 0 : maps tzid America/Bahia to range (2010, 2013)
+tzsync.exe Information: 0 : maps tzid Asia/Dhaka to range (2008, 2010)
+tzsync.exe Information: 0 : maps tzid Europe/Minsk to range (2010, 2012)
+tzsync.exe Information: 0 : maps tzid Asia/Yerevan to range (2011, 2012)
+tzsync.exe Information: 0 : maps tzid Australia/Adelaide to range (2007, 2008)
+tzsync.exe Information: 0 : maps tzid America/Cuiaba to range (2006, 2040)
+tzsync.exe Information: 0 : maps tzid America/Chicago to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid America/Sao_Paulo to range (2006, 2040)
+tzsync.exe Information: 0 : maps tzid America/New_York to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Africa/Cairo to range (2005, 2016)
+tzsync.exe Information: 0 : maps tzid Asia/Yekaterinburg to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Pacific/Fiji to range (2008, 2015)
+tzsync.exe Information: 0 : maps tzid America/Godthab to range (2008, 2021)
+tzsync.exe Information: 0 : maps tzid Asia/Tehran to range (2005, 2024)
+tzsync.exe Information: 0 : maps tzid Asia/Jerusalem to range (2004, 2023)
+tzsync.exe Information: 0 : maps tzid Asia/Amman to range (2006, 2014)
+tzsync.exe Information: 0 : maps tzid Europe/Kaliningrad to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Africa/Tripoli to range (2011, 2014)
+tzsync.exe Information: 0 : maps tzid Asia/Magadan to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Indian/Mauritius to range (2007, 2010)
+tzsync.exe Information: 0 : maps tzid Asia/Beirut to range (2009, 2021)
+tzsync.exe Information: 0 : maps tzid America/Montevideo to range (2006, 2016)
+tzsync.exe Information: 0 : maps tzid Africa/Casablanca to range (2007, 2016)
+tzsync.exe Information: 0 : maps tzid America/Denver to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Asia/Novosibirsk to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Africa/Windhoek to range (2010, 2011)
+tzsync.exe Information: 0 : maps tzid Pacific/Auckland to range (2006, 2008)
+tzsync.exe Information: 0 : maps tzid America/St_Johns to range (2006, 2012)
+tzsync.exe Information: 0 : maps tzid Asia/Irkutsk to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Asia/Krasnoyarsk to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid America/Santiago to range (2007, 2015)
+tzsync.exe Information: 0 : maps tzid America/Los_Angeles to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Asia/Karachi to range (2007, 2010)
+tzsync.exe Information: 0 : maps tzid America/Asuncion to range (2008, 2021)
+tzsync.exe Information: 0 : maps tzid Europe/Moscow to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Asia/Sakhalin to range (2010, 2017)
+tzsync.exe Information: 0 : maps tzid Pacific/Apia to range (2009, 2012)
+tzsync.exe Information: 0 : maps tzid Asia/Damascus to range (2006, 2017)
+tzsync.exe Information: 0 : maps tzid Australia/Hobart to range (2007, 2008)
+tzsync.exe Information: 0 : maps tzid Asia/Chita to range (2010, 2017)
+tzsync.exe Information: 0 : maps tzid Europe/Istanbul to range (2010, 2016)
+tzsync.exe Information: 0 : maps tzid Asia/Ulaanbaatar to range (2014, 2015)
+tzsync.exe Information: 0 : maps tzid America/Indiana/Indianapolis to range (2005, 2007)
+tzsync.exe Information: 0 : maps tzid America/Caracas to range (2006, 2007)
+tzsync.exe Information: 0 : maps tzid Asia/Vladivostok to range (2010, 2015)
+tzsync.exe Information: 0 : maps tzid Australia/Perth to range (2005, 2010)
+tzsync.exe Information: 0 : maps tzid Asia/Yakutsk to range (2010, 2015)
+tzsync.exe Information: 0 : 10 transitions for America/Anchorage
+tzsync.exe Information: 0 : 9 transitions for Asia/Barnaul
+tzsync.exe Information: 0 : 8 transitions for Asia/Baghdad
+tzsync.exe Information: 0 : 5 transitions for America/Argentina/Buenos_Aires
+tzsync.exe Information: 0 : 9 transitions for Europe/Astrakhan
+tzsync.exe Information: 0 : 10 transitions for America/Halifax
+tzsync.exe Information: 0 : 10 transitions for Australia/Sydney
+tzsync.exe Information: 0 : 12 transitions for Atlantic/Azores
+tzsync.exe Information: 0 : 6 transitions for America/Bahia
+tzsync.exe Information: 0 : 5 transitions for Asia/Dhaka
+tzsync.exe Error: 0 : expecting non-empty offset set for year 2008
+tzsync.exe Information: 0 : 7 transitions for Europe/Minsk
+tzsync.exe Information: 0 : 7 transitions for Asia/Yerevan
+tzsync.exe Information: 0 : 10 transitions for Australia/Adelaide
+tzsync.exe Information: 0 : 76 transitions for America/Cuiaba
+tzsync.exe Information: 0 : 10 transitions for America/Chicago
+tzsync.exe Information: 0 : 76 transitions for America/Sao_Paulo
+tzsync.exe Information: 0 : 10 transitions for America/New_York
+tzsync.exe Information: 0 : 22 transitions for Africa/Cairo
+tzsync.exe Information: 0 : tzid:Africa/Cairo, pjSet:UtcOff: {02:00:00}, Dlt: {04/29/2010 22:00:00, 09/09/2010 22:00:00}, Std: {08/10/2010 21:00:00, 09/30/2010 21:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : tzid:Africa/Cairo, pjSet:UtcOff: {02:00:00}, Dlt: {05/15/2014 22:00:00, 07/31/2014 22:00:00}, Std: {06/26/2014 21:00:00, 09/25/2014 21:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : 8 transitions for Asia/Yekaterinburg
+tzsync.exe Information: 0 : 17 transitions for Pacific/Fiji
+tzsync.exe Information: 0 : 34 transitions for America/Godthab
+tzsync.exe Information: 0 : 42 transitions for Asia/Tehran
+tzsync.exe Information: 0 : 46 transitions for Asia/Jerusalem
+tzsync.exe Information: 0 : 22 transitions for Asia/Amman
+tzsync.exe Information: 0 : 8 transitions for Europe/Kaliningrad
+tzsync.exe Information: 0 : 5 transitions for Africa/Tripoli
+tzsync.exe Information: 0 : 8 transitions for Asia/Magadan
+tzsync.exe Information: 0 : 4 transitions for Indian/Mauritius
+tzsync.exe Information: 0 : 32 transitions for Asia/Beirut
+tzsync.exe Information: 0 : 23 transitions for America/Montevideo
+tzsync.exe Information: 0 : 34 transitions for Africa/Casablanca
+tzsync.exe Information: 0 : tzid:Africa/Casablanca, pjSet:UtcOff: {00:00:00}, Dlt: {04/29/2012 02:00:00, 08/20/2012 02:00:00}, Std: {07/20/2012 02:00:00, 09/30/2012 02:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : tzid:Africa/Casablanca, pjSet:UtcOff: {00:00:00}, Dlt: {04/28/2013 02:00:00, 08/10/2013 02:00:00}, Std: {07/07/2013 02:00:00, 10/27/2013 02:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : tzid:Africa/Casablanca, pjSet:UtcOff: {00:00:00}, Dlt: {03/30/2014 02:00:00, 08/02/2014 02:00:00}, Std: {06/28/2014 02:00:00, 10/26/2014 02:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : tzid:Africa/Casablanca, pjSet:UtcOff: {00:00:00}, Dlt: {03/29/2015 02:00:00, 07/19/2015 02:00:00}, Std: {06/14/2015 02:00:00, 10/25/2015 02:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : tzid:Africa/Casablanca, pjSet:UtcOff: {00:00:00}, Dlt: {03/27/2016 02:00:00, 07/10/2016 02:00:00}, Std: {06/05/2016 02:00:00, 10/30/2016 02:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : 10 transitions for America/Denver
+tzsync.exe Information: 0 : 8 transitions for Asia/Novosibirsk
+tzsync.exe Information: 0 : 10 transitions for Africa/Windhoek
+tzsync.exe Information: 0 : 12 transitions for Pacific/Auckland
+tzsync.exe Information: 0 : 21 transitions for America/St_Johns
+tzsync.exe Information: 0 : 8 transitions for Asia/Irkutsk
+tzsync.exe Information: 0 : 8 transitions for Asia/Krasnoyarsk
+tzsync.exe Information: 0 : 21 transitions for America/Santiago
+tzsync.exe Information: 0 : 10 transitions for America/Los_Angeles
+tzsync.exe Information: 0 : 6 transitions for Asia/Karachi
+tzsync.exe Information: 0 : 34 transitions for America/Asuncion
+tzsync.exe Information: 0 : 8 transitions for Europe/Moscow
+tzsync.exe Information: 0 : 9 transitions for Asia/Sakhalin
+tzsync.exe Information: 0 : 10 transitions for Pacific/Apia
+tzsync.exe Information: 0 : tzid:Pacific/Apia, pjSet:UtcOff: {-11:00:00, 13:00:00}, Dlt: {09/24/2011 14:00:00}, Std: {04/02/2011 14:00:00}, LstOff: 01:00:00
+tzsync.exe Information: 0 : 30 transitions for Asia/Damascus
+tzsync.exe Information: 0 : 10 transitions for Australia/Hobart
+tzsync.exe Information: 0 : 9 transitions for Asia/Chita
+tzsync.exe Information: 0 : 20 transitions for Europe/Istanbul
+tzsync.exe Information: 0 : 6 transitions for Asia/Ulaanbaatar
+tzsync.exe Information: 0 : 9 transitions for America/Indiana/Indianapolis
+tzsync.exe Error: 0 : expecting non-empty offset set for year 2005
+tzsync.exe Information: 0 : 3 transitions for America/Caracas
+tzsync.exe Information: 0 : 8 transitions for Asia/Vladivostok
+tzsync.exe Information: 0 : 8 transitions for Australia/Perth
+tzsync.exe Information: 0 : 8 transitions for Asia/Yakutsk
+tzsync.exe Information: 0 : tzsync Completed 05/10/2016 13:48:09, duration:49.497s
+PID=5556 TID=5172 Target image information: OS Version=10.0.10586.168, Image architecture=amd64 - CDismCore::LogImageSessionDetails
+PID=5556 TID=5552 Leave DismOpenSessionInternal - DismOpenSessionInternal
+PID=5556 TID=5552 Session id is: 2 - DismOpenSessionInternal
+PID=5556 TID=5552 DismInitialize: 2 - DismInitializeInternal
+PID=5556 TID=5552 Enter DismOpenSessionInternal - DismOpenSessionInternal
+PID=5556 TID=5552 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+PID=5556 TID=5552 Returning existing DismSession=2 for path DRIVE_C. RefCount=2 - CSessionTable::CreateSession
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=5172 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=5172 Target image information: OS Version=10.0.10586.168, Image architecture=amd64 - CDismCore::LogImageSessionDetails
+PID=5556 TID=5552 Leave DismOpenSessionInternal - DismOpenSessionInternal
+PID=5556 TID=5552 Session id is: 2 - DismOpenSessionInternal
+PID=5556 TID=5552 Enter DismGetUsedSpaceInternal - DismGetUsedSpaceInternal
+PID=5556 TID=5552 Input parameters: Session: 2, Type: 2,  - DismGetUsedSpaceInternal
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=5172 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=5172 Superseded Service Packs 0  - CGetUsedSpaceCommandObject::InternalExecute
+PID=5556 TID=5552 Exit DismGetUsedSpaceInternal - DismGetUsedSpaceInternal
+PID=5556 TID=5552 Enter DismGetUsedSpaceInternal - DismGetUsedSpaceInternal
+PID=5556 TID=5552 Input parameters: Session: 2, Type: 1,  - DismGetUsedSpaceInternal
+PID=5556 TID=5172 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=5172 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=5552 Exit DismGetUsedSpaceInternal - DismGetUsedSpaceInternal
+PID=5556 TID=5552 Enter DismCloseSessionInternal - DismCloseSessionInternal
+PID=5556 TID=5552 Input parameters: Session: 2 - DismCloseSessionInternal
+PID=5556 TID=5552 GetReferenceCount hr: 0x0 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Refcount for DismSession= 2s 1 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Leave DismCloseSessionInternal - DismCloseSessionInternal
+PID=5556 TID=5552 DismShutdown: 1 - DismShutdownInternal
+PID=5556 TID=5552 Enter DismCloseSessionInternal - DismCloseSessionInternal
+PID=5556 TID=5552 Input parameters: Session: 2 - DismCloseSessionInternal
+PID=5556 TID=5552 GetReferenceCount hr: 0x0 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Refcount for DismSession= 2s 0 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=5172 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=5172 ExecuteLoop: Cancel signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=5172 Leave CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=5532 TID=5176 Disconnecting the provider store - CDISMImageSession::Final_OnDisconnectPID=5532 TID=5176 Encountered a loaded provider DISMLogger. - CDISMProviderStore::Internal_DisconnectProviderPID=5532 TID=5176 Disconnecting Provider: DISMLogger - CDISMProviderStore::Internal_DisconnectProviderPID=5556 TID=5172 Disconnecting the provider store - CDISMImageSession::Final_OnDisconnectPID=5556 TID=5172 Encountered a loaded provider DISMLogger. - CDISMProviderStore::Internal_DisconnectProviderPID=5556 TID=5172 Disconnecting Provider: DISMLogger - CDISMProviderStore::Internal_DisconnectProviderPID=5556 TID=5172 Leave CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=5556 TID=5552 Leave DismCloseSessionInternal - DismCloseSessionInternal
+PID=5556 TID=5552 Enter DismShutdownInternal - DismShutdownInternal
+PID=5556 TID=5552 GetReferenceCount hr: 0x0 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Refcount for DismSession= 1s 0 - CSessionTable::RemoveSession
+PID=5556 TID=5552 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+PID=5556 TID=4976 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=4976 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+PID=5556 TID=4976 ExecuteLoop: Cancel signaled - CCommandThread::ExecuteLoop
+PID=5556 TID=4976 Leave CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+PID=5556 TID=4976 Leave CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+PID=5556 TID=5552 Deleted g_internalDismSession - DismShutdownInternal
+PID=5556 TID=5552 Shutdown SessionTable - DismShutdownInternal
+PID=5556 TID=5552 Leave DismShutdownInternal - DismShutdownInternal
+PID=5556 TID=5552 DismApi.dll:                                          - DismShutdownInternal
+PID=5556 TID=5552 DismApi.dll: <----- Ending DismApi.dll session -----> - DismShutdownInternal
+PID=5556 TID=5552 DismApi.dll:                                          - DismShutdownInternal
+Suspending
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+1: kd> .logfile
+Log 'c:\course\windbg.day7.log' open
+1: kd> g
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FFF4C3E7AF4: (caller: 00007FFF4C40AD7A) ReturnHr[PreRelease](23) tid(1254) 80070002 The system cannot find the file specified.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+0: kd> x nt!*Dynamic*
+fffff802`be29f4ec nt!HvlValidateDynamicCodePages (<no parameter info>)
+fffff802`be1d246c nt!KeGetDynamicTickDisableReason (<no parameter info>)
+fffff802`be1996d8 nt!MiUnlockDynamicMemoryExclusive (<no parameter info>)
+fffff802`be402504 nt!KiClockLatencyMaxDynamicTickDuration = <no type information>
+fffff802`be402084 nt!KiMinDynamicTickDuration = <no type information>
+fffff802`be2b70f8 nt!_imp_HalRegisterDynamicProcessor = <no type information>
+fffff802`be6cc394 nt!RtlSetDynamicTimeZoneInformation (<no parameter info>)
+fffff802`be724fb0 nt!szDynamicDaylightDisabled = <no type information>
+fffff802`be4020a0 nt!KiDynamicHeteroCpuPolicyImportantShort = <no type information>
+fffff802`be7cd120 nt!MiInitializeDynamicRegion (<no parameter info>)
+fffff802`be402264 nt!KiDynamicHeteroCpuPolicyExpectedRuntime = <no type information>
+fffff802`be40209c nt!KiDynamicHeteroCpuPolicyImportant = <no type information>
+fffff802`be402260 nt!KiDynamicTickDisableReason = <no type information>
+fffff802`be77eb54 nt!ExpLastDynamicTimeZoneYear = <no type information>
+fffff802`be40323e nt!KeDynamicPartitioningSupported = <no type information>
+fffff802`be2d1cd0 nt!POP_ETW_EVENT_DYNAMIC_TICK_DISABLED = <no type information>
+fffff802`be725380 nt!szDynamicDst = <no type information>
+fffff802`be69e728 nt!KeStartDynamicProcessor (<no parameter info>)
+fffff802`be5b7d7c nt!RtlpGetDynamicTimeZoneInfoHandle (<no parameter info>)
+fffff802`be725640 nt!szSlashDynamicDst = <no type information>
+fffff802`be122774 nt!MiObtainDynamicVa (<no parameter info>)
+fffff802`be4fed30 nt!KeSynchronizeWithDynamicProcessors (<no parameter info>)
+fffff802`be2462e0 nt!KiDynamicProcessorAddNotification (<no parameter info>)
+fffff802`be369bcc nt!KiDynamicTickCancellations = <no type information>
+fffff802`be248fc0 nt!KiConvertDynamicHeteroPolicy (<no parameter info>)
+fffff802`be24300c nt!KeConfigureDynamicMemory (<no parameter info>)
+fffff802`be69ddbc nt!KiStartDynamicProcessor (<no parameter info>)
+fffff802`be4021bc nt!KiDynamicHeteroCpuPolicyExpectedCycles = <no type information>
+fffff802`be243a34 nt!KeSetMaxDynamicTickDuration (<no parameter info>)
+fffff802`be1a5a1c nt!MiBuildDynamicRegion (<no parameter info>)
+fffff802`be402050 nt!KiDynamicHeteroCpuPolicyMask = <no type information>
+fffff802`be4020b0 nt!KiMaxDynamicTickDuration = <no type information>
+fffff802`be402098 nt!KiDefaultDynamicHeteroCpuPolicy = <no type information>
+fffff802`be39c2c0 nt!PopDynamicIrpWorkerLookaside = <no type information>
+fffff802`be6bc43c nt!PopDiagTraceDynamicTickStatusRundown (<no parameter info>)
+fffff802`be10da50 nt!RtlInsertDynamicFunctionTable (<no parameter info>)
+fffff802`be1b2f90 nt!MiExtendDynamicBitMap (<no parameter info>)
+fffff802`be1513e4 nt!RtlRemoveDynamicFunctionTable (<no parameter info>)
+fffff802`be6cc37c nt!RtlQueryDynamicTimeZoneInformation (<no parameter info>)
+fffff802`be2d1cc0 nt!POP_ETW_EVENT_DYNAMIC_TICK_STATUS_RUNDOWN = <no type information>
+fffff802`be432254 nt!KiInitializeDynamicProcessorDpc (<no parameter info>)
+fffff802`be432478 nt!KiConfigureDynamicProcessor (<no parameter info>)
+fffff802`be4321fc nt!KiInitializeDynamicProcessor (<no parameter info>)
+fffff802`be5b796c nt!RtlpUpdateDynamicTimeZones (<no parameter info>)
+fffff802`be3698c0 nt!KiDynamicProcessorLock = <no type information>
+fffff802`be198718 nt!PopCreateDynamicIrpWorker (<no parameter info>)
+fffff802`be26ce74 nt!PoTraceDynamicTickDisabled (<no parameter info>)
+fffff802`be246348 nt!KiInitDynamicProcessorIpi (<no parameter info>)
+fffff802`be7f3148 nt!InitializeDynamicPartitioningPolicy (<no parameter info>)
+fffff802`be1999d0 nt!MiLockDynamicMemoryExclusive (<no parameter info>)
+fffff802`be5b7c54 nt!RtlpCheckDynamicTimeZoneInformation (<no parameter info>)
+fffff802`be4be838 nt!SepExpandDynamic (<no parameter info>)
+fffff802`be4022f8 nt!KiMaxDynamicTickDurationSize = <no type information>
+fffff802`be35d278 nt!PopMaxDynamicTickDurationOriginalValue = <no type information>
+fffff802`be579978 nt!MiInitializeDynamicBitmap (<no parameter info>)
+fffff802`be4021c0 nt!KiDynamicHeteroCpuPolicyImportantPriority = <no type information>
+fffff802`be2b7100 nt!_imp_HalStartDynamicProcessor = <no type information>
+fffff802`be250f88 nt!MiInitializeDynamicPfns (<no parameter info>)
+fffff802`be403650 nt!MmDynamicPfn = <no type information>
+0: kd> x nt!*DynamicProc*
+fffff802`be2b70f8 nt!_imp_HalRegisterDynamicProcessor = <no type information>
+fffff802`be69e728 nt!KeStartDynamicProcessor (<no parameter info>)
+fffff802`be4fed30 nt!KeSynchronizeWithDynamicProcessors (<no parameter info>)
+fffff802`be2462e0 nt!KiDynamicProcessorAddNotification (<no parameter info>)
+fffff802`be69ddbc nt!KiStartDynamicProcessor (<no parameter info>)
+fffff802`be432254 nt!KiInitializeDynamicProcessorDpc (<no parameter info>)
+fffff802`be432478 nt!KiConfigureDynamicProcessor (<no parameter info>)
+fffff802`be4321fc nt!KiInitializeDynamicProcessor (<no parameter info>)
+fffff802`be3698c0 nt!KiDynamicProcessorLock = <no type information>
+fffff802`be246348 nt!KiInitDynamicProcessorIpi (<no parameter info>)
+fffff802`be2b7100 nt!_imp_HalStartDynamicProcessor = <no type information>
+0: kd> uf nt!KiConfigureDynamicProcessor
+nt!KiConfigureDynamicProcessor:
+fffff802`be432478 4883ec28        sub     rsp,28h
+fffff802`be43247c e85748ffff      call    nt!KiEnableXSave (fffff802`be426cd8)
+fffff802`be432481 4c8b05d80dfdff  mov     r8,qword ptr [nt!KeFeatureBits (fffff802`be403260)]
+fffff802`be432488 49f7c001000010  test    r8,10000001h
+fffff802`be43248f 741d            je      nt!KiConfigureDynamicProcessor+0x36 (fffff802`be4324ae)  Branch
+
+nt!KiConfigureDynamicProcessor+0x19:
+fffff802`be432491 0f20e0          mov     rax,cr4
+fffff802`be432494 41f6c001        test    r8b,1
+fffff802`be432498 7405            je      nt!KiConfigureDynamicProcessor+0x27 (fffff802`be43249f)  Branch
+
+nt!KiConfigureDynamicProcessor+0x22:
+fffff802`be43249a 480fbae814      bts     rax,14h
+
+nt!KiConfigureDynamicProcessor+0x27:
+fffff802`be43249f 490fbae01c      bt      r8,1Ch
+fffff802`be4324a4 7305            jae     nt!KiConfigureDynamicProcessor+0x33 (fffff802`be4324ab)  Branch
+
+nt!KiConfigureDynamicProcessor+0x2e:
+fffff802`be4324a6 480fbae810      bts     rax,10h
+
+nt!KiConfigureDynamicProcessor+0x33:
+fffff802`be4324ab 0f22e0          mov     cr4,rax
+
+nt!KiConfigureDynamicProcessor+0x36:
+fffff802`be4324ae 4883c428        add     rsp,28h
+fffff802`be4324b2 c3              ret
+0: kd> db fffff802`be432491 L3
+fffff802`be432491  0f 20 e0                                         . .
+0: kd> lm m nt
+Browse full module list
+start             end                 module name
+fffff802`be084000 fffff802`be850000   nt         (pdb symbols)          c:\course\symbols\ntkrnlmp.pdb\1A603169B1B942A092B69787CCB7C4811\ntkrnlmp.pdb
+
+Unable to enumerate user-mode unloaded modules, Win32 error 0n30
+0: kd> s b fffff802`be084000 fffff802`be850000 0f 20 e0 c3
+                           ^ Range error in 's b fffff802`be084000 fffff802`be850000 0f 20 e0 c3'
+0: kd> s -b fffff802`be084000 fffff802`be850000 0f 20 e0 c3
+fffff802`be39f000  0f 20 e0 c3 00 00 00 00-00 00 00 00 00 00 00 00  . ..............
+0: kd> ln fffff802`be39f000
+Browse module
+Set bu breakpoint
+
+(fffff802`be39f000)   nt!KdpMessageBuffer   |  (fffff802`be3a0000)   nt!ObpWorkItemFreeList
+Exact matches:
+    nt!KdpMessageBuffer = <no type information>
+0: kd> !for_each_module s -b @#Base @#End 0f 20 e0 c3
+fffff802`be39f000  0f 20 e0 c3 00 00 00 00-00 00 00 00 00 00 00 00  . ..............
+0: kd> !for_each_module "s -b @#Base @#End 0f 20 e0 c3"
+fffff802`be39f000  0f 20 e0 c3 00 00 00 00-00 00 00 00 00 00 00 00  . ..............
+0: kd> !for_each_module "s -b @#Base @#End 0f 20 e0 c3"
+fffff802`be39f000  0f 20 e0 c3 00 00 00 00-00 00 00 00 00 00 00 00  . ..............
+0: kd> !for_each_module "s -b @#Base @#End 0f 20 e0"
+fffff802`be070f7c  0f 20 e0 74 3b 48 83 c8-40 0f 22 e0 48 8b 5c 24  . .t;H..@.".H.\$
+fffff802`be1a639a  0f 20 e0 45 84 c6 74 05-48 0f ba e8 14 49 0f ba  . .E..t.H....I..
+fffff802`be1c69a4  0f 20 e0 48 89 41 18 44-0f 20 c0 48 89 81 a0 00  . .H.A.D. .H....
+fffff802`be1c6ab4  0f 20 e0 48 89 41 18 44-0f 20 c0 48 89 81 a0 00  . .H.A.D. .H....
+fffff802`be39f000  0f 20 e0 c3 00 00 00 00-00 00 00 00 00 00 00 00  . ..............
+fffff802`be41d073  0f 20 e0 4c 89 82 d8 01-00 00 0f 01 82 16 02 00  . .L............
+fffff802`be429be1  0f 20 e0 48 83 c8 18 0f-22 e0 0f 20 e1 84 c9 0f  . .H....".. ....
+fffff802`be432491  0f 20 e0 41 f6 c0 01 74-05 48 0f ba e8 14 49 0f  . .A...t.H....I.
+0: kd> g
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`be1cbeb0 cc              int     3
+0: kd> a NOP
+Couldn't resolve error at 'NOP'
+0: kd> a "NOP"
+Syntax error at '"NOP"'
+0: kd> a MOV rcx, 6
+Couldn't resolve error at 'MOV rcx, 6'
+0: kd> a xchg eax, eax
+Couldn't resolve error at 'xchg eax, eax'
+0: kd> a "xchg eax, eax"
+Syntax error at '"xchg eax, eax"'
+0: kd> a "NOP"
+Syntax error at '"NOP"'
+0: kd> .logclose
+Closing open log file c:\course\windbg.day7.log

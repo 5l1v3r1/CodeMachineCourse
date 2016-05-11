@@ -1,0 +1,785 @@
+Opened log file 'c:\course\windbg.day8.log'
+Driver Verifier: Enabled for NTFS.sys, flags 0x1, build 10586, key 3UspDkkXdeMuFYNJ6DGpm
+minio\security\base\lsa\security\driver\asyncsspi.cxx - SspiInitAsyncInterface
+IOINIT: Built-in driver \Driver\hwpolicy failed to initialize with status - 0xC000025E
+KDTARGET: Refreshing KD connection
+DimpHidAddDevice: Failed to open device \\?\HID#{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}#6&1a8c06af&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030} (err=5).
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFD19F22993: (caller: 00007FFD1EEFD533) LogHr(1) tid(3f4) 80004005 Unspecified error
+    CallContext:[\Startup] 
+Fail to read system\currentcontrolset\services\Lmhosts\Parameters\EnableUserMode, error=2
+DfsDs RPC server started.
+shell\lib\util_drive.cpp(28)\shsvcs.dll!00007FFD1495E290: (caller: 00007FFD149577A1) ReturnHr[PreRelease](1) tid(67c) 80070001 Incorrect function.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFD13FE4EF0: (caller: 00007FFD13FE502D) ReturnHr[PreRelease](1) tid(758) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(113)\netprofmsvc.dll!00007FFD13FE4EF0: (caller: 00007FFD13FE502D) ReturnHr[PreRelease](2) tid(758) 80070032 The request is not supported.
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(99)\netprofmsvc.dll!00007FFD13FE4800: (caller: 00007FFD13FE45D3) ReturnHr[PreRelease](3) tid(758) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomanager.cpp(12)\netprofmsvc.dll!00007FFD13FE4655: (caller: 00007FFD13FE4D2E) ReturnHr[PreRelease](4) tid(758) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(161)\netprofmsvc.dll!00007FFD13FE4D4D: (caller: 00007FFD13FE4F3E) ReturnHr[PreRelease](5) tid(758) 80040154 Class not registered
+net\mobility\radiomanagement\radiomonitor\radiomonitorlib\cradiomonitor.cpp(122)\netprofmsvc.dll!00007FFD13FE4EF0: (caller: 00007FFD13FE502D) ReturnHr[PreRelease](6) tid(758) 80040154 Class not registered
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFD11DBFFB3: (caller: 00007FFD11DBF9A6) ReturnHr[PreRelease](1) tid(810) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFD11DBFC2B: (caller: 00007FFD11DBF6ED) LogHr(1) tid(810) 80070002 The system cannot find the file specified.
+base\flighting\clientapi\lib\enumeratehelper.cpp(18)\diagtrack.dll!00007FFD11DDA5B8: (caller: 00007FFD11DD9134) ReturnHr[PreRelease](2) tid(810) 80070002 The system cannot find the file specified.
+    CallContext:[\ActivityFaGetFlightsInfo] 
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFD11DB925A: (caller: 00007FFD11D65F74) LogHr(2) tid(810) 80070015 The device is not ready.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1519)\diagtrack.dll!00007FFD11DFE105: (caller: 00007FFD11E251B4) ReturnHr[PreRelease](3) tid(810) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\connectivityheartbeat.cpp(209)\diagtrack.dll!00007FFD11E251D2: (caller: 00007FFD11E0E796) ReturnHr[PreRelease](4) tid(810) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\systemstatemanager.cpp(991)\diagtrack.dll!00007FFD11DB925A: (caller: 00007FFD11D65F74) LogHr(3) tid(96c) 80070015 The device is not ready.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(589)\diagtrack.dll!00007FFD11DBFFB3: (caller: 00007FFD11DBF9A6) ReturnHr[PreRelease](5) tid(9a0) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\engine\settingsmanager.cpp(507)\diagtrack.dll!00007FFD11DBFC2B: (caller: 00007FFD11DBF6ED) LogHr(4) tid(9a0) 80070002 The system cannot find the file specified.
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](6) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](7) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](8) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](9) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](10) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](11) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](12) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](13) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](14) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](15) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](16) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](17) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](18) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](19) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](20) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](21) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](22) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](23) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](24) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](25) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](26) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](27) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](28) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](29) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](30) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](31) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](32) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](33) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](34) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](35) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](36) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](37) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](38) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](39) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](40) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](41) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](42) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](43) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](44) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](45) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](46) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](47) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](48) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](49) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](50) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](51) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](52) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](53) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](54) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](55) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](56) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](57) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](58) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](59) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](60) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](61) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](62) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](63) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](64) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](65) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](66) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](67) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](68) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](69) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](70) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](71) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](72) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](73) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](74) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](75) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](76) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](77) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](78) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](79) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](80) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\include\Utils.h(2581)\diagtrack.dll!00007FFD11D71784: (caller: 00007FFD11DA83EC) ReturnHr[PreRelease](81) tid(9a0) 800401F3 Invalid class string
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D616CD) ReturnHr[PreRelease](82) tid(9a0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(418)\diagtrack.dll!00007FFD11D616EA: (caller: 00007FFD11D61B71) LogHr(5) tid(9a0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\twinui\softlanding\published\softlandingcampaign.cpp(56)\diagtrack.dll!00007FFD11DE1463: (caller: 00007FFD11DB00F0) ReturnHr[PreRelease](83) tid(9a0) 800703F0 An attempt was made to reference a token that does not exist.
+base\diagnosis\diagtrack\engine\scenariomanager.cpp(2333)\diagtrack.dll!00007FFD11DB039C: (caller: 00007FFD11D61EA3) LogHr(6) tid(9a0) 800703F0 An attempt was made to reference a token that does not exist.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFD11E0A333: (caller: 00007FFD11D699C5) ReturnHr[PreRelease](84) tid(940) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](85) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(1) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(7) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](86) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](87) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(2) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(8) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](88) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFD11E0A333: (caller: 00007FFD11D699C5) ReturnHr[PreRelease](89) tid(940) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](90) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(3) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(9) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](91) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\roaming\settingsync\settingprofilehandler.cpp(85)\SettingSync.dll!00007FFD0E63D04E: (caller: 00007FFD17439F73) LogHr(1) tid(890) 80070002 The system cannot find the file specified.
+shell\roaming\settingsync\settingprofilehandler.cpp(24)\SettingSync.dll!00007FFD0E633CBC: (caller: 00007FFD17439F73) LogHr(2) tid(890) 800704EC This program is blocked by group policy. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\deskstartupmgr.cpp(52)\modernexecserver.dll!00007FFD0D2675EC: (caller: 00007FFD0D267503) ReturnHr[PreRelease](1) tid(78c) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(162)\ACPBackgroundManagerPolicy.dll!00007FFD0E084C0B: (caller: 00007FFD0E0847E3) ReturnHr[PreRelease](1) tid(aec) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\policies\preinstalltaskpolicy\preinstalltaskutils.cpp(248)\ACPBackgroundManagerPolicy.dll!00007FFD0E084AD4: (caller: 00007FFD0E0864A3) ReturnHr[PreRelease](2) tid(aec) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFD11E0A333: (caller: 00007FFD11D699C5) ReturnHr[PreRelease](92) tid(940) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](93) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(4) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(10) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](94) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFD0D291020: (caller: 00007FFD1EEFD533) ReturnHr[PreRelease](2) tid(b68) 8002802B Element not found.
+base\appmodel\execmodel\modern\lifetimemanager\plmlegacy.cpp(174)\modernexecserver.dll!00007FFD0D291020: (caller: 00007FFD1EEFD533) ReturnHr[PreRelease](3) tid(b68) 8002802B Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFD0B0232DC: (caller: 00007FFD0B0234FF) ReturnHr[PreRelease](1) tid(ca4) 8004B200 base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFD0D28E724: (caller: 00007FFD0D27B15A) ReturnHr[PreRelease](4) tid(ae0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFD0D28E724: (caller: 00007FFD0D27B15A) ReturnHr[PreRelease](5) tid(ae0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFD0D28E724: (caller: 00007FFD0D27A9B6) ReturnHr[PreRelease](6) tid(ae4) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFD0D28E724: (caller: 00007FFD0D27A9B6) ReturnHr[PreRelease](7) tid(ae4) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FFD0D28E724: (caller: 00007FFD0D27A9B6) ReturnHr[PreRelease](8) tid(ae4) 80070002 The system cannot find the file specified.
+StartUI.LauncherFrame
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FFD19F22993: (caller: 00007FF6D1F06B66) LogHr(1) tid(c30) 80004005 Unspecified error
+    CallContext:[\Startup] 
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FFD0D117C7A: (caller: 00007FFD1EEFD533) ReturnHr[PreRelease](1) tid(c58) 80070002 The system cannot find the file specified.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFD0B0232DC: (caller: 00007FFD0B0234FF) ReturnHr[PreRelease](2) tid(ca4) 8004B200 Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff800`3d75feb0 cc              int     3
+0: kd> bl
+ 0 du                      0001 (0001) (KeyboardFilter!DriverEntry)
+ 4 du                      0001 (0001) (@@masm(`KeyboardFilter!c:\course\source\kerrkt.labs\labs\keyboardfilter\keyboardfilter.c:108+`))
+
+0: kd> g
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\KeyboardFilter\x64\Debug\KeyboardFilter.sys' (\SystemRoot\System32\Drivers\KeyboardFilter.sys)
+  File size 8KKdPullRemoteFile(FFFFE001AFAB2040): About to overwrite \SystemRoot\System32\Drivers\KeyboardFilter.sys and preallocate to 1e00
+KdPullRemoteFile(FFFFE001AFAB2040): Return from ZwCreateFile with status 0
+..
+*** KeyboardFilter.sys Loaded ***
+0 BREAK [20] 
+0 MAKE  [23] 
+0 BREAK [23] 
+0 MAKE  [12] 
+0 BREAK [12] 
+0 MAKE  [26] 
+0 BREAK [26] 
+0 MAKE  [26] 
+0 BREAK [26] 
+0 MAKE  [18] 
+0 BREAK [18] 
+0 MAKE  [14] 
+0 MAKE  [23] 
+0 BREAK [14] 
+0 MAKE  [12] 
+0 BREAK [23] 
+0 MAKE  [13] 
+0 BREAK [12] 
+0 MAKE  [12] 
+0 BREAK [13] 
+0 BREAK [12] 
+0 MAKE  [23] 
+0 MAKE  [18] 
+0 BREAK [23] 
+0 BREAK [18] 
+0 MAKE  [11] 
+0 BREAK [11] 
+0 MAKE  [15] 
+0 MAKE  [18] 
+0 BREAK [15] 
+0 MAKE  [16] 
+0 BREAK [18] 
+0 BREAK [16] 
+0 MAKE  [36] 
+0 MAKE  [35] 
+0 BREAK [36] 
+0 BREAK [35] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 BREAK [0e] 
+0 MAKE  [14] 
+0 MAKE  [23] 
+0 BREAK [14] 
+0 MAKE  [17] 
+0 BREAK [23] 
+0 MAKE  [1f] 
+0 BREAK [17] 
+0 BREAK [1f] 
+0 MAKE  [39] 
+0 MAKE  [17] 
+0 BREAK [39] 
+0 BREAK [17] 
+0 MAKE  [1f] 
+0 BREAK [1f] 
+0 MAKE  [39] 
+0 BREAK [39] 
+0 MAKE  [22] 
+0 BREAK [22] 
+0 MAKE  [13] 
+0 MAKE  [12] 
+0 BREAK [13] 
+0 MAKE  [1e] 
+0 BREAK [12] 
+0 BREAK [1e] 
+0 MAKE  [14] 
+0 BREAK [14] 
+0 MAKE  [2a] 
+0 MAKE  [02] 
+0 BREAK [02] 
+0 MAKE  [02] 
+0 BREAK [02] 
+0 MAKE  [02] 
+0 BREAK [02] 
+0 MAKE  [02] 
+0 BREAK [02] 
+0 MAKE  [02] 
+0 BREAK [02] 
+0 BREAK [2a] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [25] 
+0 MAKE  [21] 
+0 BREAK [24] 
+0 MAKE  [27] 
+0 BREAK [21] 
+0 MAKE  [26] 
+0 MAKE  [25] 
+0 MAKE  [20] 
+0 MAKE  [1f] 
+0 BREAK [27] 
+0 BREAK [26] 
+0 MAKE  [23] 
+0 BREAK [25] 
+0 MAKE  [21] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [23] 
+0 MAKE  [26] 
+0 MAKE  [1e] 
+0 MAKE  [25] 
+0 MAKE  [1f] 
+0 BREAK [21] 
+0 MAKE  [20] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 BREAK [1e] 
+0 BREAK [25] 
+0 BREAK [1f] 
+0 BREAK [24] 
+0 MAKE  [23] 
+0 MAKE  [21] 
+0 BREAK [20] 
+0 BREAK [23] 
+0 BREAK [21] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 BREAK [0e] 
+0 MAKE  [0e] 
+0 BREAK [0e] 
+0 MAKE  [1e] 
+0 MAKE  [1f] 
+0 MAKE  [20] 
+0 MAKE  [21] 
+0 BREAK [1f] 
+0 BREAK [1e] 
+0 BREAK [20] 
+0 MAKE  [25] 
+0 MAKE  [1e] 
+0 MAKE  [1f] 
+0 MAKE  [20] 
+0 BREAK [21] 
+0 BREAK [25] 
+0 MAKE  [24] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 BREAK [24] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 MAKE  [27] 
+0 MAKE  [26] 
+0 MAKE  [25] 
+0 MAKE  [1e] 
+0 BREAK [27] 
+0 MAKE  [1f] 
+0 MAKE  [24] 
+0 BREAK [21] 
+0 MAKE  [20] 
+0 BREAK [26] 
+0 BREAK [25] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [24] 
+0 MAKE  [27] 
+0 MAKE  [26] 
+0 MAKE  [1e] 
+0 MAKE  [1f] 
+0 BREAK [21] 
+0 MAKE  [20] 
+0 BREAK [27] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [24] 
+0 BREAK [21] 
+0 MAKE  [20] 
+0 MAKE  [1f] 
+0 MAKE  [1e] 
+0 MAKE  [21] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [1e] 
+0 BREAK [21] 
+0 MAKE  [1f] 
+0 MAKE  [20] 
+0 MAKE  [1e] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 MAKE  [23] 
+0 BREAK [21] 
+0 BREAK [23] 
+0 MAKE  [24] 
+0 MAKE  [20] 
+0 BREAK [24] 
+0 MAKE  [1f] 
+0 MAKE  [1e] 
+0 MAKE  [26] 
+0 MAKE  [21] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [1e] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 BREAK [21] 
+0 BREAK [24] 
+0 MAKE  [1e] 
+0 MAKE  [23] 
+0 MAKE  [1f] 
+0 MAKE  [20] 
+0 MAKE  [26] 
+0 BREAK [23] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 MAKE  [25] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [26] 
+0 BREAK [25] 
+0 BREAK [21] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 BREAK [0e] 
+0 MAKE  [22] 
+0 BREAK [22] 
+0 MAKE  [24] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 MAKE  [22] 
+0 BREAK [23] 
+0 MAKE  [25] 
+0 BREAK [22] 
+0 MAKE  [24] 
+0 BREAK [25] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 MAKE  [22] 
+0 BREAK [23] 
+0 MAKE  [24] 
+0 BREAK [22] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 MAKE  [22] 
+0 BREAK [23] 
+0 BREAK [22] 
+0 MAKE  [26] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 BREAK [25] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 MAKE  [26] 
+0 BREAK [23] 
+0 MAKE  [25] 
+0 BREAK [26] 
+0 BREAK [25] 
+0 MAKE  [24] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 MAKE  [26] 
+0 BREAK [23] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 BREAK [25] 
+0 MAKE  [23] 
+0 BREAK [24] 
+0 BREAK [23] 
+0 MAKE  [25] 
+0 BREAK [25] 
+0 MAKE  [23] 
+0 BREAK [23] 
+0 MAKE  [26] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 MAKE  [1f] 
+0 BREAK [25] 
+0 BREAK [24] 
+0 MAKE  [20] 
+0 MAKE  [21] 
+0 MAKE  [23] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [23] 
+0 MAKE  [1f] 
+0 MAKE  [20] 
+0 MAKE  [1e] 
+0 BREAK [21] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [1e] 
+0 BREAK [25] 
+0 BREAK [24] 
+0 MAKE  [21] 
+0 BREAK [1f] 
+0 MAKE  [23] 
+0 BREAK [20] 
+0 MAKE  [26] 
+0 MAKE  [1e] 
+0 MAKE  [1f] 
+0 BREAK [23] 
+0 MAKE  [20] 
+0 BREAK [21] 
+0 MAKE  [25] 
+0 MAKE  [24] 
+0 BREAK [26] 
+0 MAKE  [21] 
+0 BREAK [1e] 
+0 BREAK [1f] 
+0 BREAK [20] 
+0 BREAK [25] 
+0 BREAK [24] 
+0 MAKE  [23] 
+0 MAKE  [1e] 
+0 BREAK [21] 
+0 MAKE  [1f] 
+0 MAKE  [26] 
+0 BREAK [23] 
+0 MAKE  [25] 
+0 MAKE  [20] 
+0 BREAK [26] 
+0 MAKE  [21] 
+0 MAKE  [24] 
+0 BREAK [1e] 
+0 BREAK [1f] 
+0 BREAK [25] 
+0 BREAK [20] 
+0 BREAK [24] 
+0 MAKE  [23] 
+0 BREAK [21] 
+0 BREAK [23] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 MAKE  [0e] 
+0 BREAK [0e] 
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FFD0B0232DC: (caller: 00007FFD0B0234FF) ReturnHr[PreRelease](3) tid(ca4) 8004B200 base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFD0D2169BF: (caller: 00007FFD0D20A93F) ReturnHr[PreRelease](1) tid(a44) 80070002 The system cannot find the file specified.
+0 MAKE  [1f] 
+0 BREAK [1f] 
+0 MAKE  [2e] 
+0 BREAK [2e] 
+0 MAKE  [39] 
+0 BREAK [39] 
+0 MAKE  [1f] 
+0 BREAK [1f] 
+0 MAKE  [14] 
+0 MAKE  [18] 
+0 BREAK [14] 
+0 MAKE  [19] 
+0 BREAK [18] 
+0 MAKE  [39] 
+0 BREAK [19] 
+0 BREAK [39] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [2a] 
+0 MAKE  [25] 
+0 BREAK [25] 
+0 BREAK [2a] 
+0 MAKE  [12] 
+0 BREAK [12] 
+0 MAKE  [15] 
+0 BREAK [15] 
+0 MAKE  [30] 
+0 BREAK [30] 
+0 MAKE  [18] 
+0 MAKE  [1e] 
+0 BREAK [18] 
+0 MAKE  [13] 
+0 BREAK [1e] 
+0 BREAK [13] 
+0 MAKE  [20] 
+0 BREAK [20] 
+0 MAKE  [2a] 
+0 MAKE  [21] 
+0 BREAK [2a] 
+0 BREAK [21] 
+0 MAKE  [17] 
+0 MAKE  [26] 
+0 BREAK [17] 
+0 MAKE  [14] 
+0 BREAK [26] 
+0 MAKE  [12] 
+0 BREAK [14] 
+0 MAKE  [13] 
+0 BREAK [12] 
+0 BREAK [13] 
+0 MAKE  [1c] 
+0 BREAK [1c] 
+*** KeyboardFilter.sys Unloaded ***
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFD0D2169BF: (caller: 00007FFD0D20A93F) ReturnHr[PreRelease](1) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1065)\FlightSettings.dll!00007FFD0D209D2C: (caller: 00007FFD0D20BF07) ReturnHr[PreRelease](2) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFD0D20A6A4: (caller: 00007FFD0D209E04) ReturnHr[PreRelease](3) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFD0D209E8E: (caller: 00007FFD0D20C11D) ReturnHr[PreRelease](4) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FFD0D20A6A4: (caller: 00007FFD0D209E04) ReturnHr[PreRelease](5) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FFD0D209E8E: (caller: 00007FFD1EEFD533) ReturnHr[PreRelease](6) tid(80c) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FFD0D2169BF: (caller: 00007FFD0D20A93F) ReturnHr[PreRelease](7) tid(80c) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FFD11E0A333: (caller: 00007FFD11D699C5) ReturnHr[PreRelease](95) tid(940) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](96) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(5) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(11) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](97) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](98) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(6) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(12) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](99) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11DDE051) ReturnHr[PreRelease](100) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FFD11DFB8B2: (caller: 00007FFD11D69B50) Exception(7) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FFD11DEC6E7: (caller: 00007FFD11D69507) LogHr(13) tid(940) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FFD11DFE0D5: (caller: 00007FFD11D65C28) ReturnHr[PreRelease](101) tid(940) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.

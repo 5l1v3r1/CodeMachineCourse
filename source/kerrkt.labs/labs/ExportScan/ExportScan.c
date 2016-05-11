@@ -31,16 +31,11 @@ FindNTOSBase(
     // Step #2 : Search backwards from KiSystemCall64 to locate the PE header
     // of NTOSKrnl
     NTOSKrnlBase = (PUCHAR)((UINT_PTR)KiSystemCall64Address & ~0xFFF); //Round down to nearest align boundary (0x1000) size
-    //while (NTOSKrnlBase[0] != 'M' || NTOSKrnlBase[1] != 'Z' || NTOSKrnlBase[2] != 0x90)
-    while (*(PUINT32)NTOSKrnlBase != 0x905a4d) // {'M', 'Z', 0x90, 00}
+    while (*(PUINT32)NTOSKrnlBase != (0xFFFFFF & 0x905a4d)) // {'M', 'Z', 0x90}
     {
         NTOSKrnlBase -= 0x1000;
     }
 
-    if (((UINT_PTR)NTOSKrnlBase >> 12) <= 0xFFFF)
-    {
-        NTOSKrnlBase = 0;
-    }
 
     return NTOSKrnlBase;
 } // FindNTOSBase()

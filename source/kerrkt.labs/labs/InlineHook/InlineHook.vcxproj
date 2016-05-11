@@ -18,7 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-
   <PropertyGroup Label="Globals">
     <ProjectGuid>{46fc0e00-a144-11e5-8853-001bdc06a7b9}</ProjectGuid>
     <TargetVersion>Windows10</TargetVersion>
@@ -45,7 +44,6 @@
     <SignMode>Off</SignMode>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -65,6 +63,12 @@
     <ClCompile Include="MemCpyWP.c" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="amd64\trampoline.asm" />
+    <MASM Include="amd64\trampoline.asm">
+      <DeploymentContent>false</DeploymentContent>
+      <TreatWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatWarningsAsErrors>
+    </MASM>
   </ItemGroup>
 </Project>

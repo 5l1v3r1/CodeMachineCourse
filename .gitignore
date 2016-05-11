@@ -13,3 +13,5 @@ symbols/
 sysint/
 dumps/
 rootkits/
+*.db
+*.obj

@@ -80,14 +80,25 @@ PatchImportTable (
 
     // Step #1 : Get a pointer to the base of the data directory
     // Use ImageGetDataDirectory()
+    DataDirectory = ImageGetDataDirectory(ModuleBase);
 
     // Step #2 : Get the base of the IAT and store it in ImportAddressTableBase (RVA_TO_VA())
+    ImportAddressTableBase = (PVOID *)RVA_TO_VA(ModuleBase, DataDirectory[IMAGE_DIRECTORY_ENTRY_IAT].VirtualAddress);
 
     // Step #3 : Get the size of the IAT and store it in ImportAddressTableSize
+    ImportAddressTableSize = DataDirectory[IMAGE_DIRECTORY_ENTRY_IAT].Size;
 
     // Step #4 : Search through the IAT and find the entry that contains the OriginalFunction
     // replace that IAT entry with TargetFunction and return TRUE to indicate success
     // Use MemCpyWP() from the "InlineHook" lab to write to the IAT
+    for (Index = 0; Index < ImportAddressTableSize / sizeof(ULONG_PTR); ++Index)
+    {
+        if (ImportAddressTableBase[Index] == OriginalFunction)
+        {
+            MemCpyWP((PUCHAR)&ImportAddressTableBase[Index], (PUCHAR)&TargetFunction, sizeof(ULONG_PTR));
+            return TRUE;
+        }
+    }
 
     // if the OriginalFunction is not found return FALSE
     return FALSE;
