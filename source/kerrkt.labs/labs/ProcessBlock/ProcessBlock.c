@@ -5,10 +5,19 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "ntddk.h"
+//#include "ntddk.h"
+#include <ntifs.h>
 
 #define __MODULE__  "ProcessBlock"
 #define DPF(x)      DbgPrint x
+
+//BOOLEAN
+//FsRtlIsNameInExpression(
+//    _In_ PUNICODE_STRING Expression,
+//    _In_ PUNICODE_STRING Name,
+//    _In_ BOOLEAN IgnoreCase,
+//    _In_opt_ PWCH UpcaseTable
+//);
 
 NTSTATUS 
 DriverEntry(
@@ -45,9 +54,15 @@ DriverEntry(
     DriverObject->DriverUnload	= DriverUnload;
 
     // Step #1 : Initialize the global variable g_RunDownRef (ExInitializeRundownProtection())
+    ExInitializeRundownProtection(&g_RunDownRef);
 
     // Step #2 : Install the function ProcessNotifyCallbackEx() as a process notification callback
     // (PsSetCreateProcessNotifyRoutineEx())
+    if (!NT_SUCCESS(Status = PsSetCreateProcessNotifyRoutineEx(ProcessNotifyCallbackEx, FALSE)))
+    {
+        DbgPrint("ERROR PsSetCreateProcessNotifyRoutineEx (%x)\n", Status);
+        goto Exit;
+    }
 
     return STATUS_SUCCESS;
 
@@ -64,8 +79,14 @@ DriverUnload (
     UNREFERENCED_PARAMETER(DriverObject);
 
     // Step #3 : Remove the process notification callback (PsSetCreateProcessNotifyRoutineEx())
+    if (!NT_SUCCESS(Status = PsSetCreateProcessNotifyRoutineEx(ProcessNotifyCallbackEx, TRUE)))
+    {
+        DbgPrint("ERROR PsSetCreateProcessNotifyRoutineEx (%x)\n", Status);
+        goto Exit;
+    }
 
     // Step #4 : Wait for rundown references to drop to zero (ExWaitForRundownProtectionRelease())
+    ExWaitForRundownProtectionRelease(&g_RunDownRef);
 
 
 Exit :
@@ -79,26 +100,32 @@ ProcessNotifyCallbackEx (
     HANDLE  ProcessId,
     PPS_CREATE_NOTIFY_INFO  CreateInfo )
 {
-    UNICODE_STRING ExecutableBlocked[2] = {
-        // Step #5 : Initialize the path to all the executables that need to be blocked
-        // Use the macro RTL_CONSTANT_STRING()
-    };
+    UNICODE_STRING ExecutableBlocked = RTL_CONSTANT_STRING(L"*CALC*.EXE");
+    
     UNREFERENCED_PARAMETER(ProcessId);
     UNREFERENCED_PARAMETER(Process);
 
     // Step #6 : Take a rundown reference (ExAcquireRundownProtection())
-
+    ExAcquireRundownProtection(&g_RunDownRef);
 
     if ( CreateInfo ) {
-        ULONG Idx;
 
         // Step #7 : Iterate through all the elements of the ExecutableBlocked[] array
         // and check if any of the paths match the executable being started and if so
         // fail the process creation with STATUS_INSUFFICIENT_RESOURCES
-
+        if (!FsRtlIsNameInExpression(&ExecutableBlocked, (PUNICODE_STRING)CreateInfo->ImageFileName, TRUE, NULL))
+        {
+            DbgPrint("Starting Process: %wZ\n", CreateInfo->ImageFileName);
+        }
+        else
+        {
+            DbgPrint("Preventing Process (%wZ) Execution\n", CreateInfo->ImageFileName);
+            CreateInfo->CreationStatus = STATUS_ACCESS_DENIED;
+        }
     }
 
     // Step #8 : Drop a rundown reference (ExReleaseRundownProtection())
+    ExReleaseRundownProtection(&g_RunDownRef);
 
     return;
 } // ProcessNotifyCallbackEx()

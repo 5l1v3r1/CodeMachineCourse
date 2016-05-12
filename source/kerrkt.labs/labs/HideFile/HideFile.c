@@ -59,6 +59,7 @@ CONST FLT_REGISTRATION g_FltRegistration = {
 
 PFLT_FILTER     g_FltFilter = NULL;
 PWCHAR          g_Pattern = NULL;
+ULONG           g_PatternLen = 0;
 
 NTSTATUS
 DriverEntry (
@@ -75,6 +76,7 @@ DriverEntry (
     DriverObject->DriverUnload = DriverUnload;
 
     g_Pattern = L"HideThisFile.txt";
+    g_PatternLen = (ULONG)wcslen(g_Pattern);
 
     // Register the filter driver using the
     // registration structure g_FltRegistration and store the filter pointer
@@ -207,6 +209,8 @@ ProcessFileFullDirectoryInformation(
 
     UNREFERENCED_PARAMETER(Length);
 
+    #define FILE_FULL_DIR_INFORMATION_SIZE(x) (ULONG)(FIELD_OFFSET(FILE_FULL_DIR_INFORMATION, FileName) + (x)->FileNameLength)
+
     // Step #1 : iterate through all the directory entries in Buffer and compare (_wcsnicmp())
     // the FILE_FULL_DIR_INFORMATION->FileName to g_Pattern to find if the entry contains the
     // filename that must be removed from the directory listing. This function must return TRUE
@@ -216,6 +220,56 @@ ProcessFileFullDirectoryInformation(
     //  which is FIELD_OFFSET(FILE_FULL_DIR_INFORMATION, FileName) + FILE_FULL_DIR_INFORMATION->FileNameLength
     // *The last entry in the list has FILE_FULL_DIR_INFORMATION->NextEntryOffset == 0
     // *Directory entries are always unique i.e. cannot have more than one occurance of a given entry
+    while (TRUE)
+    {
+        DbgPrint("[LAB] FILENAME: %.*S\n", Current->FileNameLength / sizeof(WCHAR), Current->FileName);
+        if (0 == _wcsnicmp(Current->FileName, g_Pattern, min(g_PatternLen, Current->FileNameLength / sizeof(WCHAR))))
+        {
+            Found = TRUE;
+            break;
+        }
+
+        if (0 == Current->NextEntryOffset)
+        {
+            break;
+        }
+
+        Previous = Current;
+        Current = (PFILE_FULL_DIR_INFORMATION)((ULONG_PTR)Current + Current->NextEntryOffset);
+    }
+
+    if (Found)
+    {
+        //Handle First Entry
+        if (NULL == Previous)
+        {
+            if (0 == Current->NextEntryOffset) // Only entry in the list - can do nothing but zero out the memory
+            {
+                RtlZeroMemory(Current, FILE_FULL_DIR_INFORMATION_SIZE(Current));
+            }
+            else //Not the only entry in the list
+            {
+                PFILE_FULL_DIR_INFORMATION Next = (PFILE_FULL_DIR_INFORMATION)((ULONG_PTR)Current + Current->NextEntryOffset);
+                ULONG CurrentSize = FILE_FULL_DIR_INFORMATION_SIZE(Current);
+                Next->NextEntryOffset += Current->NextEntryOffset;
+                RtlMoveMemory(Current, Next, FILE_FULL_DIR_INFORMATION_SIZE(Next));
+                RtlZeroMemory(Next, CurrentSize);
+                Next = NULL;
+            }
+        }
+        //Handle Last Entry
+        else if (0 == Current->NextEntryOffset)
+        {
+            Previous->NextEntryOffset = 0;
+            RtlZeroMemory(Current, FILE_FULL_DIR_INFORMATION_SIZE(Current));
+        }
+        else //Handle Entry In Middle or Last
+        {
+            Previous->NextEntryOffset += Current->NextEntryOffset;
+            RtlZeroMemory(Current, FILE_FULL_DIR_INFORMATION_SIZE(Current));
+        }
+    }
+
 
     return Found;
 } // ProcessFileFullDirectoryInformation()
