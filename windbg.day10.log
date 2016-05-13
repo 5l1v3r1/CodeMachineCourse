@@ -1,0 +1,451 @@
+Opened log file 'c:\course\windbg.day10.log'
+0: kd> g
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](131) tid(1618) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](132) tid(1244) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](133) tid(1244) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](134) tid(1244) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](135) tid(1244) 80070490 Element not found.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](47) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](46) tid(260) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](48) tid(d50) 80070057 The parameter is incorrect.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](31) tid(c08) 8004B200 shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(864) 80004005 Unspecified error
+    CallContext:[\Startup] 
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+1: kd> !ndiskd.filters
+ffffe00110238700 - QoS Packet Scheduler
+  Filter ffffe00110b65680, Miniport ffffe00110b041a0 - Microsoft Hyper-V Network Adapter #2
+ffffe00110239010 - Virtual WiFi Filter Driver
+ffffe00110884510 - WFP vSwitch Layers LightWeight Filter
+ffffe00110884d70 - WFP Native MAC Layer LightWeight Filter
+  Filter ffffe00110dc4830, Miniport ffffe00110b041a0 - Microsoft Hyper-V Network Adapter #2
+ffffe00110884010 - WFP 802.3 MAC Layer LightWeight Filter
+  Filter ffffe00110dc8010, Miniport ffffe00110b041a0 - Microsoft Hyper-V Network Adapter #2
+1: kd> g
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FF8E28510FF: (caller: 00007FF8D82991DB) ReturnHr[PreRelease](33) tid(1174) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FF8D82992BC: (caller: 00007FF8D82ADCD5) ReturnHr[PreRelease](83) tid(1174) 80070005 Access is denied.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](136) tid(17f8) 80070490 Element not found.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](49) tid(1764) 80070057 The parameter is incorrect.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](32) tid(e04) 8004B200 shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](50) tid(1764) 80070057 The parameter is incorrect.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](33) tid(e04) 8004B200 shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(b4) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(15f8) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](51) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](52) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](53) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](54) tid(1764) 80070057 The parameter is incorrect.
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+1: kd> .kdfile C:\course\mymap.ini
+                                 ^ Syntax error in '.kdfile C:\course\mymap.ini'
+1: kd> .kdfiles C:\course\mymap.ini
+KD file associations loaded from 'C:\course\mymap.ini'
+1: kd> .kdfiles
+KD file associations loaded from 'C:\course\mymap.ini'
+\systemroot\system32\drivers\ndislwf.sys -> C:\course\source\kerrkt.labs\labs\NdisLwf\x64\Debug\NdisLwf.sys
+\systemroot\system32\drivers\streamscan.sys -> C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys
+\systemroot\system32\drivers\hidefile.sys -> C:\course\source\kerrkt.labs\labs\HideFile\x64\Debug\HideFile.sys
+\systemroot\system32\drivers\hidereg.sys -> C:\course\source\kerrkt.labs\labs\HideReg\x64\Debug\HideReg.sys
+\systemroot\system32\drivers\processblock.sys -> C:\course\source\kerrkt.labs\labs\ProcessBlock\x64\Debug\ProcessBlock.sys
+\systemroot\system32\drivers\keyboardfilter.sys -> C:\course\source\kerrkt.labs\labs\KeyboardFilter\x64\Debug\KeyboardFilter.sys
+\systemroot\system32\drivers\iathook.sys -> C:\course\source\kerrkt.labs\labs\IATHook\x64\Debug\IATHook.sys
+\systemroot\system32\drivers\inlinehook.sys -> C:\course\source\kerrkt.labs\labs\InlineHook\x64\Debug\InlineHook.sys
+\systemroot\system32\drivers\exportscan.sys -> C:\course\source\kerrkt.labs\labs\ExportScan\x64\Debug\ExportScan.sys
+\systemroot\system32\drivers\drivermigrate.sys -> C:\course\source\kerrkt.labs\labs\DriverMigrate\x64\Debug\DriverMigrate.sys
+\systemroot\system32\drivers\vulnerable.sys -> C:\course\source\kerrkt.labs\labs\KMCSBypass\sys\x64\Debug\Vulnerable.sys
+\systemroot\system32\drivers\registry.sys -> C:\course\source\kerprg.labs\labs\Registry\x64\Debug\Registry.sys
+\systemroot\system32\drivers\stacktrace.sys -> C:\course\source\kerprg.labs\labs\StackTrace\x64\Debug\StackTrace.sys
+\systemroot\system32\drivers\userioctl.sys -> C:\course\source\kerprg.labs\labs\UserIoctl\x64\Debug\UserIoctl.sys
+\systemroot\system32\drivers\workitem.sys -> C:\course\source\kerprg.labs\labs\WorkItem\x64\Debug\WorkItem.sys
+\systemroot\system32\drivers\dpctimer.sys -> C:\course\source\kerprg.labs\labs\DpcTimer\x64\Debug\DpcTimer.sys
+\systemroot\system32\drivers\buildio.sys -> C:\course\source\kerprg.labs\labs\BuildIo\x64\Debug\BuildIo.sys
+\systemroot\system32\drivers\usercomm.sys -> C:\course\source\kerprg.labs\labs\UserComm\x64\Debug\UserComm.sys
+\systemroot\system32\drivers\strings.sys -> C:\course\source\kerprg.labs\labs\Strings\x64\Debug\Strings.sys
+\systemroot\system32\drivers\simple.sys -> C:\course\source\kerprg.labs\labs\Simple\x64\Debug\Simple.sys
+1: kd> bc *
+1: kd> bp NdisLwf!DriverEntry
+Bp expression 'NdisLwf!DriverEntry' could not be resolved, adding deferred bp
+1: kd> g
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(4f4) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](55) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](56) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](57) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](58) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](59) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](60) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](61) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](62) tid(1764) 80070057 The parameter is incorrect.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(165)\usermgrcli.dll!00007FF8E28510FF: (caller: 00007FF8D82991DB) ReturnHr[PreRelease](34) tid(f28) 80070005 Access is denied.
+base\appmodel\execmodel\modern\lifetimemanager\appxexecutionutil.cpp(40)\modernexecserver.dll!00007FF8D82992BC: (caller: 00007FF8D82ADCD5) ReturnHr[PreRelease](84) tid(f28) 80070005 Access is denied.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](63) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](64) tid(1764) 80070057 The parameter is incorrect.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](137) tid(e2c) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](138) tid(e2c) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](139) tid(e2c) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](140) tid(e2c) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](141) tid(e2c) 80070490 Element not found.
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\NdisLwf\x64\Debug\NdisLwf.sys' (\SystemRoot\System32\Drivers\NdisLwf.sys)
+  File size 9KKdPullRemoteFile(FFFFE00112551840): About to overwrite \SystemRoot\System32\Drivers\NdisLwf.sys and preallocate to 2200
+KdPullRemoteFile(FFFFE00112551840): Return from ZwCreateFile with status 0
+....
+Breakpoint 0 hit
+NdisLwf!DriverEntry:
+fffff800`12331000 4889542410      mov     qword ptr [rsp+10h],rdx
+0: kd> bp NdisLwf!ProcessNblChain
+0: kd> bp Ndislwf!NDISLWF_ReceiveNetBufferListsHandler
+0: kd> g
+NdisLwf!DriverEntry DriverObject=FFFFE0010FA5E720 RegistryPath=\REGISTRY\MACHINE\SYSTEM\ControlSet001\Services\NdisLwf
+NdisLwf!DriverEntry NdisFRegisterFilterDriver() FAIL=c0000001
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(1550) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](65) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](66) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](67) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](68) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](69) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](70) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](71) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](72) tid(1764) 80070057 The parameter is incorrect.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](36) tid(117c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](37) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](38) tid(155c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](39) tid(d08) 8004B200 Suspending
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](40) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](41) tid(c5c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](42) tid(d3c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](43) tid(2f0) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](44) tid(1b0) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FF8D7B07C7A: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](1) tid(15c0) 80070002 The system cannot find the file specified.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](45) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](46) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](47) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](48) tid(155c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](49) tid(117c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](50) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](51) tid(1b0) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](52) tid(c5c) 8004B200 shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](142) tid(c68) 80070490 Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](53) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](54) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](55) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](56) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](57) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](58) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](59) tid(1478) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](60) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](61) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](62) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](63) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](64) tid(d08) 8004B200 Suspending
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](65) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](66) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](67) tid(d08) 8004B200 base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FF8D7B07C7A: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](2) tid(c5c) 80070002 The system cannot find the file specified.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](143) tid(b88) 80070490 Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](68) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](69) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](70) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](71) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](72) tid(858) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](73) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](74) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](75) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](76) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](77) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](78) tid(d08) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](79) tid(d08) 8004B200 Suspending
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](144) tid(c68) 80070490 Element not found.
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FF8D7B07C7A: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](3) tid(14c) 80070002 The system cannot find the file specified.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](145) tid(c68) 80070490 Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FF8D6138D28: (caller: 00007FF8E79AFE2C) ReturnHr[PreRelease](34) tid(14f8) 80030002 %1 could not be found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](35) tid(11a8) 8004B203 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](36) tid(c08) 8004B200 net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(1) tid(14f8) 80004005 Unspecified error
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(2) tid(14f8) 80004005 Unspecified error
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](146) tid(c68) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](147) tid(c68) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](148) tid(c68) 80070490 Element not found.
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\NdisLwf\x64\Debug\NdisLwf.sys' (\SystemRoot\system32\DRIVERS\NdisLwf.sys)
+  File size 9KKdPullRemoteFile(FFFFE0011053B840): About to overwrite \SystemRoot\system32\DRIVERS\NdisLwf.sys and preallocate to 2200
+KdPullRemoteFile(FFFFE0011053B840): Return from ZwCreateFile with status 0
+....
+Breakpoint 0 hit
+NdisLwf!DriverEntry:
+fffff800`12341000 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+NdisLwf!DriverEntry DriverObject=FFFFE0010FBD3E60 RegistryPath=\REGISTRY\MACHINE\SYSTEM\ControlSet001\Services\NdisLwf
+NdisLwf!DriverEntry NdisFRegisterFilterDriver() FilterDriverHandle=FFFFE00111E5F470
+NdisLwf!NDISLWF_AttachHandler [164.104c] (FilterHandle=FFFFE00111E5F0D0 DriverContext=FFFFE0010FBD3E60 AttachParameters=FFFFD000252DAFA0)
+NdisLwf!NDISLWF_StatusHandler [164.104c] (Context=FFFFE001118EC860 StatusIndication=FFFFD000252DACA0)
+NdisLwf!NDISLWF_StatusHandler [164.104c] (Context=FFFFE001118EC860 StatusIndication=FFFFD000252DACA0)
+NdisLwf!NDISLWF_StatusHandler [4bc.15c8] (Context=FFFFE001118EC860 StatusIndication=FFFFF80244B1A770)
+NdisLwf!NDISLWF_StatusHandler [164.104c] (Context=FFFFE001118EC860 StatusIndication=FFFFD000228065A0)
+NdisLwf!NDISLWF_StatusHandler [164.104c] (Context=FFFFE001118EC860 StatusIndication=FFFFD000228065A0)
+NdisLwf!NDISLWF_StatusHandler [164.104c] (Context=FFFFE001118EC860 StatusIndication=FFFFD000228065A0)
+NdisLwf!NDISLWF_RestartHandler [164.104c] (Context=FFFFE001118EC860 RestartParameters=FFFFD000252DB1C8)
+OperState->OperationalStatus is 5OperState->OperationalStatus is 1shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](37) tid(11a8) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](38) tid(11a8) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](39) tid(11a8) 8004B200 Fail to read system\currentcontrolset\services\Lmhosts\Parameters\EnableUserMode, error=2
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](149) tid(c68) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](150) tid(c68) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](151) tid(c68) 80070490 Element not found.
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA6D10 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA6D10 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA6D10 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA6D10 BLOCKED
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+0: kd> bl
+ 0 e fffff800`12341000     0001 (0001) NdisLwf!DriverEntry
+ 1 e fffff800`12331630     0001 (0001) <Unloaded_NdisLwf.sys>+0x1630
+ 2 e fffff800`12331440     0001 (0001) <Unloaded_NdisLwf.sys>+0x1440
+
+0: kd> bc 2
+0: kd> bc 1
+0: kd> bp NdisLwf!ProcessNblChain
+0: kd> bp Ndislwf!NDISLWF_ReceiveNetBufferListsHandler
+0: kd> g
+Breakpoint 2 hit
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler:
+fffff800`12341440 44894c2420      mov     dword ptr [rsp+20h],r9d
+1: kd> p
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler+0x18:
+fffff800`12341458 488b442450      mov     rax,qword ptr [rsp+50h]
+1: kd> p
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler+0x22:
+fffff800`12341462 488b4c2458      mov     rcx,qword ptr [rsp+58h]
+1: kd> p
+Breakpoint 1 hit
+NdisLwf!ProcessNblChain:
+fffff800`12341630 48894c2408      mov     qword ptr [rsp+8],rcx
+1: kd> g
+Breakpoint 3 hit
+NdisLwf!ProcessNblChain+0x7e:
+fffff800`123416ae c74424782a000000 mov     dword ptr [rsp+78h],2Ah
+1: kd> p
+NdisLwf!ProcessNblChain+0x86:
+fffff800`123416b6 48c784248000000000000000 mov qword ptr [rsp+80h],0
+1: kd> g
+Breakpoint 1 hit
+NdisLwf!ProcessNblChain+0xcb:
+fffff800`123416fb 488b842480000000 mov     rax,qword ptr [rsp+80h]
+1: kd> p
+NdisLwf!ProcessNblChain+0xdb:
+fffff800`1234170b 488b842488000000 mov     rax,qword ptr [rsp+88h]
+1: kd> p
+NdisLwf!ProcessNblChain+0x112:
+fffff800`12341742 488b842488000000 mov     rax,qword ptr [rsp+88h]
+1: kd> p
+NdisLwf!ProcessNblChain+0x123:
+fffff800`12341753 488b442460      mov     rax,qword ptr [rsp+60h]
+1: kd> p
+NdisLwf!ProcessNblChain+0x131:
+fffff800`12341761 e92fffffff      jmp     NdisLwf!ProcessNblChain+0x65 (fffff800`12341695)
+1: kd> g
+Breakpoint 2 hit
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler:
+fffff800`12341440 44894c2420      mov     dword ptr [rsp+20h],r9d
+0: kd> p
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler+0x18:
+fffff800`12341458 488b442450      mov     rax,qword ptr [rsp+50h]
+0: kd> g
+Breakpoint 1 hit
+NdisLwf!ProcessNblChain+0xcb:
+fffff800`123416fb 488b842480000000 mov     rax,qword ptr [rsp+80h]
+0: kd> g
+Breakpoint 2 hit
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler:
+fffff800`12341440 44894c2420      mov     dword ptr [rsp+20h],r9d
+1: kd> g
+shell\ext\inputswitch\switch\ctfhandler.cpp(1976)\InputSwitch.dll!00007FF8E5632993: (caller: 00007FF8EA40D533) LogHr(1) tid(728) 80004005 Unspecified error
+    CallContext:[\Startup] 
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](73) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](74) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](75) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](76) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](77) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](78) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](79) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](80) tid(1764) 80070057 The parameter is incorrect.
+Breakpoint 3 hit
+NdisLwf!ProcessNblChain+0x136:
+fffff800`12341766 488b442460      mov     rax,qword ptr [rsp+60h]
+0: kd> p
+NdisLwf!ProcessNblChain+0x147:
+fffff800`12341777 b801000000      mov     eax,1
+0: kd> p
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!ProcessNblChain+0x22e:
+fffff800`1234185e 488b842490000000 mov     rax,qword ptr [rsp+90h]
+0: kd> p
+NdisLwf!ProcessNblChain+0x23d:
+fffff800`1234186d b001            mov     al,1
+0: kd> p
+NdisLwf!ProcessNblChain+0x24d:
+fffff800`1234187d 488b8c24c8000000 mov     rcx,qword ptr [rsp+0C8h]
+0: kd> bl
+ 0 e fffff800`12341000 [c:\course\source\kerrkt.labs\labs\ndislwf\ndislwf.c @ 93]    0001 (0001) NdisLwf!DriverEntry
+ 3 e fffff800`12341766 [c:\course\source\kerrkt.labs\labs\ndislwf\nblchain.c @ 69]    0001 (0001) NdisLwf!ProcessNblChain+0x136
+
+0: kd> bd 3
+0: kd> g
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110D943B0 BLOCKED
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](81) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](82) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](83) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](84) tid(1764) 80070057 The parameter is incorrect.
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [72c.10d4] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [72c.778] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](80) tid(117c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](81) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](82) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](83) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](84) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](85) tid(117c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](86) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](87) tid(117c) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](88) tid(90) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(198)\thumbcache.dll!00007FF8D614341D: (caller: 00007FF8E795FE5D) ReturnHr[PreRelease](89) tid(90) 8004B200 Suspending
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](152) tid(16fc) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](153) tid(16fc) 80070490 Element not found.
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](40) tid(12d0) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(153)\thumbcache.dll!00007FF8D6138D28: (caller: 00007FF8E79AFE2C) ReturnHr[PreRelease](41) tid(12d0) 8004B200 shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](42) tid(12b8) 8004B200 ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(3) tid(12d0) 80004005 Unspecified error
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(4) tid(12d0) 80004005 Unspecified error
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FF8D7B07C7A: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](4) tid(2f0) 80070002 The system cannot find the file specified.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](154) tid(16fc) 80070490 Element not found.
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+NdisLwf!NDISLWF_PauseHandler [164.154c] (Context=FFFFE001118EC860 PauseParameters=FFFFD00020EBD2C8)
+OperState->OperationalStatus is 5OperState->OperationalStatus is 1shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](155) tid(16fc) 80070490 Element not found.
+WER/CrashAPI:1959: ERROR ReadProcessMemory failed while trying to read PebBaseAddress
+WER/CrashAPI:2068: ERROR Failed to read the peb from the process
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](156) tid(16fc) 80070490 Element not found.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FF8D87469BF: (caller: 00007FF8D873A93F) ReturnHr[PreRelease](1) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1065)\FlightSettings.dll!00007FF8D8739D2C: (caller: 00007FF8D873BF07) ReturnHr[PreRelease](2) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FF8D873A6A4: (caller: 00007FF8D8739E04) ReturnHr[PreRelease](3) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FF8D8739E8E: (caller: 00007FF8D873C11D) ReturnHr[PreRelease](4) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1247)\FlightSettings.dll!00007FF8D873A6A4: (caller: 00007FF8D8739E04) ReturnHr[PreRelease](5) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsdevbroker.cpp(1096)\FlightSettings.dll!00007FF8D8739E8E: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](6) tid(1588) 80070002 The system cannot find the file specified.
+base\flighting\flightsettings\broker\lib\flightsettingsonlinevalidation.cpp(330)\FlightSettings.dll!00007FF8D87469BF: (caller: 00007FF8D873A93F) ReturnHr[PreRelease](7) tid(1588) 80070002 The system cannot find the file specified.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](157) tid(1338) 80070490 Element not found.
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(5) tid(12d0) 80004005 Unspecified error
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(6) tid(12d0) 80004005 Unspecified error
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](158) tid(1338) 80070490 Element not found.
+NdisLwf!NDISLWF_AttachHandler [164.ee8] (FilterHandle=FFFFE00111E5F0D0 DriverContext=FFFFE0010FBD3E60 AttachParameters=FFFFD00022E9BFA0)
+NdisLwf!NDISLWF_StatusHandler [164.ee8] (Context=FFFFE00111E3DEB0 StatusIndication=FFFFD00022E9BCA0)
+NdisLwf!NDISLWF_StatusHandler [164.ee8] (Context=FFFFE00111E3DEB0 StatusIndication=FFFFD00022E9BCA0)
+OperState->OperationalStatus is 5NdisLwf!NDISLWF_RestartHandler [164.ee8] (Context=FFFFE00111E3DEB0 RestartParameters=FFFFD00022E9C1C8)
+OperState->OperationalStatus is 1ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA09F0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [4.64] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(7) tid(12d0) 80004005 Unspecified error
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(8) tid(12d0) 80004005 Unspecified error
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+ProcessNblChain ICMP (0) 169.254.24.6 < 169.254.139.240
+NdisLwf!NDISLWF_ReceiveNetBufferListsHandler [0.0] NBL=FFFFE00110DA06D0 BLOCKED
+NdisLwf!DriverUnload DriverObject=FFFFE0010FBD3E60
+NdisLwf!NDISLWF_PauseHandler [4.324] (Context=FFFFE00111E3DEB0 PauseParameters=FFFFD000CA9186A8)
+NdisLwf!NDISLWF_StatusHandler [4.1524] (Context=FFFFE00111E3DEB0 StatusIndication=FFFFD00020B5DC00)
+NdisLwf!NDISLWF_StatusHandler [508.1768] (Context=FFFFE00111E3DEB0 StatusIndication=FFFFF80244B1A770)
+NdisLwf!NDISLWF_StatusHandler [4.a48] (Context=FFFFE00111E3DEB0 StatusIndication=FFFFF80244B1A770)
+***** DRIVER UNLOADED *****
+OperState->OperationalStatus is 5OperState->OperationalStatus is 1Fail to read system\currentcontrolset\services\Lmhosts\Parameters\EnableUserMode, error=2
+shell\ext\thumbnailcache\lib\thumbcacheapi.cpp(243)\thumbcache.dll!00007FF8D61432DC: (caller: 00007FF8D61434FF) ReturnHr[PreRelease](43) tid(79c) 8004B200 shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](159) tid(990) 80070490 Element not found.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](160) tid(175c) 80070490 Element not found.
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(9) tid(12d0) 80004005 Unspecified error
+net\homenet\config\dll\hncutil.cpp(1939)\hnetcfg.dll!00007FF8D1CAB66A: (caller: 00007FF8D1CAB23A) Exception(10) tid(12d0) 80004005 Unspecified error
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](161) tid(175c) 80070490 Element not found.

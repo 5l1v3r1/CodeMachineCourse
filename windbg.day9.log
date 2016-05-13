@@ -39618,3 +39618,617 @@ fffff800`0f97daf4 tcpip!FlpSetAddressWolPattern (<no parameter info>)
 fffff800`0f97b1bc tcpip!Fl8pPCFClearAllFilters (<no parameter info>)
 fffff800`0f978cb0 tcpip!FlQueryOffloadState (<no parameter info>)
 0: kd> bc *
+0: kd> g
+[LAB] FILENAME: scripts
+[LAB] FILENAME: install.driver.cmd
+[LAB] FILENAME: install.driver.cmd
+[LAB] FILENAME: sc.exe
+[LAB] FILENAME: sc.exe
+[LAB] FILENAME: sc.exe
+[LAB] FILENAME: sc.exe
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+0: kd> .kdfiles C:\course\mymap.ini
+KD file associations loaded from 'C:\course\mymap.ini'
+0: kd> bp StreamScan!DriverEntry
+Bp expression 'StreamScan!DriverEntry' could not be resolved, adding deferred bp
+0: kd> g
+[LAB] FILENAME: sc.exe
+[LAB] FILENAME: sc.exe
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE0010FEFA040): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE0010FEFA040): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`121114d0 4889542410      mov     qword ptr [rsp+10h],rdx
+0: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+[LAB] FILENAME: transfer
+[LAB] FILENAME: binaries
+[LAB] FILENAME: .
+[LAB] FILENAME: ..
+[LAB] FILENAME: binaries
+[LAB] FILENAME: scripts
+[LAB] FILENAME: tools
+[LAB] FILENAME: tools
+[LAB] FILENAME: nasm.exe
+[LAB] FILENAME: nc.exe
+[LAB] FILENAME: nc64.exe
+[LAB] FILENAME: ndisasm.exe
+[LAB] FILENAME: nc.exe
+[LAB] FILENAME: sc.exe
+[LAB] FILENAME: sc.exe
+HideFile!FilterUnloadCallback
+*** HideFile.sys Unloaded ***
+StreamScan!StreamClassifyCallback Flow=382 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52398 RECV Nbl=FFFFE001122AFB10 Len=12   
+StreamScan!StreamClassifyCallback Flow=382 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52398 RECV Nbl=FFFFE001122AFB10 Len=27   
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=382 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52398 RECV Nbl=FFFFE0010FAEB820 Len=30   
+Breakpoint 1 hit
+StreamScan!PatternScan+0x2e:
+fffff800`12111b6e 8b442458        mov     eax,dword ptr [rsp+58h]
+1: kd> p
+StreamScan!PatternScan+0x3a:
+fffff800`12111b7a c744242000000000 mov     dword ptr [rsp+20h],0
+1: kd> p
+StreamScan!PatternScan+0x60:
+fffff800`12111ba0 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> p
+StreamScan!PatternScan+0x9f:
+fffff800`12111bdf eba3            jmp     StreamScan!PatternScan+0x44 (fffff800`12111b84)
+1: kd> g
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE0010FEFA040): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE0010FEFA040): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`121514d0 4889542410      mov     qword ptr [rsp+10h],rdx
+0: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=387 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52503 RECV Nbl=FFFFE0010F84F1A0 Len=31   
+Breakpoint 3 hit
+StreamScan!PatternScan+0x3a:
+fffff800`12151b7a c744242000000000 mov     dword ptr [rsp+20h],0
+0: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x84:
+fffff800`12151bc4 488b442468      mov     rax,qword ptr [rsp+68h]
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=387 Pid=e98 169.254.24.6:60000 <- 169.254.139.240:52503 SEND Nbl=FFFFE00110896930 Len=26   
+Breakpoint 3 hit
+StreamScan!PatternScan+0x3a:
+fffff800`12151b7a c744242000000000 mov     dword ptr [rsp+20h],0
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=387 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52503 RECV Nbl=FFFFE00110472DE0 Len=26   
+Breakpoint 2 hit
+StreamScan!PatternScan+0x84:
+fffff800`12151bc4 488b442468      mov     rax,qword ptr [rsp+68h]
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=387 Pid=e98 169.254.24.6:60000 <- 169.254.139.240:52503 SEND Nbl=FFFFE00110896930 Len=27   
+Breakpoint 2 hit
+StreamScan!PatternScan+0x84:
+fffff800`12151bc4 488b442468      mov     rax,qword ptr [rsp+68h]
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=387 Pid=e98 169.254.24.6:60000 <- 169.254.139.240:52503 SEND Nbl=FFFFE00110896930 Len=12   
+Breakpoint 2 hit
+StreamScan!PatternScan+0x84:
+fffff800`12151bc4 488b442468      mov     rax,qword ptr [rsp+68h]
+0: kd> p
+StreamScan!PatternScan+0x8f:
+fffff800`12151bcf 488b442468      mov     rax,qword ptr [rsp+68h]
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=3af Pid=0 169.254.24.6:60000 <- 169.254.139.240:52669 RECV Nbl=FFFFE001129783B0 Len=2   
+StreamScan!StreamClassifyCallback Flow=3af Pid=cb8 169.254.24.6:60000 <- 169.254.139.240:52669 SEND Nbl=FFFFE00110896930 Len=1   
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE001118B1840): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE001118B1840): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`121614d0 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> bl
+ 0 e fffff800`121614d0 [c:\course\source\kerrkt.labs\labs\streamscan\streamscan.c @ 712]    0001 (0001) StreamScan!DriverEntry
+
+1: kd> bp StreamScan!PatternScan
+1: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=406 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52786 RECV Nbl=FFFFE001118E2DE0 Len=6   
+Breakpoint 1 hit
+StreamScan!PatternScan:
+fffff800`12161b40 44894c2420      mov     dword ptr [rsp+20h],r9d
+0: kd> g
+Breakpoint 1 hit
+StreamScan!PatternScan+0xc8:
+fffff800`12161c08 8b442448        mov     eax,dword ptr [rsp+48h]
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=406 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52786 RECV Nbl=FFFFE001118E2DE0 Len=1   
+StreamScan!StreamClassifyCallback Flow=40a Pid=0 169.254.24.6:60000 <- 169.254.139.240:52790 RECV Nbl=FFFFE001122AFB10 Len=71   
+Breakpoint 1 hit
+StreamScan!PatternScan+0xc8:
+fffff800`12161c08 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> p
+StreamScan!PatternScan+0xd5:
+fffff800`12161c15 488b442468      mov     rax,qword ptr [rsp+68h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=40a Pid=0 169.254.24.6:60000 <- 169.254.139.240:52790 RECV Nbl=FFFFE001122AFB10 Len=66   
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE0010FA5C300): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE0010FA5C300): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`121a14d0 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=40f Pid=0 169.254.24.6:60000 <- 169.254.139.240:52799 RECV Nbl=FFFFE0010FAA2930 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> p
+StreamScan!PatternScan+0xb7:
+fffff800`121a1bf7 eb94            jmp     StreamScan!PatternScan+0x4d (fffff800`121a1b8d)
+1: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+Breakpoint 2 hit
+StreamScan!PatternScan+0x61:
+fffff800`121a1ba1 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=40f Pid=0 169.254.24.6:60000 <- 169.254.139.240:52799 RECV Nbl=FFFFE0010FAA2930 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about Virus???
+
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE0010FA5C300): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE0010FA5C300): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`121e14d0 4889542410      mov     qword ptr [rsp+10h],rdx
+0: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=423 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52818 RECV Nbl=FFFFE0010F84F1A0 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`121e1ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=423 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52818 RECV Nbl=FFFFE0010F84F1A0 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about Virus???
+
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE00111A0F840): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE00111A0F840): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`122214d0 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=428 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52832 RECV Nbl=FFFFE001118E2DE0 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`12221ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=428 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52832 RECV Nbl=FFFFE001118E2DE0 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 3 hit
+StreamScan!PatternScan+0xa0:
+fffff800`12221be0 c744242001000000 mov     dword ptr [rsp+20h],1
+1: kd> g
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE00111A0F840): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE00111A0F840): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`122314d0 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE001118E2DE0 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`12231ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE001118E2DE0 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 1 hit
+StreamScan!PatternScan+0xe1:
+fffff800`12231c21 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE001118E2DE0 Len=56   
+[LAB] Buffer: Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`12231ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE001118E2DE0 Len=51   
+[LAB] Buffer: .. I don't knwo what you're talking about Virus???
+
+Breakpoint 1 hit
+StreamScan!PatternScan+0xe1:
+fffff800`12231c21 8b442420        mov     eax,dword ptr [rsp+20h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE0010FAEB820 Len=9   
+[LAB] Buffer: Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`12231ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+1: kd> g
+StreamScan!StreamClassifyCallback Flow=42e Pid=0 169.254.24.6:60000 <- 169.254.139.240:52847 RECV Nbl=FFFFE0010FAEB820 Len=4   
+[LAB] Buffer: ???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001122AFB10 Len=1   
+[LAB] Buffer: 
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE0010F852B80 Len=1   
+[LAB] Buffer: 
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001122AFB10 Len=1   
+[LAB] Buffer: 
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001109543B0 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about Virus???
+
+Breakpoint 2 hit
+StreamScan!PatternScan+0x67:
+fffff800`12231ba7 8b442448        mov     eax,dword ptr [rsp+48h]
+0: kd> bd *
+0: kd> g
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001109543B0 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about Virus???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001109543B0 Len=56   
+[LAB] Buffer: Virus.. I don't knwo what you're talking about Virus???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001109543B0 Len=51   
+[LAB] Buffer: .. I don't knwo what you're talking about Virus???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001122AFB10 Len=9   
+[LAB] Buffer: Virus???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001122AFB10 Len=4   
+[LAB] Buffer: ???
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001118E2DE0 Len=84   
+[LAB] Buffer: Viruxs is not a Virus just becaue you don't know what a V1rus is do you hey Virus??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001118E2DE0 Len=68   
+[LAB] Buffer: Virus just becaue you don't know what a V1rus is do you hey Virus??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001118E2DE0 Len=63   
+[LAB] Buffer:  just becaue you don't know what a V1rus is do you hey Virus??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE0010F852B80 Len=28   
+[LAB] Buffer: V1rus is do you hey Virus??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE0010F852B80 Len=8   
+[LAB] Buffer: Virus??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE0010F852B80 Len=3   
+[LAB] Buffer: ??
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52852 RECV Nbl=FFFFE001129FF9B0 Len=1   
+[LAB] Buffer: 
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=147c 169.254.24.6:60000 <- 169.254.139.240:52852 SEND Nbl=FFFFE0010FF19870 Len=1   
+[LAB] Buffer: 
+
+StreamScan!StreamClassifyCallback Flow=430 Pid=147c 169.254.24.6:60000 <- 169.254.139.240:52852 SEND Nbl=FFFFE00110896930 Len=1   
+[LAB] Buffer: 
+
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+1: kd> de 1
+*************************************************************************
+***                                                                   ***
+***                                                                   ***
+***    Either you specified an unqualified symbol, or your debugger   ***
+***    doesn't have full symbol information.  Unqualified symbol      ***
+***    resolution is turned off by default. Please either specify a   ***
+***    fully qualified symbol module!symbolname, or enable resolution ***
+***    of unqualified symbols by typing ".symopt- 100". Note that   ***
+***    enabling unqualified symbol resolution with network symbol     ***
+***    server shares in the symbol path may cause the debugger to     ***
+***    appear to hang for long periods of time when an incorrect      ***
+***    symbol name is typed or the network symbol server is down.     ***
+***                                                                   ***
+***    For some commands to work properly, your symbol path           ***
+***    must point to .pdb files that have full type information.      ***
+***                                                                   ***
+***    Certain .pdb files (such as the public OS symbols) do not      ***
+***    contain the required information.  Contact the group that      ***
+***    provided you with these symbols if you need this command to    ***
+***    work.                                                          ***
+***                                                                   ***
+***    Type referenced: 1                                             ***
+***                                                                   ***
+*************************************************************************
+Symbol 1 not found.
+1: kd> de 0
+*************************************************************************
+***                                                                   ***
+***                                                                   ***
+***    Either you specified an unqualified symbol, or your debugger   ***
+***    doesn't have full symbol information.  Unqualified symbol      ***
+***    resolution is turned off by default. Please either specify a   ***
+***    fully qualified symbol module!symbolname, or enable resolution ***
+***    of unqualified symbols by typing ".symopt- 100". Note that   ***
+***    enabling unqualified symbol resolution with network symbol     ***
+***    server shares in the symbol path may cause the debugger to     ***
+***    appear to hang for long periods of time when an incorrect      ***
+***    symbol name is typed or the network symbol server is down.     ***
+***                                                                   ***
+***    For some commands to work properly, your symbol path           ***
+***    must point to .pdb files that have full type information.      ***
+***                                                                   ***
+***    Certain .pdb files (such as the public OS symbols) do not      ***
+***    contain the required information.  Contact the group that      ***
+***    provided you with these symbols if you need this command to    ***
+***    work.                                                          ***
+***                                                                   ***
+***    Type referenced: 0                                             ***
+***                                                                   ***
+*************************************************************************
+Symbol 0 not found.
+1: kd> be 0
+1: kd> bl
+ 0 e fffff800`122314d0     0001 (0001) StreamScan!DriverEntry
+ 1 d fffff800`12231c21     0001 (0001) StreamScan!PatternScan+0xe1
+ 2 d fffff800`12231ba7     0001 (0001) StreamScan!PatternScan+0x67
+
+1: kd> g
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+0: kd> .reload /u streamscan.sys
+Unable to find module 'streamscan.sys'
+0: kd> .reload /u streamscan
+Unable to find module 'streamscan'
+0: kd> g
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE001118B1840): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE001118B1840): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`122714d0 4889542410      mov     qword ptr [rsp+10h],rdx
+0: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001129783B0 Len=71   
+[LAB] Buffer: Virus is not a Virus.. I don't knwo what you're talking about virus???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001129783B0 Len=66   
+[LAB] Buffer:  is not a Virus.. I don't knwo what you're talking about virus???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001129783B0 Len=56   
+[LAB] Buffer: Virus.. I don't knwo what you're talking about virus???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001129783B0 Len=51   
+[LAB] Buffer: .. I don't knwo what you're talking about virus???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE00110472DE0 Len=9   
+[LAB] Buffer: virus???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE00110472DE0 Len=4   
+[LAB] Buffer: ???
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE00110472DE0 Len=84   
+[LAB] Buffer: Viruxs is not a viRus just becaue you don't know what a V1rus is do you hey virUs??
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE00110472DE0 Len=68   
+[LAB] Buffer: viRus just becaue you don't know what a V1rus is do you hey virUs??
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE00110472DE0 Len=63   
+[LAB] Buffer:  just becaue you don't know what a V1rus is do you hey virUs??
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001122AFB10 Len=28   
+[LAB] Buffer: V1rus is do you hey virUs??
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001122AFB10 Len=8   
+[LAB] Buffer: virUs??
+
+StreamScan!StreamClassifyCallback Flow=445 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52890 RECV Nbl=FFFFE001122AFB10 Len=3   
+[LAB] Buffer: ??
+
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+KD: Accessing 'C:\course\source\kerrkt.labs\labs\StreamScan\x64\Debug\StreamScan.sys' (\SystemRoot\System32\Drivers\StreamScan.sys)
+  File size 14KKdPullRemoteFile(FFFFE001118B1840): About to overwrite \SystemRoot\System32\Drivers\StreamScan.sys and preallocate to 3800
+KdPullRemoteFile(FFFFE001118B1840): Return from ZwCreateFile with status 0
+.....
+Breakpoint 0 hit
+StreamScan!DriverEntry:
+fffff800`122814d0 4889542410      mov     qword ptr [rsp+10h],rdx
+1: kd> g
+*** StreamScan.sys Loaded ***
+NOTIFY:FWPS_CALLOUT_NOTIFY_ADD_FILTER
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE00110534BA0 Len=71   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE00110534BA0 Len=66   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE00110534BA0 Len=56   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE00110534BA0 Len=51   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE0010FAEB820 Len=9   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE0010FAEB820 Len=4   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001122AFB10 Len=84   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001122AFB10 Len=68   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001122AFB10 Len=63   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001106F29B0 Len=28   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001106F29B0 Len=8   
+StreamScan!StreamClassifyCallback Flow=452 Pid=0 169.254.24.6:60000 <- 169.254.139.240:52904 RECV Nbl=FFFFE001106F29B0 Len=3   
+NOTIFY:FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+*** StreamScan.sys Unloaded ***
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FF8DC9AA333: (caller: 00007FF8DC9099C5) ReturnHr[PreRelease](212) tid(ac0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](213) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(19) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(32) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](214) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](215) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(20) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(33) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](216) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\flighting\clientapi\lib\enumeratehelper.cpp(18)\DeviceCensus.exe!00007FF663F75F27: (caller: 00007FF663F733F8) ReturnHr[PreRelease](1) tid(a30) 80070002 The system cannot find the file specified.
+    CallContext:[\ActivityFaGetFlightsInfo] 
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FF8DC9AA333: (caller: 00007FF8DC9099C5) ReturnHr[PreRelease](217) tid(ac0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](218) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(21) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(34) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](219) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](220) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(22) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(35) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](221) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FF8DC9AA333: (caller: 00007FF8DC9099C5) ReturnHr[PreRelease](222) tid(ac0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](223) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(23) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(36) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](224) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\appmodel\execmodel\modern\lifetimemanager\suspendresume.cpp(4263)\modernexecserver.dll!00007FF8D82B102A: (caller: 00007FF8D82978E3) ReturnHr[PreRelease](79) tid(c10) 8000000D An illegal state change was requested.
+ds\security\umstartup\usermgr\cli\usermgrcli.cxx(145)\usermgrcli.dll!00007FF8D82ACEE7: (caller: 00007FF8D82ACEE7) ReturnHr[PreRelease](32) tid(dc4) 80070057 The parameter is incorrect.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](225) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(24) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(37) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](226) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](43) tid(1764) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](44) tid(d50) 80070057 The parameter is incorrect.
+shell\lib\bindctx.cpp(1144)\explorerframe.dll!00007FF8D6D8186D: (caller: 00007FF8D6D9DFC2) ReturnHr[PreRelease](45) tid(260) 80070057 The parameter is incorrect.
+base\appmodel\execmodel\shared\resourcetimers\lib\applicationdata.cpp(197)\modernexecserver.dll!00007FF8D82BE724: (caller: 00007FF8D82AB15A) ReturnHr[PreRelease](80) tid(c10) 80070002 The system cannot find the file specified.
+base\appmodel\appcontracts\lib\backgroundcontractstore.cpp(32)\AppContracts.dll!00007FF8D7B07C7A: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](1) tid(17d0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FF8D8297AF4: (caller: 00007FF8D82BAD7A) ReturnHr[PreRelease](81) tid(15b0) 80070002 The system cannot find the file specified.
+base\appmodel\execmodel\modern\lifetimemanager\plmutil.cpp(281)\modernexecserver.dll!00007FF8D8297AF4: (caller: 00007FF8D82BAD7A) ReturnHr[PreRelease](82) tid(1394) 80070002 The system cannot find the file specified.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FF8DC9AA333: (caller: 00007FF8DC9099C5) ReturnHr[PreRelease](227) tid(ac0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](228) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(25) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(38) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](229) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+internal\Base\inc\DeviceTicket.hpp(175)\diagtrack.dll!00007FF8DC9AA333: (caller: 00007FF8DC9099C5) ReturnHr[PreRelease](230) tid(ac0) 800704CF The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC97E051) ReturnHr[PreRelease](231) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+base\diagnosis\diagtrack\matchengine\asimovhttpclient.cpp(163)\diagtrack.dll!00007FF8DC99B8B2: (caller: 00007FF8DC909B50) Exception(26) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1210)\diagtrack.dll!00007FF8DC98C6E7: (caller: 00007FF8DC909507) LogHr(39) tid(ac0) 80072EE7 base\diagnosis\diagtrack\matchengine\asimovuploader.cpp(1533)\diagtrack.dll!00007FF8DC99E0D5: (caller: 00007FF8DC905C28) ReturnHr[PreRelease](232) tid(ac0) 80070510 The requested file operation failed because the storage policy blocks that type of file. For more information, contact your system administrator.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](1) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](2) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](3) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](4) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](5) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](6) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](7) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](8) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](9) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](10) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1312)\shcore.dll!00007FF8E77B1ADA: (caller: 00007FF8EA40D533) ReturnHr[PreRelease](11) tid(e64) 80070005 Access is denied.
+shell\shcore\libs\stream\managedcreatefile.cpp(1336)\shcore.dll!00007FF8E778CA14: (caller: 00007FF8E7753D11) ReturnHr[PreRelease](12) tid(e64) 80070005 Access is denied.
+shell\twinui\nowplayingsessionmanager\localprovider\baseprovider\lib\baseprovider.cpp(516)\NPSMDesktopProvider.dll!00007FF8D9D1E7E8: (caller: 00007FF8D9D14A09) ReturnHr[PreRelease](130) tid(2c4) 80070490 Element not found.
+Suspending
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run console kernel debugger) or,                       *
+*       CTRL+BREAK (if you run GUI kernel debugger),                          *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus:
+fffff802`42f66eb0 cc              int     3
+0: kd> bc *
+0: kd> .logclose
+Closing open log file c:\course\windbg.day9.log

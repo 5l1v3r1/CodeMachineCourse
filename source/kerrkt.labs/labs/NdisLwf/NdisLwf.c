@@ -301,9 +301,11 @@ NDISLWF_ReceiveNetBufferListsHandler (
         // Step #1 : Return the NBL chain to the caller instead of indicating it up to 
         // the driver above (NdisFReturnNetBufferLists())
         // ensure that the ReceiveFlags are properly translated to ReturnFlags
+        NdisFReturnNetBufferLists(FilterContext->FilterHandle, NetBufferLists, ReceiveFlags & NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL);
 
     } else {
         // Step #2 : Indicate the NBL chain to the driver above (NdisFIndicateReceiveNetBufferLists())
+        NdisFIndicateReceiveNetBufferLists(FilterContext->FilterHandle, NetBufferLists, PortNumber, NumberOfNetBufferLists, ReceiveFlags);
 
     }
 } // NDISLWF_ReceiveNetBufferListsHandler()
@@ -318,5 +320,6 @@ NDISLWF_ReturnNetBufferListsHandler (
 
     // Step #3 : Return the NBL chain (NdisFReturnNetBufferLists()) to the driver
     // that indicated the NBL
+    NdisFReturnNetBufferLists(FilterContext->FilterHandle, NetBufferLists, ReturnFlags);
 
 } // NDISLWF_ReturnNetBufferListsHandler()

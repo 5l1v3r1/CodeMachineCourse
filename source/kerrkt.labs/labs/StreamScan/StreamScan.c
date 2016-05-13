@@ -681,6 +681,29 @@ PatternScan (
     //   ClassifyOut->rights
     //   ClassifyOut->flags
 
+    if (DataLength >= PatternLength)
+    {
+        if (0 == _strnicmp(DataBuffer, PatternBuffer, PatternLength))
+        {
+            FwpsStreamCalloutIoPacket->countBytesEnforced = PatternLength;
+            ClassifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
+            ClassifyOut->flags = FWPS_CLASSIFY_OUT_FLAG_ABSORB;
+            ClassifyOut->actionType = FWP_ACTION_BLOCK;
+            return;
+        }
+    }
+
+    for (BufferIdx = 1; BufferIdx < DataLength; ++BufferIdx)
+    {
+        if (tolower(DataBuffer[BufferIdx]) == tolower(PatternBuffer[0]))
+        {
+            FwpsStreamCalloutIoPacket->countBytesEnforced = BufferIdx;
+            ClassifyOut->flags = 0;
+            ClassifyOut->actionType = FWP_ACTION_PERMIT;
+            return;
+        }
+    }
+
 } // PatternScan()
 
 NTSTATUS
