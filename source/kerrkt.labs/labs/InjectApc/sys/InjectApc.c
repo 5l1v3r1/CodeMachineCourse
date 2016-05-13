@@ -248,13 +248,23 @@ InjectApc(
 
     // Step #1 : Obtain the EPROCESS pointer from ProcessId (PsLookupProcessByProcessId())
     // and store it in ProcessObject
+    if (!NT_SUCCESS(Status = PsLookupProcessByProcessId(ProcessId, &ProcessObject)))
+    {
+        DbgPrint("ERROR PsLookupProcessByProcessId (%x)\n", Status);
+        goto Exit;
+    }
 
     // Step #2 : Suspend the target process (PsSuspendProcess())
+    if (!NT_SUCCESS(Status = PsSuspendProcess(ProcessObject)))
+    {
+        DbgPrint("ERROR PsSuspendProcess (%x)\n", Status);
+        goto Exit;
+    }
 
     Suspended = TRUE;
 
     // Step #3 : Attach to the target process (KeStackAttachProcess())
-
+    KeStackAttachProcess(ProcessObject, &ApcState);
     Attached = TRUE;
 
     AllocationSize = ShellcodeSize + sizeof ( CONTEXT_DATA ) ;
@@ -262,12 +272,19 @@ InjectApc(
     // Step #4 : Allocate memory in the target process large enough
     // to hold the shellcode and CONTEXT_DATA (ZwAllocateVirtualMemory())
     // and store the result in AllocationBase
+    if (!NT_SUCCESS(Status = ZwAllocateVirtualMemory(NtCurrentProcess(), &AllocationBase, 0, &AllocationSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE)))
+    {
+        DbgPrint("ERROR ZwAllocateVirtualMemory (%x)\n", Status);
+        goto Exit;
+    }
+    ProcessHandle = NULL;
 
     ShellcodeBase = AllocationBase;
     ContextData = (PCONTEXT_DATA)(AllocationBase + ShellcodeSize);
 
     // Step #5 : Copy the user mode APC code into the newly allocated 
     // memory (RtlCopyMemory()) i.e. @ ShellCodeBase
+    RtlCopyMemory(ShellcodeBase, (PVOID)UserApcNormalRoutine, ShellcodeSize);
 
     //setup the context structure with data that will be required by the APC routine
     ContextData->ShellCodeBase = ShellcodeBase;
@@ -299,20 +316,24 @@ Exit :
 
             // Step #6 : Free the virtual memory that was allocated in the 
             // target process (ZwFreeVirtualMemory())
+            ZwFreeVirtualMemory(ProcessHandle, &AllocationBase, &AllocationSize, MEM_RELEASE | MEM_DECOMMIT);
         }
     }
 
 
     if ( Attached ) {
         // Step #7 : Detach from the target process (KeUnstackDetachProcess())
+        KeUnstackDetachProcess(&ApcState);
     }
 
     if ( Suspended ) {
         // Step #8 : Resume the target process (PsResumeProcess())
+        PsResumeProcess(ProcessObject);
     }
 
     if ( ProcessObject ) {
         // Step #9 : Dereference the process object (ObDereferenceObject())
+        ObDereferenceObject(ProcessObject);
     }
 
     return Status;
